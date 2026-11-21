@@ -7,3 +7,8 @@ yonsei_robots https://www.yonsei.ac.kr/robots.txt
 yonsei_haksa_list https://www.yonsei.ac.kr/bbs/sc/58/artclList.do
 yonsei_notice https://www.yonsei.ac.kr/sc/support/notice.jsp
 yonsei_main https://www.yonsei.ac.kr/sc/index.do
+yonsei_moji_list https://www.yonsei.ac.kr/bbs/sc/58/artclList.do?findClSeq=258
+yonsei_art_contest https://www.yonsei.ac.kr/bbs/sc/58/944449/artclView.do
+yonsei_art_scholar https://www.yonsei.ac.kr/bbs/sc/58/943529/artclView.do
+yonsei_art_poem https://www.yonsei.ac.kr/bbs/sc/58/941856/artclView.do
+wevity_it_p2 https://www.wevity.com/?c=find&s=1&gub=1&cidx=20&gp=2
