@@ -6,3 +6,6 @@ public/
 # LearnUs 주소처럼 토큰이 든 파일은 여기 두지 말 것
 *.secret
 .env
+node_modules/
+.dev.vars
+.wrangler/

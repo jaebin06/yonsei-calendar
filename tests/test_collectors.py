@@ -68,3 +68,19 @@ def test_short_acronym_word_boundary():
     assert _has_any("Poultry and VPH marketing Intern", ["PM"]) == []
     assert _has_any("서비스 PM 인턴", ["PM"]) == ["PM"]
     assert _has_any("AI영상 공모전", ["AI"]) == ["AI"]
+
+
+def test_dorm_list_and_dates():
+    from yc.collectors import dorm
+    rows = dorm.parse_list(read("dorm_notice"), "notice")
+    assert any(r["category"] == "공통" for r in rows)
+    r = next(r for r in rows if "방역" in r["title"])
+    assert dorm.dates_from_title(r["title"], r["posted"]) == [date(2026, 11, 30)]
+    assert not dorm.wanted("3학사", set()) and dorm.wanted("3학사", {"3학사"})
+    ds, note = dorm.dates_from_article(read("dorm_art_winter"), date(2026, 10, 20))
+    assert ds == [date(2026, 12, 26)] and "신규 입사" in note
+    ev = dorm.build_event({"idx": "9168", "category": "공통", "title": "겨울방학 연장 신청 안내",
+                           "url": "u", "posted": date(2026, 10, 20)}, ds, note)
+    assert ev.category == "dorm" and "신규 입사" in ev.title
+    postponed = dorm.dates_from_title("(일정연기)무악4학사 단수 공지(10.16금→10.30금)", date(2026, 10, 8))
+    assert dorm.build_event({"idx": "1", "category": "4학사", "title": "→", "url": "u", "posted": None}, postponed).event_start.date() == date(2026, 10, 30)

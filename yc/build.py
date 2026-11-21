@@ -92,9 +92,10 @@ def run(offline: bool = False, fixture: Path | None = None, out: Path | None = N
 
     academic = manual.load_dated(ROOT / "data/manual/academic.yaml", "academic", "yonsei")
     exams = manual.load_dated(ROOT / "data/manual/exams.yaml", "exam", "manual-exam")
+    dorm_manual = manual.load_dated(ROOT / "data/manual/dorm.yaml", "dorm", "manual-dorm")
 
     if offline:
-        scraped = [e for e in state.values() if e.source not in ("yonsei", "manual-exam", "manual")]
+        scraped = [e for e in state.values() if e.source not in ("yonsei", "manual-exam", "manual-dorm", "manual")]
         health = {"offline": {"ok": True, "count": len(scraped)}}
     else:
         scraped, health = collect(fixture)
@@ -109,9 +110,12 @@ def run(offline: bool = False, fixture: Path | None = None, out: Path | None = N
 
     result: list[Event] = []
     for ev in scraped:
+        ev.warnings = []  # 오프라인 재빌드 때 경고가 중복으로 쌓이지 않게
         prev = state.get(ev.id)
         ev.first_seen = prev.first_seen if prev and prev.first_seen else now.replace(tzinfo=None)
-        if ev.source != "manual":
+        if ev.category == "dorm":
+            pass  # 기숙사 공지는 점수 없이 그대로 (기본으로 내 일정에 들어감)
+        elif ev.source != "manual":
             if ev.category == "internship":
                 score.score_internship(ev, cfg, today)
             else:
@@ -153,7 +157,7 @@ def run(offline: bool = False, fixture: Path | None = None, out: Path | None = N
         "generated_at": now.isoformat(timespec="minutes"),
         "repo": cfg.get("repo", ""),
         "health": health,
-        "events": [json.loads(e.model_dump_json()) for e in (academic + exams + result)],
+        "events": [json.loads(e.model_dump_json()) for e in (academic + exams + dorm_manual + result)],
     }
     text = json.dumps(payload, ensure_ascii=False, indent=1)
     (out / "events.json").write_text(text, encoding="utf-8")

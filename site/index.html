@@ -6,14 +6,15 @@
 <title>연세 통합 일정</title>
 <style>
   :root {
-    --bg: #f6f5f1; --card: #ffffff; --ink: #1d1d1b; --muted: #6b6a64; --line: #e4e2db;
+    --bg: #f6f5f1; --card: #ffffff; --ink: #1d1d1b; --muted: #6b6a64; --line: #e4e2db; --soft: #f1f0eb;
     --accent: #1f4fd1; --accent-soft: #e8eefc; --warn: #b4540a; --warn-soft: #fdf0e3;
     --good: #22743d; --good-soft: #e5f4e9;
     --academic: #2f6fdb; --contest: #2e9b57; --exam: #8a4bd6; --internship: #e07b1f; --event: #8a8a84;
+    --learnus: #d23f4f; --dorm: #0e8f8f; --custom: #5b5bd6;
   }
   @media (prefers-color-scheme: dark) {
     :root {
-      --bg: #151514; --card: #1e1e1c; --ink: #ecebe6; --muted: #9c9a92; --line: #33322e;
+      --bg: #151514; --card: #1e1e1c; --ink: #ecebe6; --muted: #9c9a92; --line: #33322e; --soft: #262624;
       --accent: #7ea2ff; --accent-soft: #1e2a4a; --warn: #f3a35c; --warn-soft: #3a2a19;
       --good: #6fcf8f; --good-soft: #1b3324;
     }
@@ -21,53 +22,85 @@
   * { box-sizing: border-box; }
   body { margin: 0; background: var(--bg); color: var(--ink);
     font: 15px/1.55 -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Pretendard", "Noto Sans KR", "Malgun Gothic", sans-serif; }
-  main { max-width: 880px; margin: 0 auto; padding: 28px 18px 80px; }
-  header { display: flex; justify-content: space-between; align-items: flex-end; gap: 12px; flex-wrap: wrap; margin-bottom: 22px; }
+  main { max-width: 920px; margin: 0 auto; padding: 24px 14px 80px; }
+  header { display: flex; justify-content: space-between; align-items: flex-end; gap: 12px; flex-wrap: wrap; margin-bottom: 18px; }
   h1 { font-size: 24px; margin: 0; letter-spacing: -0.02em; }
-  h2 { font-size: 16px; margin: 0 0 12px; letter-spacing: -0.01em; }
+  h2 { font-size: 16px; margin: 0; letter-spacing: -0.01em; }
   .muted { color: var(--muted); font-size: 13px; }
-  section { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 18px; margin-bottom: 16px; }
-  .chips { display: flex; gap: 6px; flex-wrap: wrap; }
-  .chip { font-size: 12px; padding: 2px 9px; border-radius: 999px; background: var(--bg); border: 1px solid var(--line); color: var(--muted); white-space: nowrap; }
+  section { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 16px; margin-bottom: 14px; }
+  .sec-head { display: flex; justify-content: space-between; align-items: center; gap: 8px; margin-bottom: 12px; flex-wrap: wrap; }
+  .chips { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; }
+  .chip { font-size: 12px; padding: 2px 9px; border-radius: 999px; background: var(--soft); border: 1px solid var(--line); color: var(--muted); white-space: nowrap; }
   .chip.ok { color: var(--good); background: var(--good-soft); border-color: transparent; }
   .chip.bad { color: var(--warn); background: var(--warn-soft); border-color: transparent; }
   .chip.new { color: var(--accent); background: var(--accent-soft); border-color: transparent; font-weight: 600; }
   .chip.warn { color: var(--warn); background: var(--warn-soft); border-color: transparent; }
-  .dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 6px; vertical-align: 1px; }
-  .week { list-style: none; margin: 0; padding: 0; }
-  .week li { display: grid; grid-template-columns: 74px 1fr; gap: 10px; padding: 7px 0; border-top: 1px solid var(--line); }
-  .week li:first-child { border-top: 0; }
-  .week .when { color: var(--muted); font-size: 13px; font-variant-numeric: tabular-nums; }
-  .feeds { display: grid; gap: 8px; }
-  .feed { display: flex; align-items: center; gap: 10px; }
-  .feed code { flex: 1; font-size: 12px; background: var(--bg); border: 1px solid var(--line); border-radius: 8px; padding: 6px 8px; overflow-x: auto; white-space: nowrap; }
-  button, .btn { font: inherit; font-size: 13px; border: 1px solid var(--line); background: var(--card); color: var(--ink); border-radius: 8px; padding: 5px 11px; cursor: pointer; text-decoration: none; white-space: nowrap; }
+  .dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 6px; vertical-align: 1px; flex: none; }
+  button, .btn, select { font: inherit; font-size: 13px; border: 1px solid var(--line); background: var(--card); color: var(--ink); border-radius: 8px; padding: 5px 11px; cursor: pointer; text-decoration: none; white-space: nowrap; }
   button:hover, .btn:hover { border-color: var(--muted); }
-  .btn.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
-  @media (prefers-color-scheme: dark) { .btn.primary { color: #10162b; } }
-  .quick { display: flex; gap: 8px; }
-  .quick input { flex: 1; font: inherit; padding: 8px 10px; border: 1px solid var(--line); border-radius: 8px; background: var(--bg); color: var(--ink); min-width: 0; }
-  .tabs { display: flex; gap: 6px; margin-bottom: 12px; flex-wrap: wrap; }
+  button:disabled, select:disabled { opacity: .45; cursor: not-allowed; }
+  .btn.primary, button.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+  @media (prefers-color-scheme: dark) { .btn.primary, button.primary { color: #10162b; } }
+  button.ghost { border-color: transparent; background: transparent; color: var(--muted); padding: 4px 6px; }
+  input[type=text], input[type=date], input[type=time], input[type=password], input[type=search], input[type=url] {
+    font: inherit; font-size: 14px; padding: 7px 9px; border: 1px solid var(--line); border-radius: 8px; background: var(--soft); color: var(--ink); min-width: 0; }
+  .banner[hidden] { display: none; }
+  .banner { background: var(--accent-soft); color: var(--ink); border-radius: 10px; padding: 10px 12px; font-size: 13px; margin-bottom: 14px; display: flex; justify-content: space-between; gap: 10px; align-items: center; flex-wrap: wrap; }
+
+  .cal { display: grid; grid-template-columns: repeat(7, 1fr); border-top: 1px solid var(--line); border-left: 1px solid var(--line); }
+  .cal .wd { font-size: 12px; color: var(--muted); text-align: center; padding: 4px 0; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); background: var(--soft); }
+  .cal .day { min-height: 86px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 3px 4px; cursor: pointer; overflow: hidden; min-width: 0; }
+  .cal .day.other { background: var(--soft); color: var(--muted); }
+  .cal .day.sel { outline: 2px solid var(--accent); outline-offset: -2px; }
+  .cal .num { font-size: 12px; font-variant-numeric: tabular-nums; }
+  .cal .day.today .num { background: var(--ink); color: var(--bg); border-radius: 999px; padding: 0 6px; }
+  .cal .it { font-size: 11px; line-height: 1.35; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; padding: 1px 4px; border-radius: 4px; margin-top: 2px; }
+  .cal .it.done { text-decoration: line-through; opacity: .5; }
+  .cal .more { font-size: 11px; color: var(--muted); padding-left: 4px; }
+  @media (max-width: 560px) {
+    .cal .day { min-height: 54px; }
+    .cal .it { font-size: 0; height: 6px; padding: 0; margin-top: 3px; }
+    .cal .more { display: none; }
+  }
+
+  .rows { list-style: none; margin: 0; padding: 0; }
+  .rows li { display: grid; grid-template-columns: 26px 1fr auto; gap: 8px; align-items: start; padding: 8px 0; border-top: 1px solid var(--line); }
+  .rows li:first-child { border-top: 0; }
+  .rows li.done .t { text-decoration: line-through; color: var(--muted); }
+  .rows .t { font-size: 14px; }
+  .rows .s { font-size: 12px; color: var(--muted); }
+  .rows input[type=checkbox] { width: 18px; height: 18px; margin-top: 2px; accent-color: var(--good); }
+  .overdue .s { color: var(--warn); }
+  .group-title { font-size: 12px; color: var(--muted); margin: 12px 0 2px; font-weight: 600; }
+  .group-title:first-child { margin-top: 0; }
+
+  .tabs { display: flex; gap: 6px; flex-wrap: wrap; }
   .tabs button[aria-pressed="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
-  .toolbar { display: flex; gap: 8px; justify-content: space-between; flex-wrap: wrap; margin-bottom: 12px; }
-  .toolbar input { font: inherit; font-size: 13px; padding: 5px 10px; border: 1px solid var(--line); border-radius: 8px; background: var(--bg); color: var(--ink); width: 180px; }
-  .card { border-top: 1px solid var(--line); padding: 14px 0; display: grid; grid-template-columns: 58px 1fr; gap: 12px; }
+  .toolbar { display: flex; gap: 8px; justify-content: space-between; flex-wrap: wrap; margin-bottom: 10px; }
+  .card { border-top: 1px solid var(--line); padding: 13px 0; display: grid; grid-template-columns: 58px 1fr; gap: 12px; }
   .card:first-child { border-top: 0; padding-top: 4px; }
   .dday { text-align: center; }
   .dday b { display: block; font-size: 17px; font-variant-numeric: tabular-nums; }
   .dday span { font-size: 11px; color: var(--muted); }
-  .card h3 { font-size: 15px; margin: 0 0 4px; line-height: 1.4; }
+  .card h3 { font-size: 15px; margin: 0 0 3px; line-height: 1.4; }
   .card h3 a { color: inherit; text-decoration: none; }
   .card h3 a:hover { text-decoration: underline; }
   .meta { font-size: 13px; color: var(--muted); margin-bottom: 6px; }
   .row { display: flex; gap: 6px; align-items: center; flex-wrap: wrap; }
-  .score { font-weight: 700; font-variant-numeric: tabular-nums; }
   details { font-size: 12.5px; color: var(--muted); margin-top: 6px; }
-  details summary { cursor: pointer; }
-  .actions { display: flex; gap: 6px; margin-top: 8px; }
+  .actions { display: flex; gap: 6px; margin-top: 8px; flex-wrap: wrap; }
   .empty { color: var(--muted); font-size: 14px; padding: 8px 0; }
-  .toast { position: fixed; bottom: 18px; left: 50%; transform: translateX(-50%); background: var(--ink); color: var(--bg); padding: 8px 14px; border-radius: 8px; font-size: 13px; opacity: 0; transition: opacity .2s; pointer-events: none; }
+  form.add { display: grid; grid-template-columns: 1fr 150px 110px 110px auto; gap: 8px; }
+  @media (max-width: 640px) { form.add { grid-template-columns: 1fr 1fr; } form.add input[name=title] { grid-column: 1 / -1; } }
+  .feed { display: flex; align-items: center; gap: 8px; }
+  .feed code { flex: 1; font-size: 12px; background: var(--soft); border: 1px solid var(--line); border-radius: 8px; padding: 6px 8px; overflow-x: auto; white-space: nowrap; }
+  dialog { border: 1px solid var(--line); border-radius: 14px; background: var(--card); color: var(--ink); padding: 18px; width: min(440px, 92vw); }
+  dialog::backdrop { background: rgba(0,0,0,.35); }
+  dialog label { display: block; font-size: 13px; margin: 10px 0 4px; color: var(--muted); }
+  dialog input { width: 100%; }
+  .toast { position: fixed; bottom: 18px; left: 50%; transform: translateX(-50%); background: var(--ink); color: var(--bg); padding: 8px 14px; border-radius: 8px; font-size: 13px; opacity: 0; transition: opacity .2s; pointer-events: none; z-index: 10; }
   .toast.show { opacity: 1; }
+  .legend { display: flex; gap: 10px; flex-wrap: wrap; font-size: 12px; color: var(--muted); margin-top: 8px; }
 </style>
 </head>
 <body>
@@ -77,194 +110,370 @@
       <h1>연세 통합 일정</h1>
       <div class="muted" id="generated">불러오는 중…</div>
     </div>
-    <div class="chips" id="health"></div>
+    <div class="chips"><span id="health" class="chips"></span><button id="open-settings" class="ghost" title="연결 설정">⚙ 연결</button></div>
   </header>
 
-  <section>
-    <h2>다가오는 7일</h2>
-    <ul class="week" id="week"></ul>
-  </section>
+  <div class="banner" id="readonly-banner" hidden>
+    <span>읽기 전용이에요. 개인 서버에 연결하면 완료 체크, 내 일정 고르기, LearnUs 과제·영상 보기를 쓸 수 있어요.</span>
+    <button class="primary" id="banner-connect">연결하기</button>
+  </div>
 
   <section>
-    <h2>대회 · 인턴</h2>
-    <div class="toolbar">
-      <div class="tabs" id="tabs">
-        <button data-tab="cal" aria-pressed="true">캘린더에 있음</button>
-        <button data-tab="maybe" aria-pressed="false">검토</button>
-        <button data-tab="hidden" aria-pressed="false">숨김</button>
-      </div>
+    <div class="sec-head">
+      <h2 id="cal-title">내 달력</h2>
       <div class="row">
-        <select id="kind" class="btn">
-          <option value="all">전체</option>
-          <option value="contest">대회</option>
-          <option value="internship">인턴</option>
-          <option value="event">세미나·모임</option>
-        </select>
-        <input id="q" type="search" placeholder="검색">
+        <button id="prev" aria-label="이전 달">‹</button>
+        <button id="today-btn">오늘</button>
+        <button id="next" aria-label="다음 달">›</button>
       </div>
     </div>
-    <div id="list"></div>
-    <div class="row" style="margin-top:10px">
-      <a class="btn" id="add-manual" target="_blank" rel="noopener">+ 대회·인턴 직접 추가</a>
-    </div>
+    <div class="cal" id="cal"></div>
+    <div class="legend" id="legend"></div>
+    <div id="day-detail" style="margin-top:12px"></div>
   </section>
 
   <section>
-    <h2>과제 빠른 입력</h2>
-    <p class="muted" style="margin:0 0 10px">LearnUs에 없는 과제를 한 줄로 적으면 구글 캘린더 일정 추가 화면이 열려요. 예: <code>인공지능입문 과제3 12/5 23:59</code></p>
-    <form class="quick" id="quick">
-      <input id="quick-text" placeholder="과목 과제명 월/일 시:분" autocomplete="off">
-      <button class="btn primary" type="submit">캘린더에 추가</button>
+    <div class="sec-head"><h2>할 일</h2><span class="muted">내 일정에 넣은 것 중 마감이 있는 것</span></div>
+    <div id="todo"></div>
+  </section>
+
+  <section id="add-section">
+    <div class="sec-head"><h2>직접 추가</h2><span class="muted">카톡으로 받은 공지, 기숙사 일정, LearnUs에 없는 과제</span></div>
+    <form class="add" id="add-form">
+      <input type="text" name="title" placeholder="예: 무악학사 퇴사 점검" required maxlength="120">
+      <input type="date" name="date" required>
+      <input type="time" name="time" title="시간 (선택)">
+      <select name="kind">
+        <option value="assignment">과제</option><option value="video">영상</option><option value="contest">대회</option>
+        <option value="internship">인턴</option><option value="dorm">기숙사</option><option value="other" selected>기타</option>
+      </select>
+      <button class="primary" type="submit">추가</button>
     </form>
   </section>
 
   <section>
-    <h2>구독 주소</h2>
-    <p class="muted" style="margin:0 0 10px">PC에서 calendar.google.com → 다른 캘린더 + → URL로 추가. 갤럭시 삼성 캘린더에는 구글 계정 동기화로 자동으로 떠요.</p>
-    <div class="feeds" id="feeds"></div>
+    <div class="sec-head"><h2>대회 · 인턴 찾기</h2></div>
+    <div class="toolbar">
+      <div class="tabs" id="tabs">
+        <button data-tab="rec" aria-pressed="true">추천</button>
+        <button data-tab="maybe" aria-pressed="false">검토</button>
+        <button data-tab="mine" aria-pressed="false">내 일정</button>
+        <button data-tab="dismissed" aria-pressed="false">추천 안 함</button>
+      </div>
+      <div class="row">
+        <select id="kind">
+          <option value="all">전체</option><option value="contest">대회</option>
+          <option value="internship">인턴</option><option value="event">세미나·모임</option>
+        </select>
+        <input id="q" type="search" placeholder="검색" style="width:150px">
+      </div>
+    </div>
+    <div id="list"></div>
+  </section>
+
+  <section>
+    <div class="sec-head"><h2>구글 캘린더 구독</h2></div>
+    <div id="feeds"></div>
   </section>
 </main>
+
+<dialog id="settings">
+  <h2>개인 서버 연결</h2>
+  <p class="muted">Cloudflare에 배포한 서버 주소와 GitHub Secret에 넣은 <code>APP_KEY</code>를 입력하세요. 이 기기 브라우저에만 저장돼요.</p>
+  <label for="api-url">서버 주소</label>
+  <input id="api-url" type="url" placeholder="https://yonsei-calendar.○○.workers.dev">
+  <label for="api-key">APP_KEY</label>
+  <input id="api-key" type="password" autocomplete="current-password">
+  <div class="row" style="justify-content:flex-end;margin-top:14px">
+    <button id="disconnect" class="ghost">연결 해제</button>
+    <button id="close-settings">취소</button>
+    <button id="save-settings" class="primary">저장</button>
+  </div>
+</dialog>
 <div class="toast" id="toast"></div>
 
 <script>
-const COLORS = { academic: "var(--academic)", contest: "var(--contest)", exam: "var(--exam)", internship: "var(--internship)", event: "var(--event)" };
-const KIND = { academic: "학사", contest: "대회", exam: "시험", internship: "인턴", event: "행사" };
-const FEEDS = [["연세 학사", "academic.ics"], ["대회", "contests.ics"], ["시험·자격증", "exams.ics"], ["인턴", "internships.ics"]];
-let DATA = null, TAB = "cal";
+const COLORS = { academic: "var(--academic)", contest: "var(--contest)", exam: "var(--exam)", internship: "var(--internship)", event: "var(--event)", learnus: "var(--learnus)", dorm: "var(--dorm)", custom: "var(--custom)" };
+const CAT = { academic: "학사", contest: "대회", exam: "시험", internship: "인턴", event: "행사", learnus: "LearnUs", dorm: "기숙사", custom: "직접 추가" };
+const KIND = { assignment: "과제", video: "영상", quiz: "퀴즈", contest: "대회", internship: "인턴", dorm: "기숙사", other: "일정" };
+const WD = ["일", "월", "화", "수", "목", "금", "토"];
+const DEFAULT_IN = new Set(["academic", "exam", "dorm", "learnus", "custom"]);
+
+let DATA = null, TAB = "rec";
+let view = new Date(); view.setDate(1);
+let selectedDay = null;
 
 const $ = (s) => document.querySelector(s);
 const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
-const today = () => { const d = new Date(); d.setHours(0, 0, 0, 0); return d; };
-const parseD = (s) => (s ? new Date(s) : null);
-const keyDate = (e) => parseD(e.deadline) || parseD(e.event_start);
-const ymd = (d) => `${d.getMonth() + 1}/${d.getDate()}`;
-const WD = ["일", "월", "화", "수", "목", "금", "토"];
+const pad = (n) => String(n).padStart(2, "0");
+const dkey = (d) => `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`;
+const todayKey = () => dkey(new Date());
+const ymdLabel = (k) => { const [, m, d] = k.split("-").map(Number); return `${m}/${d} (${WD[new Date(k + "T00:00").getDay()]})`; };
+const timeOf = (iso) => (iso && iso.length > 10 ? iso.slice(11, 16) : "");
+const daysBetween = (a, b) => Math.round((new Date(b + "T00:00") - new Date(a + "T00:00")) / 864e5);
 
-function toast(msg) { const t = $("#toast"); t.textContent = msg; t.classList.add("show"); setTimeout(() => t.classList.remove("show"), 1600); }
+function toast(msg) { const t = $("#toast"); t.textContent = msg; t.classList.add("show"); clearTimeout(toast.t); toast.t = setTimeout(() => t.classList.remove("show"), 1700); }
 
-function issueUrl(title, extra = "") {
-  return `https://github.com/${DATA.repo}/issues/new?title=${encodeURIComponent(title)}${extra}`;
+// ---------- 연결 ----------
+const conf = () => { try { return JSON.parse(localStorage.getItem("yc-conf") || "null"); } catch { return null; } };
+const setConf = (c) => { try { c ? localStorage.setItem("yc-conf", JSON.stringify(c)) : localStorage.removeItem("yc-conf"); } catch {} };
+const connected = () => !!conf();
+
+async function api(path, opts = {}) {
+  const c = conf();
+  const res = await fetch(c.url.replace(/\/$/, "") + path, {
+    ...opts, headers: { Authorization: `Bearer ${c.key}`, "Content-Type": "application/json", ...(opts.headers || {}) },
+  });
+  if (res.status === 401) throw new Error("APP_KEY가 맞지 않아요");
+  if (!res.ok) throw new Error((await res.json().catch(() => ({}))).error || `서버 오류 ${res.status}`);
+  return res.json();
 }
 
+// 서버가 돌려준 상태를 화면 데이터에 다시 적용 (worker/src/logic.js와 같은 규칙)
+function applyState(state) {
+  const custom = new Map((state.custom || []).map((c) => [c.id, c]));
+  DATA.events = DATA.events.filter((e) => e.category !== "custom" || custom.has(e.id));
+  for (const c of custom.values()) if (!DATA.events.some((e) => e.id === c.id)) DATA.events.push({ ...c });
+  const sel = state.selected || {}, dis = state.dismissed || {}, done = state.done || {};
+  for (const e of DATA.events) {
+    e.dismissed = dis[e.id]?.reason || null;
+    e.done = !!done[e.id];
+    if (e.dismissed) e.included = false;
+    else if (e.id in sel) e.included = !!sel[e.id];
+    else if (e.category === "learnus" && e.is_open) e.included = false;
+    else e.included = e.status === "starred" || DEFAULT_IN.has(e.category);
+  }
+}
+
+async function op(body, msg) {
+  if (!connected()) { openSettings(); return; }
+  try {
+    const res = await api("/api/state", { method: "POST", body: JSON.stringify(body) });
+    applyState(res.state);
+    renderAll();
+    if (msg) toast(msg);
+  } catch (e) { toast(e.message); }
+}
+
+async function loadPublic() {
+  DATA = await (await fetch("events.json", { cache: "no-store" })).json();
+  applyState({});
+}
+
+async function load() {
+  if (connected()) {
+    try { DATA = await api("/api/events"); }
+    catch (e) { toast(`서버 연결 실패: ${e.message}`); await loadPublic(); }
+  } else {
+    await loadPublic();
+  }
+  renderAll();
+}
+
+// ---------- 날짜 배치: 일정 하나 → 달력에 놓을 [날짜, 라벨, 시간] ----------
+function placements(e) {
+  const out = [];
+  const s = e.event_start?.slice(0, 10), en = (e.event_end || e.event_start)?.slice(0, 10);
+  if (["contest", "internship", "event"].includes(e.category)) {
+    if (e.deadline) out.push([e.deadline.slice(0, 10), e.category === "internship" ? "인턴 마감" : "마감", timeOf(e.deadline)]);
+    if (s) out.push([s, e.category === "contest" ? "본선" : "행사", timeOf(e.event_start)]);
+  } else if (e.category === "learnus" || e.category === "custom") {
+    if (s) out.push([s, KIND[e.kind] || "일정", timeOf(e.event_start)]);
+  } else if (s) {
+    if (en && en !== s) { out.push([s, "시작", ""]); out.push([en, "끝", ""]); }
+    else out.push([s, "", ""]);
+  }
+  return out;
+}
+
+const titleOf = (e) => (e.course ? `${e.course} · ` : "") + e.title;
+
+function byDay(events) {
+  const map = new Map();
+  for (const e of events) for (const [k, label, t] of placements(e)) {
+    if (!map.has(k)) map.set(k, []);
+    map.get(k).push({ e, label, t });
+  }
+  for (const list of map.values()) list.sort((a, b) => (a.t || "99").localeCompare(b.t || "99"));
+  return map;
+}
+
+// ---------- 그리기 ----------
 function renderHeader() {
   const g = new Date(DATA.generated_at);
-  $("#generated").textContent = `마지막 갱신 ${g.getMonth() + 1}월 ${g.getDate()}일 ${String(g.getHours()).padStart(2, "0")}:${String(g.getMinutes()).padStart(2, "0")}`;
-  $("#health").innerHTML = Object.entries(DATA.health).map(([name, h]) =>
+  $("#generated").textContent = `공개 일정 갱신 ${g.getMonth() + 1}월 ${g.getDate()}일 ${pad(g.getHours())}:${pad(g.getMinutes())}` + (connected() ? " · 개인 서버 연결됨" : "");
+  $("#health").innerHTML = Object.entries(DATA.health || {}).map(([name, h]) =>
     `<span class="chip ${h.ok ? "ok" : "bad"}" title="${esc(h.error || "")}">${esc(name)} ${h.ok ? h.count + "건" : "실패"}</span>`).join("");
-  $("#add-manual").href = `https://github.com/${DATA.repo}/issues/new?template=manual-add.yml`;
+  $("#readonly-banner").hidden = connected();
+  $("#add-section").style.opacity = connected() ? 1 : .55;
 }
 
-function renderWeek() {
-  const t0 = today(), t7 = new Date(t0); t7.setDate(t7.getDate() + 7);
-  const items = [];
-  for (const e of DATA.events) {
-    const inCal = e.status === "always" || e.status === "recommended" || e.status === "starred";
-    if (!inCal) continue;
-    const pts = [];
-    if (e.category === "academic" || e.category === "exam") {
-      const s = parseD(e.event_start), en = parseD(e.event_end) || s;
-      if (en >= t0 && s < t7) pts.push([s < t0 ? t0 : s, e.title + (s < t0 ? " (진행 중)" : "")]);
-    } else {
-      const d = parseD(e.deadline);
-      if (d && d >= t0 && d < t7) pts.push([d, "[마감] " + e.title]);
-      const s = parseD(e.event_start);
-      if (s && s >= t0 && s < t7) pts.push([s, "[행사] " + e.title]);
-    }
-    for (const [d, label] of pts) items.push({ d, label, e });
+function renderCalendar() {
+  const mine = DATA.events.filter((e) => e.included);
+  const map = byDay(mine);
+  $("#cal-title").textContent = `내 달력 · ${view.getFullYear()}년 ${view.getMonth() + 1}월`;
+  const start = new Date(view); start.setDate(1 - view.getDay());
+  const cells = WD.map((w) => `<div class="wd">${w}</div>`);
+  const tk = todayKey();
+  for (let i = 0; i < 42; i++) {
+    const d = new Date(start); d.setDate(start.getDate() + i);
+    if (i >= 35 && d.getMonth() !== view.getMonth()) break;
+    const k = dkey(d), items = map.get(k) || [];
+    const shown = items.slice(0, 3).map(({ e, label, t }) =>
+      `<div class="it ${e.done ? "done" : ""}" style="background:color-mix(in srgb, ${COLORS[e.category]} 16%, transparent);border-left:3px solid ${COLORS[e.category]}" title="${esc((label ? "[" + label + "] " : "") + titleOf(e))}">${t ? t + " " : ""}${esc(e.title)}</div>`).join("");
+    cells.push(`<div class="day ${d.getMonth() !== view.getMonth() ? "other" : ""} ${k === tk ? "today" : ""} ${k === selectedDay ? "sel" : ""}" data-day="${k}">
+      <span class="num">${d.getDate()}</span>${shown}${items.length > 3 ? `<div class="more">+${items.length - 3}</div>` : ""}</div>`);
   }
-  items.sort((a, b) => a.d - b.d);
-  $("#week").innerHTML = items.length ? items.map(({ d, label, e }) =>
-    `<li><span class="when">${ymd(d)} (${WD[d.getDay()]})</span><span><span class="dot" style="background:${COLORS[e.category]}"></span>${e.url ? `<a href="${esc(e.url)}" target="_blank" rel="noopener" style="color:inherit">${esc(label)}</a>` : esc(label)}</span></li>`).join("")
-    : `<li class="empty">이번 주에는 일정이 없어요.</li>`;
+  $("#cal").innerHTML = cells.join("");
+  const used = [...new Set(mine.map((e) => e.category))];
+  $("#legend").innerHTML = used.map((c) => `<span><span class="dot" style="background:${COLORS[c]}"></span>${CAT[c]}</span>`).join("") +
+    `<span>날짜를 누르면 그날 일정을 보고 완료 체크할 수 있어요</span>`;
+  renderDayDetail(map);
 }
+
+function rowHtml({ e, label, t }, opts = {}) {
+  const dis = connected() ? "" : "disabled";
+  const sub = [opts.dateLabel, t, label, CAT[e.category], e.organizer].filter(Boolean).join(" · ");
+  return `<li class="${e.done ? "done" : ""} ${opts.overdue ? "overdue" : ""}">
+    <input type="checkbox" ${e.done ? "checked" : ""} data-done="${e.id}" ${dis} aria-label="완료">
+    <div><div class="t"><span class="dot" style="background:${COLORS[e.category]}"></span>${e.url ? `<a href="${esc(e.url)}" target="_blank" rel="noopener" style="color:inherit">${esc(titleOf(e))}</a>` : esc(titleOf(e))}</div><div class="s">${esc(sub)}</div></div>
+    <div class="row">${e.category === "custom" ? `<button class="ghost" data-delete="${e.id}" ${dis}>삭제</button>` : `<button class="ghost" data-unselect="${e.id}" ${dis}>빼기</button>`}</div>
+  </li>`;
+}
+
+function renderDayDetail(map) {
+  if (!selectedDay) { $("#day-detail").innerHTML = ""; return; }
+  const items = map.get(selectedDay) || [];
+  $("#day-detail").innerHTML = `<div class="group-title">${ymdLabel(selectedDay)}</div>` +
+    (items.length ? `<ul class="rows">${items.map((x) => rowHtml(x)).join("")}</ul>` : `<div class="empty">이 날은 일정이 없어요.</div>`);
+}
+
+function renderTodo() {
+  const tk = todayKey();
+  const rows = [];
+  for (const e of DATA.events) {
+    if (!e.included || !["learnus", "custom", "contest", "internship", "event"].includes(e.category)) continue;
+    for (const [k, label, t] of placements(e)) {
+      if (label === "본선" || label === "행사") continue;
+      rows.push({ e, label, t, k });
+    }
+  }
+  const sortKey = (r) => r.k + (r.t || "99");
+  const overdue = rows.filter((r) => r.k < tk && !r.e.done && daysBetween(r.k, tk) <= 14).sort((a, b) => sortKey(a).localeCompare(sortKey(b)));
+  const upcoming = rows.filter((r) => r.k >= tk && daysBetween(tk, r.k) <= 21).sort((a, b) => sortKey(a).localeCompare(sortKey(b)));
+  const todo = upcoming.filter((r) => !r.e.done), done = upcoming.filter((r) => r.e.done);
+  const html = [];
+  if (overdue.length) html.push(`<div class="group-title">지난 마감 · 아직 미완료</div><ul class="rows">${overdue.map((r) => rowHtml(r, { dateLabel: ymdLabel(r.k), overdue: true })).join("")}</ul>`);
+  html.push(`<div class="group-title">다가오는 3주 · 미완료 ${todo.length}개</div>`);
+  html.push(todo.length ? `<ul class="rows">${todo.map((r) => rowHtml(r, { dateLabel: ymdLabel(r.k) })).join("")}</ul>` : `<div class="empty">남은 할 일이 없어요.</div>`);
+  if (done.length) html.push(`<details><summary>완료 ${done.length}개</summary><ul class="rows">${done.map((r) => rowHtml(r, { dateLabel: ymdLabel(r.k) })).join("")}</ul></details>`);
+  if (!connected()) html.push(`<p class="muted">LearnUs 과제·영상은 개인 서버에 연결하면 여기에 보여요.</p>`);
+  $("#todo").innerHTML = html.join("");
+}
+
+const keyDate = (e) => (e.deadline || e.event_start || "9999").slice(0, 10);
 
 function renderList() {
   const kind = $("#kind").value, q = $("#q").value.trim().toLowerCase();
-  const pool = DATA.events.filter((e) => ["contest", "internship", "event"].includes(e.category));
   const match = (e) => {
-    if (TAB === "cal" && !["recommended", "starred"].includes(e.status)) return false;
-    if (TAB === "maybe" && e.status !== "maybe") return false;
-    if (TAB === "hidden" && e.status !== "hidden") return false;
+    if (!["contest", "internship", "event"].includes(e.category)) return false;
+    if (TAB === "rec" && !(e.status === "recommended" && !e.included && !e.dismissed)) return false;
+    if (TAB === "maybe" && !(e.status === "maybe" && !e.included && !e.dismissed)) return false;
+    if (TAB === "mine" && !e.included) return false;
+    if (TAB === "dismissed" && !e.dismissed) return false;
     if (kind !== "all" && e.category !== kind) return false;
-    if (q && !(e.title + " " + e.organizer + " " + e.tags.join(" ")).toLowerCase().includes(q)) return false;
+    if (q && !(e.title + " " + (e.organizer || "") + " " + (e.tags || []).join(" ")).toLowerCase().includes(q)) return false;
     return true;
   };
-  const rows = pool.filter(match).sort((a, b) => (keyDate(a) - keyDate(b)) || (b.score - a.score));
-  const t0 = today();
+  const tk = todayKey(), dis = connected() ? "" : "disabled";
+  const rows = DATA.events.filter(match).sort((a, b) => keyDate(a).localeCompare(keyDate(b)) || ((b.score || 0) - (a.score || 0)));
   $("#list").innerHTML = rows.length ? rows.map((e) => {
-    const kd = keyDate(e), days = Math.round((new Date(kd).setHours(0, 0, 0, 0) - t0) / 864e5);
+    const k = keyDate(e), days = daysBetween(tk, k);
     const isNew = e.first_seen && (Date.now() - new Date(e.first_seen)) < 3 * 864e5;
-    const starred = e.status === "starred", hidden = e.status === "hidden";
-    const star = starred ? ["unstar", "별표 해제"] : ["star", e.status === "recommended" ? "★ 별표로 고정" : "★ 캘린더에 넣기"];
-    const hide = hidden ? ["unhide", "숨김 해제"] : ["hide", "숨기기"];
+    const actions = e.dismissed
+      ? `<button data-undismiss="${e.id}" ${dis}>되돌리기</button>`
+      : e.included
+        ? `<button data-unselect="${e.id}" ${dis}>내 일정에서 빼기</button>`
+        : `<button class="primary" data-select="${e.id}" ${dis}>+ 내 일정에 넣기</button>
+           <select data-dismiss="${e.id}" ${dis} aria-label="추천 안 함"><option value="">추천 안 함…</option><option>대상 아님</option><option>관심 없음</option><option>이미 지원함</option><option>기타</option></select>`;
     return `<div class="card">
-      <div class="dday"><b>${days < 0 ? "끝" : days === 0 ? "D-day" : "D-" + days}</b><span>${ymd(kd)} ${e.deadline ? "마감" : "행사"}</span></div>
+      <div class="dday"><b>${days < 0 ? "끝" : days === 0 ? "D-day" : "D-" + days}</b><span>${k.slice(5).replace("-", "/")} ${e.deadline ? "마감" : "행사"}</span></div>
       <div>
         <h3><a href="${esc(e.url)}" target="_blank" rel="noopener">${esc(e.title)}</a></h3>
         <div class="meta">${esc(e.organizer || "주최 정보 없음")}${e.location ? " · " + esc(e.location) : ""}</div>
         <div class="row">
-          <span class="chip"><span class="dot" style="background:${COLORS[e.category]}"></span>${KIND[e.category]}</span>
-          ${e.source !== "manual" ? `<span class="chip"><span class="score">${e.score}</span>점</span>` : `<span class="chip">직접 추가</span>`}
-          ${starred ? `<span class="chip ok">별표</span>` : ""}
+          <span class="chip"><span class="dot" style="background:${COLORS[e.category]}"></span>${CAT[e.category]}</span>
+          ${e.score ? `<span class="chip">${e.score}점</span>` : ""}
+          ${e.included ? `<span class="chip ok">내 일정${e.done ? " · 완료" : ""}</span>` : ""}
+          ${e.dismissed ? `<span class="chip">${esc(e.dismissed)}</span>` : ""}
           ${isNew ? `<span class="chip new">NEW</span>` : ""}
           ${(e.warnings || []).map((w) => `<span class="chip warn">${esc(w)}</span>`).join("")}
         </div>
         ${e.score_reasons?.length ? `<details><summary>점수 이유</summary>${e.score_reasons.map(esc).join(" · ")}</details>` : ""}
-        ${e.source !== "manual" ? `<div class="actions">
-          <a class="btn" target="_blank" rel="noopener" href="${issueUrl(star[0] + ": " + e.id)}">${star[1]}</a>
-          <a class="btn" target="_blank" rel="noopener" href="${issueUrl(hide[0] + ": " + e.id)}">${hide[1]}</a>
-        </div>` : ""}
+        <div class="actions">${actions}</div>
       </div></div>`;
-  }).join("") : `<div class="empty">조건에 맞는 항목이 없어요.</div>`;
+  }).join("") : `<div class="empty">${TAB === "mine" ? "아직 내 일정에 넣은 대회·인턴이 없어요. '추천' 탭에서 골라 보세요." : "조건에 맞는 항목이 없어요."}</div>`;
 }
 
-function renderFeeds() {
-  const base = location.href.replace(/[^/]*$/, "") + "feeds/";
-  $("#feeds").innerHTML = FEEDS.map(([name, file]) =>
-    `<div class="feed"><span style="width:88px;font-size:13px">${name}</span><code>${base}${file}</code><button data-copy="${base}${file}">복사</button></div>`).join("") +
-    `<div class="feed"><span style="width:88px;font-size:13px">LearnUs 과제</span><span class="muted">LearnUs 캘린더의 내보내기 주소를 직접 구독 (여기엔 올리지 않음)</span></div>`;
-}
-
-// "인공지능입문 과제3 12/5 23:59" → 구글 캘린더 일정 추가 링크
-function quickAdd(text) {
-  const m = text.match(/^(.*?)\s*(\d{1,2})[\/.](\d{1,2})(?:\s+(\d{1,2}):(\d{2}))?\s*$/);
-  if (!m) return null;
-  const [, title, mo, d, hh = "23", mm = "59"] = m;
-  const now = new Date();
-  let y = now.getFullYear();
-  if (Number(mo) < now.getMonth() + 1 - 2) y += 1; // 1~2월 과제를 11~12월에 입력한 경우
-  const pad = (n) => String(n).padStart(2, "0");
-  const end = `${y}${pad(mo)}${pad(d)}T${pad(hh)}${pad(mm)}00`;
-  const startDate = new Date(y, Number(mo) - 1, Number(d), Number(hh), Number(mm) - 30);
-  const start = `${startDate.getFullYear()}${pad(startDate.getMonth() + 1)}${pad(startDate.getDate())}T${pad(startDate.getHours())}${pad(startDate.getMinutes())}00`;
-  const p = new URLSearchParams({ action: "TEMPLATE", text: `[과제] ${title.trim() || "과제"}`, dates: `${start}/${end}`, ctz: "Asia/Seoul", details: "연세 통합 일정 대시보드에서 추가" });
-  return `https://calendar.google.com/calendar/render?${p}`;
-}
-
-document.addEventListener("click", (ev) => {
-  const b = ev.target.closest("[data-copy]");
-  if (b) { navigator.clipboard?.writeText(b.dataset.copy).then(() => toast("주소를 복사했어요")); }
-  const t = ev.target.closest("[data-tab]");
-  if (t) {
-    TAB = t.dataset.tab;
-    document.querySelectorAll("[data-tab]").forEach((x) => x.setAttribute("aria-pressed", String(x === t)));
-    renderList();
+async function renderFeeds() {
+  if (!connected()) {
+    $("#feeds").innerHTML = `<p class="muted" style="margin:0">개인 서버에 연결하면 <b>내가 고른 일정만</b> 담긴 구독 주소가 여기에 나와요.</p>`;
+    return;
   }
-});
-$("#kind").addEventListener("change", renderList);
-$("#q").addEventListener("input", renderList);
-$("#quick").addEventListener("submit", (ev) => {
-  ev.preventDefault();
-  const url = quickAdd($("#quick-text").value);
-  if (!url) { toast("‘과제명 12/5 23:59’ 형식으로 적어주세요"); return; }
-  window.open(url, "_blank", "noopener");
-  $("#quick-text").value = "";
-});
+  try {
+    const { url } = await api("/api/feed-url");
+    $("#feeds").innerHTML = `<div class="feed"><span style="font-size:13px;width:64px">내 일정</span><code>${esc(url)}</code><button data-copy="${esc(url)}">복사</button></div>
+      <p class="muted" style="margin:10px 0 0">PC에서 calendar.google.com → 다른 캘린더 + → URL로 추가. 이 주소 하나에 학사·기숙사·LearnUs·내가 고른 대회·인턴이 모두 들어가고, 완료한 일정은 ✅가 붙어요. 전에 따로 구독한 LearnUs·대회·학사 캘린더는 겹치니까 지워 주세요. 주소에 비밀 토큰이 들어 있으니 공유하지 마세요.</p>`;
+  } catch (e) { $("#feeds").innerHTML = `<p class="muted">${esc(e.message)}</p>`; }
+}
 
-fetch("events.json", { cache: "no-store" })
-  .then((r) => r.json())
-  .then((d) => { DATA = d; renderHeader(); renderWeek(); renderList(); renderFeeds(); })
-  .catch(() => { $("#generated").textContent = "events.json을 불러오지 못했어요."; });
+function renderAll() { renderHeader(); renderCalendar(); renderTodo(); renderList(); }
+
+// ---------- 이벤트 ----------
+document.addEventListener("click", (ev) => {
+  const t = ev.target;
+  if (t.closest("a, input, select")) return;
+  const day = t.closest("[data-day]");
+  if (day) { selectedDay = selectedDay === day.dataset.day ? null : day.dataset.day; renderCalendar(); return; }
+  const copy = t.closest("[data-copy]");
+  if (copy) { navigator.clipboard?.writeText(copy.dataset.copy).then(() => toast("주소를 복사했어요")); return; }
+  const tab = t.closest("[data-tab]");
+  if (tab) { TAB = tab.dataset.tab; document.querySelectorAll("[data-tab]").forEach((x) => x.setAttribute("aria-pressed", String(x === tab))); renderList(); return; }
+  if (t.dataset.select) return op({ op: "select", id: t.dataset.select }, "내 일정에 넣었어요");
+  if (t.dataset.unselect) return op({ op: "unselect", id: t.dataset.unselect }, "내 일정에서 뺐어요");
+  if (t.dataset.undismiss) return op({ op: "undismiss", id: t.dataset.undismiss }, "다시 추천해요");
+  if (t.dataset.delete) return op({ op: "delete", id: t.dataset.delete }, "삭제했어요");
+});
+document.addEventListener("change", (ev) => {
+  const t = ev.target;
+  if (t.dataset.done) op({ op: t.checked ? "done" : "undone", id: t.dataset.done }, t.checked ? "완료!" : "미완료로 돌렸어요");
+  if (t.dataset.dismiss && t.value) op({ op: "dismiss", id: t.dataset.dismiss, reason: t.value }, "더 이상 추천하지 않아요");
+});
+$("#prev").onclick = () => { view.setMonth(view.getMonth() - 1); renderCalendar(); };
+$("#next").onclick = () => { view.setMonth(view.getMonth() + 1); renderCalendar(); };
+$("#today-btn").onclick = () => { view = new Date(); view.setDate(1); selectedDay = todayKey(); renderCalendar(); };
+$("#kind").onchange = renderList;
+$("#q").oninput = renderList;
+$("#add-form").onsubmit = (ev) => {
+  ev.preventDefault();
+  const f = new FormData(ev.target);
+  op({ op: "add", title: f.get("title"), date: f.get("date"), time: f.get("time"), kind: f.get("kind") }, "추가했어요");
+  ev.target.reset();
+};
+function openSettings() { const c = conf() || {}; $("#api-url").value = c.url || ""; $("#api-key").value = c.key || ""; $("#settings").showModal(); }
+$("#open-settings").onclick = openSettings;
+$("#banner-connect").onclick = openSettings;
+$("#close-settings").onclick = () => $("#settings").close();
+$("#disconnect").onclick = async () => { setConf(null); $("#settings").close(); await load(); renderFeeds(); toast("연결을 해제했어요"); };
+$("#save-settings").onclick = async () => {
+  const url = $("#api-url").value.trim(), key = $("#api-key").value;
+  if (!/^https:\/\//.test(url) && !/^http:\/\/localhost/.test(url)) { toast("https:// 로 시작하는 주소를 넣어주세요"); return; }
+  setConf({ url, key });
+  try { await api("/api/feed-url"); } catch (e) { setConf(null); toast(e.message); return; }
+  $("#settings").close(); toast("연결했어요"); await load(); renderFeeds();
+};
+
+load().then(renderFeeds).catch(() => { $("#generated").textContent = "일정을 불러오지 못했어요."; });
 </script>
 </body>
 </html>

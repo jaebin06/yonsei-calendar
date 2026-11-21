@@ -1,0 +1,13 @@
+name = "yonsei-calendar"
+main = "src/index.js"
+compatibility_date = "2026-11-01"
+workers_dev = true
+
+# KV id는 배포 워크플로가 자동으로 만들고 채운다 (deploy-worker.yml)
+[[kv_namespaces]]
+binding = "STATE"
+id = "__KV_ID__"
+
+[vars]
+PUBLIC_BASE = "https://jaebin06.github.io/yonsei-calendar"
+ALLOWED_ORIGINS = "https://jaebin06.github.io,http://localhost:8765"

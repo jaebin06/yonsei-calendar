@@ -1,0 +1,54 @@
+name: deploy-worker
+
+on:
+  push:
+    branches: [main]
+    paths: ["worker/**", ".github/workflows/deploy-worker.yml"]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: worker
+    env:
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - run: npm install --no-save wrangler@4
+      - name: 테스트
+        run: node --test test/*.test.js
+      - name: 비밀값 확인
+        id: check
+        env:
+          HAS_APP_KEY: ${{ secrets.APP_KEY != '' }}
+        run: |
+          if [ -z "$CLOUDFLARE_API_TOKEN" ] || [ -z "$CLOUDFLARE_ACCOUNT_ID" ] || [ "$HAS_APP_KEY" != "true" ]; then
+            echo "::notice::Cloudflare 비밀값(CLOUDFLARE_API_TOKEN, CLOUDFLARE_ACCOUNT_ID, APP_KEY)이 아직 없어서 배포를 건너뛰어요."
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+          fi
+      - name: KV 저장소 준비 (없으면 만들기)
+        if: steps.check.outputs.skip != 'true'
+        run: |
+          id=$(npx wrangler kv namespace list | jq -r '.[] | select(.title=="yonsei-calendar-state") | .id')
+          if [ -z "$id" ]; then
+            npx wrangler kv namespace create yonsei-calendar-state
+            id=$(npx wrangler kv namespace list | jq -r '.[] | select(.title=="yonsei-calendar-state") | .id')
+          fi
+          sed -i "s/__KV_ID__/$id/" wrangler.toml
+      - name: 배포
+        if: steps.check.outputs.skip != 'true'
+        run: npx wrangler deploy
+      - name: 비밀값 넣기
+        if: steps.check.outputs.skip != 'true'
+        env:
+          APP_KEY: ${{ secrets.APP_KEY }}
+          LEARNUS_URL: ${{ secrets.LEARNUS_URL }}
+        run: |
+          printf '%s' "$APP_KEY" | npx wrangler secret put APP_KEY
+          if [ -n "$LEARNUS_URL" ]; then printf '%s' "$LEARNUS_URL" | npx wrangler secret put LEARNUS_URL; fi

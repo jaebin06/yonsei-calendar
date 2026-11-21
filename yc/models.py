@@ -8,7 +8,7 @@ from typing import Literal, Optional
 
 from pydantic import BaseModel, Field
 
-Category = Literal["academic", "contest", "exam", "event", "internship"]
+Category = Literal["academic", "contest", "exam", "event", "internship", "dorm"]
 Status = Literal["recommended", "maybe", "hidden", "starred", "always"]
 
 
