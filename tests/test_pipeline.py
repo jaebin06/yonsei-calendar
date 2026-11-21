@@ -105,3 +105,16 @@ def test_full_build(tmp_path, monkeypatch):
             state.unlink(missing_ok=True)
         else:
             state.write_bytes(backup)
+
+
+def test_missing_date_with_keyword_goes_to_review():
+    ev = Event(id="m", category="contest", title="「AI 리터러시」 학습 경험 공모전", source="yonsei-notice")
+    score.score_contest(ev, CFG, EXAM, date(2026, 11, 21))
+    assert ev.status == "maybe" and "마감일 확인 필요" in ev.warnings
+
+
+def test_generic_idea_contest_not_auto_added():
+    ev = Event(id="g", category="contest", title="2026 수목원 제도개선 아이디어 공모", source="wevity",
+               organizer="한국수목원정원관리원", tags=["기획/아이디어"], deadline=datetime(2026, 12, 1, 23, 59))
+    score.score_contest(ev, CFG, EXAM, date(2026, 11, 21))
+    assert ev.status == "maybe"

@@ -57,11 +57,20 @@ def _conflict(ev: Event, periods) -> str | None:
 def score_contest(ev: Event, cfg: dict, periods, today: date) -> Event:
     kw = cfg["keywords"]
     reasons: list[str] = []
-    text = " ".join([ev.title, " ".join(ev.tags), ev.organizer])
+    # 위비티의 '기획/아이디어' 같은 분야 분류는 주제 키워드로 치지 않는다 (슬래시 포함 태그 제외)
+    topic_tags = [t for t in ev.tags if "/" not in t]
+    text = " ".join([ev.title, " ".join(topic_tags), ev.organizer])
 
     # ① 하드 필터
     kd = ev.key_date()
     if kd is None:
+        # 날짜를 못 뽑은 글: 관심 키워드가 있으면 캘린더 대신 '검토' 탭에 경고와 함께 둔다
+        hit = _has_any(ev.title, kw["core"])
+        if hit:
+            ev.status, ev.score = "maybe", 0
+            ev.warnings.append("마감일 확인 필요")
+            ev.score_reasons = [f"제목에 '{hit[0]}' 있음, 마감일을 못 찾음 → 원문 확인"]
+            return ev
         return _hide(ev, "날짜 확인 필요")
     if (kd - today).days < cfg.get("min_days_left", 2):
         return _hide(ev, "마감 임박·지남")
@@ -109,6 +118,9 @@ def score_contest(ev: Event, cfg: dict, periods, today: date) -> Event:
     ev.score = score
     ev.score_reasons = reasons
     ev.status = _grade(ev, score, cfg)
+    if ev.status == "recommended" and not (core_title or core_any):
+        ev.status = "maybe"  # 관심 분야 키워드가 하나도 없으면 자동으로 캘린더에 넣지 않는다
+        reasons.append("핵심 키워드 없음 → 검토")
     return ev
 
 
