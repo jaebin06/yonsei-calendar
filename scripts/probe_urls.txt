@@ -17,3 +17,4 @@ linkareer_intern https://linkareer.com/list/intern
 wanted_robots https://www.wanted.co.kr/robots.txt
 wanted_api_pm https://www.wanted.co.kr/api/v4/jobs?country=kr&tag_type_ids=565&job_sort=job.latest_order&years=0&locations=all&limit=20
 wanted_search https://www.wanted.co.kr/search?query=PM%20%EC%9D%B8%ED%84%B4&tab=position
+linkareer_intern_p2 https://linkareer.com/list/intern?page=2
