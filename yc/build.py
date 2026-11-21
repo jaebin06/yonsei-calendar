@@ -34,16 +34,33 @@ def load_state(path: Path) -> dict[str, Event]:
     return {r["id"]: Event.model_validate(r) for r in rows}
 
 
+def _richness(ev: Event) -> int:
+    return sum(bool(x) for x in (ev.organizer, ev.url, ev.location, ev.prize, ev.apply_start, ev.event_start))
+
+
 def dedupe(events: list[Event]) -> list[Event]:
-    """같은 제목(정규화)·같은 날짜는 하나로. 정보가 더 많은 쪽을 남긴다."""
-    best: dict[tuple, Event] = {}
-    for ev in events:
-        key = (ev.category, normalize_title(ev.title), ev.key_date())
-        cur = best.get(key)
-        richness = sum(bool(x) for x in (ev.organizer, ev.url, ev.location, ev.prize, ev.apply_start))
-        if cur is None or richness > sum(bool(x) for x in (cur.organizer, cur.url, cur.location, cur.prize, cur.apply_start)):
-            best[key] = ev
-    return list(best.values())
+    """같은 날짜에 제목이 같거나 한쪽이 다른 쪽을 포함하면 하나로. 정보가 많은 쪽을 남긴다.
+
+    예: 위비티 '2026 서울관광 프롬프톤' = Dev-Event '2026 서울관광 프롬프톤 (Seoul Tourism Prompt-thon)'
+    """
+    kept: list[Event] = []
+    for ev in sorted(events, key=_richness, reverse=True):
+        nt = normalize_title(ev.title)
+        dup = False
+        for k in kept:
+            if k.category == "internship" or ev.category == "internship":
+                if k.category != ev.category:
+                    continue
+            if k.key_date() != ev.key_date():
+                continue
+            kt = normalize_title(k.title)
+            short, long_ = sorted((nt, kt), key=len)
+            if short == long_ or (len(short) >= 6 and short in long_):
+                dup = True
+                break
+        if not dup:
+            kept.append(ev)
+    return kept
 
 
 def collect(fixture: Path | None) -> tuple[list[Event], dict]:

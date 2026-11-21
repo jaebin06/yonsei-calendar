@@ -67,6 +67,8 @@ def score_contest(ev: Event, cfg: dict, periods, today: date) -> Event:
         return _hide(ev, "마감 임박·지남")
     if not _region_ok(ev, cfg["regions"]):
         return _hide(ev, "허용 지역 아님")
+    if "대학원생 대상" in ev.eligibility:
+        return _hide(ev, "대학원생 대상")
     bad = _has_any(ev.title, kw["exclude"])
     if bad:
         return _hide(ev, f"제외 키워드({bad[0]})")
