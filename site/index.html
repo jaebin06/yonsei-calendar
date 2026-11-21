@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>연세 통합 일정</title>
+<style>
+  :root {
+    --bg: #f6f5f1; --card: #ffffff; --ink: #1d1d1b; --muted: #6b6a64; --line: #e4e2db;
+    --accent: #1f4fd1; --accent-soft: #e8eefc; --warn: #b4540a; --warn-soft: #fdf0e3;
+    --good: #22743d; --good-soft: #e5f4e9;
+    --academic: #2f6fdb; --contest: #2e9b57; --exam: #8a4bd6; --internship: #e07b1f; --event: #8a8a84;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #151514; --card: #1e1e1c; --ink: #ecebe6; --muted: #9c9a92; --line: #33322e;
+      --accent: #7ea2ff; --accent-soft: #1e2a4a; --warn: #f3a35c; --warn-soft: #3a2a19;
+      --good: #6fcf8f; --good-soft: #1b3324;
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink);
+    font: 15px/1.55 -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Pretendard", "Noto Sans KR", "Malgun Gothic", sans-serif; }
+  main { max-width: 880px; margin: 0 auto; padding: 28px 18px 80px; }
+  header { display: flex; justify-content: space-between; align-items: flex-end; gap: 12px; flex-wrap: wrap; margin-bottom: 22px; }
+  h1 { font-size: 24px; margin: 0; letter-spacing: -0.02em; }
+  h2 { font-size: 16px; margin: 0 0 12px; letter-spacing: -0.01em; }
+  .muted { color: var(--muted); font-size: 13px; }
+  section { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 18px; margin-bottom: 16px; }
+  .chips { display: flex; gap: 6px; flex-wrap: wrap; }
+  .chip { font-size: 12px; padding: 2px 9px; border-radius: 999px; background: var(--bg); border: 1px solid var(--line); color: var(--muted); white-space: nowrap; }
+  .chip.ok { color: var(--good); background: var(--good-soft); border-color: transparent; }
+  .chip.bad { color: var(--warn); background: var(--warn-soft); border-color: transparent; }
+  .chip.new { color: var(--accent); background: var(--accent-soft); border-color: transparent; font-weight: 600; }
+  .chip.warn { color: var(--warn); background: var(--warn-soft); border-color: transparent; }
+  .dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 6px; vertical-align: 1px; }
+  .week { list-style: none; margin: 0; padding: 0; }
+  .week li { display: grid; grid-template-columns: 74px 1fr; gap: 10px; padding: 7px 0; border-top: 1px solid var(--line); }
+  .week li:first-child { border-top: 0; }
+  .week .when { color: var(--muted); font-size: 13px; font-variant-numeric: tabular-nums; }
+  .feeds { display: grid; gap: 8px; }
+  .feed { display: flex; align-items: center; gap: 10px; }
+  .feed code { flex: 1; font-size: 12px; background: var(--bg); border: 1px solid var(--line); border-radius: 8px; padding: 6px 8px; overflow-x: auto; white-space: nowrap; }
+  button, .btn { font: inherit; font-size: 13px; border: 1px solid var(--line); background: var(--card); color: var(--ink); border-radius: 8px; padding: 5px 11px; cursor: pointer; text-decoration: none; white-space: nowrap; }
+  button:hover, .btn:hover { border-color: var(--muted); }
+  .btn.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+  @media (prefers-color-scheme: dark) { .btn.primary { color: #10162b; } }
+  .quick { display: flex; gap: 8px; }
+  .quick input { flex: 1; font: inherit; padding: 8px 10px; border: 1px solid var(--line); border-radius: 8px; background: var(--bg); color: var(--ink); min-width: 0; }
+  .tabs { display: flex; gap: 6px; margin-bottom: 12px; flex-wrap: wrap; }
+  .tabs button[aria-pressed="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+  .toolbar { display: flex; gap: 8px; justify-content: space-between; flex-wrap: wrap; margin-bottom: 12px; }
+  .toolbar input { font: inherit; font-size: 13px; padding: 5px 10px; border: 1px solid var(--line); border-radius: 8px; background: var(--bg); color: var(--ink); width: 180px; }
+  .card { border-top: 1px solid var(--line); padding: 14px 0; display: grid; grid-template-columns: 58px 1fr; gap: 12px; }
+  .card:first-child { border-top: 0; padding-top: 4px; }
+  .dday { text-align: center; }
+  .dday b { display: block; font-size: 17px; font-variant-numeric: tabular-nums; }
+  .dday span { font-size: 11px; color: var(--muted); }
+  .card h3 { font-size: 15px; margin: 0 0 4px; line-height: 1.4; }
+  .card h3 a { color: inherit; text-decoration: none; }
+  .card h3 a:hover { text-decoration: underline; }
+  .meta { font-size: 13px; color: var(--muted); margin-bottom: 6px; }
+  .row { display: flex; gap: 6px; align-items: center; flex-wrap: wrap; }
+  .score { font-weight: 700; font-variant-numeric: tabular-nums; }
+  details { font-size: 12.5px; color: var(--muted); margin-top: 6px; }
+  details summary { cursor: pointer; }
+  .actions { display: flex; gap: 6px; margin-top: 8px; }
+  .empty { color: var(--muted); font-size: 14px; padding: 8px 0; }
+  .toast { position: fixed; bottom: 18px; left: 50%; transform: translateX(-50%); background: var(--ink); color: var(--bg); padding: 8px 14px; border-radius: 8px; font-size: 13px; opacity: 0; transition: opacity .2s; pointer-events: none; }
+  .toast.show { opacity: 1; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <div>
+      <h1>연세 통합 일정</h1>
+      <div class="muted" id="generated">불러오는 중…</div>
+    </div>
+    <div class="chips" id="health"></div>
+  </header>
+
+  <section>
+    <h2>다가오는 7일</h2>
+    <ul class="week" id="week"></ul>
+  </section>
+
+  <section>
+    <h2>대회 · 인턴</h2>
+    <div class="toolbar">
+      <div class="tabs" id="tabs">
+        <button data-tab="cal" aria-pressed="true">캘린더에 있음</button>
+        <button data-tab="maybe" aria-pressed="false">검토</button>
+        <button data-tab="hidden" aria-pressed="false">숨김</button>
+      </div>
+      <div class="row">
+        <select id="kind" class="btn">
+          <option value="all">전체</option>
+          <option value="contest">대회</option>
+          <option value="internship">인턴</option>
+          <option value="event">세미나·모임</option>
+        </select>
+        <input id="q" type="search" placeholder="검색">
+      </div>
+    </div>
+    <div id="list"></div>
+    <div class="row" style="margin-top:10px">
+      <a class="btn" id="add-manual" target="_blank" rel="noopener">+ 대회·인턴 직접 추가</a>
+    </div>
+  </section>
+
+  <section>
+    <h2>과제 빠른 입력</h2>
+    <p class="muted" style="margin:0 0 10px">LearnUs에 없는 과제를 한 줄로 적으면 구글 캘린더 일정 추가 화면이 열려요. 예: <code>인공지능입문 과제3 12/5 23:59</code></p>
+    <form class="quick" id="quick">
+      <input id="quick-text" placeholder="과목 과제명 월/일 시:분" autocomplete="off">
+      <button class="btn primary" type="submit">캘린더에 추가</button>
+    </form>
+  </section>
+
+  <section>
+    <h2>구독 주소</h2>
+    <p class="muted" style="margin:0 0 10px">PC에서 calendar.google.com → 다른 캘린더 + → URL로 추가. 갤럭시 삼성 캘린더에는 구글 계정 동기화로 자동으로 떠요.</p>
+    <div class="feeds" id="feeds"></div>
+  </section>
+</main>
+<div class="toast" id="toast"></div>
+
+<script>
+const COLORS = { academic: "var(--academic)", contest: "var(--contest)", exam: "var(--exam)", internship: "var(--internship)", event: "var(--event)" };
+const KIND = { academic: "학사", contest: "대회", exam: "시험", internship: "인턴", event: "행사" };
+const FEEDS = [["연세 학사", "academic.ics"], ["대회", "contests.ics"], ["시험·자격증", "exams.ics"], ["인턴", "internships.ics"]];
+let DATA = null, TAB = "cal";
+
+const $ = (s) => document.querySelector(s);
+const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+const today = () => { const d = new Date(); d.setHours(0, 0, 0, 0); return d; };
+const parseD = (s) => (s ? new Date(s) : null);
+const keyDate = (e) => parseD(e.deadline) || parseD(e.event_start);
+const ymd = (d) => `${d.getMonth() + 1}/${d.getDate()}`;
+const WD = ["일", "월", "화", "수", "목", "금", "토"];
+
+function toast(msg) { const t = $("#toast"); t.textContent = msg; t.classList.add("show"); setTimeout(() => t.classList.remove("show"), 1600); }
+
+function issueUrl(title, extra = "") {
+  return `https://github.com/${DATA.repo}/issues/new?title=${encodeURIComponent(title)}${extra}`;
+}
+
+function renderHeader() {
+  const g = new Date(DATA.generated_at);
+  $("#generated").textContent = `마지막 갱신 ${g.getMonth() + 1}월 ${g.getDate()}일 ${String(g.getHours()).padStart(2, "0")}:${String(g.getMinutes()).padStart(2, "0")}`;
+  $("#health").innerHTML = Object.entries(DATA.health).map(([name, h]) =>
+    `<span class="chip ${h.ok ? "ok" : "bad"}" title="${esc(h.error || "")}">${esc(name)} ${h.ok ? h.count + "건" : "실패"}</span>`).join("");
+  $("#add-manual").href = `https://github.com/${DATA.repo}/issues/new?template=manual-add.yml`;
+}
+
+function renderWeek() {
+  const t0 = today(), t7 = new Date(t0); t7.setDate(t7.getDate() + 7);
+  const items = [];
+  for (const e of DATA.events) {
+    const inCal = e.status === "always" || e.status === "recommended" || e.status === "starred";
+    if (!inCal) continue;
+    const pts = [];
+    if (e.category === "academic" || e.category === "exam") {
+      const s = parseD(e.event_start), en = parseD(e.event_end) || s;
+      if (en >= t0 && s < t7) pts.push([s < t0 ? t0 : s, e.title + (s < t0 ? " (진행 중)" : "")]);
+    } else {
+      const d = parseD(e.deadline);
+      if (d && d >= t0 && d < t7) pts.push([d, "[마감] " + e.title]);
+      const s = parseD(e.event_start);
+      if (s && s >= t0 && s < t7) pts.push([s, "[행사] " + e.title]);
+    }
+    for (const [d, label] of pts) items.push({ d, label, e });
+  }
+  items.sort((a, b) => a.d - b.d);
+  $("#week").innerHTML = items.length ? items.map(({ d, label, e }) =>
+    `<li><span class="when">${ymd(d)} (${WD[d.getDay()]})</span><span><span class="dot" style="background:${COLORS[e.category]}"></span>${e.url ? `<a href="${esc(e.url)}" target="_blank" rel="noopener" style="color:inherit">${esc(label)}</a>` : esc(label)}</span></li>`).join("")
+    : `<li class="empty">이번 주에는 일정이 없어요.</li>`;
+}
+
+function renderList() {
+  const kind = $("#kind").value, q = $("#q").value.trim().toLowerCase();
+  const pool = DATA.events.filter((e) => ["contest", "internship", "event"].includes(e.category));
+  const match = (e) => {
+    if (TAB === "cal" && !["recommended", "starred"].includes(e.status)) return false;
+    if (TAB === "maybe" && e.status !== "maybe") return false;
+    if (TAB === "hidden" && e.status !== "hidden") return false;
+    if (kind !== "all" && e.category !== kind) return false;
+    if (q && !(e.title + " " + e.organizer + " " + e.tags.join(" ")).toLowerCase().includes(q)) return false;
+    return true;
+  };
+  const rows = pool.filter(match).sort((a, b) => (keyDate(a) - keyDate(b)) || (b.score - a.score));
+  const t0 = today();
+  $("#list").innerHTML = rows.length ? rows.map((e) => {
+    const kd = keyDate(e), days = Math.round((new Date(kd).setHours(0, 0, 0, 0) - t0) / 864e5);
+    const isNew = e.first_seen && (Date.now() - new Date(e.first_seen)) < 3 * 864e5;
+    const starred = e.status === "starred", hidden = e.status === "hidden";
+    const star = starred ? ["unstar", "별표 해제"] : ["star", e.status === "recommended" ? "★ 별표로 고정" : "★ 캘린더에 넣기"];
+    const hide = hidden ? ["unhide", "숨김 해제"] : ["hide", "숨기기"];
+    return `<div class="card">
+      <div class="dday"><b>${days < 0 ? "끝" : days === 0 ? "D-day" : "D-" + days}</b><span>${ymd(kd)} ${e.deadline ? "마감" : "행사"}</span></div>
+      <div>
+        <h3><a href="${esc(e.url)}" target="_blank" rel="noopener">${esc(e.title)}</a></h3>
+        <div class="meta">${esc(e.organizer || "주최 정보 없음")}${e.location ? " · " + esc(e.location) : ""}</div>
+        <div class="row">
+          <span class="chip"><span class="dot" style="background:${COLORS[e.category]}"></span>${KIND[e.category]}</span>
+          ${e.source !== "manual" ? `<span class="chip"><span class="score">${e.score}</span>점</span>` : `<span class="chip">직접 추가</span>`}
+          ${starred ? `<span class="chip ok">별표</span>` : ""}
+          ${isNew ? `<span class="chip new">NEW</span>` : ""}
+          ${(e.warnings || []).map((w) => `<span class="chip warn">${esc(w)}</span>`).join("")}
+        </div>
+        ${e.score_reasons?.length ? `<details><summary>점수 이유</summary>${e.score_reasons.map(esc).join(" · ")}</details>` : ""}
+        ${e.source !== "manual" ? `<div class="actions">
+          <a class="btn" target="_blank" rel="noopener" href="${issueUrl(star[0] + ": " + e.id)}">${star[1]}</a>
+          <a class="btn" target="_blank" rel="noopener" href="${issueUrl(hide[0] + ": " + e.id)}">${hide[1]}</a>
+        </div>` : ""}
+      </div></div>`;
+  }).join("") : `<div class="empty">조건에 맞는 항목이 없어요.</div>`;
+}
+
+function renderFeeds() {
+  const base = location.href.replace(/[^/]*$/, "") + "feeds/";
+  $("#feeds").innerHTML = FEEDS.map(([name, file]) =>
+    `<div class="feed"><span style="width:88px;font-size:13px">${name}</span><code>${base}${file}</code><button data-copy="${base}${file}">복사</button></div>`).join("") +
+    `<div class="feed"><span style="width:88px;font-size:13px">LearnUs 과제</span><span class="muted">LearnUs 캘린더의 내보내기 주소를 직접 구독 (여기엔 올리지 않음)</span></div>`;
+}
+
+// "인공지능입문 과제3 12/5 23:59" → 구글 캘린더 일정 추가 링크
+function quickAdd(text) {
+  const m = text.match(/^(.*?)\s*(\d{1,2})[\/.](\d{1,2})(?:\s+(\d{1,2}):(\d{2}))?\s*$/);
+  if (!m) return null;
+  const [, title, mo, d, hh = "23", mm = "59"] = m;
+  const now = new Date();
+  let y = now.getFullYear();
+  if (Number(mo) < now.getMonth() + 1 - 2) y += 1; // 1~2월 과제를 11~12월에 입력한 경우
+  const pad = (n) => String(n).padStart(2, "0");
+  const end = `${y}${pad(mo)}${pad(d)}T${pad(hh)}${pad(mm)}00`;
+  const startDate = new Date(y, Number(mo) - 1, Number(d), Number(hh), Number(mm) - 30);
+  const start = `${startDate.getFullYear()}${pad(startDate.getMonth() + 1)}${pad(startDate.getDate())}T${pad(startDate.getHours())}${pad(startDate.getMinutes())}00`;
+  const p = new URLSearchParams({ action: "TEMPLATE", text: `[과제] ${title.trim() || "과제"}`, dates: `${start}/${end}`, ctz: "Asia/Seoul", details: "연세 통합 일정 대시보드에서 추가" });
+  return `https://calendar.google.com/calendar/render?${p}`;
+}
+
+document.addEventListener("click", (ev) => {
+  const b = ev.target.closest("[data-copy]");
+  if (b) { navigator.clipboard?.writeText(b.dataset.copy).then(() => toast("주소를 복사했어요")); }
+  const t = ev.target.closest("[data-tab]");
+  if (t) {
+    TAB = t.dataset.tab;
+    document.querySelectorAll("[data-tab]").forEach((x) => x.setAttribute("aria-pressed", String(x === t)));
+    renderList();
+  }
+});
+$("#kind").addEventListener("change", renderList);
+$("#q").addEventListener("input", renderList);
+$("#quick").addEventListener("submit", (ev) => {
+  ev.preventDefault();
+  const url = quickAdd($("#quick-text").value);
+  if (!url) { toast("‘과제명 12/5 23:59’ 형식으로 적어주세요"); return; }
+  window.open(url, "_blank", "noopener");
+  $("#quick-text").value = "";
+});
+
+fetch("events.json", { cache: "no-store" })
+  .then((r) => r.json())
+  .then((d) => { DATA = d; renderHeader(); renderWeek(); renderList(); renderFeeds(); })
+  .catch(() => { $("#generated").textContent = "events.json을 불러오지 못했어요."; });
+</script>
+</body>
+</html>

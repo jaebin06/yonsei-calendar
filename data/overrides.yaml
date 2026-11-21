@@ -1,0 +1,12 @@
+# 대시보드의 별표·숨기기 버튼 → GitHub 이슈 → issues.yml 워크플로가 이 파일을 고친다.
+# 손으로 고쳐도 된다.
+star: []   # 점수와 상관없이 캘린더에 넣을 일정 id
+hide: []   # 점수와 상관없이 숨길 일정 id
+
+# 직접 추가한 대회·인턴 (이슈의 '직접 추가' 양식으로 들어온다)
+manual: []
+#  - title: "○○ 해커톤"
+#    category: contest      # contest | internship | event
+#    deadline: 2027-01-20T23:59
+#    url: https://example.com
+#    organizer: ○○

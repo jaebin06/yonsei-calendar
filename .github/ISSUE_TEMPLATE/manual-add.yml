@@ -1,0 +1,33 @@
+name: 직접 추가
+description: 카톡이나 공지로 받은 대회·인턴을 캘린더에 넣어요
+title: "[직접 추가] "
+body:
+  - type: input
+    id: name
+    attributes:
+      label: 이름
+      placeholder: ○○ AI 해커톤
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: 종류
+      options: [대회, 인턴, 행사]
+    validations:
+      required: true
+  - type: input
+    id: deadline
+    attributes:
+      label: 마감일
+      description: "2027-01-20 또는 2027-01-20 18:00"
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: 링크
+  - type: input
+    id: org
+    attributes:
+      label: 주최
