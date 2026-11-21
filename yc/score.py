@@ -1,6 +1,7 @@
 """하드 필터 + 0~100점 점수화 (기획안 5장)."""
 from __future__ import annotations
 
+import re
 from datetime import date
 from typing import Iterable
 
@@ -17,8 +18,17 @@ def exam_periods(academic: Iterable[Event]) -> list[tuple[date, date, str]]:
 
 
 def _has_any(text: str, words: list[str]) -> list[str]:
+    """포함된 키워드 목록. PM·PO·AI처럼 짧은 영문 약어는 단어 단위·대소문자 그대로 본다
+    (예: 'development' 안의 'pm', 'VPH marketing'에 걸리지 않게)."""
     low = text.lower()
-    return [w for w in words if w.lower() in low]
+    hits = []
+    for w in words:
+        if w.isascii() and len(w) <= 3:
+            if re.search(rf"(?<![A-Za-z]){re.escape(w)}(?![A-Za-z])", text):
+                hits.append(w)
+        elif w.lower() in low:
+            hits.append(w)
+    return hits
 
 
 def _region_ok(ev: Event, regions: list[str]) -> bool:
@@ -138,9 +148,11 @@ def score_internship(ev: Event, cfg: dict, today: date) -> Event:
         return _hide(ev, "지원 자격 불일치")
 
     score = 0
-    if _has_any(ev.title, ic["roles_core"]):
-        score += 40; reasons.append("PM·기획 직무 +40")
-    elif _has_any(ev.title, ic["roles_related"]):
+    role_text = ev.title + " " + " ".join(ev.tags)  # 링커리어 직무 분류(서비스기획/운영 등)도 본다
+    not_pm = _has_any(ev.title, ic.get("roles_not_pm", []))
+    if _has_any(role_text, ic["roles_core"]) and not not_pm:
+        score += 40; reasons.append("PM·서비스 기획 직무 +40")
+    elif _has_any(role_text, ic["roles_related"]):
         score += 25; reasons.append("AI·데이터 직무 +25")
     else:
         score += 10; reasons.append("기타 직무 +10")
@@ -153,8 +165,8 @@ def score_internship(ev: Event, cfg: dict, today: date) -> Event:
     pts, why = _organizer_points(ev.organizer, cfg)
     company_pts = {15: 20, 8: 12, 3: 5}[pts]  # 인턴은 회사 배점이 20점 만점
     score += company_pts; reasons.append(why.rsplit(" +", 1)[0] + f" +{company_pts}")
-    if "재학" in ev.eligibility:
-        score += 15; reasons.append("재학생 지원 가능 +15")
+    if "재학" in ev.eligibility or "체험형 인턴" in ev.tags:
+        score += 15; reasons.append("재학생 지원 가능(체험형) +15")
 
     ev.score = score
     ev.score_reasons = reasons

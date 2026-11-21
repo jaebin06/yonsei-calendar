@@ -8,7 +8,7 @@
 ## 구조
 
 ```
-yc/collectors/   소스별 수집기 (dev-event, wevity, yonsei 공지)
+yc/collectors/   소스별 수집기 (dev-event, wevity, yonsei 공지, linkareer 인턴)
 yc/score.py      하드 필터 + 0~100점 점수화
 yc/ics.py        ICS 피드 생성
 yc/build.py      전체 파이프라인 (python -m yc.build)
@@ -43,6 +43,6 @@ python -m http.server -d public 8000
 ## 다음 단계
 
 - [x] 위비티·학교 공지 수집기
-- [ ] 링커리어·원티드 인턴 수집기
+- [x] 링커리어 인턴 수집기 (원티드는 GitHub Actions 접속을 막아서 제외)
 - [ ] 2027-1학기 학사일정, SQLD 2027 일정 공고 반영
 - [ ] 일요일 주간 체크인 (구글 캘린더 연결)

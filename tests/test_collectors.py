@@ -49,3 +49,22 @@ def test_dedupe_contains():
               location="오프라인(서울 종로구)")
     out = dedupe([a, b])
     assert [e.id for e in out] == ["b"]
+
+
+def test_linkareer_interns():
+    from yc.collectors import linkareer
+    evs = linkareer.parse(read("linkareer_intern"))
+    assert len(evs) >= 15
+    kb = next(e for e in evs if "AI Native 인증 서비스 기획자" in e.title)
+    assert kb.organizer == "카카오뱅크"
+    assert kb.deadline == datetime(2026, 12, 7, 23, 59)
+    assert "서비스기획/운영" in kb.tags and "오프라인(경기)" in kb.location
+    p2 = {e.id for e in linkareer.parse(read("linkareer_intern_p2"))}
+    assert p2 - {e.id for e in evs}  # page 파라미터가 다른 목록을 준다
+
+
+def test_short_acronym_word_boundary():
+    from yc.score import _has_any
+    assert _has_any("Poultry and VPH marketing Intern", ["PM"]) == []
+    assert _has_any("서비스 PM 인턴", ["PM"]) == ["PM"]
+    assert _has_any("AI영상 공모전", ["AI"]) == ["AI"]
