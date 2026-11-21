@@ -21,3 +21,8 @@ linkareer_intern_p2 https://linkareer.com/list/intern?page=2
 dorm_main https://dorm.yonsei.ac.kr/
 dorm_robots https://dorm.yonsei.ac.kr/robots.txt
 dorm_notice https://dorm.yonsei.ac.kr/board/?id=notice
+dorm_schedule_list https://dorm.yonsei.ac.kr/board/?id=schedule
+dorm_art_winter https://dorm.yonsei.ac.kr/board/?id=schedule&mode=V&idx=9168
+dorm_art_gosi https://dorm.yonsei.ac.kr/board/?id=schedule&mode=V&idx=9172
+dorm_art_bangyeok https://dorm.yonsei.ac.kr/board/?id=notice&mode=V&idx=9178
+dorm_art_dansu https://dorm.yonsei.ac.kr/board/?id=notice&mode=V&idx=9179
