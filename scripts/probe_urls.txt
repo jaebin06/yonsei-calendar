@@ -1,0 +1,9 @@
+# 이름 URL  (probe.yml이 받아서 tests/fixtures/raw/<이름>.html 로 저장)
+wevity_robots https://www.wevity.com/robots.txt
+wevity_it https://www.wevity.com/?c=find&s=1&gub=1&cidx=20
+wevity_sw https://www.wevity.com/?c=find&s=1&gub=1&cidx=21
+wevity_idea https://www.wevity.com/?c=find&s=1&gub=1&cidx=1
+yonsei_robots https://www.yonsei.ac.kr/robots.txt
+yonsei_haksa_list https://www.yonsei.ac.kr/bbs/sc/58/artclList.do
+yonsei_notice https://www.yonsei.ac.kr/sc/support/notice.jsp
+yonsei_main https://www.yonsei.ac.kr/sc/index.do
