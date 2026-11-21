@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-21T23:49+09:00",
+ "generated_at": "2026-11-21T23:52+09:00",
  "repo": "jaebin06/yonsei-calendar",
  "health": {
   "dev-event": {
@@ -715,10 +715,12 @@
    "work_end": null,
    "score": 0,
    "score_reasons": [
-    "제외: 날짜 확인 필요"
+    "제목에 'AI' 있음, 마감일을 못 찾음 → 원문 확인"
    ],
-   "status": "hidden",
-   "warnings": [],
+   "status": "maybe",
+   "warnings": [
+    "마감일 확인 필요"
+   ],
    "first_seen": "2026-11-21T23:49:32.186546"
   },
   {
@@ -929,96 +931,6 @@
    "first_seen": "2026-11-21T22:41:22.809219"
   },
   {
-   "id": "wevity-6823428e",
-   "category": "contest",
-   "title": "[포천도시공사] 2026년 저출생·인구감소 대응 아이디어 공모전",
-   "source": "wevity",
-   "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=112217",
-   "organizer": "포천도시공사",
-   "apply_start": null,
-   "deadline": "2026-11-23T23:59:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "기획/아이디어"
-   ],
-   "eligibility": "",
-   "location": "",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 69,
-   "score_reasons": [
-    "태그·주최에 '기획' +25",
-    "공모전 +14",
-    "대기업·공공·대학 주최 +15",
-    "시험기간과 안 겹침 +15"
-   ],
-   "status": "recommended",
-   "warnings": [],
-   "first_seen": "2026-11-21T23:49:32.186546"
-  },
-  {
-   "id": "wevity-90d77a0d",
-   "category": "contest",
-   "title": "[강원특별자치도] 2026년 톡톡 Idea 공모전",
-   "source": "wevity",
-   "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=112084",
-   "organizer": "강원특별자치도",
-   "apply_start": null,
-   "deadline": "2026-11-23T23:59:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "기획/아이디어"
-   ],
-   "eligibility": "",
-   "location": "",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 69,
-   "score_reasons": [
-    "태그·주최에 '기획' +25",
-    "공모전 +14",
-    "대기업·공공·대학 주최 +15",
-    "시험기간과 안 겹침 +15"
-   ],
-   "status": "recommended",
-   "warnings": [],
-   "first_seen": "2026-11-21T23:49:32.186546"
-  },
-  {
-   "id": "wevity-11c9f3de",
-   "category": "contest",
-   "title": "제1회 홍제천 상상더하기 공모전",
-   "source": "wevity",
-   "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=112055",
-   "organizer": "서대문구청",
-   "apply_start": null,
-   "deadline": "2026-11-23T23:59:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "기획/아이디어"
-   ],
-   "eligibility": "",
-   "location": "",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 69,
-   "score_reasons": [
-    "태그·주최에 '기획' +25",
-    "공모전 +14",
-    "대기업·공공·대학 주최 +15",
-    "시험기간과 안 겹침 +15"
-   ],
-   "status": "recommended",
-   "warnings": [],
-   "first_seen": "2026-11-21T23:49:32.186546"
-  },
-  {
    "id": "devevent-1a39ee5f",
    "category": "event",
    "title": "3rd vLLM Korea Meetup",
@@ -1086,6 +998,94 @@
    "first_seen": "2026-11-21T22:41:22.809219"
   },
   {
+   "id": "wevity-6823428e",
+   "category": "contest",
+   "title": "[포천도시공사] 2026년 저출생·인구감소 대응 아이디어 공모전",
+   "source": "wevity",
+   "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=112217",
+   "organizer": "포천도시공사",
+   "apply_start": null,
+   "deadline": "2026-11-23T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "기획/아이디어"
+   ],
+   "eligibility": "",
+   "location": "",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 54,
+   "score_reasons": [
+    "주변 키워드 '아이디어' +10",
+    "공모전 +14",
+    "대기업·공공·대학 주최 +15",
+    "시험기간과 안 겹침 +15"
+   ],
+   "status": "maybe",
+   "warnings": [],
+   "first_seen": "2026-11-21T23:49:32.186546"
+  },
+  {
+   "id": "wevity-90d77a0d",
+   "category": "contest",
+   "title": "[강원특별자치도] 2026년 톡톡 Idea 공모전",
+   "source": "wevity",
+   "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=112084",
+   "organizer": "강원특별자치도",
+   "apply_start": null,
+   "deadline": "2026-11-23T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "기획/아이디어"
+   ],
+   "eligibility": "",
+   "location": "",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 44,
+   "score_reasons": [
+    "공모전 +14",
+    "대기업·공공·대학 주최 +15",
+    "시험기간과 안 겹침 +15"
+   ],
+   "status": "maybe",
+   "warnings": [],
+   "first_seen": "2026-11-21T23:49:32.186546"
+  },
+  {
+   "id": "wevity-11c9f3de",
+   "category": "contest",
+   "title": "제1회 홍제천 상상더하기 공모전",
+   "source": "wevity",
+   "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=112055",
+   "organizer": "서대문구청",
+   "apply_start": null,
+   "deadline": "2026-11-23T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "기획/아이디어"
+   ],
+   "eligibility": "",
+   "location": "",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 44,
+   "score_reasons": [
+    "공모전 +14",
+    "대기업·공공·대학 주최 +15",
+    "시험기간과 안 겹침 +15"
+   ],
+   "status": "maybe",
+   "warnings": [],
+   "first_seen": "2026-11-21T23:49:32.186546"
+  },
+  {
    "id": "wevity-08c3193b",
    "category": "contest",
    "title": "전남광주통합특별시의회 정책아이디어 공모전",
@@ -1104,9 +1104,9 @@
    "prize": "",
    "work_start": null,
    "work_end": null,
-   "score": 57,
+   "score": 42,
    "score_reasons": [
-    "태그·주최에 '기획' +25",
+    "주변 키워드 '아이디어' +10",
     "공모전 +14",
     "기타 주최 +3",
     "시험기간과 안 겹침 +15"
@@ -1276,36 +1276,6 @@
    "first_seen": "2026-11-21T23:49:32.186546"
   },
   {
-   "id": "wevity-810002bd",
-   "category": "contest",
-   "title": "2026년 제2회 구리시 정책제안 공모전",
-   "source": "wevity",
-   "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=112220",
-   "organizer": "구리시",
-   "apply_start": null,
-   "deadline": "2026-11-25T23:59:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "기획/아이디어"
-   ],
-   "eligibility": "",
-   "location": "",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 69,
-   "score_reasons": [
-    "태그·주최에 '기획' +25",
-    "공모전 +14",
-    "대기업·공공·대학 주최 +15",
-    "시험기간과 안 겹침 +15"
-   ],
-   "status": "recommended",
-   "warnings": [],
-   "first_seen": "2026-11-21T23:49:32.186546"
-  },
-  {
    "id": "devevent-22b77040",
    "category": "event",
    "title": "잡코리아 프로덕트 컨퍼런스 | 흩어진 경계, 흔들리는 기준",
@@ -1337,36 +1307,6 @@
    "status": "maybe",
    "warnings": [],
    "first_seen": "2026-11-21T22:41:22.809219"
-  },
-  {
-   "id": "wevity-57128b88",
-   "category": "contest",
-   "title": "국회 미래세대 미래의제 공모전",
-   "source": "wevity",
-   "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=112078",
-   "organizer": "국회미래연구원",
-   "apply_start": null,
-   "deadline": "2026-11-25T23:59:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "기획/아이디어"
-   ],
-   "eligibility": "",
-   "location": "",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 57,
-   "score_reasons": [
-    "태그·주최에 '기획' +25",
-    "공모전 +14",
-    "기타 주최 +3",
-    "시험기간과 안 겹침 +15"
-   ],
-   "status": "maybe",
-   "warnings": [],
-   "first_seen": "2026-11-21T23:49:32.186546"
   },
   {
    "id": "devevent-94cfa322",
@@ -1434,6 +1374,64 @@
    "status": "maybe",
    "warnings": [],
    "first_seen": "2026-11-21T22:41:22.809219"
+  },
+  {
+   "id": "wevity-810002bd",
+   "category": "contest",
+   "title": "2026년 제2회 구리시 정책제안 공모전",
+   "source": "wevity",
+   "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=112220",
+   "organizer": "구리시",
+   "apply_start": null,
+   "deadline": "2026-11-25T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "기획/아이디어"
+   ],
+   "eligibility": "",
+   "location": "",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 44,
+   "score_reasons": [
+    "공모전 +14",
+    "대기업·공공·대학 주최 +15",
+    "시험기간과 안 겹침 +15"
+   ],
+   "status": "maybe",
+   "warnings": [],
+   "first_seen": "2026-11-21T23:49:32.186546"
+  },
+  {
+   "id": "wevity-57128b88",
+   "category": "contest",
+   "title": "국회 미래세대 미래의제 공모전",
+   "source": "wevity",
+   "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=112078",
+   "organizer": "국회미래연구원",
+   "apply_start": null,
+   "deadline": "2026-11-25T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "기획/아이디어"
+   ],
+   "eligibility": "",
+   "location": "",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 32,
+   "score_reasons": [
+    "공모전 +14",
+    "기타 주최 +3",
+    "시험기간과 안 겹침 +15"
+   ],
+   "status": "hidden",
+   "warnings": [],
+   "first_seen": "2026-11-21T23:49:32.186546"
   },
   {
    "id": "devevent-6937cd16",
@@ -1581,14 +1579,14 @@
    "prize": "",
    "work_start": null,
    "work_end": null,
-   "score": 69,
+   "score": 54,
    "score_reasons": [
-    "태그·주최에 '기획' +25",
+    "주변 키워드 '아이디어' +10",
     "공모전 +14",
     "대기업·공공·대학 주최 +15",
     "시험기간과 안 겹침 +15"
    ],
-   "status": "recommended",
+   "status": "maybe",
    "warnings": [],
    "first_seen": "2026-11-21T23:49:32.186546"
   },
@@ -1646,36 +1644,6 @@
     "제목에 'AI' +40",
     "공모전 +14",
     "협회·커뮤니티 주최 +8",
-    "시험기간과 안 겹침 +15"
-   ],
-   "status": "recommended",
-   "warnings": [],
-   "first_seen": "2026-11-21T23:49:32.186546"
-  },
-  {
-   "id": "wevity-5ba4d123",
-   "category": "contest",
-   "title": "2026년 ESG경영·경영혁신 시민 아이디어 공모전",
-   "source": "wevity",
-   "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=112337",
-   "organizer": "화성도시공사",
-   "apply_start": null,
-   "deadline": "2026-11-27T23:59:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "기획/아이디어"
-   ],
-   "eligibility": "",
-   "location": "",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 69,
-   "score_reasons": [
-    "태그·주최에 '기획' +25",
-    "공모전 +14",
-    "대기업·공공·대학 주최 +15",
     "시험기간과 안 겹침 +15"
    ],
    "status": "recommended",
@@ -1749,66 +1717,6 @@
    "first_seen": "2026-11-21T22:41:22.809219"
   },
   {
-   "id": "wevity-b5399e70",
-   "category": "contest",
-   "title": "2040 여수혁신제안 공모전",
-   "source": "wevity",
-   "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=112250",
-   "organizer": "지방행정발전연구원",
-   "apply_start": null,
-   "deadline": "2026-11-27T23:59:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "기획/아이디어"
-   ],
-   "eligibility": "",
-   "location": "",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 57,
-   "score_reasons": [
-    "태그·주최에 '기획' +25",
-    "공모전 +14",
-    "기타 주최 +3",
-    "시험기간과 안 겹침 +15"
-   ],
-   "status": "maybe",
-   "warnings": [],
-   "first_seen": "2026-11-21T23:49:32.186546"
-  },
-  {
-   "id": "wevity-34d3fe1a",
-   "category": "contest",
-   "title": "2026년 K-Petro 대국민 혁신 아이디어 공모전",
-   "source": "wevity",
-   "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=112194",
-   "organizer": "한국석유관리원",
-   "apply_start": null,
-   "deadline": "2026-11-27T23:59:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "기획/아이디어"
-   ],
-   "eligibility": "",
-   "location": "",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 57,
-   "score_reasons": [
-    "태그·주최에 '기획' +25",
-    "공모전 +14",
-    "기타 주최 +3",
-    "시험기간과 안 겹침 +15"
-   ],
-   "status": "maybe",
-   "warnings": [],
-   "first_seen": "2026-11-21T23:49:32.186546"
-  },
-  {
    "id": "wevity-1ceaf8ee",
    "category": "contest",
    "title": "2026년 대국민 재정교육 아이디어 공모전",
@@ -1830,36 +1738,6 @@
    "score": 57,
    "score_reasons": [
     "태그·주최에 '기획' +25",
-    "공모전 +14",
-    "기타 주최 +3",
-    "시험기간과 안 겹침 +15"
-   ],
-   "status": "maybe",
-   "warnings": [],
-   "first_seen": "2026-11-21T23:49:32.186546"
-  },
-  {
-   "id": "wevity-173f569f",
-   "category": "contest",
-   "title": "2026년 경기도 사회연대경제 청년 일경험 시범사업 참여청년 모집",
-   "source": "wevity",
-   "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=112388",
-   "organizer": "경기도사회적경제원",
-   "apply_start": null,
-   "deadline": "2026-11-27T23:59:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "취업/창업"
-   ],
-   "eligibility": "",
-   "location": "",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 57,
-   "score_reasons": [
-    "태그·주최에 '창업' +25",
     "공모전 +14",
     "기타 주최 +3",
     "시험기간과 안 겹침 +15"
@@ -1902,6 +1780,36 @@
    "first_seen": "2026-11-21T22:41:22.809219"
   },
   {
+   "id": "wevity-5ba4d123",
+   "category": "contest",
+   "title": "2026년 ESG경영·경영혁신 시민 아이디어 공모전",
+   "source": "wevity",
+   "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=112337",
+   "organizer": "화성도시공사",
+   "apply_start": null,
+   "deadline": "2026-11-27T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "기획/아이디어"
+   ],
+   "eligibility": "",
+   "location": "",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 54,
+   "score_reasons": [
+    "주변 키워드 '아이디어' +10",
+    "공모전 +14",
+    "대기업·공공·대학 주최 +15",
+    "시험기간과 안 겹침 +15"
+   ],
+   "status": "maybe",
+   "warnings": [],
+   "first_seen": "2026-11-21T23:49:32.186546"
+  },
+  {
    "id": "devevent-73de3e7b",
    "category": "event",
    "title": "2026 FDE Field Forum: FDE가 전달하는 현장의 이야기",
@@ -1933,6 +1841,94 @@
    "status": "maybe",
    "warnings": [],
    "first_seen": "2026-11-21T22:41:22.809219"
+  },
+  {
+   "id": "wevity-34d3fe1a",
+   "category": "contest",
+   "title": "2026년 K-Petro 대국민 혁신 아이디어 공모전",
+   "source": "wevity",
+   "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=112194",
+   "organizer": "한국석유관리원",
+   "apply_start": null,
+   "deadline": "2026-11-27T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "기획/아이디어"
+   ],
+   "eligibility": "",
+   "location": "",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 42,
+   "score_reasons": [
+    "주변 키워드 '아이디어' +10",
+    "공모전 +14",
+    "기타 주최 +3",
+    "시험기간과 안 겹침 +15"
+   ],
+   "status": "maybe",
+   "warnings": [],
+   "first_seen": "2026-11-21T23:49:32.186546"
+  },
+  {
+   "id": "wevity-b5399e70",
+   "category": "contest",
+   "title": "2040 여수혁신제안 공모전",
+   "source": "wevity",
+   "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=112250",
+   "organizer": "지방행정발전연구원",
+   "apply_start": null,
+   "deadline": "2026-11-27T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "기획/아이디어"
+   ],
+   "eligibility": "",
+   "location": "",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 32,
+   "score_reasons": [
+    "공모전 +14",
+    "기타 주최 +3",
+    "시험기간과 안 겹침 +15"
+   ],
+   "status": "hidden",
+   "warnings": [],
+   "first_seen": "2026-11-21T23:49:32.186546"
+  },
+  {
+   "id": "wevity-173f569f",
+   "category": "contest",
+   "title": "2026년 경기도 사회연대경제 청년 일경험 시범사업 참여청년 모집",
+   "source": "wevity",
+   "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=112388",
+   "organizer": "경기도사회적경제원",
+   "apply_start": null,
+   "deadline": "2026-11-27T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "취업/창업"
+   ],
+   "eligibility": "",
+   "location": "",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 32,
+   "score_reasons": [
+    "공모전 +14",
+    "기타 주최 +3",
+    "시험기간과 안 겹침 +15"
+   ],
+   "status": "hidden",
+   "warnings": [],
+   "first_seen": "2026-11-21T23:49:32.186546"
   },
   {
    "id": "devevent-383c52f1",
@@ -2211,14 +2207,14 @@
    "prize": "",
    "work_start": null,
    "work_end": null,
-   "score": 69,
+   "score": 54,
    "score_reasons": [
-    "태그·주최에 '기획' +25",
+    "주변 키워드 '아이디어' +10",
     "공모전 +14",
     "대기업·공공·대학 주최 +15",
     "시험기간과 안 겹침 +15"
    ],
-   "status": "recommended",
+   "status": "maybe",
    "warnings": [],
    "first_seen": "2026-11-21T23:49:32.186546"
   },
@@ -2409,126 +2405,6 @@
    "first_seen": "2026-11-21T23:49:32.186546"
   },
   {
-   "id": "wevity-df25f5ea",
-   "category": "contest",
-   "title": "2027년 울산광역시 중구 고향사랑기부제 고향사랑기금 사업 아이디어 공모",
-   "source": "wevity",
-   "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=112407",
-   "organizer": "울산광역시 중구",
-   "apply_start": null,
-   "deadline": "2026-11-30T23:59:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "기획/아이디어"
-   ],
-   "eligibility": "",
-   "location": "",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 69,
-   "score_reasons": [
-    "태그·주최에 '기획' +25",
-    "공모전 +14",
-    "대기업·공공·대학 주최 +15",
-    "시험기간과 안 겹침 +15"
-   ],
-   "status": "recommended",
-   "warnings": [],
-   "first_seen": "2026-11-21T23:49:32.186546"
-  },
-  {
-   "id": "wevity-d4a872ab",
-   "category": "contest",
-   "title": "2026년 산림복지 국민제안 공모전",
-   "source": "wevity",
-   "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=112363",
-   "organizer": "한국산림복지진흥원",
-   "apply_start": null,
-   "deadline": "2026-11-30T23:59:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "기획/아이디어"
-   ],
-   "eligibility": "",
-   "location": "",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 69,
-   "score_reasons": [
-    "태그·주최에 '기획' +25",
-    "공모전 +14",
-    "대기업·공공·대학 주최 +15",
-    "시험기간과 안 겹침 +15"
-   ],
-   "status": "recommended",
-   "warnings": [],
-   "first_seen": "2026-11-21T23:49:32.186546"
-  },
-  {
-   "id": "wevity-15a594e9",
-   "category": "contest",
-   "title": "부천도시공사 2026 ESG 아이디어 공모전",
-   "source": "wevity",
-   "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=112308",
-   "organizer": "부천도시공사",
-   "apply_start": null,
-   "deadline": "2026-11-30T23:59:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "기획/아이디어"
-   ],
-   "eligibility": "",
-   "location": "",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 69,
-   "score_reasons": [
-    "태그·주최에 '기획' +25",
-    "공모전 +14",
-    "대기업·공공·대학 주최 +15",
-    "시험기간과 안 겹침 +15"
-   ],
-   "status": "recommended",
-   "warnings": [],
-   "first_seen": "2026-11-21T23:49:32.186546"
-  },
-  {
-   "id": "wevity-d9b12084",
-   "category": "contest",
-   "title": "제2회 Nitto Open Innovation Challenge",
-   "source": "wevity",
-   "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=112082",
-   "organizer": "Nitto",
-   "apply_start": null,
-   "deadline": "2026-11-30T23:59:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "기획/아이디어"
-   ],
-   "eligibility": "",
-   "location": "",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 63,
-   "score_reasons": [
-    "태그·주최에 '기획' +25",
-    "해커톤·개발 대회 +20",
-    "기타 주최 +3",
-    "시험기간과 안 겹침 +15"
-   ],
-   "status": "recommended",
-   "warnings": [],
-   "first_seen": "2026-11-21T23:49:32.186546"
-  },
-  {
    "id": "devevent-2d386486",
    "category": "event",
    "title": "[토스페이먼츠] 2026 GEO 그로스 살롱 웨비나: 글로벌 진출 초기 챙겨야 할 GEO 전략",
@@ -2595,6 +2471,95 @@
    "first_seen": "2026-11-21T22:41:22.809219"
   },
   {
+   "id": "wevity-df25f5ea",
+   "category": "contest",
+   "title": "2027년 울산광역시 중구 고향사랑기부제 고향사랑기금 사업 아이디어 공모",
+   "source": "wevity",
+   "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=112407",
+   "organizer": "울산광역시 중구",
+   "apply_start": null,
+   "deadline": "2026-11-30T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "기획/아이디어"
+   ],
+   "eligibility": "",
+   "location": "",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 54,
+   "score_reasons": [
+    "주변 키워드 '아이디어' +10",
+    "공모전 +14",
+    "대기업·공공·대학 주최 +15",
+    "시험기간과 안 겹침 +15"
+   ],
+   "status": "maybe",
+   "warnings": [],
+   "first_seen": "2026-11-21T23:49:32.186546"
+  },
+  {
+   "id": "wevity-15a594e9",
+   "category": "contest",
+   "title": "부천도시공사 2026 ESG 아이디어 공모전",
+   "source": "wevity",
+   "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=112308",
+   "organizer": "부천도시공사",
+   "apply_start": null,
+   "deadline": "2026-11-30T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "기획/아이디어"
+   ],
+   "eligibility": "",
+   "location": "",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 54,
+   "score_reasons": [
+    "주변 키워드 '아이디어' +10",
+    "공모전 +14",
+    "대기업·공공·대학 주최 +15",
+    "시험기간과 안 겹침 +15"
+   ],
+   "status": "maybe",
+   "warnings": [],
+   "first_seen": "2026-11-21T23:49:32.186546"
+  },
+  {
+   "id": "wevity-d4a872ab",
+   "category": "contest",
+   "title": "2026년 산림복지 국민제안 공모전",
+   "source": "wevity",
+   "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=112363",
+   "organizer": "한국산림복지진흥원",
+   "apply_start": null,
+   "deadline": "2026-11-30T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "기획/아이디어"
+   ],
+   "eligibility": "",
+   "location": "",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 44,
+   "score_reasons": [
+    "공모전 +14",
+    "대기업·공공·대학 주최 +15",
+    "시험기간과 안 겹침 +15"
+   ],
+   "status": "maybe",
+   "warnings": [],
+   "first_seen": "2026-11-21T23:49:32.186546"
+  },
+  {
    "id": "wevity-9a153929",
    "category": "contest",
    "title": "2026년 지속가능한 기본소득 추진을 위한 제안 아이디어 공모",
@@ -2613,9 +2578,9 @@
    "prize": "",
    "work_start": null,
    "work_end": null,
-   "score": 57,
+   "score": 42,
    "score_reasons": [
-    "태그·주최에 '기획' +25",
+    "주변 키워드 '아이디어' +10",
     "공모전 +14",
     "기타 주최 +3",
     "시험기간과 안 겹침 +15"
@@ -2643,10 +2608,39 @@
    "prize": "",
    "work_start": null,
    "work_end": null,
-   "score": 57,
+   "score": 42,
    "score_reasons": [
-    "태그·주최에 '기획' +25",
+    "주변 키워드 '아이디어' +10",
     "공모전 +14",
+    "기타 주최 +3",
+    "시험기간과 안 겹침 +15"
+   ],
+   "status": "maybe",
+   "warnings": [],
+   "first_seen": "2026-11-21T23:49:32.186546"
+  },
+  {
+   "id": "wevity-d9b12084",
+   "category": "contest",
+   "title": "제2회 Nitto Open Innovation Challenge",
+   "source": "wevity",
+   "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=112082",
+   "organizer": "Nitto",
+   "apply_start": null,
+   "deadline": "2026-11-30T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "기획/아이디어"
+   ],
+   "eligibility": "",
+   "location": "",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 38,
+   "score_reasons": [
+    "해커톤·개발 대회 +20",
     "기타 주최 +3",
     "시험기간과 안 겹침 +15"
    ],
@@ -2673,14 +2667,13 @@
    "prize": "",
    "work_start": null,
    "work_end": null,
-   "score": 42,
+   "score": 32,
    "score_reasons": [
-    "주변 키워드 '소프트웨어' +10",
     "공모전 +14",
     "기타 주최 +3",
     "시험기간과 안 겹침 +15"
    ],
-   "status": "maybe",
+   "status": "hidden",
    "warnings": [],
    "first_seen": "2026-11-21T23:49:32.186546"
   },
@@ -2970,36 +2963,6 @@
    "first_seen": "2026-11-21T22:41:22.809219"
   },
   {
-   "id": "wevity-a43e09a5",
-   "category": "contest",
-   "title": "한국어촌어항공단 2026년 FiPA 3S 아이디어 공모전",
-   "source": "wevity",
-   "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=112433",
-   "organizer": "한국어촌어항공단",
-   "apply_start": null,
-   "deadline": "2026-12-03T23:59:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "기획/아이디어"
-   ],
-   "eligibility": "",
-   "location": "",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 69,
-   "score_reasons": [
-    "태그·주최에 '기획' +25",
-    "공모전 +14",
-    "대기업·공공·대학 주최 +15",
-    "시험기간과 안 겹침 +15"
-   ],
-   "status": "recommended",
-   "warnings": [],
-   "first_seen": "2026-11-21T23:49:32.186546"
-  },
-  {
    "id": "devevent-23aec6a3",
    "category": "contest",
    "title": "eat.pl 잇플 수익화 챌린지 (K-SKILL × EAT.PL)",
@@ -3031,6 +2994,36 @@
    "status": "recommended",
    "warnings": [],
    "first_seen": "2026-11-21T22:41:22.809219"
+  },
+  {
+   "id": "wevity-a43e09a5",
+   "category": "contest",
+   "title": "한국어촌어항공단 2026년 FiPA 3S 아이디어 공모전",
+   "source": "wevity",
+   "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=112433",
+   "organizer": "한국어촌어항공단",
+   "apply_start": null,
+   "deadline": "2026-12-03T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "기획/아이디어"
+   ],
+   "eligibility": "",
+   "location": "",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 54,
+   "score_reasons": [
+    "주변 키워드 '아이디어' +10",
+    "공모전 +14",
+    "대기업·공공·대학 주최 +15",
+    "시험기간과 안 겹침 +15"
+   ],
+   "status": "maybe",
+   "warnings": [],
+   "first_seen": "2026-11-21T23:49:32.186546"
   },
   {
    "id": "devevent-b6d78717",
@@ -3150,14 +3143,14 @@
    "prize": "",
    "work_start": null,
    "work_end": null,
-   "score": 69,
+   "score": 54,
    "score_reasons": [
-    "태그·주최에 '기획' +25",
+    "주변 키워드 '아이디어' +10",
     "공모전 +14",
     "대기업·공공·대학 주최 +15",
     "시험기간과 안 겹침 +15"
    ],
-   "status": "recommended",
+   "status": "maybe",
    "warnings": [],
    "first_seen": "2026-11-21T23:49:32.186546"
   },
@@ -3292,40 +3285,6 @@
    "first_seen": "2026-11-21T22:41:22.809219"
   },
   {
-   "id": "wevity-fe6cca33",
-   "category": "contest",
-   "title": "2027 Sunny Scholar 6기 모집 - Deep Dive into Social Problems",
-   "source": "wevity",
-   "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=112374",
-   "organizer": "SK행복나눔재단",
-   "apply_start": null,
-   "deadline": "2026-12-06T23:59:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "기획/아이디어",
-    "광고/마케팅",
-    "예체능/미술/음악",
-    "대외활동/서포터즈",
-    "봉사활동"
-   ],
-   "eligibility": "",
-   "location": "",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 69,
-   "score_reasons": [
-    "태그·주최에 '기획' +25",
-    "공모전 +14",
-    "대기업·공공·대학 주최 +15",
-    "시험기간과 안 겹침 +15"
-   ],
-   "status": "recommended",
-   "warnings": [],
-   "first_seen": "2026-11-21T23:49:32.186546"
-  },
-  {
    "id": "devevent-65a5a29d",
    "category": "event",
    "title": "AI와 함께 앱 출시부터 운영·수익화까지! 6주 만에 팀으로 완성하는 프로젝트 [스위프 앱 8기]",
@@ -3391,6 +3350,39 @@
    "status": "maybe",
    "warnings": [],
    "first_seen": "2026-11-21T22:41:22.809219"
+  },
+  {
+   "id": "wevity-fe6cca33",
+   "category": "contest",
+   "title": "2027 Sunny Scholar 6기 모집 - Deep Dive into Social Problems",
+   "source": "wevity",
+   "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=112374",
+   "organizer": "SK행복나눔재단",
+   "apply_start": null,
+   "deadline": "2026-12-06T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "기획/아이디어",
+    "광고/마케팅",
+    "예체능/미술/음악",
+    "대외활동/서포터즈",
+    "봉사활동"
+   ],
+   "eligibility": "",
+   "location": "",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 44,
+   "score_reasons": [
+    "공모전 +14",
+    "대기업·공공·대학 주최 +15",
+    "시험기간과 안 겹침 +15"
+   ],
+   "status": "maybe",
+   "warnings": [],
+   "first_seen": "2026-11-21T23:49:32.186546"
   },
   {
    "id": "devevent-857d6f9f",
@@ -3477,14 +3469,11 @@
    "prize": "",
    "work_start": null,
    "work_end": null,
-   "score": 60,
+   "score": 0,
    "score_reasons": [
-    "주변 키워드 '소프트웨어' +10",
-    "해커톤·개발 대회 +20",
-    "대기업·공공·대학 주최 +15",
-    "시험기간과 안 겹침 +15"
+    "제외: 제외 키워드(e-스포츠)"
    ],
-   "status": "recommended",
+   "status": "hidden",
    "warnings": [],
    "first_seen": "2026-11-21T23:49:32.186546"
   },
@@ -3829,14 +3818,13 @@
    "prize": "",
    "work_start": null,
    "work_end": null,
-   "score": 57,
+   "score": 32,
    "score_reasons": [
-    "태그·주최에 '기획' +25",
     "공모전 +14",
     "기타 주최 +3",
     "시험기간과 안 겹침 +15"
    ],
-   "status": "maybe",
+   "status": "hidden",
    "warnings": [],
    "first_seen": "2026-11-21T23:49:32.186546"
   },
@@ -3960,14 +3948,14 @@
    "prize": "",
    "work_start": null,
    "work_end": null,
-   "score": 62,
+   "score": 47,
    "score_reasons": [
-    "태그·주최에 '기획' +25",
+    "주변 키워드 '아이디어' +10",
     "공모전 +14",
     "협회·커뮤니티 주최 +8",
     "시험기간과 안 겹침 +15"
    ],
-   "status": "recommended",
+   "status": "maybe",
    "warnings": [],
    "first_seen": "2026-11-21T23:49:32.186546"
   },
@@ -3995,41 +3983,6 @@
     "제목에 'AI' +40",
     "공모전 +14",
     "대기업·공공·대학 주최 +15",
-    "시험기간과 안 겹침 +15"
-   ],
-   "status": "recommended",
-   "warnings": [],
-   "first_seen": "2026-11-21T23:49:32.186546"
-  },
-  {
-   "id": "wevity-82cf74ef",
-   "category": "contest",
-   "title": "공모전 준비 중이라면? AI 교정 서비스 [교정의 신]과 함께!",
-   "source": "wevity",
-   "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=111812",
-   "organizer": "교정의 신",
-   "apply_start": null,
-   "deadline": "2026-12-31T23:59:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "기획/아이디어",
-    "광고/마케팅",
-    "논문/리포트",
-    "문학/글/시나리오",
-    "예체능/미술/음악",
-    "기타"
-   ],
-   "eligibility": "",
-   "location": "",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 72,
-   "score_reasons": [
-    "제목에 'AI' +40",
-    "공모전 +14",
-    "기타 주최 +3",
     "시험기간과 안 겹침 +15"
    ],
    "status": "recommended",
@@ -4100,6 +4053,38 @@
    "status": "hidden",
    "warnings": [],
    "first_seen": "2026-11-21T22:41:22.809219"
+  },
+  {
+   "id": "wevity-82cf74ef",
+   "category": "contest",
+   "title": "공모전 준비 중이라면? AI 교정 서비스 [교정의 신]과 함께!",
+   "source": "wevity",
+   "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=111812",
+   "organizer": "교정의 신",
+   "apply_start": null,
+   "deadline": "2026-12-31T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "기획/아이디어",
+    "광고/마케팅",
+    "논문/리포트",
+    "문학/글/시나리오",
+    "예체능/미술/음악",
+    "기타"
+   ],
+   "eligibility": "",
+   "location": "",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 0,
+   "score_reasons": [
+    "제외: 제외 키워드(준비 중이라면)"
+   ],
+   "status": "hidden",
+   "warnings": [],
+   "first_seen": "2026-11-21T23:49:32.186546"
   },
   {
    "id": "wevity-0304d209",
@@ -4181,15 +4166,11 @@
    "prize": "",
    "work_start": null,
    "work_end": null,
-   "score": 67,
+   "score": 0,
    "score_reasons": [
-    "태그·주최에 '창업' +25",
-    "공모전 +14",
-    "기타 주최 +3",
-    "상금·혜택 +10",
-    "시험기간과 안 겹침 +15"
+    "제외: 제외 키워드(신입사원)"
    ],
-   "status": "recommended",
+   "status": "hidden",
    "warnings": [],
    "first_seen": "2026-11-21T23:49:32.186546"
   },
@@ -4215,14 +4196,13 @@
    "prize": "",
    "work_start": null,
    "work_end": null,
-   "score": 57,
+   "score": 32,
    "score_reasons": [
-    "태그·주최에 '기획' +25",
     "공모전 +14",
     "기타 주최 +3",
     "시험기간과 안 겹침 +15"
    ],
-   "status": "maybe",
+   "status": "hidden",
    "warnings": [],
    "first_seen": "2026-11-21T23:49:32.186546"
   }
