@@ -148,11 +148,13 @@ def score_internship(ev: Event, cfg: dict, today: date) -> Event:
         return _hide(ev, "지원 자격 불일치")
 
     score = 0
-    role_text = ev.title + " " + " ".join(ev.tags)  # 링커리어 직무 분류(서비스기획/운영 등)도 본다
+    # 링커리어 직무 분류(서비스기획/운영 등)는 넓게 붙어 있어서, 제목에 있을 때만 핵심 직무로 친다
+    role_text = ev.title + " " + " ".join(ev.tags)
     not_pm = _has_any(ev.title, ic.get("roles_not_pm", []))
-    if _has_any(role_text, ic["roles_core"]) and not not_pm:
+    core_role = bool(_has_any(ev.title, ic["roles_core"])) and not not_pm
+    if core_role:
         score += 40; reasons.append("PM·서비스 기획 직무 +40")
-    elif _has_any(role_text, ic["roles_related"]):
+    elif _has_any(role_text, ic["roles_core"] + ic["roles_related"]):
         score += 25; reasons.append("AI·데이터 직무 +25")
     else:
         score += 10; reasons.append("기타 직무 +10")
@@ -171,6 +173,9 @@ def score_internship(ev: Event, cfg: dict, today: date) -> Event:
     ev.score = score
     ev.score_reasons = reasons
     ev.status = _grade(ev, score, cfg)
+    if ev.status == "recommended" and not core_role:
+        ev.status = "maybe"  # 제목에 PM·서비스 기획이 없으면 캘린더 대신 검토
+        reasons.append("제목에 PM·기획 직무 없음 → 검토")
     return ev
 
 
