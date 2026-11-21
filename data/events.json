@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-22T00:13+09:00",
+ "generated_at": "2026-11-22T00:34+09:00",
  "repo": "jaebin06/yonsei-calendar",
  "health": {
   "dev-event": {
@@ -17,6 +17,10 @@
   "linkareer": {
    "ok": true,
    "count": 104
+  },
+  "dorm": {
+   "ok": true,
+   "count": 3
   }
  },
  "events": [
@@ -77,6 +81,31 @@
    "status": "hidden",
    "warnings": [],
    "first_seen": "2026-11-21T23:49:32.186546"
+  },
+  {
+   "id": "dorm-83e8c7a6",
+   "category": "dorm",
+   "title": "찾아가는 청년주거 상담소 (2026.11.5.(목)~11.6.(금))",
+   "source": "dorm",
+   "url": "https://dorm.yonsei.ac.kr/board/?id=notice&mode=V&idx=9169",
+   "organizer": "생활관 · 공통",
+   "apply_start": null,
+   "deadline": null,
+   "event_start": "2026-11-05T00:00:00",
+   "event_end": "2026-11-06T23:59:00",
+   "tags": [
+    "공통"
+   ],
+   "eligibility": "",
+   "location": "",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 0,
+   "score_reasons": [],
+   "status": "always",
+   "warnings": [],
+   "first_seen": "2026-11-22T00:34:09.539795"
   },
   {
    "id": "yonsei-notice-80349c10",
@@ -764,6 +793,34 @@
    "first_seen": "2026-11-22T00:09:44.527946"
   },
   {
+   "id": "linkareer-25a3aa5f",
+   "category": "internship",
+   "title": "[LG생활건강] 소셜크루 25기 채용 공고",
+   "source": "linkareer",
+   "url": "https://linkareer.com/activity/362716",
+   "organizer": "LG생활건강",
+   "apply_start": null,
+   "deadline": "2026-11-22T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "SNS/콘텐츠마케팅",
+    "체험형 인턴"
+   ],
+   "eligibility": "",
+   "location": "오프라인(서울)",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 0,
+   "score_reasons": [
+    "제외: 마감 임박·지남"
+   ],
+   "status": "hidden",
+   "warnings": [],
+   "first_seen": "2026-11-22T00:34:09.539795"
+  },
+  {
    "id": "linkareer-48d397de",
    "category": "internship",
    "title": "[유한화학] 재무 채용전환형 인턴 사원 모집 (2026년 11월)",
@@ -1121,36 +1178,6 @@
    "event_start": null,
    "event_end": null,
    "tags": [
-    "체험형 인턴"
-   ],
-   "eligibility": "",
-   "location": "오프라인(경기)",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 0,
-   "score_reasons": [
-    "제외: 마감 임박·지남"
-   ],
-   "status": "hidden",
-   "warnings": [],
-   "first_seen": "2026-11-22T00:09:44.527946"
-  },
-  {
-   "id": "linkareer-6902315d",
-   "category": "internship",
-   "title": "[네이버] 2027 NAVER 동계 인턴십 : Corporate 트랙",
-   "source": "linkareer",
-   "url": "https://linkareer.com/activity/364520",
-   "organizer": "네이버",
-   "apply_start": null,
-   "deadline": "2026-11-23T10:00:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "인사/채용/노무",
-    "시장조사/리서치",
-    "AI/ML엔지니어",
     "체험형 인턴"
    ],
    "eligibility": "",
@@ -3598,6 +3625,31 @@
    "first_seen": "2026-11-21T22:41:22.809219"
   },
   {
+   "id": "dorm-0ca91b5c",
+   "category": "dorm",
+   "title": "전체 사생실 내부 정기 방역 안내 (11. 30.(월))",
+   "source": "dorm",
+   "url": "https://dorm.yonsei.ac.kr/board/?id=notice&mode=V&idx=9178",
+   "organizer": "생활관 · 공통",
+   "apply_start": null,
+   "deadline": null,
+   "event_start": "2026-11-30T00:00:00",
+   "event_end": "2026-11-30T23:59:00",
+   "tags": [
+    "공통"
+   ],
+   "eligibility": "",
+   "location": "",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 0,
+   "score_reasons": [],
+   "status": "always",
+   "warnings": [],
+   "first_seen": "2026-11-22T00:34:09.539795"
+  },
+  {
    "id": "wevity-5d09d721",
    "category": "contest",
    "title": "[한국체육산업개발(주)] 공공데이터 활용 경진대회",
@@ -5402,6 +5454,31 @@
    "status": "maybe",
    "warnings": [],
    "first_seen": "2026-11-21T23:49:32.186546"
+  },
+  {
+   "id": "dorm-3b312b94",
+   "category": "dorm",
+   "title": "2026학년도 신촌캠퍼스 겨울방학 연장 신청 안내  (Sinchon Winter Extension) — 겨울방학 신규 입사 2026. 12. 26.( 토 )",
+   "source": "dorm",
+   "url": "https://dorm.yonsei.ac.kr/board/?id=schedule&mode=V&idx=9168",
+   "organizer": "생활관 · 공통",
+   "apply_start": null,
+   "deadline": null,
+   "event_start": "2026-12-26T00:00:00",
+   "event_end": "2026-12-26T23:59:00",
+   "tags": [
+    "공통"
+   ],
+   "eligibility": "",
+   "location": "",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 0,
+   "score_reasons": [],
+   "status": "always",
+   "warnings": [],
+   "first_seen": "2026-11-22T00:34:09.539795"
   },
   {
    "id": "wevity-dddfecbf",
