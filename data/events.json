@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-22T00:09+09:00",
+ "generated_at": "2026-11-22T00:13+09:00",
  "repo": "jaebin06/yonsei-calendar",
  "health": {
   "dev-event": {
@@ -1853,14 +1853,15 @@
    "prize": "",
    "work_start": null,
    "work_end": null,
-   "score": 85,
+   "score": 70,
    "score_reasons": [
-    "PM·서비스 기획 직무 +40",
+    "AI·데이터 직무 +25",
     "근무 기간 미상 +10",
     "대기업·공공·대학 주최 +20",
-    "재학생 지원 가능(체험형) +15"
+    "재학생 지원 가능(체험형) +15",
+    "제목에 PM·기획 직무 없음 → 검토"
    ],
-   "status": "recommended",
+   "status": "maybe",
    "warnings": [],
    "first_seen": "2026-11-22T00:09:44.527946"
   },
@@ -2614,37 +2615,6 @@
    "first_seen": "2026-11-21T22:41:22.809219"
   },
   {
-   "id": "linkareer-2a8fed96",
-   "category": "internship",
-   "title": "[PTKOREA] [인턴] 온라인 패션몰 콘텐츠 기획 및 운영 업무 보조",
-   "source": "linkareer",
-   "url": "https://linkareer.com/activity/365822",
-   "organizer": "PTKOREA",
-   "apply_start": null,
-   "deadline": "2026-11-29T23:55:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "서비스기획/운영",
-    "체험형 인턴"
-   ],
-   "eligibility": "",
-   "location": "오프라인(서울)",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 70,
-   "score_reasons": [
-    "PM·서비스 기획 직무 +40",
-    "근무 기간 미상 +10",
-    "기타 주최 +5",
-    "재학생 지원 가능(체험형) +15"
-   ],
-   "status": "recommended",
-   "warnings": [],
-   "first_seen": "2026-11-22T00:09:44.527946"
-  },
-  {
    "id": "linkareer-a2f90177",
    "category": "internship",
    "title": "[네이버웹툰] IP 비즈니스 마케터 (체험형 인턴)",
@@ -2669,9 +2639,10 @@
     "AI·데이터 직무 +25",
     "근무 기간 미상 +10",
     "대기업·공공·대학 주최 +20",
-    "재학생 지원 가능(체험형) +15"
+    "재학생 지원 가능(체험형) +15",
+    "제목에 PM·기획 직무 없음 → 검토"
    ],
-   "status": "recommended",
+   "status": "maybe",
    "warnings": [],
    "first_seen": "2026-11-22T00:09:44.527946"
   },
@@ -2707,6 +2678,37 @@
    "status": "recommended",
    "warnings": [],
    "first_seen": "2026-11-21T22:41:22.809219"
+  },
+  {
+   "id": "linkareer-2a8fed96",
+   "category": "internship",
+   "title": "[PTKOREA] [인턴] 온라인 패션몰 콘텐츠 기획 및 운영 업무 보조",
+   "source": "linkareer",
+   "url": "https://linkareer.com/activity/365822",
+   "organizer": "PTKOREA",
+   "apply_start": null,
+   "deadline": "2026-11-29T23:55:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "서비스기획/운영",
+    "체험형 인턴"
+   ],
+   "eligibility": "",
+   "location": "오프라인(서울)",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 55,
+   "score_reasons": [
+    "AI·데이터 직무 +25",
+    "근무 기간 미상 +10",
+    "기타 주최 +5",
+    "재학생 지원 가능(체험형) +15"
+   ],
+   "status": "maybe",
+   "warnings": [],
+   "first_seen": "2026-11-22T00:09:44.527946"
   },
   {
    "id": "wevity-97b5fae1",
@@ -3646,13 +3648,13 @@
    "prize": "",
    "work_start": null,
    "work_end": null,
-   "score": 70,
+   "score": 55,
    "score_reasons": [
-    "PM·서비스 기획 직무 +40",
+    "AI·데이터 직무 +25",
     "근무 기간 미상 +10",
     "대기업·공공·대학 주최 +20"
    ],
-   "status": "recommended",
+   "status": "maybe",
    "warnings": [],
    "first_seen": "2026-11-22T00:09:44.527946"
   },
@@ -3750,14 +3752,15 @@
    "prize": "",
    "work_start": null,
    "work_end": null,
-   "score": 85,
+   "score": 70,
    "score_reasons": [
-    "PM·서비스 기획 직무 +40",
+    "AI·데이터 직무 +25",
     "근무 기간 미상 +10",
     "대기업·공공·대학 주최 +20",
-    "재학생 지원 가능(체험형) +15"
+    "재학생 지원 가능(체험형) +15",
+    "제목에 PM·기획 직무 없음 → 검토"
    ],
-   "status": "recommended",
+   "status": "maybe",
    "warnings": [],
    "first_seen": "2026-11-22T00:09:44.527946"
   },
@@ -5790,14 +5793,14 @@
    "prize": "",
    "work_start": null,
    "work_end": null,
-   "score": 70,
+   "score": 55,
    "score_reasons": [
-    "PM·서비스 기획 직무 +40",
+    "AI·데이터 직무 +25",
     "근무 기간 미상 +10",
     "기타 주최 +5",
     "재학생 지원 가능(체험형) +15"
    ],
-   "status": "recommended",
+   "status": "maybe",
    "warnings": [],
    "first_seen": "2026-11-22T00:09:44.527946"
   },
@@ -6184,14 +6187,14 @@
    "prize": "",
    "work_start": null,
    "work_end": null,
-   "score": 70,
+   "score": 55,
    "score_reasons": [
-    "PM·서비스 기획 직무 +40",
+    "AI·데이터 직무 +25",
     "근무 기간 미상 +10",
     "기타 주최 +5",
     "재학생 지원 가능(체험형) +15"
    ],
-   "status": "recommended",
+   "status": "maybe",
    "warnings": [],
    "first_seen": "2026-11-22T00:09:44.527946"
   },
@@ -6216,72 +6219,12 @@
    "prize": "",
    "work_start": null,
    "work_end": null,
-   "score": 70,
+   "score": 55,
    "score_reasons": [
-    "PM·서비스 기획 직무 +40",
+    "AI·데이터 직무 +25",
     "근무 기간 미상 +10",
     "기타 주최 +5",
     "재학생 지원 가능(체험형) +15"
-   ],
-   "status": "recommended",
-   "warnings": [],
-   "first_seen": "2026-11-22T00:09:44.527946"
-  },
-  {
-   "id": "linkareer-e7186c99",
-   "category": "internship",
-   "title": "[채널톡] Project Manager Assistant (PMA)",
-   "source": "linkareer",
-   "url": "https://linkareer.com/activity/365794",
-   "organizer": "채널코퍼레이션",
-   "apply_start": null,
-   "deadline": "2027-02-17T23:59:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "IT기획/PM/PO",
-    "기타"
-   ],
-   "eligibility": "",
-   "location": "오프라인(서울)",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 55,
-   "score_reasons": [
-    "PM·서비스 기획 직무 +40",
-    "근무 기간 미상 +10",
-    "기타 주최 +5"
-   ],
-   "status": "maybe",
-   "warnings": [],
-   "first_seen": "2026-11-22T00:09:44.527946"
-  },
-  {
-   "id": "linkareer-473e3b59",
-   "category": "internship",
-   "title": "Ad Operations Intern",
-   "source": "linkareer",
-   "url": "https://linkareer.com/activity/365585",
-   "organizer": "뤼튼테크놀로지스",
-   "apply_start": null,
-   "deadline": "2027-02-17T23:59:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "서비스기획/운영",
-    "기타"
-   ],
-   "eligibility": "",
-   "location": "오프라인(서울)",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 55,
-   "score_reasons": [
-    "PM·서비스 기획 직무 +40",
-    "근무 기간 미상 +10",
-    "기타 주최 +5"
    ],
    "status": "maybe",
    "warnings": [],
@@ -6332,6 +6275,36 @@
    "tags": [
     "경영기획/전략",
     "사무/문서관리",
+    "기타"
+   ],
+   "eligibility": "",
+   "location": "오프라인(서울)",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 40,
+   "score_reasons": [
+    "AI·데이터 직무 +25",
+    "근무 기간 미상 +10",
+    "기타 주최 +5"
+   ],
+   "status": "maybe",
+   "warnings": [],
+   "first_seen": "2026-11-22T00:09:44.527946"
+  },
+  {
+   "id": "linkareer-e7186c99",
+   "category": "internship",
+   "title": "[채널톡] Project Manager Assistant (PMA)",
+   "source": "linkareer",
+   "url": "https://linkareer.com/activity/365794",
+   "organizer": "채널코퍼레이션",
+   "apply_start": null,
+   "deadline": "2027-02-17T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "IT기획/PM/PO",
     "기타"
    ],
    "eligibility": "",
@@ -6409,6 +6382,36 @@
     "근무 기간 미상 +10",
     "기타 주최 +5",
     "재학생 지원 가능(체험형) +15"
+   ],
+   "status": "maybe",
+   "warnings": [],
+   "first_seen": "2026-11-22T00:09:44.527946"
+  },
+  {
+   "id": "linkareer-473e3b59",
+   "category": "internship",
+   "title": "Ad Operations Intern",
+   "source": "linkareer",
+   "url": "https://linkareer.com/activity/365585",
+   "organizer": "뤼튼테크놀로지스",
+   "apply_start": null,
+   "deadline": "2027-02-17T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "서비스기획/운영",
+    "기타"
+   ],
+   "eligibility": "",
+   "location": "오프라인(서울)",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 40,
+   "score_reasons": [
+    "AI·데이터 직무 +25",
+    "근무 기간 미상 +10",
+    "기타 주최 +5"
    ],
    "status": "maybe",
    "warnings": [],
