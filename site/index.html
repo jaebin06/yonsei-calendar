@@ -333,7 +333,8 @@ function renderCalendar() {
 
 function rowHtml({ e, label, t }, opts = {}) {
   const dis = connected() ? "" : "disabled";
-  const sub = [opts.dateLabel, t, label, CAT[e.category], e.organizer].filter(Boolean).join(" · ");
+  const from = e.available_from ? `${ymdLabel(e.available_from.slice(0, 10))} ${timeOf(e.available_from)}부터` : "";
+  const sub = [opts.dateLabel, t, label, CAT[e.category], from, e.organizer].filter(Boolean).join(" · ");
   return `<li class="${e.done ? "done" : ""} ${opts.overdue ? "overdue" : ""}">
     <input type="checkbox" ${e.done ? "checked" : ""} data-done="${e.id}" ${dis} aria-label="완료">
     <div><div class="t"><span class="dot" style="background:${COLORS[e.category]}"></span>${e.url ? `<a href="${esc(e.url)}" target="_blank" rel="noopener" style="color:inherit">${esc(titleOf(e))}</a>` : esc(titleOf(e))}</div><div class="s">${esc(sub)}</div></div>

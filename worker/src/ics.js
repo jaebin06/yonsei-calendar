@@ -54,7 +54,10 @@ export function learnusEvents(text) {
     const title = ve.SUMMARY?.value?.trim() || "(제목 없음)";
     const desc = ve.DESCRIPTION?.value || "";
     const start = icsDateToKst(ve.DTSTART);
-    const end = icsDateToKst(ve.DTEND) || start;
+    const end = icsDateToKst(ve.DTEND);
+    // 기간이 있는 항목(예: 20일 00시 ~ 24일 00시)은 끝나는 시각이 마감 → 끝나는 날에만 표시
+    const due = end && start && end > start ? end : start;
+    const from = due !== start ? start : null;
     const hay = `${title} ${desc}`;
     let kind = "assignment";
     if (/동영상|영상|VOD|vod|시청|강의\s*콘텐츠/.test(hay)) kind = "video";
@@ -68,9 +71,10 @@ export function learnusEvents(text) {
       title,
       course: ve.CATEGORIES?.value || "",
       source: "learnus",
-      deadline: start && start.length > 10 ? start : null,
-      event_start: start,
-      event_end: end,
+      deadline: due && due.length > 10 ? due : null,
+      event_start: due,
+      event_end: due,
+      available_from: from,
       url: "https://ys.learnus.org/calendar/view.php?view=upcoming",
     };
   }).filter((e) => e.event_start);

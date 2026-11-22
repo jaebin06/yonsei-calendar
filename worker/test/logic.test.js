@@ -39,6 +39,17 @@ test("LearnUs ICS 파싱: UTC → KST, 종류 판별", () => {
   assert.match(a.id, /^learnus-[0-9a-f]{8}$/);
 });
 
+test("기간이 있는 LearnUs 항목은 끝나는 시각에만", () => {
+  const evs = learnusEvents("BEGIN:VEVENT\r\nUID:7@x\r\nSUMMARY:10주차 동영상\r\nDTSTART:20261119T150000Z\r\nDTEND:20261123T150000Z\r\nEND:VEVENT");
+  assert.equal(evs[0].event_start, "2026-11-24T00:00");
+  assert.equal(evs[0].event_end, "2026-11-24T00:00");
+  assert.equal(evs[0].deadline, "2026-11-24T00:00");
+  assert.equal(evs[0].available_from, "2026-11-20T00:00");
+  const items = feedItems(decorate(evs, EMPTY_STATE));
+  assert.equal(items.length, 1);
+  assert.equal(items[0].start, items[0].end);
+});
+
 test("줄 접기 해제", () => {
   const evs = parseICS("BEGIN:VEVENT\r\nSUMMARY:긴 제\r\n 목\r\nEND:VEVENT");
   assert.equal(evs[0].SUMMARY.value, "긴 제목");
