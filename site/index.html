@@ -47,20 +47,27 @@
   .banner[hidden] { display: none; }
   .banner { background: var(--accent-soft); color: var(--ink); border-radius: 10px; padding: 10px 12px; font-size: 13px; margin-bottom: 14px; display: flex; justify-content: space-between; gap: 10px; align-items: center; flex-wrap: wrap; }
 
-  .cal { display: grid; grid-template-columns: repeat(7, 1fr); border-top: 1px solid var(--line); border-left: 1px solid var(--line); }
+  .cal { border-top: 1px solid var(--line); border-left: 1px solid var(--line); }
+  .cal-head { display: grid; grid-template-columns: repeat(7, 1fr); }
   .cal .wd { font-size: 12px; color: var(--muted); text-align: center; padding: 4px 0; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); background: var(--soft); }
-  .cal .day { min-height: 86px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 3px 4px; cursor: pointer; overflow: hidden; min-width: 0; }
+  .cal-week { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); grid-template-rows: 22px repeat(3, 20px) 18px; min-height: 108px; position: relative; }
+  .cal .day { grid-row: 1 / -1; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 3px 4px; cursor: pointer; min-width: 0; }
   .cal .day.other { background: var(--soft); color: var(--muted); }
-  .cal .day.sel { outline: 2px solid var(--accent); outline-offset: -2px; }
+  .cal .day.sel { box-shadow: inset 0 0 0 2px var(--accent); }
   .cal .num { font-size: 12px; font-variant-numeric: tabular-nums; }
   .cal .day.today .num { background: var(--ink); color: var(--bg); border-radius: 999px; padding: 0 6px; }
-  .cal .it { font-size: 11px; line-height: 1.35; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; padding: 1px 4px; border-radius: 4px; margin-top: 2px; }
-  .cal .it.done { text-decoration: line-through; opacity: .5; }
-  .cal .more { font-size: 11px; color: var(--muted); padding-left: 4px; }
+  .cal .bar { z-index: 1; margin: 1px 3px; font-size: 11px; line-height: 17px; height: 18px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+    padding: 0 5px; border-radius: 4px; cursor: pointer; min-width: 0;
+    background: color-mix(in srgb, var(--c) 16%, transparent); border-left: 3px solid var(--c); }
+  .cal .bar.multi { background: color-mix(in srgb, var(--c) 30%, transparent); }
+  .cal .bar.cont-l { border-left: 0; border-top-left-radius: 0; border-bottom-left-radius: 0; margin-left: 0; }
+  .cal .bar.cont-r { border-top-right-radius: 0; border-bottom-right-radius: 0; margin-right: 0; }
+  .cal .bar.done { text-decoration: line-through; opacity: .5; }
+  .cal .more { z-index: 1; font-size: 11px; color: var(--muted); padding-left: 6px; cursor: pointer; line-height: 18px; }
   @media (max-width: 560px) {
-    .cal .day { min-height: 54px; }
-    .cal .it { font-size: 0; height: 6px; padding: 0; margin-top: 3px; }
-    .cal .more { display: none; }
+    .cal-week { grid-template-rows: 26px repeat(3, 9px) 12px; min-height: 70px; }
+    .cal .bar { font-size: 0; height: 6px; line-height: 6px; padding: 0; margin: 1px 1px; border-left-width: 0; }
+    .cal .more { font-size: 9px; line-height: 12px; padding-left: 3px; }
   }
 
   .rows { list-style: none; margin: 0; padding: 0; }
@@ -282,29 +289,34 @@ async function load() {
   renderAll();
 }
 
-// ---------- 날짜 배치: 일정 하나 → 달력에 놓을 [날짜, 라벨, 시간] ----------
+// ---------- 날짜 배치: 일정 하나 → [시작일, 라벨, 시간, 끝일] 목록 ----------
 function placements(e) {
   const out = [];
   const s = e.event_start?.slice(0, 10), en = (e.event_end || e.event_start)?.slice(0, 10);
   if (["contest", "internship", "event"].includes(e.category)) {
-    if (e.deadline) out.push([e.deadline.slice(0, 10), e.category === "internship" ? "인턴 마감" : "마감", timeOf(e.deadline)]);
-    if (s) out.push([s, e.category === "contest" ? "본선" : "행사", timeOf(e.event_start)]);
+    if (e.deadline) { const d = e.deadline.slice(0, 10); out.push([d, e.category === "internship" ? "인턴 마감" : "마감", timeOf(e.deadline), d]); }
+    if (s) out.push([s, e.category === "contest" ? "본선" : "행사", timeOf(e.event_start), en && en > s ? en : s]);
   } else if (e.category === "learnus" || e.category === "custom") {
-    if (s) out.push([s, KIND[e.kind] || "일정", timeOf(e.event_start)]);
+    if (s) out.push([s, KIND[e.kind] || "일정", timeOf(e.event_start), s]);
   } else if (s) {
-    if (en && en !== s) { out.push([s, "시작", ""]); out.push([en, "끝", ""]); }
-    else out.push([s, "", ""]);
+    out.push([s, "", "", en && en > s ? en : s]);  // 여러 날짜에 걸친 일정은 하나의 긴 막대로
   }
   return out;
 }
 
 const titleOf = (e) => (e.course ? `${e.course} · ` : "") + e.title;
+const addDay = (k, n) => { const d = new Date(k + "T00:00"); d.setDate(d.getDate() + n); return dkey(d); };
+const shortDate = (k) => `${Number(k.slice(5, 7))}/${Number(k.slice(8, 10))}`;
 
+// 날짜별 목록 (그날 걸쳐 있는 기간 일정도 포함) — 날짜를 눌렀을 때 보여줄 목록
 function byDay(events) {
   const map = new Map();
-  for (const e of events) for (const [k, label, t] of placements(e)) {
-    if (!map.has(k)) map.set(k, []);
-    map.get(k).push({ e, label, t });
+  for (const e of events) for (const [s, label, t, en] of placements(e)) {
+    for (let k = s; k <= en; k = addDay(k, 1)) {
+      if (!map.has(k)) map.set(k, []);
+      const range = en > s ? `${shortDate(s)}~${shortDate(en)}` : "";
+      map.get(k).push({ e, label: [label, range].filter(Boolean).join(" "), t });
+    }
   }
   for (const list of map.values()) list.sort((a, b) => (a.t || "99").localeCompare(b.t || "99"));
   return map;
@@ -320,23 +332,51 @@ function renderHeader() {
   $("#add-section").style.opacity = connected() ? 1 : .55;
 }
 
+const MAX_LANES = 3;
+
 function renderCalendar() {
   const mine = DATA.events.filter((e) => e.included);
   const map = byDay(mine);
+  const segs = [];
+  for (const e of mine) for (const [s, label, t, en] of placements(e)) segs.push({ e, s, en, label, t });
   $("#cal-title").textContent = `내 달력 · ${view.getFullYear()}년 ${view.getMonth() + 1}월`;
-  const start = new Date(view); start.setDate(1 - view.getDay());
-  const cells = WD.map((w) => `<div class="wd">${w}</div>`);
+
+  const first = new Date(view); first.setDate(1 - view.getDay());
   const tk = todayKey();
-  for (let i = 0; i < 42; i++) {
-    const d = new Date(start); d.setDate(start.getDate() + i);
-    if (i >= 35 && d.getMonth() !== view.getMonth()) break;
-    const k = dkey(d), items = map.get(k) || [];
-    const shown = items.slice(0, 3).map(({ e, label, t }) =>
-      `<div class="it ${e.done ? "done" : ""}" style="background:color-mix(in srgb, ${COLORS[e.category]} 16%, transparent);border-left:3px solid ${COLORS[e.category]}" title="${esc((label ? "[" + label + "] " : "") + titleOf(e))}">${t ? t + " " : ""}${esc(e.title)}</div>`).join("");
-    cells.push(`<div class="day ${d.getMonth() !== view.getMonth() ? "other" : ""} ${k === tk ? "today" : ""} ${k === selectedDay ? "sel" : ""}" data-day="${k}">
-      <span class="num">${d.getDate()}</span>${shown}${items.length > 3 ? `<div class="more">+${items.length - 3}</div>` : ""}</div>`);
+  const html = [`<div class="cal-head">${WD.map((w) => `<div class="wd">${w}</div>`).join("")}</div>`];
+  for (let w = 0; w < 6; w++) {
+    const ws = new Date(first); ws.setDate(first.getDate() + 7 * w);
+    if (w >= 4 && ws.getMonth() !== view.getMonth() && ws > view) break;
+    const days = [...Array(7)].map((_, i) => { const d = new Date(ws); d.setDate(ws.getDate() + i); return d; });
+    const wk0 = dkey(days[0]), wk6 = dkey(days[6]);
+
+    // 이번 주에 걸친 일정 → 칸(줄) 배정: 긴 일정과 먼저 시작하는 일정이 위로
+    const weekSegs = segs.filter((g) => g.s <= wk6 && g.en >= wk0)
+      .map((g) => ({ ...g, a: g.s < wk0 ? wk0 : g.s, b: g.en > wk6 ? wk6 : g.en }))
+      .sort((x, y) => x.a.localeCompare(y.a) || y.b.localeCompare(x.b) || (x.t || "99").localeCompare(y.t || "99"));
+    const lanes = [];
+    const hidden = Array(7).fill(0);
+    const bars = [];
+    for (const g of weekSegs) {
+      const c0 = daysBetween(wk0, g.a), c1 = daysBetween(wk0, g.b);
+      let lane = lanes.findIndex((end) => end < c0);
+      if (lane === -1) { lane = lanes.length; lanes.push(-1); }
+      lanes[lane] = c1;
+      if (lane >= MAX_LANES) { for (let c = c0; c <= c1; c++) hidden[c]++; continue; }
+      const multi = g.en > g.s;
+      const tip = `${g.label ? "[" + g.label + "] " : ""}${titleOf(g.e)}${multi ? ` (${shortDate(g.s)}~${shortDate(g.en)})` : ""}`;
+      const contL = g.s < wk0, contR = g.en > wk6;
+      bars.push(`<div class="bar ${multi ? "multi" : ""} ${g.e.done ? "done" : ""} ${contL ? "cont-l" : ""} ${contR ? "cont-r" : ""}"
+        style="grid-column:${c0 + 1} / ${c1 + 2};grid-row:${lane + 2};--c:${COLORS[g.e.category]}" data-day="${g.a}" title="${esc(tip)}">${g.t && !multi ? g.t + " " : ""}${esc(g.e.title)}</div>`);
+    }
+    const cells = days.map((d, i) => {
+      const k = dkey(d);
+      return `<div class="day ${d.getMonth() !== view.getMonth() ? "other" : ""} ${k === tk ? "today" : ""} ${k === selectedDay ? "sel" : ""}" style="grid-column:${i + 1}" data-day="${k}"><span class="num">${d.getDate()}</span></div>`;
+    }).join("");
+    const more = hidden.map((n, i) => (n ? `<div class="more" style="grid-column:${i + 1};grid-row:${MAX_LANES + 2}" data-day="${dkey(days[i])}">+${n}</div>` : "")).join("");
+    html.push(`<div class="cal-week">${cells}${bars.join("")}${more}</div>`);
   }
-  $("#cal").innerHTML = cells.join("");
+  $("#cal").innerHTML = html.join("");
   const used = [...new Set(mine.map((e) => e.category))];
   $("#legend").innerHTML = used.map((c) => `<span><span class="dot" style="background:${COLORS[c]}"></span>${CAT[c]}</span>`).join("") +
     `<span>날짜를 누르면 그날 일정을 보고 완료 체크할 수 있어요</span>`;
