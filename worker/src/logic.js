@@ -13,12 +13,23 @@ export function isIncluded(ev, state) {
   return DEFAULT_IN.has(ev.category);
 }
 
-export function decorate(events, state) {
+export const kstToday = (now = new Date()) => new Date(now.getTime() + 9 * 3600 * 1000).toISOString().slice(0, 10);
+
+/** 점수가 높은 대회 중 아직 참여 여부를 정하지 않은 것 (넣지도, 빼지도, 추천 안 함도 아님) */
+export function needsDecision(ev, state, today) {
+  if (!ev.ask || state.dismissed[ev.id] || ev.id in state.selected) return false;
+  const key = (ev.deadline || ev.event_start || "").slice(0, 10);
+  return !!key && key >= today;
+}
+
+export function decorate(events, state, now = new Date()) {
+  const today = kstToday(now);
   return events.map((ev) => ({
     ...ev,
     included: isIncluded(ev, state),
     done: !!state.done[ev.id],
     dismissed: state.dismissed[ev.id]?.reason || null,
+    needs_decision: needsDecision(ev, state, today),
   }));
 }
 
@@ -67,9 +78,17 @@ export function applyOp(state, body, now = new Date()) {
 const KIND_LABEL = { assignment: "과제", video: "영상", quiz: "퀴즈", contest: "대회", internship: "인턴", dorm: "기숙사", other: "일정" };
 
 /** '내 일정'에 든 일정 → 개인 피드 항목 */
-export function feedItems(decorated) {
+export function feedItems(decorated, now = new Date()) {
   const items = [];
+  const today = kstToday(now);
   for (const ev of decorated) {
+    // 참여 여부를 정하지 않은 고득점 대회: 정할 때까지 매일 '오늘' 칸에 띄운다
+    if (ev.needs_decision) {
+      const key = (ev.deadline || ev.event_start).slice(0, 10);
+      const dday = Math.round((Date.parse(key) - Date.parse(today)) / 864e5);
+      items.push({ uid: `${ev.id}-ask`, summary: `❓ [참여 결정] ${ev.title} (D-${dday}, ${ev.score}점)`, allDay: true, start: today,
+        description: `대시보드에서 '참여할래요' 또는 '안 할래요'를 누르면 사라져요.\n주최: ${ev.organizer || "-"}\n링크: ${ev.url || "-"}`, url: ev.url });
+    }
     if (!ev.included) continue;
     const check = ev.done ? "✅ " : "";
     const desc = [ev.course && `과목: ${ev.course}`, ev.organizer && `주최: ${ev.organizer}`, ev.url && `링크: ${ev.url}`]

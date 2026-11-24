@@ -1,7 +1,7 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import { buildICS, icsDateToKst, learnusEvents, parseICS } from "../src/ics.js";
-import { applyOp, decorate, EMPTY_STATE, feedItems, isIncluded } from "../src/logic.js";
+import { applyOp, decorate, EMPTY_STATE, feedItems, isIncluded, kstToday } from "../src/logic.js";
 
 const LEARNUS = [
   "BEGIN:VCALENDAR",
@@ -101,4 +101,26 @@ test("ICS 줄은 75바이트를 넘지 않는다", () => {
 test("날짜 변환", () => {
   assert.equal(icsDateToKst({ value: "20261231" }), "2026-12-31");
   assert.equal(icsDateToKst({ value: "20261231T150000Z" }), "2027-01-01T00:00");
+});
+
+test("90점 이상 대회는 정할 때까지 참여 결정 항목", () => {
+  const now = new Date("2026-11-24T03:00:00Z"); // KST 11/24 12:00
+  assert.equal(kstToday(now), "2026-11-24");
+  const ev = { id: "devevent-aaaa0001", category: "contest", title: "SVC Seoul AI 해커톤", ask: true, score: 90, deadline: "2026-11-29T23:59" };
+  let d = decorate([ev], EMPTY_STATE, now);
+  assert.equal(d[0].needs_decision, true);
+  const items = feedItems(d, now);
+  assert.equal(items.length, 1);
+  assert.equal(items[0].start, "2026-11-24");
+  assert.match(items[0].summary, /참여 결정.*D-5, 90점/);
+  // 참여하기로 하면 질문은 사라지고 마감 일정이 들어간다
+  let s = applyOp(EMPTY_STATE, { op: "select", id: ev.id }, now);
+  d = decorate([ev], s, now);
+  assert.equal(d[0].needs_decision, false);
+  assert.deepEqual(feedItems(d, now).map((i) => i.summary), ["[마감] SVC Seoul AI 해커톤"]);
+  // 안 하기로 해도 사라진다
+  s = applyOp(EMPTY_STATE, { op: "dismiss", id: ev.id, reason: "관심 없음" }, now);
+  assert.equal(decorate([ev], s, now)[0].needs_decision, false);
+  // 마감이 지나면 묻지 않는다
+  assert.equal(decorate([{ ...ev, deadline: "2026-11-20T23:59" }], EMPTY_STATE, now)[0].needs_decision, false);
 });

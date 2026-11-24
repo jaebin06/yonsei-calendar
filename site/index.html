@@ -100,6 +100,11 @@
   dialog input { width: 100%; }
   .toast { position: fixed; bottom: 18px; left: 50%; transform: translateX(-50%); background: var(--ink); color: var(--bg); padding: 8px 14px; border-radius: 8px; font-size: 13px; opacity: 0; transition: opacity .2s; pointer-events: none; z-index: 10; }
   .toast.show { opacity: 1; }
+  .ask { border: 2px solid var(--accent); background: linear-gradient(0deg, var(--card), var(--card)) padding-box; }
+  .ask .sec-head h2::before { content: "❓ "; }
+  .ask-card { display: grid; grid-template-columns: 58px 1fr; gap: 12px; padding: 12px 0; border-top: 1px solid var(--line); }
+  .ask-card:first-of-type { border-top: 0; padding-top: 2px; }
+  .badge { background: var(--accent); color: #fff; border-radius: 999px; font-size: 12px; padding: 1px 8px; margin-left: 6px; vertical-align: 2px; }
   .legend { display: flex; gap: 10px; flex-wrap: wrap; font-size: 12px; color: var(--muted); margin-top: 8px; }
 </style>
 </head>
@@ -117,6 +122,11 @@
     <span>읽기 전용이에요. 개인 서버에 연결하면 완료 체크, 내 일정 고르기, LearnUs 과제·영상 보기를 쓸 수 있어요.</span>
     <button class="primary" id="banner-connect">연결하기</button>
   </div>
+
+  <section class="ask" id="ask-section" hidden>
+    <div class="sec-head"><h2>참여할지 정해 주세요<span class="badge" id="ask-count"></span></h2><span class="muted">내 기준 점수가 높은 대회예요. 정할 때까지 구글 캘린더 오늘 칸에도 떠요</span></div>
+    <div id="ask-list"></div>
+  </section>
 
   <section>
     <div class="sec-head">
@@ -242,6 +252,8 @@ function applyState(state) {
     else if (e.id in sel) e.included = !!sel[e.id];
     else if (e.category === "learnus" && e.is_open) e.included = false;
     else e.included = e.status === "starred" || DEFAULT_IN.has(e.category);
+    const key = (e.deadline || e.event_start || "").slice(0, 10);
+    e.needs_decision = !!e.ask && !e.dismissed && !(e.id in sel) && !!key && key >= todayKey();
   }
 }
 
@@ -408,6 +420,7 @@ function renderList() {
           ${e.included ? `<span class="chip ok">내 일정${e.done ? " · 완료" : ""}</span>` : ""}
           ${e.dismissed ? `<span class="chip">${esc(e.dismissed)}</span>` : ""}
           ${isNew ? `<span class="chip new">NEW</span>` : ""}
+          ${e.needs_decision ? `<span class="chip new">❓ 참여 결정 필요</span>` : ""}
           ${(e.warnings || []).map((w) => `<span class="chip warn">${esc(w)}</span>`).join("")}
         </div>
         ${e.score_reasons?.length ? `<details><summary>점수 이유</summary>${e.score_reasons.map(esc).join(" · ")}</details>` : ""}
@@ -428,7 +441,29 @@ async function renderFeeds() {
   } catch (e) { $("#feeds").innerHTML = `<p class="muted">${esc(e.message)}</p>`; }
 }
 
-function renderAll() { renderHeader(); renderCalendar(); renderTodo(); renderList(); }
+function renderAsk() {
+  const items = DATA.events.filter((e) => e.needs_decision).sort((a, b) => keyDate(a).localeCompare(keyDate(b)));
+  $("#ask-section").hidden = !items.length;
+  $("#ask-count").textContent = items.length;
+  document.title = items.length ? `(${items.length}) 연세 통합 일정` : "연세 통합 일정";
+  const tk = todayKey(), dis = connected() ? "" : "disabled";
+  $("#ask-list").innerHTML = items.map((e) => {
+    const k = keyDate(e), days = daysBetween(tk, k);
+    return `<div class="ask-card">
+      <div class="dday"><b>${days === 0 ? "D-day" : "D-" + days}</b><span>${k.slice(5).replace("-", "/")} 마감</span></div>
+      <div>
+        <h3 style="font-size:15px;margin:0 0 3px"><a href="${esc(e.url)}" target="_blank" rel="noopener" style="color:inherit">${esc(e.title)}</a></h3>
+        <div class="meta">${esc(e.organizer || "주최 정보 없음")}${e.location ? " · " + esc(e.location) : ""} · <b>${e.score}점</b></div>
+        ${e.score_reasons?.length ? `<details><summary>왜 높은지</summary>${e.score_reasons.map(esc).join(" · ")}</details>` : ""}
+        <div class="actions">
+          <button class="primary" data-select="${e.id}" ${dis}>참여할래요</button>
+          <select data-dismiss="${e.id}" ${dis} aria-label="안 할래요"><option value="">안 할래요…</option><option>관심 없음</option><option>대상 아님</option><option>이미 지원함</option><option>기타</option></select>
+        </div>
+      </div></div>`;
+  }).join("");
+}
+
+function renderAll() { renderHeader(); renderAsk(); renderCalendar(); renderTodo(); renderList(); }
 
 // ---------- 이벤트 ----------
 document.addEventListener("click", (ev) => {

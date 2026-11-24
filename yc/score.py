@@ -94,11 +94,16 @@ def score_contest(ev: Event, cfg: dict, periods, today: date) -> Event:
 
     # ② 점수
     score = 0
-    core_title = _has_any(ev.title, kw["core"])
-    core_any = _has_any(text, kw["core"])
+    weak = kw.get("core_weak", [])
+    strong_title = _has_any(ev.title, kw["core"])
+    weak_title = _has_any(ev.title, weak)
+    core_title = strong_title or weak_title
+    core_any = _has_any(text, kw["core"] + weak)
     related = _has_any(text, kw["related"])
-    if core_title:
-        score += 40; reasons.append(f"제목에 '{core_title[0]}' +40")
+    if strong_title:
+        score += 40; reasons.append(f"제목에 '{strong_title[0]}' +40")
+    elif weak_title:
+        score += 30; reasons.append(f"제목에 '{weak_title[0]}' +30")
     elif core_any:
         score += 25; reasons.append(f"태그·주최에 '{core_any[0]}' +25")
     elif related:
@@ -117,6 +122,11 @@ def score_contest(ev: Event, cfg: dict, periods, today: date) -> Event:
 
     if ev.prize or _has_any(ev.title, ["상금", "시상", "채용", "장학"]):
         score += 10; reasons.append("상금·혜택 +10")
+
+    if not ev.location:
+        place = _has_any(ev.title, cfg.get("non_local_places", []))
+        if place:
+            score -= 15; reasons.append(f"제목에 '{place[0]}' → 지방 행사일 수 있음 -15")
 
     clash = _conflict(ev, periods)
     if clash:

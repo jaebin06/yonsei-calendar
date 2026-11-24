@@ -45,6 +45,7 @@ class Event(BaseModel):
     score_reasons: list[str] = Field(default_factory=list)
     status: Status = "maybe"
     warnings: list[str] = Field(default_factory=list)
+    ask: bool = False  # 점수가 높아서 참여 여부를 먼저 물어볼 대회
     first_seen: Optional[datetime] = None
 
     def key_date(self) -> Optional[date]:

@@ -124,6 +124,8 @@ def run(offline: bool = False, fixture: Path | None = None, out: Path | None = N
             clash = score._conflict(ev, periods)
             if clash:
                 ev.warnings.append(f"{clash} 기간과 겹침")
+        ev.ask = (ev.category == "contest" and ev.status != "hidden"
+                  and ev.score >= cfg.get("ask_threshold", 90))
         if ev.id in star:
             ev.status = "starred"
         if ev.id in hide:

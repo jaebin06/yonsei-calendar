@@ -118,3 +118,18 @@ def test_generic_idea_contest_not_auto_added():
                organizer="한국수목원정원관리원", tags=["기획/아이디어"], deadline=datetime(2026, 12, 1, 23, 59))
     score.score_contest(ev, CFG, EXAM, date(2026, 11, 21))
     assert ev.status == "maybe"
+
+
+def test_strong_vs_weak_keywords_and_regional_penalty():
+    seoul = Event(id="s", category="contest", title="서울 AI 해커톤", source="t", organizer="서울경제진흥원",
+                  deadline=datetime(2026, 12, 7, 23, 59), location="온라인")
+    score.score_contest(seoul, CFG, EXAM, date(2026, 11, 24))
+    assert seoul.score >= CFG["ask_threshold"]
+    farm = Event(id="f", category="contest", title="농촌창업 경진대회", source="t", organizer="농림축산식품부",
+                 deadline=datetime(2026, 12, 10, 23, 59))
+    score.score_contest(farm, CFG, EXAM, date(2026, 11, 24))
+    assert farm.score < CFG["ask_threshold"]  # '창업'은 약한 키워드
+    local = Event(id="l", category="contest", title="포항 MICE 창업 해커톤", source="wevity", organizer="포항시",
+                  deadline=datetime(2026, 11, 30, 23, 59))
+    score.score_contest(local, CFG, EXAM, date(2026, 11, 24))
+    assert any("포항" in r for r in local.score_reasons) and local.score < 80
