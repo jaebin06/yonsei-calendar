@@ -1,14 +1,14 @@
 {
- "generated_at": "2026-11-23T10:28+09:00",
+ "generated_at": "2026-11-24T13:10+09:00",
  "repo": "jaebin06/yonsei-calendar",
  "health": {
   "dev-event": {
    "ok": true,
-   "count": 81
+   "count": 87
   },
   "wevity": {
    "ok": true,
-   "count": 47
+   "count": 48
   },
   "yonsei-notice": {
    "ok": true,
@@ -19,9 +19,8 @@
    "count": 104
   },
   "dorm": {
-   "ok": false,
-   "count": 0,
-   "error": "ConnectError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1011)"
+   "ok": true,
+   "count": 2
   }
  },
  "events": [
@@ -221,607 +220,6 @@
    "first_seen": "2026-11-21T23:49:32.186546"
   },
   {
-   "id": "devevent-14ccdbe0",
-   "category": "event",
-   "title": "SHOWCASE26",
-   "source": "dev-event",
-   "url": "https://developeracademy.postech.ac.kr/showcase26",
-   "organizer": "Apple Developer Academy @ POSTECH",
-   "apply_start": null,
-   "deadline": null,
-   "event_start": "2026-11-20T13:30:00",
-   "event_end": "2026-11-20T17:30:00",
-   "tags": [
-    "오프라인(경북 포항)",
-    "무료",
-    "세미나",
-    "기술일반"
-   ],
-   "eligibility": "",
-   "location": "오프라인(경북 포항)",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 0,
-   "score_reasons": [
-    "제외: 마감 임박·지남"
-   ],
-   "status": "hidden",
-   "warnings": [],
-   "first_seen": "2026-11-21T22:41:22.809219"
-  },
-  {
-   "id": "devevent-5308aa73",
-   "category": "event",
-   "title": "클라우드 네이티브 커뮤니티 밋업 in 대구",
-   "source": "dev-event",
-   "url": "https://ticketa.co/event/o2k0l625",
-   "organizer": "CNCD (Cloud Native Daegu)",
-   "apply_start": "2026-11-05",
-   "deadline": "2026-11-20T13:00:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "오프라인(대구)",
-    "무료",
-    "모임",
-    "클라우드"
-   ],
-   "eligibility": "",
-   "location": "오프라인(대구)",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 0,
-   "score_reasons": [
-    "제외: 마감 임박·지남"
-   ],
-   "status": "hidden",
-   "warnings": [],
-   "first_seen": "2026-11-21T22:41:22.809219"
-  },
-  {
-   "id": "devevent-9898d567",
-   "category": "event",
-   "title": "AWSKRUG #container 🐳 K8s Service Account 기반 SSO 인증 및 GPU 컨테이너 활용 사례 (11/24)",
-   "source": "dev-event",
-   "url": "https://www.meetup.com/awskrug/events/317143207/",
-   "organizer": "AWSKRUG",
-   "apply_start": "2026-10-27",
-   "deadline": "2026-11-20T14:00:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "오프라인(서울 강남구)",
-    "유료",
-    "모임",
-    "클라우드"
-   ],
-   "eligibility": "",
-   "location": "오프라인(서울 강남구)",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 0,
-   "score_reasons": [
-    "제외: 마감 임박·지남"
-   ],
-   "status": "hidden",
-   "warnings": [],
-   "first_seen": "2026-11-21T22:41:22.809219"
-  },
-  {
-   "id": "devevent-b2963b6d",
-   "category": "event",
-   "title": "[에너자이 기술 세미나] AI on Edge #2",
-   "source": "dev-event",
-   "url": "https://event-us.kr/enerzai/event/138890",
-   "organizer": "에너자이 (ENERZAi)",
-   "apply_start": "2026-10-30",
-   "deadline": "2026-11-20T17:00:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "오프라인(서울 강남구)",
-    "무료",
-    "세미나",
-    "AI"
-   ],
-   "eligibility": "",
-   "location": "오프라인(서울 강남구)",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 0,
-   "score_reasons": [
-    "제외: 마감 임박·지남"
-   ],
-   "status": "hidden",
-   "warnings": [],
-   "first_seen": "2026-11-21T22:41:22.809219"
-  },
-  {
-   "id": "devevent-f205abf8",
-   "category": "contest",
-   "title": "2026 대구광역시 기후·환경·탄소중립 공공데이터 AI 활용대회",
-   "source": "dev-event",
-   "url": "https://www.dcnc.or.kr/bbs/board.php?bo_table=notice&wr_id=193",
-   "organizer": "대구광역시 탄소중립지원센터",
-   "apply_start": "2026-10-12",
-   "deadline": "2026-11-20T17:00:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "온라인",
-    "무료",
-    "대회",
-    "AI"
-   ],
-   "eligibility": "",
-   "location": "온라인",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 0,
-   "score_reasons": [
-    "제외: 마감 임박·지남"
-   ],
-   "status": "hidden",
-   "warnings": [],
-   "first_seen": "2026-11-21T22:41:22.809219"
-  },
-  {
-   "id": "devevent-e8323eee",
-   "category": "event",
-   "title": "2026 대구 블록체인 밋업데이 [4회차 보안 과정]",
-   "source": "dev-event",
-   "url": "https://event-us.kr/ConventionSOOP/event/138223",
-   "organizer": "과학기술정보통신부 / 한국인터넷진흥원(KISA) / 대구광역시",
-   "apply_start": "2026-10-21",
-   "deadline": "2026-11-20T18:00:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "오프라인(대구)",
-    "무료",
-    "세미나",
-    "블록체인"
-   ],
-   "eligibility": "",
-   "location": "오프라인(대구)",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 0,
-   "score_reasons": [
-    "제외: 마감 임박·지남"
-   ],
-   "status": "hidden",
-   "warnings": [],
-   "first_seen": "2026-11-21T22:41:22.809219"
-  },
-  {
-   "id": "devevent-0f4d7440",
-   "category": "event",
-   "title": "2026 블록체인 밋업데이 (32회차)",
-   "source": "dev-event",
-   "url": "https://event-us.kr/2026bcmd/event/129800",
-   "organizer": "과학기술정보통신부 / 한국인터넷진흥원(KISA)",
-   "apply_start": "2026-10-19",
-   "deadline": "2026-11-20T18:00:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "오프라인(서울 송파구)",
-    "무료",
-    "세미나",
-    "블록체인",
-    "AI"
-   ],
-   "eligibility": "",
-   "location": "오프라인(서울 송파구)",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 0,
-   "score_reasons": [
-    "제외: 마감 임박·지남"
-   ],
-   "status": "hidden",
-   "warnings": [],
-   "first_seen": "2026-11-21T22:41:22.809219"
-  },
-  {
-   "id": "devevent-10a1d092",
-   "category": "contest",
-   "title": "2026 성평등 AI 벤치마크 챌린지",
-   "source": "dev-event",
-   "url": "https://www.mogefdatacontest.co.kr/",
-   "organizer": "성평등가족부",
-   "apply_start": "2026-11-02",
-   "deadline": "2026-11-20T18:00:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "온라인",
-    "무료",
-    "대회",
-    "AI"
-   ],
-   "eligibility": "",
-   "location": "온라인",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 0,
-   "score_reasons": [
-    "제외: 마감 임박·지남"
-   ],
-   "status": "hidden",
-   "warnings": [],
-   "first_seen": "2026-11-21T22:41:22.809219"
-  },
-  {
-   "id": "devevent-f8527b75",
-   "category": "contest",
-   "title": "NAVER Connect Robotics Cup 2026 결승전 현장 관람",
-   "source": "dev-event",
-   "url": "https://form.naver.com/response/38PbnPPGCJT",
-   "organizer": "네이버 커넥트재단",
-   "apply_start": "2026-11-18",
-   "deadline": "2026-11-20T23:30:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "오프라인(경기 성남)",
-    "무료",
-    "대회",
-    "AI"
-   ],
-   "eligibility": "",
-   "location": "오프라인(경기 성남)",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 0,
-   "score_reasons": [
-    "제외: 마감 임박·지남"
-   ],
-   "status": "hidden",
-   "warnings": [],
-   "first_seen": "2026-11-21T22:41:22.809219"
-  },
-  {
-   "id": "devevent-ca118294",
-   "category": "contest",
-   "title": "2026 사회보장 데이터를 활용한 AI 혁신 아이디어 경진대회",
-   "source": "dev-event",
-   "url": "https://wma.co.kr/ax",
-   "organizer": "대구가톨릭대학교 · 한국사회보장정보원",
-   "apply_start": "2026-10-21",
-   "deadline": "2026-11-20T23:59:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "온라인",
-    "무료",
-    "대회",
-    "AI"
-   ],
-   "eligibility": "",
-   "location": "온라인",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 0,
-   "score_reasons": [
-    "제외: 마감 임박·지남"
-   ],
-   "status": "hidden",
-   "warnings": [],
-   "first_seen": "2026-11-21T22:41:22.809219"
-  },
-  {
-   "id": "devevent-249d78a1",
-   "category": "event",
-   "title": "AWSKRUG #Security 소모임 - 11월 24일(화)",
-   "source": "dev-event",
-   "url": "https://www.meetup.com/awskrug/events/317392910/",
-   "organizer": "AWSKRUG",
-   "apply_start": "2026-11-12",
-   "deadline": "2026-11-20T23:59:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "오프라인(서울 강남구)",
-    "유료",
-    "모임",
-    "클라우드"
-   ],
-   "eligibility": "",
-   "location": "오프라인(서울 강남구)",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 0,
-   "score_reasons": [
-    "제외: 마감 임박·지남"
-   ],
-   "status": "hidden",
-   "warnings": [],
-   "first_seen": "2026-11-21T22:41:22.809219"
-  },
-  {
-   "id": "devevent-014a51a8",
-   "category": "contest",
-   "title": "[2회차] 디노티시아 NIPA 오픈소스 해커톤",
-   "source": "dev-event",
-   "url": "https://luma.com/z8hzosog",
-   "organizer": "모두의연구소 커뮤니티 · 디노티시아",
-   "apply_start": null,
-   "deadline": null,
-   "event_start": "2026-11-21T13:00:00",
-   "event_end": "2026-11-21T18:00:00",
-   "tags": [
-    "오프라인(서울 강남구)",
-    "무료",
-    "대회",
-    "AI"
-   ],
-   "eligibility": "",
-   "location": "오프라인(서울 강남구)",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 0,
-   "score_reasons": [
-    "제외: 마감 임박·지남"
-   ],
-   "status": "hidden",
-   "warnings": [],
-   "first_seen": "2026-11-21T22:41:22.809219"
-  },
-  {
-   "id": "devevent-25129a78",
-   "category": "contest",
-   "title": "Notion AI Hackathon Seoul",
-   "source": "dev-event",
-   "url": "https://luma.com/vc6rmvaz",
-   "organizer": "Team.HUMAN (Notion Korea 지원)",
-   "apply_start": null,
-   "deadline": null,
-   "event_start": "2026-11-21T10:00:00",
-   "event_end": "2026-11-21T19:00:00",
-   "tags": [
-    "오프라인(서울 서초구)",
-    "무료",
-    "대회",
-    "AI"
-   ],
-   "eligibility": "",
-   "location": "오프라인(서울 서초구)",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 0,
-   "score_reasons": [
-    "제외: 마감 임박·지남"
-   ],
-   "status": "hidden",
-   "warnings": [],
-   "first_seen": "2026-11-21T22:41:22.809219"
-  },
-  {
-   "id": "devevent-bd75bd15",
-   "category": "event",
-   "title": "2026 SSAFYnity 커리어파티",
-   "source": "dev-event",
-   "url": "https://ssafynity.github.io/events/archive/2026-career-party/",
-   "organizer": "SSAFYnity (싸피니티)",
-   "apply_start": "2026-11-01",
-   "deadline": "2026-11-21T23:30:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "오프라인(서울 강남구)",
-    "유료",
-    "모임",
-    "기술일반"
-   ],
-   "eligibility": "",
-   "location": "오프라인(서울 강남구)",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 0,
-   "score_reasons": [
-    "제외: 마감 임박·지남"
-   ],
-   "status": "hidden",
-   "warnings": [],
-   "first_seen": "2026-11-21T22:41:22.809219"
-  },
-  {
-   "id": "devevent-04d6777f",
-   "category": "event",
-   "title": "시민기술 실험실 민주주의편 실험공유회",
-   "source": "dev-event",
-   "url": "https://event-us.kr/ka2rbGlwNKTD/event/140317",
-   "organizer": "빠띠",
-   "apply_start": "2026-11-16",
-   "deadline": "2026-11-21T23:30:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "오프라인(서울 성동구)",
-    "무료",
-    "모임",
-    "기술일반"
-   ],
-   "eligibility": "",
-   "location": "오프라인(서울 성동구)",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 0,
-   "score_reasons": [
-    "제외: 마감 임박·지남"
-   ],
-   "status": "hidden",
-   "warnings": [],
-   "first_seen": "2026-11-21T22:41:22.809219"
-  },
-  {
-   "id": "devevent-fcc43ee6",
-   "category": "event",
-   "title": "PyTorch;DeepDive!",
-   "source": "dev-event",
-   "url": "https://event-us.kr/pytorchkr/event/140260",
-   "organizer": "파이토치 한국 사용자 모임(PyTorchKR) · 래블업",
-   "apply_start": "2026-11-15",
-   "deadline": "2026-11-21T23:30:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "오프라인(서울 강남구)",
-    "무료",
-    "세미나",
-    "AI"
-   ],
-   "eligibility": "",
-   "location": "오프라인(서울 강남구)",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 0,
-   "score_reasons": [
-    "제외: 마감 임박·지남"
-   ],
-   "status": "hidden",
-   "warnings": [],
-   "first_seen": "2026-11-21T22:41:22.809219"
-  },
-  {
-   "id": "devevent-aba628ac",
-   "category": "event",
-   "title": "meet(Kotlin.DevRel): 퇴근길 Kotlin 소소밋업",
-   "source": "dev-event",
-   "url": "https://ticketa.co/event/sjlia1ex",
-   "organizer": "Kotlin User Groups Seoul",
-   "apply_start": "2026-11-04",
-   "deadline": "2026-11-22T23:59:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "오프라인(서울 서초구)",
-    "무료",
-    "모임",
-    "기술일반"
-   ],
-   "eligibility": "",
-   "location": "오프라인(서울 서초구)",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 0,
-   "score_reasons": [
-    "제외: 마감 임박·지남"
-   ],
-   "status": "hidden",
-   "warnings": [],
-   "first_seen": "2026-11-21T22:41:22.809219"
-  },
-  {
-   "id": "devevent-9b268d2c",
-   "category": "event",
-   "title": "[GDGoC Konkuk] Open Session 11/24",
-   "source": "dev-event",
-   "url": "https://ticketa.co/event/dtx8yph8",
-   "organizer": "GDGoC Konkuk (건국대학교 GDG on Campus)",
-   "apply_start": "2026-11-19",
-   "deadline": "2026-11-22T23:59:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "오프라인(서울 광진구)",
-    "무료",
-    "세미나",
-    "기술일반"
-   ],
-   "eligibility": "",
-   "location": "오프라인(서울 광진구)",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 0,
-   "score_reasons": [
-    "제외: 마감 임박·지남"
-   ],
-   "status": "hidden",
-   "warnings": [],
-   "first_seen": "2026-11-21T22:41:22.809219"
-  },
-  {
-   "id": "devevent-0d92e802",
-   "category": "event",
-   "title": "[GenAI Lab 핸즈온] 안전하고 경제적인 AI 운영 — LLM Gateway 직접 설치해보기",
-   "source": "dev-event",
-   "url": "https://home.nxavis.com/promotion/field/genailab26",
-   "organizer": "AWS · NDS",
-   "apply_start": null,
-   "deadline": null,
-   "event_start": "2026-11-23T14:00:00",
-   "event_end": "2026-11-23T17:00:00",
-   "tags": [
-    "오프라인(서울 강남구)",
-    "무료",
-    "세미나",
-    "AI"
-   ],
-   "eligibility": "",
-   "location": "오프라인(서울 강남구)",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 0,
-   "score_reasons": [
-    "제외: 마감 임박·지남"
-   ],
-   "status": "hidden",
-   "warnings": [],
-   "first_seen": "2026-11-21T22:41:22.809219"
-  },
-  {
-   "id": "devevent-d2e3a4c1",
-   "category": "event",
-   "title": "AWSKRUG #Data x AIEngineering 소모임 - 비전 파운데이션 모델 ZERO 개발 과정 공유 [11월 26일]",
-   "source": "dev-event",
-   "url": "https://www.meetup.com/awskrug/events/317406828/",
-   "organizer": "AWSKRUG",
-   "apply_start": "2026-11-13",
-   "deadline": "2026-11-23T09:00:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "오프라인(서울 강남구)",
-    "유료",
-    "모임",
-    "AI"
-   ],
-   "eligibility": "",
-   "location": "오프라인(서울 강남구)",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 0,
-   "score_reasons": [
-    "제외: 마감 임박·지남"
-   ],
-   "status": "hidden",
-   "warnings": [],
-   "first_seen": "2026-11-21T22:41:22.809219"
-  },
-  {
    "id": "devevent-24b86984",
    "category": "event",
    "title": "스크래퍼 개발자 모임 6회",
@@ -943,89 +341,6 @@
    "first_seen": "2026-11-21T22:41:22.809219"
   },
   {
-   "id": "linkareer-74aeb987",
-   "category": "internship",
-   "title": "[네이버] 2027 NAVER 동계 인턴십 : Business 트랙",
-   "source": "linkareer",
-   "url": "https://linkareer.com/activity/364518",
-   "organizer": "네이버",
-   "apply_start": null,
-   "deadline": "2026-11-23T23:59:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "체험형 인턴"
-   ],
-   "eligibility": "",
-   "location": "오프라인(경기)",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 0,
-   "score_reasons": [
-    "제외: 마감 임박·지남"
-   ],
-   "status": "hidden",
-   "warnings": [],
-   "first_seen": "2026-11-22T00:09:44.527946"
-  },
-  {
-   "id": "yonsei-notice-d9c15840",
-   "category": "event",
-   "title": "2026 연세노벨위크 문학 심포지엄",
-   "source": "yonsei-notice",
-   "url": "https://www.yonsei.ac.kr/bbs/sc/58/944597/artclView.do",
-   "organizer": "인문예술발전기획사업단",
-   "apply_start": null,
-   "deadline": null,
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "연세대 공지"
-   ],
-   "eligibility": "",
-   "location": "",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 0,
-   "score_reasons": [
-    "제외: 날짜 확인 필요"
-   ],
-   "status": "hidden",
-   "warnings": [],
-   "first_seen": "2026-11-21T23:49:32.186546"
-  },
-  {
-   "id": "yonsei-notice-bbfce028",
-   "category": "contest",
-   "title": "[교수학습혁신센터] 「AI 리터러시」 학습 경험 공모전 참여 안내",
-   "source": "yonsei-notice",
-   "url": "https://www.yonsei.ac.kr/bbs/sc/58/944596/artclView.do",
-   "organizer": "교수학습혁신센터",
-   "apply_start": null,
-   "deadline": null,
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "연세대 공지"
-   ],
-   "eligibility": "재학생",
-   "location": "",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 0,
-   "score_reasons": [
-    "제목에 'AI' 있음, 마감일을 못 찾음 → 원문 확인"
-   ],
-   "status": "maybe",
-   "warnings": [
-    "마감일 확인 필요"
-   ],
-   "first_seen": "2026-11-21T23:49:32.186546"
-  },
-  {
    "id": "devevent-e3b753b4",
    "category": "event",
    "title": "AI in class, AI at work (Dev Korea #20)",
@@ -1086,156 +401,21 @@
    "first_seen": "2026-11-21T22:41:22.809219"
   },
   {
-   "id": "linkareer-a86e25e7",
-   "category": "internship",
-   "title": "[동아오츠카] 칠서캠퍼스 엔지니어링팀 (전기) 인턴 채용",
-   "source": "linkareer",
-   "url": "https://linkareer.com/activity/365691",
-   "organizer": "동아오츠카",
-   "apply_start": null,
-   "deadline": "2026-11-24T23:59:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "전기/전자/반도체",
-    "채용연계형 인턴"
-   ],
-   "eligibility": "",
-   "location": "오프라인(경남), 오프라인(경상)",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 0,
-   "score_reasons": [
-    "제외: 마감 임박·지남"
-   ],
-   "status": "hidden",
-   "warnings": [],
-   "first_seen": "2026-11-22T00:09:44.527946"
-  },
-  {
-   "id": "wevity-08c3193b",
-   "category": "contest",
-   "title": "전남광주통합특별시의회 정책아이디어 공모전",
-   "source": "wevity",
-   "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=112270",
-   "organizer": "전남광주통합특별시의회사무처",
-   "apply_start": null,
-   "deadline": "2026-11-24T23:59:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "기획/아이디어"
-   ],
-   "eligibility": "",
-   "location": "",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 0,
-   "score_reasons": [
-    "제외: 마감 임박·지남"
-   ],
-   "status": "hidden",
-   "warnings": [],
-   "first_seen": "2026-11-21T23:49:32.186546"
-  },
-  {
-   "id": "wevity-6823428e",
-   "category": "contest",
-   "title": "[포천도시공사] 2026년 저출생·인구감소 대응 아이디어 공모전",
-   "source": "wevity",
-   "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=112217",
-   "organizer": "포천도시공사",
-   "apply_start": null,
-   "deadline": "2026-11-24T23:59:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "기획/아이디어"
-   ],
-   "eligibility": "",
-   "location": "",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 0,
-   "score_reasons": [
-    "제외: 마감 임박·지남"
-   ],
-   "status": "hidden",
-   "warnings": [],
-   "first_seen": "2026-11-21T23:49:32.186546"
-  },
-  {
-   "id": "wevity-90d77a0d",
-   "category": "contest",
-   "title": "[강원특별자치도] 2026년 톡톡 Idea 공모전",
-   "source": "wevity",
-   "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=112084",
-   "organizer": "강원특별자치도",
-   "apply_start": null,
-   "deadline": "2026-11-24T23:59:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "기획/아이디어"
-   ],
-   "eligibility": "",
-   "location": "",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 0,
-   "score_reasons": [
-    "제외: 마감 임박·지남"
-   ],
-   "status": "hidden",
-   "warnings": [],
-   "first_seen": "2026-11-21T23:49:32.186546"
-  },
-  {
-   "id": "wevity-11c9f3de",
-   "category": "contest",
-   "title": "제1회 홍제천 상상더하기 공모전",
-   "source": "wevity",
-   "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=112055",
-   "organizer": "서대문구청",
-   "apply_start": null,
-   "deadline": "2026-11-24T23:59:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "기획/아이디어"
-   ],
-   "eligibility": "",
-   "location": "",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 0,
-   "score_reasons": [
-    "제외: 마감 임박·지남"
-   ],
-   "status": "hidden",
-   "warnings": [],
-   "first_seen": "2026-11-21T23:49:32.186546"
-  },
-  {
-   "id": "devevent-22b77040",
+   "id": "devevent-03bf97d3",
    "category": "event",
-   "title": "잡코리아 프로덕트 컨퍼런스 | 흩어진 경계, 흔들리는 기준",
+   "title": "2026 AI-Powered V&V Tools — 슈어소프트테크 웨비나",
    "source": "dev-event",
-   "url": "https://www.jobkorea.co.kr/goodjob/Tip/View?News_No=22687",
-   "organizer": "잡코리아(웍스피어)",
-   "apply_start": "2026-11-05",
-   "deadline": "2026-11-25T23:59:00",
+   "url": "https://onoffmix.com/event/353238",
+   "organizer": "슈어소프트테크",
+   "apply_start": "2026-11-23",
+   "deadline": "2026-11-24T23:59:00",
    "event_start": null,
    "event_end": null,
    "tags": [
     "온라인",
     "무료",
     "세미나",
+    "기술일반",
     "AI"
    ],
    "eligibility": "",
@@ -1243,112 +423,129 @@
    "prize": "",
    "work_start": null,
    "work_end": null,
-   "score": 64,
+   "score": 0,
    "score_reasons": [
-    "제목에 '프로덕트' +40",
-    "세미나·모임 +6",
-    "기타 주최 +3",
-    "시험기간과 안 겹침 +15"
+    "제외: 마감 임박·지남"
    ],
-   "status": "maybe",
+   "status": "hidden",
    "warnings": [],
-   "first_seen": "2026-11-21T22:41:22.809219"
+   "first_seen": "2026-11-24T13:10:01.012860"
   },
   {
-   "id": "linkareer-6c6d88d5",
+   "id": "linkareer-77b5dc8f",
    "category": "internship",
-   "title": "[근로복지공단] [경기요양병원] 2026년도 하반기 청년(체험형)인턴 일반전형 채용 공고",
+   "title": "[SK증권] 체험형 Internship 시행",
    "source": "linkareer",
-   "url": "https://linkareer.com/activity/365828",
-   "organizer": "근로복지공단",
+   "url": "https://linkareer.com/activity/364878",
+   "organizer": "SK증권",
    "apply_start": null,
-   "deadline": "2026-11-25T17:30:00",
+   "deadline": "2026-11-24T17:00:00",
    "event_start": null,
    "event_end": null,
    "tags": [
-    "사무/문서관리",
-    "의료기사",
+    "영업관리/기획",
+    "재무/회계/세무",
+    "증권/투자/애널리스트",
     "체험형 인턴"
    ],
    "eligibility": "",
-   "location": "오프라인(경기)",
+   "location": "오프라인(서울)",
    "prize": "",
    "work_start": null,
    "work_end": null,
-   "score": 55,
+   "score": 0,
    "score_reasons": [
-    "기타 직무 +10",
-    "근무 기간 미상 +10",
-    "대기업·공공·대학 주최 +20",
-    "재학생 지원 가능(체험형) +15"
+    "제외: 마감 임박·지남"
    ],
-   "status": "maybe",
+   "status": "hidden",
    "warnings": [],
-   "first_seen": "2026-11-22T00:09:44.527946"
+   "first_seen": "2026-11-24T13:10:01.012860"
   },
   {
-   "id": "linkareer-ffac6391",
-   "category": "internship",
-   "title": "[네이버웹툰] 퍼포먼스 마케팅 크리에이티브 (체험형 인턴)",
-   "source": "linkareer",
-   "url": "https://linkareer.com/activity/365544",
-   "organizer": "네이버웹툰",
-   "apply_start": null,
-   "deadline": "2026-11-25T23:59:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "디지털/퍼포먼스마케팅",
-    "체험형 인턴"
-   ],
-   "eligibility": "",
-   "location": "오프라인(경기)",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 55,
-   "score_reasons": [
-    "기타 직무 +10",
-    "근무 기간 미상 +10",
-    "대기업·공공·대학 주최 +20",
-    "재학생 지원 가능(체험형) +15"
-   ],
-   "status": "maybe",
-   "warnings": [],
-   "first_seen": "2026-11-22T00:09:44.527946"
-  },
-  {
-   "id": "devevent-94cfa322",
+   "id": "yonsei-notice-d9c15840",
    "category": "event",
-   "title": "2027 ChatGPT 도입 전략 세미나",
-   "source": "dev-event",
-   "url": "https://event.imaginationgroup.co.kr/seminar/12/",
-   "organizer": "한국AI기술협회 · 상상력집단",
-   "apply_start": "2026-11-10",
-   "deadline": "2026-11-25T23:59:00",
+   "title": "2026 연세노벨위크 문학 심포지엄",
+   "source": "yonsei-notice",
+   "url": "https://www.yonsei.ac.kr/bbs/sc/58/944597/artclView.do",
+   "organizer": "인문예술발전기획사업단",
+   "apply_start": null,
+   "deadline": null,
    "event_start": null,
    "event_end": null,
    "tags": [
-    "오프라인(서울 서초구)",
+    "연세대 공지"
+   ],
+   "eligibility": "",
+   "location": "",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 0,
+   "score_reasons": [
+    "제외: 날짜 확인 필요"
+   ],
+   "status": "hidden",
+   "warnings": [],
+   "first_seen": "2026-11-21T23:49:32.186546"
+  },
+  {
+   "id": "yonsei-notice-bbfce028",
+   "category": "contest",
+   "title": "[교수학습혁신센터] 「AI 리터러시」 학습 경험 공모전 참여 안내",
+   "source": "yonsei-notice",
+   "url": "https://www.yonsei.ac.kr/bbs/sc/58/944596/artclView.do",
+   "organizer": "교수학습혁신센터",
+   "apply_start": null,
+   "deadline": null,
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "연세대 공지"
+   ],
+   "eligibility": "재학생",
+   "location": "",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 0,
+   "score_reasons": [
+    "제목에 'AI' 있음, 마감일을 못 찾음 → 원문 확인"
+   ],
+   "status": "maybe",
+   "warnings": [
+    "마감일 확인 필요"
+   ],
+   "first_seen": "2026-11-21T23:49:32.186546"
+  },
+  {
+   "id": "devevent-40c42b85",
+   "category": "event",
+   "title": "Builders Lounge 11월 모임: AI 개발 시대, 기획의 중요성",
+   "source": "dev-event",
+   "url": "https://luma.com/b4s042ch",
+   "organizer": "Builders Lounge",
+   "apply_start": null,
+   "deadline": null,
+   "event_start": "2026-11-25T13:00:00",
+   "event_end": "2026-11-25T15:00:00",
+   "tags": [
+    "온라인",
     "무료",
-    "세미나",
+    "모임",
     "AI"
    ],
    "eligibility": "",
-   "location": "오프라인(서울 서초구)",
+   "location": "온라인",
    "prize": "",
    "work_start": null,
    "work_end": null,
-   "score": 54,
+   "score": 0,
    "score_reasons": [
-    "태그·주최에 'AI' +25",
-    "세미나·모임 +6",
-    "협회·커뮤니티 주최 +8",
-    "시험기간과 안 겹침 +15"
+    "제외: 마감 임박·지남"
    ],
-   "status": "maybe",
+   "status": "hidden",
    "warnings": [],
-   "first_seen": "2026-11-21T22:41:22.809219"
+   "first_seen": "2026-11-24T13:10:01.012860"
   },
   {
    "id": "devevent-808ba208",
@@ -1373,106 +570,9 @@
    "prize": "",
    "work_start": null,
    "work_end": null,
-   "score": 49,
+   "score": 0,
    "score_reasons": [
-    "태그·주최에 'AI' +25",
-    "세미나·모임 +6",
-    "기타 주최 +3",
-    "시험기간과 안 겹침 +15"
-   ],
-   "status": "maybe",
-   "warnings": [],
-   "first_seen": "2026-11-21T22:41:22.809219"
-  },
-  {
-   "id": "linkareer-a1e7f6f7",
-   "category": "internship",
-   "title": "[하루7H근무/중식제공/본사] 신세계인터내셔날 이커머스 뷰티팀 AMD 채용",
-   "source": "linkareer",
-   "url": "https://linkareer.com/activity/365778",
-   "organizer": "주식회사유니에스",
-   "apply_start": null,
-   "deadline": "2026-11-25T23:59:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "MD/상품기획",
-    "기타"
-   ],
-   "eligibility": "",
-   "location": "오프라인(서울)",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 25,
-   "score_reasons": [
-    "기타 직무 +10",
-    "근무 기간 미상 +10",
-    "기타 주최 +5"
-   ],
-   "status": "hidden",
-   "warnings": [],
-   "first_seen": "2026-11-22T00:09:44.527946"
-  },
-  {
-   "id": "devevent-6937cd16",
-   "category": "event",
-   "title": ".NET Conf 2026 @Seoul",
-   "source": "dev-event",
-   "url": "https://ticketa.co/event/zry4rrhh",
-   "organizer": "Dot4",
-   "apply_start": "2026-10-27",
-   "deadline": "2026-11-25T23:00:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "오프라인(서울 종로구)",
-    "무료",
-    "세미나",
-    "기술일반"
-   ],
-   "eligibility": "",
-   "location": "오프라인(서울 종로구)",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 24,
-   "score_reasons": [
-    "세미나·모임 +6",
-    "기타 주최 +3",
-    "시험기간과 안 겹침 +15"
-   ],
-   "status": "hidden",
-   "warnings": [],
-   "first_seen": "2026-11-21T22:41:22.809219"
-  },
-  {
-   "id": "devevent-d3e533cd",
-   "category": "event",
-   "title": "제5회 코드포코리아 시빅테크 컨퍼런스 '다시' 시빅해킹",
-   "source": "dev-event",
-   "url": "https://ticketa.co/event/73aey7ic",
-   "organizer": "코드포코리아 · 하자센터 · 빠띠 · 전국미디어센터협의회",
-   "apply_start": "2026-11-09",
-   "deadline": "2026-11-25T23:30:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "오프라인(서울 영등포구)",
-    "무료",
-    "세미나",
-    "기술일반"
-   ],
-   "eligibility": "",
-   "location": "오프라인(서울 영등포구)",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 24,
-   "score_reasons": [
-    "세미나·모임 +6",
-    "기타 주최 +3",
-    "시험기간과 안 겹침 +15"
+    "제외: 마감 임박·지남"
    ],
    "status": "hidden",
    "warnings": [],
@@ -1502,11 +602,248 @@
    "work_end": null,
    "score": 0,
    "score_reasons": [
-    "제외: 허용 지역 아님"
+    "제외: 마감 임박·지남"
    ],
    "status": "hidden",
    "warnings": [],
    "first_seen": "2026-11-21T22:41:22.809219"
+  },
+  {
+   "id": "devevent-6937cd16",
+   "category": "event",
+   "title": ".NET Conf 2026 @Seoul",
+   "source": "dev-event",
+   "url": "https://ticketa.co/event/zry4rrhh",
+   "organizer": "Dot4",
+   "apply_start": "2026-10-27",
+   "deadline": "2026-11-25T23:00:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "오프라인(서울 종로구)",
+    "무료",
+    "세미나",
+    "기술일반"
+   ],
+   "eligibility": "",
+   "location": "오프라인(서울 종로구)",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 0,
+   "score_reasons": [
+    "제외: 마감 임박·지남"
+   ],
+   "status": "hidden",
+   "warnings": [],
+   "first_seen": "2026-11-21T22:41:22.809219"
+  },
+  {
+   "id": "devevent-d3e533cd",
+   "category": "event",
+   "title": "제5회 코드포코리아 시빅테크 컨퍼런스 '다시' 시빅해킹",
+   "source": "dev-event",
+   "url": "https://ticketa.co/event/73aey7ic",
+   "organizer": "코드포코리아 · 하자센터 · 빠띠 · 전국미디어센터협의회",
+   "apply_start": "2026-11-09",
+   "deadline": "2026-11-25T23:30:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "오프라인(서울 영등포구)",
+    "무료",
+    "세미나",
+    "기술일반"
+   ],
+   "eligibility": "",
+   "location": "오프라인(서울 영등포구)",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 0,
+   "score_reasons": [
+    "제외: 마감 임박·지남"
+   ],
+   "status": "hidden",
+   "warnings": [],
+   "first_seen": "2026-11-21T22:41:22.809219"
+  },
+  {
+   "id": "devevent-94cfa322",
+   "category": "event",
+   "title": "2027 ChatGPT 도입 전략 세미나",
+   "source": "dev-event",
+   "url": "https://event.imaginationgroup.co.kr/seminar/12/",
+   "organizer": "한국AI기술협회 · 상상력집단",
+   "apply_start": "2026-11-10",
+   "deadline": "2026-11-25T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "오프라인(서울 서초구)",
+    "무료",
+    "세미나",
+    "AI"
+   ],
+   "eligibility": "",
+   "location": "오프라인(서울 서초구)",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 0,
+   "score_reasons": [
+    "제외: 마감 임박·지남"
+   ],
+   "status": "hidden",
+   "warnings": [],
+   "first_seen": "2026-11-21T22:41:22.809219"
+  },
+  {
+   "id": "devevent-22b77040",
+   "category": "event",
+   "title": "잡코리아 프로덕트 컨퍼런스 | 흩어진 경계, 흔들리는 기준",
+   "source": "dev-event",
+   "url": "https://www.jobkorea.co.kr/goodjob/Tip/View?News_No=22687",
+   "organizer": "잡코리아(웍스피어)",
+   "apply_start": "2026-11-05",
+   "deadline": "2026-11-25T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "온라인",
+    "무료",
+    "세미나",
+    "AI"
+   ],
+   "eligibility": "",
+   "location": "온라인",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 0,
+   "score_reasons": [
+    "제외: 마감 임박·지남"
+   ],
+   "status": "hidden",
+   "warnings": [],
+   "first_seen": "2026-11-21T22:41:22.809219"
+  },
+  {
+   "id": "devevent-8b7f7f2a",
+   "category": "event",
+   "title": "2026 청강 CK GAME SUMMIT — AI와 게임 산업의 미래 생태계를 논하다",
+   "source": "dev-event",
+   "url": "https://ck-game-summit-2026.vercel.app/",
+   "organizer": "청강문화산업대학교 게임콘텐츠스쿨",
+   "apply_start": "2026-11-23",
+   "deadline": "2026-11-25T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "오프라인(경기 성남)",
+    "무료",
+    "세미나",
+    "AI"
+   ],
+   "eligibility": "",
+   "location": "오프라인(경기 성남)",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 0,
+   "score_reasons": [
+    "제외: 마감 임박·지남"
+   ],
+   "status": "hidden",
+   "warnings": [],
+   "first_seen": "2026-11-24T13:10:01.012860"
+  },
+  {
+   "id": "devevent-4c691926",
+   "category": "event",
+   "title": "[AI허브 안심존] Hands-On 데이터분석 : 미개방 데이터 체험",
+   "source": "dev-event",
+   "url": "https://onoffmix.com/event/353083",
+   "organizer": "과학기술정보통신부 · 한국지능정보사회진흥원(NIA) AI허브 안심존",
+   "apply_start": "2026-11-09",
+   "deadline": "2026-11-25T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "오프라인(경기 성남)",
+    "무료",
+    "세미나",
+    "AI"
+   ],
+   "eligibility": "",
+   "location": "오프라인(경기 성남)",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 0,
+   "score_reasons": [
+    "제외: 마감 임박·지남"
+   ],
+   "status": "hidden",
+   "warnings": [],
+   "first_seen": "2026-11-24T13:10:01.012860"
+  },
+  {
+   "id": "linkareer-6c6d88d5",
+   "category": "internship",
+   "title": "[근로복지공단] [경기요양병원] 2026년도 하반기 청년(체험형)인턴 일반전형 채용 공고",
+   "source": "linkareer",
+   "url": "https://linkareer.com/activity/365828",
+   "organizer": "근로복지공단",
+   "apply_start": null,
+   "deadline": "2026-11-25T17:30:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "사무/문서관리",
+    "의료기사",
+    "체험형 인턴"
+   ],
+   "eligibility": "",
+   "location": "오프라인(경기)",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 0,
+   "score_reasons": [
+    "제외: 마감 임박·지남"
+   ],
+   "status": "hidden",
+   "warnings": [],
+   "first_seen": "2026-11-22T00:09:44.527946"
+  },
+  {
+   "id": "linkareer-a1e7f6f7",
+   "category": "internship",
+   "title": "[하루7H근무/중식제공/본사] 신세계인터내셔날 이커머스 뷰티팀 AMD 채용",
+   "source": "linkareer",
+   "url": "https://linkareer.com/activity/365778",
+   "organizer": "주식회사유니에스",
+   "apply_start": null,
+   "deadline": "2026-11-25T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "MD/상품기획",
+    "기타"
+   ],
+   "eligibility": "",
+   "location": "오프라인(서울)",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 0,
+   "score_reasons": [
+    "제외: 마감 임박·지남"
+   ],
+   "status": "hidden",
+   "warnings": [],
+   "first_seen": "2026-11-22T00:09:44.527946"
   },
   {
    "id": "wevity-3a51e9f5",
@@ -1516,7 +853,7 @@
    "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=112316",
    "organizer": "포항시",
    "apply_start": null,
-   "deadline": "2026-11-26T23:59:00",
+   "deadline": "2026-11-25T23:59:00",
    "event_start": null,
    "event_end": null,
    "tags": [
@@ -1527,14 +864,65 @@
    "prize": "",
    "work_start": null,
    "work_end": null,
-   "score": 90,
+   "score": 0,
    "score_reasons": [
-    "제목에 'AI' +40",
-    "해커톤·개발 대회 +20",
-    "대기업·공공·대학 주최 +15",
-    "시험기간과 안 겹침 +15"
+    "제외: 마감 임박·지남"
    ],
-   "status": "recommended",
+   "status": "hidden",
+   "warnings": [],
+   "first_seen": "2026-11-21T23:49:32.186546"
+  },
+  {
+   "id": "wevity-810002bd",
+   "category": "contest",
+   "title": "2026년 제2회 구리시 정책제안 공모전",
+   "source": "wevity",
+   "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=112220",
+   "organizer": "구리시",
+   "apply_start": null,
+   "deadline": "2026-11-25T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "기획/아이디어"
+   ],
+   "eligibility": "",
+   "location": "",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 0,
+   "score_reasons": [
+    "제외: 마감 임박·지남"
+   ],
+   "status": "hidden",
+   "warnings": [],
+   "first_seen": "2026-11-21T23:49:32.186546"
+  },
+  {
+   "id": "wevity-57128b88",
+   "category": "contest",
+   "title": "국회 미래세대 미래의제 공모전",
+   "source": "wevity",
+   "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=112078",
+   "organizer": "국회미래연구원",
+   "apply_start": null,
+   "deadline": "2026-11-25T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "기획/아이디어"
+   ],
+   "eligibility": "",
+   "location": "",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 0,
+   "score_reasons": [
+    "제외: 마감 임박·지남"
+   ],
+   "status": "hidden",
    "warnings": [],
    "first_seen": "2026-11-21T23:49:32.186546"
   },
@@ -1604,12 +992,49 @@
    "first_seen": "2026-11-21T22:41:22.809219"
   },
   {
-   "id": "wevity-810002bd",
+   "id": "linkareer-fcb1e028",
+   "category": "internship",
+   "title": "[에어퍼스트] 2027년 동계 각 부문 인턴 채용공고",
+   "source": "linkareer",
+   "url": "https://linkareer.com/activity/364093",
+   "organizer": "에어퍼스트",
+   "apply_start": null,
+   "deadline": "2026-11-26T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "사업기획/신규사업",
+    "인사/채용/노무",
+    "사무/문서관리",
+    "AI/ML엔지니어",
+    "구매/자재관리",
+    "건축/인테리어설계",
+    "환경/플랜트",
+    "체험형 인턴"
+   ],
+   "eligibility": "",
+   "location": "오프라인(서울)",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 55,
+   "score_reasons": [
+    "AI·데이터 직무 +25",
+    "근무 기간 미상 +10",
+    "기타 주최 +5",
+    "재학생 지원 가능(체험형) +15"
+   ],
+   "status": "maybe",
+   "warnings": [],
+   "first_seen": "2026-11-24T13:10:01.012860"
+  },
+  {
+   "id": "wevity-d0029e83",
    "category": "contest",
-   "title": "2026년 제2회 구리시 정책제안 공모전",
+   "title": "2026년 수목원·정원분야 제도개선 아이디어 공모",
    "source": "wevity",
-   "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=112220",
-   "organizer": "구리시",
+   "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=112452",
+   "organizer": "산림청",
    "apply_start": null,
    "deadline": "2026-11-26T23:59:00",
    "event_start": null,
@@ -1622,8 +1047,9 @@
    "prize": "",
    "work_start": null,
    "work_end": null,
-   "score": 44,
+   "score": 54,
    "score_reasons": [
+    "주변 키워드 '아이디어' +10",
     "공모전 +14",
     "대기업·공공·대학 주최 +15",
     "시험기간과 안 겹침 +15"
@@ -1633,12 +1059,12 @@
    "first_seen": "2026-11-21T23:49:32.186546"
   },
   {
-   "id": "wevity-57128b88",
+   "id": "wevity-49bee37c",
    "category": "contest",
-   "title": "국회 미래세대 미래의제 공모전",
+   "title": "2026년 한국정책분석평가학회 대학생 정책아이디어공모전",
    "source": "wevity",
-   "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=112078",
-   "organizer": "국회미래연구원",
+   "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=111756",
+   "organizer": "한국정책분석평가학회",
    "apply_start": null,
    "deadline": "2026-11-26T23:59:00",
    "event_start": null,
@@ -1651,29 +1077,32 @@
    "prize": "",
    "work_start": null,
    "work_end": null,
-   "score": 32,
+   "score": 47,
    "score_reasons": [
+    "주변 키워드 '아이디어' +10",
     "공모전 +14",
-    "기타 주최 +3",
+    "협회·커뮤니티 주최 +8",
     "시험기간과 안 겹침 +15"
    ],
-   "status": "hidden",
+   "status": "maybe",
    "warnings": [],
-   "first_seen": "2026-11-21T23:49:32.186546"
+   "first_seen": "2026-11-24T13:10:01.012860"
   },
   {
-   "id": "linkareer-6dc263f6",
+   "id": "linkareer-0d97c095",
    "category": "internship",
-   "title": "[EY한영] 컨설팅부문 프로세스 혁신(PI) 프로젝트 인턴",
+   "title": "[EY한영] AI Center 인턴 (정규전환형)",
    "source": "linkareer",
-   "url": "https://linkareer.com/activity/365550",
+   "url": "https://linkareer.com/activity/366295",
    "organizer": "EY한영",
    "apply_start": null,
    "deadline": "2026-11-26T23:59:00",
    "event_start": null,
    "event_end": null,
    "tags": [
-    "시장조사/리서치",
+    "사무/문서관리",
+    "데이터분석",
+    "AI/ML엔지니어",
     "채용연계형 인턴"
    ],
    "eligibility": "",
@@ -1681,45 +1110,78 @@
    "prize": "",
    "work_start": null,
    "work_end": null,
-   "score": 25,
+   "score": 40,
    "score_reasons": [
-    "기타 직무 +10",
+    "AI·데이터 직무 +25",
     "근무 기간 미상 +10",
     "기타 주최 +5"
    ],
-   "status": "hidden",
+   "status": "maybe",
    "warnings": [],
-   "first_seen": "2026-11-22T00:09:44.527946"
+   "first_seen": "2026-11-24T13:10:01.012860"
   },
   {
-   "id": "linkareer-4ad80980",
+   "id": "linkareer-a4012f32",
    "category": "internship",
-   "title": "[EY한영] 금융감사부문 IT 시스템 및 규제 프로젝트 인턴",
+   "title": "[EY한영] 감사부문 감사지원팀 CoE ADC_Audit 인턴 채용",
    "source": "linkareer",
-   "url": "https://linkareer.com/activity/365469",
+   "url": "https://linkareer.com/activity/366213",
    "organizer": "EY한영",
    "apply_start": null,
-   "deadline": "2026-11-26T23:59:00",
+   "deadline": "2026-11-26T12:00:00",
    "event_start": null,
    "event_end": null,
    "tags": [
-    "시스템/ERP개발",
-    "채용연계형 인턴"
+    "재무/회계/세무",
+    "체험형 인턴"
    ],
    "eligibility": "",
    "location": "오프라인(서울)",
    "prize": "",
    "work_start": null,
    "work_end": null,
-   "score": 25,
+   "score": 40,
    "score_reasons": [
     "기타 직무 +10",
     "근무 기간 미상 +10",
-    "기타 주최 +5"
+    "기타 주최 +5",
+    "재학생 지원 가능(체험형) +15"
    ],
-   "status": "hidden",
+   "status": "maybe",
    "warnings": [],
-   "first_seen": "2026-11-22T00:09:44.527946"
+   "first_seen": "2026-11-24T13:10:01.012860"
+  },
+  {
+   "id": "linkareer-0374e288",
+   "category": "internship",
+   "title": "[EY한영] 품질위험관리부문(Risk Management) 독립성팀 인턴",
+   "source": "linkareer",
+   "url": "https://linkareer.com/activity/366210",
+   "organizer": "EY한영",
+   "apply_start": null,
+   "deadline": "2026-11-26T12:00:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "총무/법무/비서",
+    "사무/문서관리",
+    "체험형 인턴"
+   ],
+   "eligibility": "",
+   "location": "오프라인(서울)",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 40,
+   "score_reasons": [
+    "기타 직무 +10",
+    "근무 기간 미상 +10",
+    "기타 주최 +5",
+    "재학생 지원 가능(체험형) +15"
+   ],
+   "status": "maybe",
+   "warnings": [],
+   "first_seen": "2026-11-24T13:10:01.012860"
   },
   {
    "id": "devevent-90771b38",
@@ -1750,6 +1212,36 @@
    "status": "hidden",
    "warnings": [],
    "first_seen": "2026-11-21T22:41:22.809219"
+  },
+  {
+   "id": "wevity-4ac4b14f",
+   "category": "contest",
+   "title": "제2회 2026 대한민국 AI 창조공모대전",
+   "source": "wevity",
+   "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=111837",
+   "organizer": "한국창조미술협회",
+   "apply_start": null,
+   "deadline": "2026-11-27T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "웹/모바일/IT"
+   ],
+   "eligibility": "",
+   "location": "",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 77,
+   "score_reasons": [
+    "제목에 'AI' +40",
+    "공모전 +14",
+    "협회·커뮤니티 주최 +8",
+    "시험기간과 안 겹침 +15"
+   ],
+   "status": "recommended",
+   "warnings": [],
+   "first_seen": "2026-11-21T23:49:32.186546"
   },
   {
    "id": "devevent-38688b35",
@@ -1818,6 +1310,36 @@
    "first_seen": "2026-11-21T22:41:22.809219"
   },
   {
+   "id": "wevity-1ceaf8ee",
+   "category": "contest",
+   "title": "2026년 대국민 재정교육 아이디어 공모전",
+   "source": "wevity",
+   "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=112031",
+   "organizer": "기획예산처",
+   "apply_start": null,
+   "deadline": "2026-11-27T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "기획/아이디어"
+   ],
+   "eligibility": "",
+   "location": "",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 57,
+   "score_reasons": [
+    "태그·주최에 '기획' +25",
+    "공모전 +14",
+    "기타 주최 +3",
+    "시험기간과 안 겹침 +15"
+   ],
+   "status": "maybe",
+   "warnings": [],
+   "first_seen": "2026-11-21T23:49:32.186546"
+  },
+  {
    "id": "devevent-d1e4223e",
    "category": "event",
    "title": "GitHub Copilot 활용한 레거시 애플리케이션 현대화 핸즈온 워크샵",
@@ -1851,12 +1373,12 @@
    "first_seen": "2026-11-21T22:41:22.809219"
   },
   {
-   "id": "wevity-d0029e83",
+   "id": "wevity-5ba4d123",
    "category": "contest",
-   "title": "2026년 수목원·정원분야 제도개선 아이디어 공모",
+   "title": "2026년 ESG경영·경영혁신 시민 아이디어 공모전",
    "source": "wevity",
-   "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=112452",
-   "organizer": "산림청",
+   "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=112337",
+   "organizer": "화성도시공사",
    "apply_start": null,
    "deadline": "2026-11-27T23:59:00",
    "event_start": null,
@@ -1879,6 +1401,39 @@
    "status": "maybe",
    "warnings": [],
    "first_seen": "2026-11-21T23:49:32.186546"
+  },
+  {
+   "id": "devevent-5a80ef77",
+   "category": "event",
+   "title": "Codex Community Meetup: Seoul",
+   "source": "dev-event",
+   "url": "https://luma.com/ek6u1wis",
+   "organizer": "Codex Community Korea · Oracle Korea",
+   "apply_start": null,
+   "deadline": null,
+   "event_start": "2026-11-27T19:00:00",
+   "event_end": "2026-11-27T21:00:00",
+   "tags": [
+    "오프라인(서울 강남구)",
+    "무료",
+    "모임",
+    "AI"
+   ],
+   "eligibility": "",
+   "location": "오프라인(서울 강남구)",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 49,
+   "score_reasons": [
+    "태그·주최에 'AI' +25",
+    "세미나·모임 +6",
+    "기타 주최 +3",
+    "시험기간과 안 겹침 +15"
+   ],
+   "status": "maybe",
+   "warnings": [],
+   "first_seen": "2026-11-24T13:10:01.012860"
   },
   {
    "id": "devevent-73de3e7b",
@@ -1914,6 +1469,66 @@
    "first_seen": "2026-11-21T22:41:22.809219"
   },
   {
+   "id": "wevity-1f6811d0",
+   "category": "contest",
+   "title": "2026년 홍성군 제안 아이디어 공모전",
+   "source": "wevity",
+   "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=112469",
+   "organizer": "홍성군",
+   "apply_start": null,
+   "deadline": "2026-11-27T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "기획/아이디어"
+   ],
+   "eligibility": "",
+   "location": "",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 42,
+   "score_reasons": [
+    "주변 키워드 '아이디어' +10",
+    "공모전 +14",
+    "기타 주최 +3",
+    "시험기간과 안 겹침 +15"
+   ],
+   "status": "maybe",
+   "warnings": [],
+   "first_seen": "2026-11-24T13:10:01.012860"
+  },
+  {
+   "id": "wevity-34d3fe1a",
+   "category": "contest",
+   "title": "2026년 K-Petro 대국민 혁신 아이디어 공모전",
+   "source": "wevity",
+   "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=112194",
+   "organizer": "한국석유관리원",
+   "apply_start": null,
+   "deadline": "2026-11-27T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "기획/아이디어"
+   ],
+   "eligibility": "",
+   "location": "",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 42,
+   "score_reasons": [
+    "주변 키워드 '아이디어' +10",
+    "공모전 +14",
+    "기타 주최 +3",
+    "시험기간과 안 겹침 +15"
+   ],
+   "status": "maybe",
+   "warnings": [],
+   "first_seen": "2026-11-21T23:49:32.186546"
+  },
+  {
    "id": "linkareer-da8cdb12",
    "category": "internship",
    "title": "[한국베링거인겔하임동물약품] Poultry and VPH marketing Intern",
@@ -1944,35 +1559,94 @@
    "first_seen": "2026-11-22T00:09:44.527946"
   },
   {
-   "id": "linkareer-b778ef8c",
+   "id": "wevity-b5399e70",
+   "category": "contest",
+   "title": "2040 여수혁신제안 공모전",
+   "source": "wevity",
+   "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=112250",
+   "organizer": "지방행정발전연구원",
+   "apply_start": null,
+   "deadline": "2026-11-27T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "기획/아이디어"
+   ],
+   "eligibility": "",
+   "location": "",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 32,
+   "score_reasons": [
+    "공모전 +14",
+    "기타 주최 +3",
+    "시험기간과 안 겹침 +15"
+   ],
+   "status": "hidden",
+   "warnings": [],
+   "first_seen": "2026-11-21T23:49:32.186546"
+  },
+  {
+   "id": "wevity-173f569f",
+   "category": "contest",
+   "title": "2026년 경기도 사회연대경제 청년 일경험 시범사업 참여청년 모집",
+   "source": "wevity",
+   "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=112388",
+   "organizer": "경기도사회적경제원",
+   "apply_start": null,
+   "deadline": "2026-11-27T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "취업/창업"
+   ],
+   "eligibility": "",
+   "location": "",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 32,
+   "score_reasons": [
+    "공모전 +14",
+    "기타 주최 +3",
+    "시험기간과 안 겹침 +15"
+   ],
+   "status": "hidden",
+   "warnings": [],
+   "first_seen": "2026-11-21T23:49:32.186546"
+  },
+  {
+   "id": "linkareer-c5bc78ef",
    "category": "internship",
-   "title": "[싱클리] B2B 마케팅 인턴 채용",
+   "title": "[하루7H근무/중식제공/본사] 신세계인터내셔날 이커머스컨텐츠팀 업무보조 채용",
    "source": "linkareer",
-   "url": "https://linkareer.com/activity/365500",
-   "organizer": "주식회사 딥블루닷",
+   "url": "https://linkareer.com/activity/366222",
+   "organizer": "주식회사유니에스",
    "apply_start": null,
    "deadline": "2026-11-27T23:59:00",
    "event_start": null,
    "event_end": null,
    "tags": [
     "SNS/콘텐츠마케팅",
-    "체험형 인턴"
+    "영상촬영/편집",
+    "MD/상품기획",
+    "기타"
    ],
    "eligibility": "",
    "location": "오프라인(서울)",
    "prize": "",
    "work_start": null,
    "work_end": null,
-   "score": 40,
+   "score": 25,
    "score_reasons": [
     "기타 직무 +10",
     "근무 기간 미상 +10",
-    "기타 주최 +5",
-    "재학생 지원 가능(체험형) +15"
+    "기타 주최 +5"
    ],
-   "status": "maybe",
+   "status": "hidden",
    "warnings": [],
-   "first_seen": "2026-11-22T00:09:44.527946"
+   "first_seen": "2026-11-24T13:10:01.012860"
   },
   {
    "id": "devevent-383c52f1",
@@ -2007,29 +1681,29 @@
    "first_seen": "2026-11-21T22:41:22.809219"
   },
   {
-   "id": "wevity-4ac4b14f",
+   "id": "wevity-be0b84b5",
    "category": "contest",
-   "title": "제2회 2026 대한민국 AI 창조공모대전",
+   "title": "2027 지역 창업 솔버톤 - AI가 깨우는 지역의 불씨",
    "source": "wevity",
-   "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=111837",
-   "organizer": "한국창조미술협회",
+   "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=112402",
+   "organizer": "서울대학교 대학연대 지역인재양성사업단(IITD)",
    "apply_start": null,
    "deadline": "2026-11-28T23:59:00",
    "event_start": null,
    "event_end": null,
    "tags": [
-    "웹/모바일/IT"
+    "취업/창업"
    ],
    "eligibility": "",
    "location": "",
    "prize": "",
    "work_start": null,
    "work_end": null,
-   "score": 77,
+   "score": 84,
    "score_reasons": [
     "제목에 'AI' +40",
     "공모전 +14",
-    "협회·커뮤니티 주최 +8",
+    "대기업·공공·대학 주최 +15",
     "시험기간과 안 겹침 +15"
    ],
    "status": "recommended",
@@ -2104,154 +1778,6 @@
    "first_seen": "2026-11-21T22:41:22.809219"
   },
   {
-   "id": "wevity-1ceaf8ee",
-   "category": "contest",
-   "title": "2026년 대국민 재정교육 아이디어 공모전",
-   "source": "wevity",
-   "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=112031",
-   "organizer": "기획예산처",
-   "apply_start": null,
-   "deadline": "2026-11-28T23:59:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "기획/아이디어"
-   ],
-   "eligibility": "",
-   "location": "",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 57,
-   "score_reasons": [
-    "태그·주최에 '기획' +25",
-    "공모전 +14",
-    "기타 주최 +3",
-    "시험기간과 안 겹침 +15"
-   ],
-   "status": "maybe",
-   "warnings": [],
-   "first_seen": "2026-11-21T23:49:32.186546"
-  },
-  {
-   "id": "wevity-5ba4d123",
-   "category": "contest",
-   "title": "2026년 ESG경영·경영혁신 시민 아이디어 공모전",
-   "source": "wevity",
-   "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=112337",
-   "organizer": "화성도시공사",
-   "apply_start": null,
-   "deadline": "2026-11-28T23:59:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "기획/아이디어"
-   ],
-   "eligibility": "",
-   "location": "",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 54,
-   "score_reasons": [
-    "주변 키워드 '아이디어' +10",
-    "공모전 +14",
-    "대기업·공공·대학 주최 +15",
-    "시험기간과 안 겹침 +15"
-   ],
-   "status": "maybe",
-   "warnings": [],
-   "first_seen": "2026-11-21T23:49:32.186546"
-  },
-  {
-   "id": "wevity-34d3fe1a",
-   "category": "contest",
-   "title": "2026년 K-Petro 대국민 혁신 아이디어 공모전",
-   "source": "wevity",
-   "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=112194",
-   "organizer": "한국석유관리원",
-   "apply_start": null,
-   "deadline": "2026-11-28T23:59:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "기획/아이디어"
-   ],
-   "eligibility": "",
-   "location": "",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 42,
-   "score_reasons": [
-    "주변 키워드 '아이디어' +10",
-    "공모전 +14",
-    "기타 주최 +3",
-    "시험기간과 안 겹침 +15"
-   ],
-   "status": "maybe",
-   "warnings": [],
-   "first_seen": "2026-11-21T23:49:32.186546"
-  },
-  {
-   "id": "wevity-b5399e70",
-   "category": "contest",
-   "title": "2040 여수혁신제안 공모전",
-   "source": "wevity",
-   "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=112250",
-   "organizer": "지방행정발전연구원",
-   "apply_start": null,
-   "deadline": "2026-11-28T23:59:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "기획/아이디어"
-   ],
-   "eligibility": "",
-   "location": "",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 32,
-   "score_reasons": [
-    "공모전 +14",
-    "기타 주최 +3",
-    "시험기간과 안 겹침 +15"
-   ],
-   "status": "hidden",
-   "warnings": [],
-   "first_seen": "2026-11-21T23:49:32.186546"
-  },
-  {
-   "id": "wevity-173f569f",
-   "category": "contest",
-   "title": "2026년 경기도 사회연대경제 청년 일경험 시범사업 참여청년 모집",
-   "source": "wevity",
-   "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=112388",
-   "organizer": "경기도사회적경제원",
-   "apply_start": null,
-   "deadline": "2026-11-28T23:59:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "취업/창업"
-   ],
-   "eligibility": "",
-   "location": "",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 32,
-   "score_reasons": [
-    "공모전 +14",
-    "기타 주최 +3",
-    "시험기간과 안 겹침 +15"
-   ],
-   "status": "hidden",
-   "warnings": [],
-   "first_seen": "2026-11-21T23:49:32.186546"
-  },
-  {
    "id": "devevent-e8ebc84d",
    "category": "event",
    "title": "DevFest GDG Daejeon 2026",
@@ -2315,34 +1841,37 @@
    "first_seen": "2026-11-21T22:41:22.809219"
   },
   {
-   "id": "wevity-be0b84b5",
+   "id": "devevent-aabff015",
    "category": "contest",
-   "title": "2027 지역 창업 솔버톤 - AI가 깨우는 지역의 불씨",
-   "source": "wevity",
-   "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=112402",
-   "organizer": "서울대학교 대학연대 지역인재양성사업단(IITD)",
-   "apply_start": null,
+   "title": "Build with Qwen: AutoRAG Hackathon 2026",
+   "source": "dev-event",
+   "url": "https://luma.com/pcd9sjr8",
+   "organizer": "알리바바 클라우드 · Markr · 브레인크루",
+   "apply_start": "2026-11-23",
    "deadline": "2026-11-29T23:59:00",
    "event_start": null,
    "event_end": null,
    "tags": [
-    "취업/창업"
+    "오프라인(서울 강남구)",
+    "무료",
+    "대회",
+    "AI"
    ],
    "eligibility": "",
-   "location": "",
+   "location": "오프라인(서울 강남구)",
    "prize": "",
    "work_start": null,
    "work_end": null,
-   "score": 84,
+   "score": 78,
    "score_reasons": [
-    "제목에 'AI' +40",
-    "공모전 +14",
-    "대기업·공공·대학 주최 +15",
+    "제목에 'Hackathon' +40",
+    "해커톤·개발 대회 +20",
+    "기타 주최 +3",
     "시험기간과 안 겹침 +15"
    ],
    "status": "recommended",
    "warnings": [],
-   "first_seen": "2026-11-21T23:49:32.186546"
+   "first_seen": "2026-11-24T13:10:01.012860"
   },
   {
    "id": "devevent-412bbe94",
@@ -2376,38 +1905,6 @@
    "status": "maybe",
    "warnings": [],
    "first_seen": "2026-11-21T22:41:22.809219"
-  },
-  {
-   "id": "linkareer-a2f90177",
-   "category": "internship",
-   "title": "[네이버웹툰] IP 비즈니스 마케터 (체험형 인턴)",
-   "source": "linkareer",
-   "url": "https://linkareer.com/activity/365598",
-   "organizer": "네이버웹툰",
-   "apply_start": null,
-   "deadline": "2026-11-29T23:59:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "마케팅기획/전략",
-    "체험형 인턴"
-   ],
-   "eligibility": "",
-   "location": "오프라인(경기)",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 70,
-   "score_reasons": [
-    "AI·데이터 직무 +25",
-    "근무 기간 미상 +10",
-    "대기업·공공·대학 주최 +20",
-    "재학생 지원 가능(체험형) +15",
-    "제목에 PM·기획 직무 없음 → 검토"
-   ],
-   "status": "maybe",
-   "warnings": [],
-   "first_seen": "2026-11-22T00:09:44.527946"
   },
   {
    "id": "devevent-5cad5ccd",
@@ -2474,6 +1971,131 @@
    "first_seen": "2026-11-22T00:09:44.527946"
   },
   {
+   "id": "wevity-97b5fae1",
+   "category": "contest",
+   "title": "대전지역 대학생과 함께하는 시민체감 교통 아이디어 공모전",
+   "source": "wevity",
+   "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=112147",
+   "organizer": "대전교통공사",
+   "apply_start": null,
+   "deadline": "2026-11-29T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "기획/아이디어"
+   ],
+   "eligibility": "",
+   "location": "",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 54,
+   "score_reasons": [
+    "주변 키워드 '아이디어' +10",
+    "공모전 +14",
+    "대기업·공공·대학 주최 +15",
+    "시험기간과 안 겹침 +15"
+   ],
+   "status": "maybe",
+   "warnings": [],
+   "first_seen": "2026-11-21T23:49:32.186546"
+  },
+  {
+   "id": "devevent-fd9a27a7",
+   "category": "event",
+   "title": "PyLadies Asia Conference 2026",
+   "source": "dev-event",
+   "url": "https://pyladies.kr/ko",
+   "organizer": "PyLadies Seoul",
+   "apply_start": "2026-11-21",
+   "deadline": "2026-11-29T10:30:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "오프라인(서울 강남구)",
+    "유료",
+    "세미나",
+    "기술일반",
+    "AI"
+   ],
+   "eligibility": "",
+   "location": "오프라인(서울 강남구)",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 49,
+   "score_reasons": [
+    "태그·주최에 'AI' +25",
+    "세미나·모임 +6",
+    "기타 주최 +3",
+    "시험기간과 안 겹침 +15"
+   ],
+   "status": "maybe",
+   "warnings": [],
+   "first_seen": "2026-11-24T13:10:01.012860"
+  },
+  {
+   "id": "wevity-1952160e",
+   "category": "contest",
+   "title": "제6회 인천공항 여행 공모전 (내가 만드는 한국여행)",
+   "source": "wevity",
+   "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=111863",
+   "organizer": "인천국제공항공사",
+   "apply_start": null,
+   "deadline": "2026-11-29T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "기획/아이디어"
+   ],
+   "eligibility": "",
+   "location": "",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 44,
+   "score_reasons": [
+    "공모전 +14",
+    "대기업·공공·대학 주최 +15",
+    "시험기간과 안 겹침 +15"
+   ],
+   "status": "maybe",
+   "warnings": [],
+   "first_seen": "2026-11-23T10:28:12.861778"
+  },
+  {
+   "id": "linkareer-33a34091",
+   "category": "internship",
+   "title": "[모아저축은행] 2027년 상반기 채용연계형 인턴 공개 모집",
+   "source": "linkareer",
+   "url": "https://linkareer.com/activity/366468",
+   "organizer": "모아저축은행",
+   "apply_start": null,
+   "deadline": "2026-11-29T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "데이터분석",
+    "QA/기술지원",
+    "증권/투자/애널리스트",
+    "채용연계형 인턴"
+   ],
+   "eligibility": "",
+   "location": "오프라인(경기), 오프라인(인천)",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 40,
+   "score_reasons": [
+    "AI·데이터 직무 +25",
+    "근무 기간 미상 +10",
+    "기타 주최 +5"
+   ],
+   "status": "maybe",
+   "warnings": [],
+   "first_seen": "2026-11-24T13:10:01.012860"
+  },
+  {
    "id": "linkareer-ce016d94",
    "category": "internship",
    "title": "Software Engineer, Backend (인턴) - 서비스 운영 (운영개발)",
@@ -2531,68 +2153,6 @@
     "근무 기간 미상 +10",
     "기타 주최 +5",
     "재학생 지원 가능(체험형) +15"
-   ],
-   "status": "maybe",
-   "warnings": [],
-   "first_seen": "2026-11-22T00:09:44.527946"
-  },
-  {
-   "id": "linkareer-3ebce80e",
-   "category": "internship",
-   "title": "[DB하이텍] HR 체험형 인턴 모집",
-   "source": "linkareer",
-   "url": "https://linkareer.com/activity/365559",
-   "organizer": "DB하이텍",
-   "apply_start": null,
-   "deadline": "2026-11-29T23:59:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "인사/채용/노무",
-    "체험형 인턴"
-   ],
-   "eligibility": "",
-   "location": "오프라인(경기)",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 40,
-   "score_reasons": [
-    "기타 직무 +10",
-    "근무 기간 미상 +10",
-    "기타 주최 +5",
-    "재학생 지원 가능(체험형) +15"
-   ],
-   "status": "maybe",
-   "warnings": [],
-   "first_seen": "2026-11-22T00:09:44.527946"
-  },
-  {
-   "id": "linkareer-e4c2e488",
-   "category": "internship",
-   "title": "[EY한영] 금융감사부문 디지털 감사 & AI 리스크 분석 인턴",
-   "source": "linkareer",
-   "url": "https://linkareer.com/activity/365555",
-   "organizer": "EY한영",
-   "apply_start": null,
-   "deadline": "2026-11-29T23:59:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "데이터분석",
-    "AI/ML엔지니어",
-    "채용연계형 인턴"
-   ],
-   "eligibility": "",
-   "location": "오프라인(서울)",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 40,
-   "score_reasons": [
-    "AI·데이터 직무 +25",
-    "근무 기간 미상 +10",
-    "기타 주최 +5"
    ],
    "status": "maybe",
    "warnings": [],
@@ -2690,18 +2250,46 @@
    "first_seen": "2026-11-21T22:41:22.809219"
   },
   {
-   "id": "wevity-f6935283",
+   "id": "linkareer-cc21c12e",
+   "category": "internship",
+   "title": "[CJ푸드빌] 인사담당 사무보조 Staff 모집",
+   "source": "linkareer",
+   "url": "https://linkareer.com/activity/366286",
+   "organizer": "CJ푸드빌",
+   "apply_start": null,
+   "deadline": "2026-11-29T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "인사/채용/노무",
+    "체험형 인턴"
+   ],
+   "eligibility": "",
+   "location": "오프라인(서울)",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 0,
+   "score_reasons": [
+    "제외: 지원 자격 불일치"
+   ],
+   "status": "hidden",
+   "warnings": [],
+   "first_seen": "2026-11-24T13:10:01.012860"
+  },
+  {
+   "id": "wevity-ac388d92",
    "category": "contest",
-   "title": "일상 속 아이디어를 AI로 웹·앱 서비스로! INNO-CODER AI HACKATHON 참가팀 모집",
+   "title": "2026 대구 로컬AI그라운드 - 지역문제 해결형 AI활용 경진대회",
    "source": "wevity",
-   "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=112474",
-   "organizer": "(재)운당나눔재단, (재)울산창조경제혁신센터",
+   "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=112236",
+   "organizer": "대구광역시,대구창조경제혁신센터",
    "apply_start": null,
    "deadline": "2026-11-30T23:59:00",
    "event_start": null,
    "event_end": null,
    "tags": [
-    "게임/소프트웨어"
+    "웹/모바일/IT"
    ],
    "eligibility": "",
    "location": "",
@@ -2717,7 +2305,168 @@
    ],
    "status": "recommended",
    "warnings": [],
-   "first_seen": "2026-11-22T10:02:36.428531"
+   "first_seen": "2026-11-21T23:49:32.186546"
+  },
+  {
+   "id": "wevity-ec8dc97d",
+   "category": "contest",
+   "title": "2026 포항 MICE 창업 해커톤",
+   "source": "wevity",
+   "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=112475",
+   "organizer": "포항시",
+   "apply_start": null,
+   "deadline": "2026-11-30T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "취업/창업"
+   ],
+   "eligibility": "",
+   "location": "",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 90,
+   "score_reasons": [
+    "제목에 '해커톤' +40",
+    "해커톤·개발 대회 +20",
+    "대기업·공공·대학 주최 +15",
+    "시험기간과 안 겹침 +15"
+   ],
+   "status": "recommended",
+   "warnings": [],
+   "first_seen": "2026-11-21T23:49:32.186546"
+  },
+  {
+   "id": "wevity-dfe1e21a",
+   "category": "contest",
+   "title": "제1회 통합데이터플랫폼(원-윈도우) 활용 아이디어 공모전",
+   "source": "wevity",
+   "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=112449",
+   "organizer": "과학기술정보통신부",
+   "apply_start": null,
+   "deadline": "2026-11-30T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "기획/아이디어"
+   ],
+   "eligibility": "",
+   "location": "",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 84,
+   "score_reasons": [
+    "제목에 '데이터' +40",
+    "공모전 +14",
+    "대기업·공공·대학 주최 +15",
+    "시험기간과 안 겹침 +15"
+   ],
+   "status": "recommended",
+   "warnings": [],
+   "first_seen": "2026-11-21T23:49:32.186546"
+  },
+  {
+   "id": "devevent-ee7076c3",
+   "category": "contest",
+   "title": "ForwardThon 2026 — 기업의 숫자를 바꾸는 FDE 해커톤",
+   "source": "dev-event",
+   "url": "https://forwardthon.com/",
+   "organizer": "위시켓 · AIDP × 요즘IT",
+   "apply_start": "2026-10-22",
+   "deadline": "2026-11-30T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "오프라인(서울 광진구)",
+    "무료",
+    "대회",
+    "AI"
+   ],
+   "eligibility": "",
+   "location": "오프라인(서울 광진구)",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 78,
+   "score_reasons": [
+    "제목에 '해커톤' +40",
+    "해커톤·개발 대회 +20",
+    "기타 주최 +3",
+    "시험기간과 안 겹침 +15"
+   ],
+   "status": "recommended",
+   "warnings": [],
+   "first_seen": "2026-11-24T13:10:01.012860"
+  },
+  {
+   "id": "wevity-91b1d430",
+   "category": "contest",
+   "title": "[제3회] 매경 AI 광고 공모전 대한민국 AI 광고대상",
+   "source": "wevity",
+   "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=112073",
+   "organizer": "매경미디어",
+   "apply_start": null,
+   "deadline": "2026-11-30T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "기획/아이디어",
+    "광고/마케팅",
+    "영상/UCC/사진",
+    "웹/모바일/IT",
+    "예체능/미술/음악"
+   ],
+   "eligibility": "",
+   "location": "",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 72,
+   "score_reasons": [
+    "제목에 'AI' +40",
+    "공모전 +14",
+    "기타 주최 +3",
+    "시험기간과 안 겹침 +15"
+   ],
+   "status": "recommended",
+   "warnings": [],
+   "first_seen": "2026-11-21T23:49:32.186546"
+  },
+  {
+   "id": "linkareer-52b42be6",
+   "category": "internship",
+   "title": "[평택시국제교류재단] 2026년 제5회 직원 채용",
+   "source": "linkareer",
+   "url": "https://linkareer.com/activity/366443",
+   "organizer": "평택시국제교류재단",
+   "apply_start": null,
+   "deadline": "2026-11-30T18:00:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "경영기획/전략",
+    "사업기획/신규사업",
+    "사무/문서관리",
+    "체험형 인턴"
+   ],
+   "eligibility": "",
+   "location": "오프라인(경기)",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 70,
+   "score_reasons": [
+    "AI·데이터 직무 +25",
+    "근무 기간 미상 +10",
+    "대기업·공공·대학 주최 +20",
+    "재학생 지원 가능(체험형) +15",
+    "제목에 PM·기획 직무 없음 → 검토"
+   ],
+   "status": "maybe",
+   "warnings": [],
+   "first_seen": "2026-11-24T13:10:01.012860"
   },
   {
    "id": "devevent-2d386486",
@@ -2816,42 +2565,12 @@
    "first_seen": "2026-11-23T10:28:12.861778"
   },
   {
-   "id": "linkareer-7eda3c5f",
-   "category": "internship",
-   "title": "[인턴십] 컴플라이언스(체험형)",
-   "source": "linkareer",
-   "url": "https://linkareer.com/activity/365352",
-   "organizer": "주식회사 카카오페이증권",
-   "apply_start": null,
-   "deadline": "2026-11-30T23:59:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "체험형 인턴"
-   ],
-   "eligibility": "",
-   "location": "오프라인(서울)",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 55,
-   "score_reasons": [
-    "기타 직무 +10",
-    "근무 기간 미상 +10",
-    "대기업·공공·대학 주최 +20",
-    "재학생 지원 가능(체험형) +15"
-   ],
-   "status": "maybe",
-   "warnings": [],
-   "first_seen": "2026-11-22T00:09:44.527946"
-  },
-  {
-   "id": "wevity-97b5fae1",
+   "id": "wevity-df25f5ea",
    "category": "contest",
-   "title": "대전지역 대학생과 함께하는 시민체감 교통 아이디어 공모전",
+   "title": "2027년 울산광역시 중구 고향사랑기부제 고향사랑기금 사업 아이디어 공모",
    "source": "wevity",
-   "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=112147",
-   "organizer": "대전교통공사",
+   "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=112407",
+   "organizer": "울산광역시 중구",
    "apply_start": null,
    "deadline": "2026-11-30T23:59:00",
    "event_start": null,
@@ -2876,41 +2595,42 @@
    "first_seen": "2026-11-21T23:49:32.186546"
   },
   {
-   "id": "wevity-f4254a87",
+   "id": "wevity-15a594e9",
    "category": "contest",
-   "title": "2026 서울관광 프롬프톤",
+   "title": "부천도시공사 2026 ESG 아이디어 공모전",
    "source": "wevity",
-   "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=112294",
-   "organizer": "서울관광재단",
+   "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=112308",
+   "organizer": "부천도시공사",
    "apply_start": null,
    "deadline": "2026-11-30T23:59:00",
    "event_start": null,
    "event_end": null,
    "tags": [
-    "웹/모바일/IT"
+    "기획/아이디어"
    ],
    "eligibility": "",
    "location": "",
    "prize": "",
    "work_start": null,
    "work_end": null,
-   "score": 44,
+   "score": 54,
    "score_reasons": [
+    "주변 키워드 '아이디어' +10",
     "공모전 +14",
     "대기업·공공·대학 주최 +15",
     "시험기간과 안 겹침 +15"
    ],
    "status": "maybe",
    "warnings": [],
-   "first_seen": "2026-11-22T10:02:36.428531"
+   "first_seen": "2026-11-21T23:49:32.186546"
   },
   {
-   "id": "wevity-1952160e",
+   "id": "wevity-d4a872ab",
    "category": "contest",
-   "title": "제6회 인천공항 여행 공모전 (내가 만드는 한국여행)",
+   "title": "2026년 산림복지 국민제안 공모전",
    "source": "wevity",
-   "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=111863",
-   "organizer": "인천국제공항공사",
+   "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=112363",
+   "organizer": "한국산림복지진흥원",
    "apply_start": null,
    "deadline": "2026-11-30T23:59:00",
    "event_start": null,
@@ -2931,7 +2651,67 @@
    ],
    "status": "maybe",
    "warnings": [],
-   "first_seen": "2026-11-23T10:28:12.861778"
+   "first_seen": "2026-11-21T23:49:32.186546"
+  },
+  {
+   "id": "wevity-9a153929",
+   "category": "contest",
+   "title": "2026년 지속가능한 기본소득 추진을 위한 제안 아이디어 공모",
+   "source": "wevity",
+   "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=112326",
+   "organizer": "철원군",
+   "apply_start": null,
+   "deadline": "2026-11-30T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "기획/아이디어"
+   ],
+   "eligibility": "",
+   "location": "",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 42,
+   "score_reasons": [
+    "주변 키워드 '아이디어' +10",
+    "공모전 +14",
+    "기타 주최 +3",
+    "시험기간과 안 겹침 +15"
+   ],
+   "status": "maybe",
+   "warnings": [],
+   "first_seen": "2026-11-21T23:49:32.186546"
+  },
+  {
+   "id": "wevity-13aa683b",
+   "category": "contest",
+   "title": "제1회  하나증권 청년 금융 아이디어 공모전",
+   "source": "wevity",
+   "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=112195",
+   "organizer": "하나증권",
+   "apply_start": null,
+   "deadline": "2026-11-30T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "기획/아이디어"
+   ],
+   "eligibility": "",
+   "location": "",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 42,
+   "score_reasons": [
+    "주변 키워드 '아이디어' +10",
+    "공모전 +14",
+    "기타 주최 +3",
+    "시험기간과 안 겹침 +15"
+   ],
+   "status": "maybe",
+   "warnings": [],
+   "first_seen": "2026-11-21T23:49:32.186546"
   },
   {
    "id": "linkareer-7f6d3403",
@@ -2994,34 +2774,62 @@
    "first_seen": "2026-11-22T00:09:44.527946"
   },
   {
-   "id": "linkareer-f5c61e75",
-   "category": "internship",
-   "title": "[하루7H근무/중식제공/본사] 신세계인터내셔날 이커머스 입점팀 뷰티 AMD 채용",
-   "source": "linkareer",
-   "url": "https://linkareer.com/activity/366126",
-   "organizer": "주식회사유니에스",
+   "id": "wevity-d9b12084",
+   "category": "contest",
+   "title": "제2회 Nitto Open Innovation Challenge",
+   "source": "wevity",
+   "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=112082",
+   "organizer": "Nitto",
    "apply_start": null,
    "deadline": "2026-11-30T23:59:00",
    "event_start": null,
    "event_end": null,
    "tags": [
-    "MD/상품기획",
-    "기타"
+    "기획/아이디어"
    ],
    "eligibility": "",
-   "location": "오프라인(서울)",
+   "location": "",
    "prize": "",
    "work_start": null,
    "work_end": null,
-   "score": 25,
+   "score": 38,
    "score_reasons": [
-    "기타 직무 +10",
-    "근무 기간 미상 +10",
-    "기타 주최 +5"
+    "해커톤·개발 대회 +20",
+    "기타 주최 +3",
+    "시험기간과 안 겹침 +15"
+   ],
+   "status": "maybe",
+   "warnings": [],
+   "first_seen": "2026-11-21T23:49:32.186546"
+  },
+  {
+   "id": "wevity-d6e3d594",
+   "category": "contest",
+   "title": "제1회 한아전 게임 시나리오·그래픽 공모전",
+   "source": "wevity",
+   "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=110305",
+   "organizer": "한국IT전문학교",
+   "apply_start": null,
+   "deadline": "2026-11-30T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "게임/소프트웨어"
+   ],
+   "eligibility": "",
+   "location": "",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 32,
+   "score_reasons": [
+    "공모전 +14",
+    "기타 주최 +3",
+    "시험기간과 안 겹침 +15"
    ],
    "status": "hidden",
    "warnings": [],
-   "first_seen": "2026-11-23T10:28:12.861778"
+   "first_seen": "2026-11-21T23:49:32.186546"
   },
   {
    "id": "linkareer-549924a7",
@@ -3053,6 +2861,66 @@
    "status": "hidden",
    "warnings": [],
    "first_seen": "2026-11-22T00:09:44.527946"
+  },
+  {
+   "id": "linkareer-f6a27247",
+   "category": "internship",
+   "title": "[하루7H근무/중식제공/본사] 신세계인터내셔날 이커머스 입점팀 AMD 채용(패션 분야)",
+   "source": "linkareer",
+   "url": "https://linkareer.com/activity/366226",
+   "organizer": "주식회사유니에스",
+   "apply_start": null,
+   "deadline": "2026-11-30T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "MD/상품기획",
+    "기타"
+   ],
+   "eligibility": "",
+   "location": "오프라인(서울)",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 25,
+   "score_reasons": [
+    "기타 직무 +10",
+    "근무 기간 미상 +10",
+    "기타 주최 +5"
+   ],
+   "status": "hidden",
+   "warnings": [],
+   "first_seen": "2026-11-24T13:10:01.012860"
+  },
+  {
+   "id": "linkareer-f5c61e75",
+   "category": "internship",
+   "title": "[하루7H근무/중식제공/본사] 신세계인터내셔날 이커머스 입점팀 뷰티 AMD 채용",
+   "source": "linkareer",
+   "url": "https://linkareer.com/activity/366126",
+   "organizer": "주식회사유니에스",
+   "apply_start": null,
+   "deadline": "2026-11-30T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "MD/상품기획",
+    "기타"
+   ],
+   "eligibility": "",
+   "location": "오프라인(서울)",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 25,
+   "score_reasons": [
+    "기타 직무 +10",
+    "근무 기간 미상 +10",
+    "기타 주최 +5"
+   ],
+   "status": "hidden",
+   "warnings": [],
+   "first_seen": "2026-11-23T10:28:12.861778"
   },
   {
    "id": "devevent-e7e81be3",
@@ -3172,12 +3040,79 @@
    "first_seen": "2026-11-22T00:34:09.539795"
   },
   {
-   "id": "wevity-ac388d92",
+   "id": "devevent-26847d4f",
    "category": "contest",
-   "title": "2026 대구 로컬AI그라운드 - 지역문제 해결형 AI활용 경진대회",
+   "title": "[한국체육산업개발] 공공데이터 활용 경진대회",
+   "source": "dev-event",
+   "url": "https://www.ssgsag.kr/posters/29549",
+   "organizer": "한국체육산업개발(주)",
+   "apply_start": "2026-11-02",
+   "deadline": "2026-12-01T18:00:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "온라인",
+    "무료",
+    "대회",
+    "기술일반"
+   ],
+   "eligibility": "",
+   "location": "온라인",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 78,
+   "score_reasons": [
+    "제목에 '데이터' +40",
+    "해커톤·개발 대회 +20",
+    "기타 주최 +3",
+    "시험기간과 안 겹침 +15"
+   ],
+   "status": "recommended",
+   "warnings": [],
+   "first_seen": "2026-11-24T13:10:01.012860"
+  },
+  {
+   "id": "devevent-fc8e83cb",
+   "category": "contest",
+   "title": "오렌지파크 해커톤 | 아이디어를 MVP로, 첫 고객을 만나기",
+   "source": "dev-event",
+   "url": "https://www.orangepark.or.kr/articles/A8345675",
+   "organizer": "스마일게이트 오렌지플래닛",
+   "apply_start": "2026-11-17",
+   "deadline": "2026-12-01T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "오프라인(서울 강남구)",
+    "온라인",
+    "무료",
+    "대회",
+    "AI"
+   ],
+   "eligibility": "",
+   "location": "오프라인(서울 강남구), 온라인",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 78,
+   "score_reasons": [
+    "제목에 '해커톤' +40",
+    "해커톤·개발 대회 +20",
+    "기타 주최 +3",
+    "시험기간과 안 겹침 +15"
+   ],
+   "status": "recommended",
+   "warnings": [],
+   "first_seen": "2026-11-24T13:10:01.012860"
+  },
+  {
+   "id": "wevity-5d09d721",
+   "category": "contest",
+   "title": "[한국체육산업개발(주)] 공공데이터 활용 경진대회",
    "source": "wevity",
-   "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=112236",
-   "organizer": "대구광역시,대구창조경제혁신센터",
+   "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=112160",
+   "organizer": "한국체육산업개발(주)",
    "apply_start": null,
    "deadline": "2026-12-01T23:59:00",
    "event_start": null,
@@ -3190,104 +3125,10 @@
    "prize": "",
    "work_start": null,
    "work_end": null,
-   "score": 90,
-   "score_reasons": [
-    "제목에 'AI' +40",
-    "해커톤·개발 대회 +20",
-    "대기업·공공·대학 주최 +15",
-    "시험기간과 안 겹침 +15"
-   ],
-   "status": "recommended",
-   "warnings": [],
-   "first_seen": "2026-11-21T23:49:32.186546"
-  },
-  {
-   "id": "wevity-ec8dc97d",
-   "category": "contest",
-   "title": "2026 포항 MICE 창업 해커톤",
-   "source": "wevity",
-   "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=112475",
-   "organizer": "포항시",
-   "apply_start": null,
-   "deadline": "2026-12-01T23:59:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "취업/창업"
-   ],
-   "eligibility": "",
-   "location": "",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 90,
-   "score_reasons": [
-    "제목에 '해커톤' +40",
-    "해커톤·개발 대회 +20",
-    "대기업·공공·대학 주최 +15",
-    "시험기간과 안 겹침 +15"
-   ],
-   "status": "recommended",
-   "warnings": [],
-   "first_seen": "2026-11-21T23:49:32.186546"
-  },
-  {
-   "id": "wevity-dfe1e21a",
-   "category": "contest",
-   "title": "제1회 통합데이터플랫폼(원-윈도우) 활용 아이디어 공모전",
-   "source": "wevity",
-   "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=112449",
-   "organizer": "과학기술정보통신부",
-   "apply_start": null,
-   "deadline": "2026-12-01T23:59:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "기획/아이디어"
-   ],
-   "eligibility": "",
-   "location": "",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 84,
+   "score": 78,
    "score_reasons": [
     "제목에 '데이터' +40",
-    "공모전 +14",
-    "대기업·공공·대학 주최 +15",
-    "시험기간과 안 겹침 +15"
-   ],
-   "status": "recommended",
-   "warnings": [],
-   "first_seen": "2026-11-21T23:49:32.186546"
-  },
-  {
-   "id": "wevity-91b1d430",
-   "category": "contest",
-   "title": "[제3회] 매경 AI 광고 공모전 대한민국 AI 광고대상",
-   "source": "wevity",
-   "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=112073",
-   "organizer": "매경미디어",
-   "apply_start": null,
-   "deadline": "2026-12-01T23:59:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "기획/아이디어",
-    "광고/마케팅",
-    "영상/UCC/사진",
-    "웹/모바일/IT",
-    "예체능/미술/음악"
-   ],
-   "eligibility": "",
-   "location": "",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 72,
-   "score_reasons": [
-    "제목에 'AI' +40",
-    "공모전 +14",
+    "해커톤·개발 대회 +20",
     "기타 주최 +3",
     "시험기간과 안 겹침 +15"
    ],
@@ -3326,97 +3167,6 @@
    "first_seen": "2026-11-23T10:28:12.861778"
   },
   {
-   "id": "linkareer-e9dea298",
-   "category": "internship",
-   "title": "[카카오뱅크] 금융업무 기획 및 운영 담당자 (채용연계형 인턴)",
-   "source": "linkareer",
-   "url": "https://linkareer.com/activity/365399",
-   "organizer": "카카오뱅크",
-   "apply_start": null,
-   "deadline": "2026-12-01T23:59:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "사업기획/신규사업",
-    "서비스기획/운영",
-    "채용연계형 인턴"
-   ],
-   "eligibility": "",
-   "location": "오프라인(경기)",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 55,
-   "score_reasons": [
-    "AI·데이터 직무 +25",
-    "근무 기간 미상 +10",
-    "대기업·공공·대학 주최 +20"
-   ],
-   "status": "maybe",
-   "warnings": [],
-   "first_seen": "2026-11-22T00:09:44.527946"
-  },
-  {
-   "id": "wevity-df25f5ea",
-   "category": "contest",
-   "title": "2027년 울산광역시 중구 고향사랑기부제 고향사랑기금 사업 아이디어 공모",
-   "source": "wevity",
-   "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=112407",
-   "organizer": "울산광역시 중구",
-   "apply_start": null,
-   "deadline": "2026-12-01T23:59:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "기획/아이디어"
-   ],
-   "eligibility": "",
-   "location": "",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 54,
-   "score_reasons": [
-    "주변 키워드 '아이디어' +10",
-    "공모전 +14",
-    "대기업·공공·대학 주최 +15",
-    "시험기간과 안 겹침 +15"
-   ],
-   "status": "maybe",
-   "warnings": [],
-   "first_seen": "2026-11-21T23:49:32.186546"
-  },
-  {
-   "id": "wevity-15a594e9",
-   "category": "contest",
-   "title": "부천도시공사 2026 ESG 아이디어 공모전",
-   "source": "wevity",
-   "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=112308",
-   "organizer": "부천도시공사",
-   "apply_start": null,
-   "deadline": "2026-12-01T23:59:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "기획/아이디어"
-   ],
-   "eligibility": "",
-   "location": "",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 54,
-   "score_reasons": [
-    "주변 키워드 '아이디어' +10",
-    "공모전 +14",
-    "대기업·공공·대학 주최 +15",
-    "시험기간과 안 겹침 +15"
-   ],
-   "status": "maybe",
-   "warnings": [],
-   "first_seen": "2026-11-21T23:49:32.186546"
-  },
-  {
    "id": "devevent-2f1254ef",
    "category": "event",
    "title": "Devin Meetup Seoul",
@@ -3450,101 +3200,42 @@
    "first_seen": "2026-11-21T22:41:22.809219"
   },
   {
-   "id": "wevity-d4a872ab",
-   "category": "contest",
-   "title": "2026년 산림복지 국민제안 공모전",
-   "source": "wevity",
-   "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=112363",
-   "organizer": "한국산림복지진흥원",
-   "apply_start": null,
-   "deadline": "2026-12-01T23:59:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "기획/아이디어"
-   ],
-   "eligibility": "",
-   "location": "",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 44,
-   "score_reasons": [
-    "공모전 +14",
-    "대기업·공공·대학 주최 +15",
-    "시험기간과 안 겹침 +15"
-   ],
-   "status": "maybe",
-   "warnings": [],
-   "first_seen": "2026-11-21T23:49:32.186546"
-  },
-  {
-   "id": "wevity-9a153929",
-   "category": "contest",
-   "title": "2026년 지속가능한 기본소득 추진을 위한 제안 아이디어 공모",
-   "source": "wevity",
-   "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=112326",
-   "organizer": "철원군",
-   "apply_start": null,
-   "deadline": "2026-12-01T23:59:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "기획/아이디어"
-   ],
-   "eligibility": "",
-   "location": "",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 42,
-   "score_reasons": [
-    "주변 키워드 '아이디어' +10",
-    "공모전 +14",
-    "기타 주최 +3",
-    "시험기간과 안 겹침 +15"
-   ],
-   "status": "maybe",
-   "warnings": [],
-   "first_seen": "2026-11-21T23:49:32.186546"
-  },
-  {
-   "id": "wevity-13aa683b",
-   "category": "contest",
-   "title": "제1회  하나증권 청년 금융 아이디어 공모전",
-   "source": "wevity",
-   "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=112195",
-   "organizer": "하나증권",
-   "apply_start": null,
-   "deadline": "2026-12-01T23:59:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "기획/아이디어"
-   ],
-   "eligibility": "",
-   "location": "",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 42,
-   "score_reasons": [
-    "주변 키워드 '아이디어' +10",
-    "공모전 +14",
-    "기타 주최 +3",
-    "시험기간과 안 겹침 +15"
-   ],
-   "status": "maybe",
-   "warnings": [],
-   "first_seen": "2026-11-21T23:49:32.186546"
-  },
-  {
-   "id": "linkareer-7e4f91dc",
+   "id": "linkareer-73c6f4a6",
    "category": "internship",
-   "title": "[카카오뱅크] 고객서비스실 정규직 전환형 인턴",
+   "title": "[우체국우편집중국] 2027년 1분기 정기채용 공고[체험형 청년인턴(행정)]",
    "source": "linkareer",
-   "url": "https://linkareer.com/activity/365369",
-   "organizer": "카카오뱅크",
+   "url": "https://linkareer.com/activity/366517",
+   "organizer": "우체국물류지원단",
+   "apply_start": null,
+   "deadline": "2026-12-01T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "사무/문서관리",
+    "채용연계형 인턴"
+   ],
+   "eligibility": "",
+   "location": "오프라인(경기), 오프라인(서울), 오프라인(전남광주통합특별시)",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 25,
+   "score_reasons": [
+    "기타 직무 +10",
+    "근무 기간 미상 +10",
+    "기타 주최 +5"
+   ],
+   "status": "hidden",
+   "warnings": [],
+   "first_seen": "2026-11-24T13:10:01.012860"
+  },
+  {
+   "id": "linkareer-8ac6896b",
+   "category": "internship",
+   "title": "[우체국물류지원단] 2027년 1분기 정기채용 공고[채용형 청년인턴(행정)]",
+   "source": "linkareer",
+   "url": "https://linkareer.com/activity/366511",
+   "organizer": "우체국물류지원단",
    "apply_start": null,
    "deadline": "2026-12-01T23:59:00",
    "event_start": null,
@@ -3553,151 +3244,19 @@
     "채용연계형 인턴"
    ],
    "eligibility": "",
-   "location": "오프라인(경기)",
+   "location": "오프라인(서울)",
    "prize": "",
    "work_start": null,
    "work_end": null,
-   "score": 40,
+   "score": 25,
    "score_reasons": [
     "기타 직무 +10",
     "근무 기간 미상 +10",
-    "대기업·공공·대학 주최 +20"
-   ],
-   "status": "maybe",
-   "warnings": [],
-   "first_seen": "2026-11-22T00:09:44.527946"
-  },
-  {
-   "id": "wevity-d9b12084",
-   "category": "contest",
-   "title": "제2회 Nitto Open Innovation Challenge",
-   "source": "wevity",
-   "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=112082",
-   "organizer": "Nitto",
-   "apply_start": null,
-   "deadline": "2026-12-01T23:59:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "기획/아이디어"
-   ],
-   "eligibility": "",
-   "location": "",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 38,
-   "score_reasons": [
-    "해커톤·개발 대회 +20",
-    "기타 주최 +3",
-    "시험기간과 안 겹침 +15"
-   ],
-   "status": "maybe",
-   "warnings": [],
-   "first_seen": "2026-11-21T23:49:32.186546"
-  },
-  {
-   "id": "wevity-d6e3d594",
-   "category": "contest",
-   "title": "제1회 한아전 게임 시나리오·그래픽 공모전",
-   "source": "wevity",
-   "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=110305",
-   "organizer": "한국IT전문학교",
-   "apply_start": null,
-   "deadline": "2026-12-01T23:59:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "게임/소프트웨어"
-   ],
-   "eligibility": "",
-   "location": "",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 32,
-   "score_reasons": [
-    "공모전 +14",
-    "기타 주최 +3",
-    "시험기간과 안 겹침 +15"
+    "기타 주최 +5"
    ],
    "status": "hidden",
    "warnings": [],
-   "first_seen": "2026-11-21T23:49:32.186546"
-  },
-  {
-   "id": "wevity-5d09d721",
-   "category": "contest",
-   "title": "[한국체육산업개발(주)] 공공데이터 활용 경진대회",
-   "source": "wevity",
-   "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=112160",
-   "organizer": "한국체육산업개발(주)",
-   "apply_start": null,
-   "deadline": "2026-12-02T23:59:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "웹/모바일/IT"
-   ],
-   "eligibility": "",
-   "location": "",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 78,
-   "score_reasons": [
-    "제목에 '데이터' +40",
-    "해커톤·개발 대회 +20",
-    "기타 주최 +3",
-    "시험기간과 안 겹침 +15"
-   ],
-   "status": "recommended",
-   "warnings": [],
-   "first_seen": "2026-11-21T23:49:32.186546"
-  },
-  {
-   "id": "linkareer-c3ae7f1e",
-   "category": "internship",
-   "title": "[은행권청년창업재단] 2027년 상반기 디캠프 인턴 채용",
-   "source": "linkareer",
-   "url": "https://linkareer.com/activity/365446",
-   "organizer": "은행권청년창업재단 디캠프",
-   "apply_start": null,
-   "deadline": "2026-12-02T17:00:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "프론트엔드개발",
-    "백엔드/서버개발",
-    "iOS/Android앱개발",
-    "시스템/ERP개발",
-    "DevOps/클라우드/보안",
-    "데이터분석",
-    "IT기획/PM/PO",
-    "QA/기술지원",
-    "UI/UX디자인",
-    "해외영업",
-    "영상촬영/편집",
-    "광고제작/카피라이터",
-    "무역영업/해외영업",
-    "체험형 인턴"
-   ],
-   "eligibility": "",
-   "location": "오프라인(서울), 재택",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 70,
-   "score_reasons": [
-    "AI·데이터 직무 +25",
-    "근무 기간 미상 +10",
-    "대기업·공공·대학 주최 +20",
-    "재학생 지원 가능(체험형) +15",
-    "제목에 PM·기획 직무 없음 → 검토"
-   ],
-   "status": "maybe",
-   "warnings": [],
-   "first_seen": "2026-11-22T00:09:44.527946"
+   "first_seen": "2026-11-24T13:10:01.012860"
   },
   {
    "id": "devevent-f3af6402",
@@ -3798,6 +3357,38 @@
    "first_seen": "2026-11-21T22:41:22.809219"
   },
   {
+   "id": "linkareer-1dcda7b2",
+   "category": "internship",
+   "title": "인턴 에디터(기자) 모집",
+   "source": "linkareer",
+   "url": "https://linkareer.com/activity/366274",
+   "organizer": "라이트하우스인",
+   "apply_start": null,
+   "deadline": "2026-12-02T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "영상촬영/편집",
+    "광고제작/카피라이터",
+    "출판/편집",
+    "채용연계형 인턴"
+   ],
+   "eligibility": "",
+   "location": "오프라인(서울)",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 25,
+   "score_reasons": [
+    "기타 직무 +10",
+    "근무 기간 미상 +10",
+    "기타 주최 +5"
+   ],
+   "status": "hidden",
+   "warnings": [],
+   "first_seen": "2026-11-24T13:10:01.012860"
+  },
+  {
    "id": "devevent-75407325",
    "category": "event",
    "title": "사이드테이블 네트워킹",
@@ -3828,6 +3419,41 @@
    "status": "hidden",
    "warnings": [],
    "first_seen": "2026-11-21T22:41:22.809219"
+  },
+  {
+   "id": "devevent-a97649e9",
+   "category": "contest",
+   "title": "HSK Chain Horizon Hackathon · Seoul",
+   "source": "dev-event",
+   "url": "https://dorahacks.io/hackathon/hskchainseoul/detail",
+   "organizer": "해시키 체인(HashKey Chain) · Pentabase",
+   "apply_start": "2026-11-20",
+   "deadline": "2026-12-03T13:00:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "온라인",
+    "오프라인(서울 서초구)",
+    "무료",
+    "대회",
+    "블록체인",
+    "AI"
+   ],
+   "eligibility": "",
+   "location": "온라인, 오프라인(서울 서초구)",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 78,
+   "score_reasons": [
+    "제목에 'Hackathon' +40",
+    "해커톤·개발 대회 +20",
+    "기타 주최 +3",
+    "시험기간과 안 겹침 +15"
+   ],
+   "status": "recommended",
+   "warnings": [],
+   "first_seen": "2026-11-24T13:10:01.012860"
   },
   {
    "id": "devevent-23aec6a3",
@@ -3863,6 +3489,70 @@
    "first_seen": "2026-11-21T22:41:22.809219"
   },
   {
+   "id": "linkareer-7bf9a736",
+   "category": "internship",
+   "title": "경영지원 인턴 모집",
+   "source": "linkareer",
+   "url": "https://linkareer.com/activity/366507",
+   "organizer": "뉴로클",
+   "apply_start": null,
+   "deadline": "2026-12-03T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "경영기획/전략",
+    "서비스기획/운영",
+    "인사/채용/노무",
+    "총무/법무/비서",
+    "체험형 인턴"
+   ],
+   "eligibility": "",
+   "location": "오프라인(서울)",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 55,
+   "score_reasons": [
+    "AI·데이터 직무 +25",
+    "근무 기간 미상 +10",
+    "기타 주최 +5",
+    "재학생 지원 가능(체험형) +15"
+   ],
+   "status": "maybe",
+   "warnings": [],
+   "first_seen": "2026-11-24T13:10:01.012860"
+  },
+  {
+   "id": "wevity-a43e09a5",
+   "category": "contest",
+   "title": "한국어촌어항공단 2026년 FiPA 3S 아이디어 공모전",
+   "source": "wevity",
+   "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=112433",
+   "organizer": "한국어촌어항공단",
+   "apply_start": null,
+   "deadline": "2026-12-03T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "기획/아이디어"
+   ],
+   "eligibility": "",
+   "location": "",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 54,
+   "score_reasons": [
+    "주변 키워드 '아이디어' +10",
+    "공모전 +14",
+    "대기업·공공·대학 주최 +15",
+    "시험기간과 안 겹침 +15"
+   ],
+   "status": "maybe",
+   "warnings": [],
+   "first_seen": "2026-11-21T23:49:32.186546"
+  },
+  {
    "id": "devevent-b6d78717",
    "category": "event",
    "title": "Become a self-driving company + workshop",
@@ -3894,34 +3584,6 @@
    "status": "maybe",
    "warnings": [],
    "first_seen": "2026-11-21T22:41:22.809219"
-  },
-  {
-   "id": "linkareer-6c308ddf",
-   "category": "internship",
-   "title": "[영화진흥위원회] 2027년 상반기 청년 체험형 인턴(일반) 공개채용 공고",
-   "source": "linkareer",
-   "url": "https://linkareer.com/activity/365471",
-   "organizer": "영화진흥위원회",
-   "apply_start": null,
-   "deadline": "2026-12-03T23:59:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "사무/문서관리",
-    "체험형 인턴"
-   ],
-   "eligibility": "",
-   "location": "오프라인(부산)",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 0,
-   "score_reasons": [
-    "제외: 허용 지역 아님"
-   ],
-   "status": "hidden",
-   "warnings": [],
-   "first_seen": "2026-11-22T00:09:44.527946"
   },
   {
    "id": "devevent-92137943",
@@ -4021,12 +3683,12 @@
    "first_seen": "2026-11-22T00:09:44.527946"
   },
   {
-   "id": "wevity-a43e09a5",
+   "id": "wevity-cd6092b0",
    "category": "contest",
-   "title": "한국어촌어항공단 2026년 FiPA 3S 아이디어 공모전",
+   "title": "2026 힐링충남 관광 정책 아이디어 공모전",
    "source": "wevity",
-   "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=112433",
-   "organizer": "한국어촌어항공단",
+   "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=112387",
+   "organizer": "충청남도",
    "apply_start": null,
    "deadline": "2026-12-04T23:59:00",
    "event_start": null,
@@ -4116,19 +3778,19 @@
    "first_seen": "2026-11-21T22:41:22.809219"
   },
   {
-   "id": "linkareer-74d980d9",
+   "id": "linkareer-2a7fbde9",
    "category": "internship",
-   "title": "기존고객 계약관리팀 3기 인재모집",
+   "title": "[딜로이트 안진회계법인] 회계감사부문 ASSURANCE DELIVERY CENTER 그룹 인턴",
    "source": "linkareer",
-   "url": "https://linkareer.com/activity/365453",
-   "organizer": "(주)토탈현대",
+   "url": "https://linkareer.com/activity/366592",
+   "organizer": "Deloitte 안진회계법인",
    "apply_start": null,
-   "deadline": "2026-12-04T23:59:00",
+   "deadline": "2026-12-04T16:00:00",
    "event_start": null,
    "event_end": null,
    "tags": [
-    "보험심사/손해사정",
-    "기타"
+    "재무/회계/세무",
+    "체험형 인턴"
    ],
    "eligibility": "",
    "location": "오프라인(서울)",
@@ -4139,16 +3801,17 @@
    "score_reasons": [
     "기타 직무 +10",
     "근무 기간 미상 +10",
-    "대기업·공공·대학 주최 +20"
+    "기타 주최 +5",
+    "재학생 지원 가능(체험형) +15"
    ],
    "status": "maybe",
    "warnings": [],
-   "first_seen": "2026-11-22T00:09:44.527946"
+   "first_seen": "2026-11-24T13:10:01.012860"
   },
   {
    "id": "linkareer-41f41d4d",
    "category": "internship",
-   "title": "[-12/4] 이삼오구 RUN-UP 마케팅 인턴십",
+   "title": "[-12/4] 이삼오구 신입 마케터 대규모 채용 (채용연계형 인턴)",
    "source": "linkareer",
    "url": "https://linkareer.com/activity/366178",
    "organizer": "이삼오구",
@@ -4240,36 +3903,6 @@
    "first_seen": "2026-11-21T22:41:22.809219"
   },
   {
-   "id": "wevity-cd6092b0",
-   "category": "contest",
-   "title": "2026 힐링충남 관광 정책 아이디어 공모전",
-   "source": "wevity",
-   "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=112387",
-   "organizer": "충청남도",
-   "apply_start": null,
-   "deadline": "2026-12-05T23:59:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "기획/아이디어"
-   ],
-   "eligibility": "",
-   "location": "",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 54,
-   "score_reasons": [
-    "주변 키워드 '아이디어' +10",
-    "공모전 +14",
-    "대기업·공공·대학 주최 +15",
-    "시험기간과 안 겹침 +15"
-   ],
-   "status": "maybe",
-   "warnings": [],
-   "first_seen": "2026-11-21T23:49:32.186546"
-  },
-  {
    "id": "devevent-65a5a29d",
    "category": "event",
    "title": "AI와 함께 앱 출시부터 운영·수익화까지! 6주 만에 팀으로 완성하는 프로젝트 [스위프 앱 8기]",
@@ -4337,6 +3970,68 @@
    "first_seen": "2026-11-21T22:41:22.809219"
   },
   {
+   "id": "linkareer-a8809f7f",
+   "category": "internship",
+   "title": "[네이버웹툰] KR Webtoon 퍼포먼스 마케터 (체험형 인턴)",
+   "source": "linkareer",
+   "url": "https://linkareer.com/activity/366589",
+   "organizer": "네이버웹툰",
+   "apply_start": null,
+   "deadline": "2026-12-06T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "디지털/퍼포먼스마케팅",
+    "체험형 인턴"
+   ],
+   "eligibility": "",
+   "location": "오프라인(경기)",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 55,
+   "score_reasons": [
+    "기타 직무 +10",
+    "근무 기간 미상 +10",
+    "대기업·공공·대학 주최 +20",
+    "재학생 지원 가능(체험형) +15"
+   ],
+   "status": "maybe",
+   "warnings": [],
+   "first_seen": "2026-11-24T13:10:01.012860"
+  },
+  {
+   "id": "linkareer-eddcd48b",
+   "category": "internship",
+   "title": "[네이버웹툰] KR Webtoon 콘텐츠 마케터 (체험형 인턴)",
+   "source": "linkareer",
+   "url": "https://linkareer.com/activity/366512",
+   "organizer": "네이버웹툰",
+   "apply_start": null,
+   "deadline": "2026-12-06T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "SNS/콘텐츠마케팅",
+    "체험형 인턴"
+   ],
+   "eligibility": "",
+   "location": "오프라인(경기)",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 55,
+   "score_reasons": [
+    "기타 직무 +10",
+    "근무 기간 미상 +10",
+    "대기업·공공·대학 주최 +20",
+    "재학생 지원 가능(체험형) +15"
+   ],
+   "status": "maybe",
+   "warnings": [],
+   "first_seen": "2026-11-24T13:10:01.012860"
+  },
+  {
    "id": "linkareer-ec4addeb",
    "category": "internship",
    "title": "[동아시아재단] 2027년 상반기 인턴 채용",
@@ -4368,6 +4063,103 @@
    "first_seen": "2026-11-22T00:09:44.527946"
   },
   {
+   "id": "devevent-cdb80d8a",
+   "category": "event",
+   "title": "DevFest Seoul 2026",
+   "source": "dev-event",
+   "url": "https://event-us.kr/gdgseoul/event/140782",
+   "organizer": "GDG Seoul",
+   "apply_start": "2026-11-22",
+   "deadline": "2026-12-06T12:00:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "오프라인(서울 강남구)",
+    "유료",
+    "세미나",
+    "AI"
+   ],
+   "eligibility": "",
+   "location": "오프라인(서울 강남구)",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 54,
+   "score_reasons": [
+    "태그·주최에 'AI' +25",
+    "세미나·모임 +6",
+    "협회·커뮤니티 주최 +8",
+    "시험기간과 안 겹침 +15"
+   ],
+   "status": "maybe",
+   "warnings": [],
+   "first_seen": "2026-11-24T13:10:01.012860"
+  },
+  {
+   "id": "wevity-fe6cca33",
+   "category": "contest",
+   "title": "2027 Sunny Scholar 6기 모집 - Deep Dive into Social Problems",
+   "source": "wevity",
+   "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=112374",
+   "organizer": "SK행복나눔재단",
+   "apply_start": null,
+   "deadline": "2026-12-06T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "기획/아이디어",
+    "광고/마케팅",
+    "예체능/미술/음악",
+    "대외활동/서포터즈",
+    "봉사활동"
+   ],
+   "eligibility": "",
+   "location": "",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 44,
+   "score_reasons": [
+    "공모전 +14",
+    "대기업·공공·대학 주최 +15",
+    "시험기간과 안 겹침 +15"
+   ],
+   "status": "maybe",
+   "warnings": [],
+   "first_seen": "2026-11-21T23:49:32.186546"
+  },
+  {
+   "id": "linkareer-77632473",
+   "category": "internship",
+   "title": "[골든듀] 온라인영업(인턴)",
+   "source": "linkareer",
+   "url": "https://linkareer.com/activity/366523",
+   "organizer": "골든듀",
+   "apply_start": null,
+   "deadline": "2026-12-06T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "영업관리/기획",
+    "체험형 인턴"
+   ],
+   "eligibility": "",
+   "location": "오프라인(서울)",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 40,
+   "score_reasons": [
+    "기타 직무 +10",
+    "근무 기간 미상 +10",
+    "기타 주최 +5",
+    "재학생 지원 가능(체험형) +15"
+   ],
+   "status": "maybe",
+   "warnings": [],
+   "first_seen": "2026-11-24T13:10:01.012860"
+  },
+  {
    "id": "linkareer-78fe71a2",
    "category": "internship",
    "title": "[OK금융그룹] 2026 AI Native 채용형 인턴 공개모집",
@@ -4397,22 +4189,24 @@
    "first_seen": "2026-11-23T10:28:12.861778"
   },
   {
-   "id": "linkareer-98163bb5",
+   "id": "linkareer-40870231",
    "category": "internship",
-   "title": "[주식회사 당근마켓] Software Engineer, Backend (채용전환형) - 커뮤니티",
+   "title": "[BGF로지스] 26년 12월 경영지원본부 수시채용",
    "source": "linkareer",
-   "url": "https://linkareer.com/activity/365384",
-   "organizer": "당근마켓",
+   "url": "https://linkareer.com/activity/366433",
+   "organizer": "BGF로지스",
    "apply_start": null,
    "deadline": "2026-12-06T23:59:00",
    "event_start": null,
    "event_end": null,
    "tags": [
-    "백엔드/서버개발",
+    "총무/법무/비서",
+    "재무/IR",
+    "전기/소방/설비",
     "채용연계형 인턴"
    ],
    "eligibility": "",
-   "location": "오프라인(서울)",
+   "location": "오프라인(경기)",
    "prize": "",
    "work_start": null,
    "work_end": null,
@@ -4424,67 +4218,70 @@
    ],
    "status": "hidden",
    "warnings": [],
-   "first_seen": "2026-11-22T00:09:44.527946"
+   "first_seen": "2026-11-24T13:10:01.012860"
   },
   {
-   "id": "linkareer-02144dba",
+   "id": "linkareer-a6fc3ec1",
    "category": "internship",
-   "title": "[주식회사 당근마켓] Software Engineer, Backend (채용전환형) - 나의당근",
+   "title": "[엘앤에프] 생산기술원(설비개발) 신입/경력사원 채용",
    "source": "linkareer",
-   "url": "https://linkareer.com/activity/365378",
-   "organizer": "당근마켓",
+   "url": "https://linkareer.com/activity/366567",
+   "organizer": "엘앤에프",
    "apply_start": null,
    "deadline": "2026-12-06T23:59:00",
    "event_start": null,
    "event_end": null,
    "tags": [
-    "백엔드/서버개발",
+    "생산/공정관리",
+    "기계설계/CAD",
     "채용연계형 인턴"
    ],
    "eligibility": "",
-   "location": "오프라인(서울)",
+   "location": "오프라인(대구)",
    "prize": "",
    "work_start": null,
    "work_end": null,
-   "score": 25,
+   "score": 0,
    "score_reasons": [
-    "기타 직무 +10",
-    "근무 기간 미상 +10",
-    "기타 주최 +5"
+    "제외: 허용 지역 아님"
    ],
    "status": "hidden",
    "warnings": [],
-   "first_seen": "2026-11-22T00:09:44.527946"
+   "first_seen": "2026-11-24T13:10:01.012860"
   },
   {
-   "id": "linkareer-c7f7f111",
-   "category": "internship",
-   "title": "[주식회사 당근마켓] Software Engineer, Backend (채용전환형) - 피드 인프라",
-   "source": "linkareer",
-   "url": "https://linkareer.com/activity/365376",
-   "organizer": "주식회사 당근마켓",
-   "apply_start": null,
-   "deadline": "2026-12-06T23:59:00",
+   "id": "devevent-94e5e44b",
+   "category": "contest",
+   "title": "2026 서울 야간경제 활성화 해커톤 (Dopamine Seoul 24)",
+   "source": "dev-event",
+   "url": "https://aifactory.space/ko/competitions/9320",
+   "organizer": "서울특별시 · 서울창업허브 · 서울경제진흥원(SBA)",
+   "apply_start": "2026-11-18",
+   "deadline": "2026-12-07T23:59:00",
    "event_start": null,
    "event_end": null,
    "tags": [
-    "백엔드/서버개발",
-    "채용연계형 인턴"
+    "온라인",
+    "오프라인(서울 성동구)",
+    "무료",
+    "대회",
+    "기술일반"
    ],
    "eligibility": "",
-   "location": "오프라인(서울)",
+   "location": "온라인, 오프라인(서울 성동구)",
    "prize": "",
    "work_start": null,
    "work_end": null,
-   "score": 25,
+   "score": 90,
    "score_reasons": [
-    "기타 직무 +10",
-    "근무 기간 미상 +10",
-    "기타 주최 +5"
+    "제목에 '해커톤' +40",
+    "해커톤·개발 대회 +20",
+    "대기업·공공·대학 주최 +15",
+    "시험기간과 안 겹침 +15"
    ],
-   "status": "hidden",
+   "status": "recommended",
    "warnings": [],
-   "first_seen": "2026-11-22T00:09:44.527946"
+   "first_seen": "2026-11-24T13:10:01.012860"
   },
   {
    "id": "linkareer-31f1569d",
@@ -4583,56 +4380,67 @@
    "first_seen": "2026-11-21T22:41:22.809219"
   },
   {
-   "id": "wevity-fe6cca33",
-   "category": "contest",
-   "title": "2027 Sunny Scholar 6기 모집 - Deep Dive into Social Problems",
-   "source": "wevity",
-   "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=112374",
-   "organizer": "SK행복나눔재단",
+   "id": "linkareer-0441ab1f",
+   "category": "internship",
+   "title": "(인턴) CEO STAFF 인턴",
+   "source": "linkareer",
+   "url": "https://linkareer.com/activity/366186",
+   "organizer": "RXC",
    "apply_start": null,
-   "deadline": "2026-12-07T23:59:00",
+   "deadline": "2026-12-07T10:00:00",
    "event_start": null,
    "event_end": null,
    "tags": [
-    "기획/아이디어",
-    "광고/마케팅",
-    "예체능/미술/음악",
-    "대외활동/서포터즈",
-    "봉사활동"
+    "경영기획/전략",
+    "사업기획/신규사업",
+    "서비스기획/운영",
+    "재무/IR",
+    "경영분석/컨설팅",
+    "사무/문서관리",
+    "마케팅기획/전략",
+    "브랜드마케팅",
+    "디지털/퍼포먼스마케팅",
+    "SNS/콘텐츠마케팅",
+    "광고기획/AE",
+    "B2B영업",
+    "영업관리/기획",
+    "체험형 인턴"
    ],
    "eligibility": "",
-   "location": "",
+   "location": "오프라인(서울)",
    "prize": "",
    "work_start": null,
    "work_end": null,
-   "score": 44,
+   "score": 55,
    "score_reasons": [
-    "공모전 +14",
-    "대기업·공공·대학 주최 +15",
-    "시험기간과 안 겹침 +15"
+    "AI·데이터 직무 +25",
+    "근무 기간 미상 +10",
+    "기타 주최 +5",
+    "재학생 지원 가능(체험형) +15"
    ],
    "status": "maybe",
    "warnings": [],
-   "first_seen": "2026-11-21T23:49:32.186546"
+   "first_seen": "2026-11-24T13:10:01.012860"
   },
   {
-   "id": "linkareer-7ccb7793",
-   "category": "internship",
-   "title": "[SK가스] 2027년 상반기 SK가스 기술엔지니어(설비기술) 채용연계형 인턴 모집",
-   "source": "linkareer",
-   "url": "https://linkareer.com/activity/365379",
-   "organizer": "SK가스",
-   "apply_start": null,
+   "id": "devevent-a78fac2b",
+   "category": "contest",
+   "title": "2026 강원 AI 창업아이디어 경진대회",
+   "source": "dev-event",
+   "url": "https://sangji-ai-startup-2026.workspace-700806.chatgpt.site/",
+   "organizer": "상지대학교 앵커사업단 · 상상력집단",
+   "apply_start": "2026-11-23",
    "deadline": "2026-12-07T23:59:00",
    "event_start": null,
    "event_end": null,
    "tags": [
-    "생산직/조립/가공",
-    "화학/에너지/환경",
-    "채용연계형 인턴"
+    "오프라인(강원 원주)",
+    "무료",
+    "대회",
+    "AI"
    ],
    "eligibility": "",
-   "location": "오프라인(울산)",
+   "location": "오프라인(강원 원주)",
    "prize": "",
    "work_start": null,
    "work_end": null,
@@ -4642,7 +4450,34 @@
    ],
    "status": "hidden",
    "warnings": [],
-   "first_seen": "2026-11-22T00:09:44.527946"
+   "first_seen": "2026-11-24T13:10:01.012860"
+  },
+  {
+   "id": "linkareer-84d121ce",
+   "category": "internship",
+   "title": "[부산/코스닥 상장사] 광고 마케터 모집 (채용연계형)",
+   "source": "linkareer",
+   "url": "https://linkareer.com/activity/366609",
+   "organizer": "드림인사이트",
+   "apply_start": null,
+   "deadline": "2026-12-07T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "채용연계형 인턴"
+   ],
+   "eligibility": "",
+   "location": "오프라인(부산)",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 0,
+   "score_reasons": [
+    "제외: 허용 지역 아님"
+   ],
+   "status": "hidden",
+   "warnings": [],
+   "first_seen": "2026-11-24T13:10:01.012860"
   },
   {
    "id": "wevity-90e351a2",
@@ -4652,7 +4487,7 @@
    "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=112329",
    "organizer": "제천시",
    "apply_start": null,
-   "deadline": "2026-12-08T23:59:00",
+   "deadline": "2026-12-07T23:59:00",
    "event_start": null,
    "event_end": null,
    "tags": [
@@ -4670,6 +4505,36 @@
    "status": "hidden",
    "warnings": [],
    "first_seen": "2026-11-21T23:49:32.186546"
+  },
+  {
+   "id": "linkareer-bc680606",
+   "category": "internship",
+   "title": "[중앙일보] 데일리 콘텐트전략팀 콘텐트 기획 및 제작 인턴 채용",
+   "source": "linkareer",
+   "url": "https://linkareer.com/activity/366528",
+   "organizer": "중앙일보",
+   "apply_start": null,
+   "deadline": "2026-12-08T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "체험형 인턴"
+   ],
+   "eligibility": "",
+   "location": "오프라인(서울)",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 55,
+   "score_reasons": [
+    "AI·데이터 직무 +25",
+    "근무 기간 미상 +10",
+    "기타 주최 +5",
+    "재학생 지원 가능(체험형) +15"
+   ],
+   "status": "maybe",
+   "warnings": [],
+   "first_seen": "2026-11-24T13:10:01.012860"
   },
   {
    "id": "devevent-fcde5923",
@@ -4705,6 +4570,199 @@
    "first_seen": "2026-11-21T22:41:22.809219"
   },
   {
+   "id": "devevent-db9a25f1",
+   "category": "event",
+   "title": "n8n Meetup Seoul · Year-End Meetup 2026",
+   "source": "dev-event",
+   "url": "https://luma.com/n8n-seoul-yearend-2026",
+   "organizer": "데이터팝콘 · n8n 서울 앰배서더",
+   "apply_start": "2026-11-23",
+   "deadline": "2026-12-09T23:30:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "오프라인(서울 강남구)",
+    "무료",
+    "모임",
+    "AI"
+   ],
+   "eligibility": "",
+   "location": "오프라인(서울 강남구)",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 49,
+   "score_reasons": [
+    "태그·주최에 'AI' +25",
+    "세미나·모임 +6",
+    "기타 주최 +3",
+    "시험기간과 안 겹침 +15"
+   ],
+   "status": "maybe",
+   "warnings": [],
+   "first_seen": "2026-11-24T13:10:01.012860"
+  },
+  {
+   "id": "devevent-306de7d3",
+   "category": "event",
+   "title": "제41회 IT 인프라 & 네트워크 전문가 따라잡기 'N.EX.T' 정기 기술 세미나",
+   "source": "dev-event",
+   "url": "https://onoffmix.com/event/353459",
+   "organizer": "IT 인프라 & 네트워크 전문가 따라잡기 커뮤니티",
+   "apply_start": "2026-11-23",
+   "deadline": "2026-12-09T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "오프라인(서울 강남구)",
+    "유료",
+    "세미나",
+    "기술일반",
+    "클라우드"
+   ],
+   "eligibility": "",
+   "location": "오프라인(서울 강남구)",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 39,
+   "score_reasons": [
+    "주변 키워드 '클라우드' +10",
+    "세미나·모임 +6",
+    "협회·커뮤니티 주최 +8",
+    "시험기간과 안 겹침 +15"
+   ],
+   "status": "maybe",
+   "warnings": [],
+   "first_seen": "2026-11-24T13:10:01.012860"
+  },
+  {
+   "id": "devevent-92a0b5ba",
+   "category": "event",
+   "title": "2027년도 Apple 디벨로퍼 아카데미 6기 일반 전형 모집",
+   "source": "dev-event",
+   "url": "https://developeracademy.postech.ac.kr/apply",
+   "organizer": "Apple Developer Academy @ POSTECH",
+   "apply_start": "2027-05-14",
+   "deadline": "2026-12-09T13:00:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "오프라인(포항)",
+    "무료",
+    "교육",
+    "기술일반"
+   ],
+   "eligibility": "",
+   "location": "오프라인(포항)",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 0,
+   "score_reasons": [
+    "제외: 허용 지역 아님"
+   ],
+   "status": "hidden",
+   "warnings": [],
+   "first_seen": "2026-11-24T13:10:01.012860"
+  },
+  {
+   "id": "wevity-f5f021ea",
+   "category": "contest",
+   "title": "2027 농촌창업 경진대회",
+   "source": "wevity",
+   "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=112472",
+   "organizer": "농림축산식품부",
+   "apply_start": null,
+   "deadline": "2026-12-10T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "취업/창업"
+   ],
+   "eligibility": "",
+   "location": "",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 90,
+   "score_reasons": [
+    "제목에 '창업' +40",
+    "해커톤·개발 대회 +20",
+    "대기업·공공·대학 주최 +15",
+    "시험기간과 안 겹침 +15"
+   ],
+   "status": "recommended",
+   "warnings": [],
+   "first_seen": "2026-11-24T13:10:01.012860"
+  },
+  {
+   "id": "devevent-7657d477",
+   "category": "event",
+   "title": "AX Failure Con — 기업 AI 전환의 실패와 교훈",
+   "source": "dev-event",
+   "url": "https://day1ax.com/ax-failure-con/",
+   "organizer": "DAY1 AX (데이원컴퍼니)",
+   "apply_start": null,
+   "deadline": null,
+   "event_start": "2026-12-10T16:00:00",
+   "event_end": "2026-12-10T18:30:00",
+   "tags": [
+    "오프라인(서울 강남구)",
+    "무료",
+    "세미나",
+    "AI"
+   ],
+   "eligibility": "",
+   "location": "오프라인(서울 강남구)",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 64,
+   "score_reasons": [
+    "제목에 'AI' +40",
+    "세미나·모임 +6",
+    "기타 주최 +3",
+    "시험기간과 안 겹침 +15"
+   ],
+   "status": "maybe",
+   "warnings": [],
+   "first_seen": "2026-11-24T13:10:01.012860"
+  },
+  {
+   "id": "devevent-fe5deebb",
+   "category": "event",
+   "title": "[잇츠맨 웨비나] 텔레메트리 기반 수집부터 AI 연계까지, 실제 구축 사례로 보는 인프라 장애 대응 전략",
+   "source": "dev-event",
+   "url": "https://onoffmix.com/event/353826",
+   "organizer": "잇츠맨 · 바이텍씨스템",
+   "apply_start": "2026-11-23",
+   "deadline": "2026-12-10T14:00:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "온라인",
+    "무료",
+    "세미나",
+    "기술일반"
+   ],
+   "eligibility": "",
+   "location": "온라인",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 64,
+   "score_reasons": [
+    "제목에 'AI' +40",
+    "세미나·모임 +6",
+    "기타 주최 +3",
+    "시험기간과 안 겹침 +15"
+   ],
+   "status": "maybe",
+   "warnings": [],
+   "first_seen": "2026-11-24T13:10:01.012860"
+  },
+  {
    "id": "devevent-9df04227",
    "category": "event",
    "title": "THE PIONEERS | 팀스파르타 제품조직 AX 세미나",
@@ -4736,6 +4794,130 @@
    "status": "maybe",
    "warnings": [],
    "first_seen": "2026-11-21T22:41:22.809219"
+  },
+  {
+   "id": "linkareer-5492c05c",
+   "category": "internship",
+   "title": "[에코마케팅] 퍼포먼스 마케터 인턴/신입 채용",
+   "source": "linkareer",
+   "url": "https://linkareer.com/activity/366428",
+   "organizer": "에코마케팅",
+   "apply_start": null,
+   "deadline": "2026-12-10T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "채용연계형 인턴"
+   ],
+   "eligibility": "",
+   "location": "오프라인(서울)",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 25,
+   "score_reasons": [
+    "기타 직무 +10",
+    "근무 기간 미상 +10",
+    "기타 주최 +5"
+   ],
+   "status": "hidden",
+   "warnings": [],
+   "first_seen": "2026-11-24T13:10:01.012860"
+  },
+  {
+   "id": "devevent-bc0307a1",
+   "category": "event",
+   "title": "2026 정보접근성기술 컨퍼런스 (2026 IAT Conference)",
+   "source": "dev-event",
+   "url": "https://onoffmix.com/event/351274",
+   "organizer": "(사)한국시각장애인연합회 · 한국장애인소비자평가원",
+   "apply_start": "2026-11-23",
+   "deadline": "2026-12-10T23:30:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "오프라인(서울 마포구)",
+    "무료",
+    "세미나",
+    "기술일반"
+   ],
+   "eligibility": "",
+   "location": "오프라인(서울 마포구)",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 24,
+   "score_reasons": [
+    "세미나·모임 +6",
+    "기타 주최 +3",
+    "시험기간과 안 겹침 +15"
+   ],
+   "status": "hidden",
+   "warnings": [],
+   "first_seen": "2026-11-24T13:10:01.012860"
+  },
+  {
+   "id": "devevent-141a22e8",
+   "category": "contest",
+   "title": "2026 AI학과 공모전 「일상의 편리를 위한 AI서비스개발」 (세종사이버대학교)",
+   "source": "dev-event",
+   "url": "https://cms.sjcu.ac.kr/artificial-intelligence/community/data.do?mode=view&articleNo=138524",
+   "organizer": "세종사이버대학교 AI학과",
+   "apply_start": "2026-10-06",
+   "deadline": "2026-12-11T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "온라인",
+    "무료",
+    "대회",
+    "AI"
+   ],
+   "eligibility": "",
+   "location": "온라인",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 90,
+   "score_reasons": [
+    "제목에 'AI' +40",
+    "해커톤·개발 대회 +20",
+    "대기업·공공·대학 주최 +15",
+    "시험기간과 안 겹침 +15"
+   ],
+   "status": "recommended",
+   "warnings": [],
+   "first_seen": "2026-11-24T13:10:01.012860"
+  },
+  {
+   "id": "wevity-b609e53c",
+   "category": "contest",
+   "title": "2026년 서울교육 AI 활용 공모전",
+   "source": "wevity",
+   "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=112438",
+   "organizer": "서울특별시동부교육지원청",
+   "apply_start": null,
+   "deadline": "2026-12-11T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "웹/모바일/IT"
+   ],
+   "eligibility": "",
+   "location": "",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 84,
+   "score_reasons": [
+    "제목에 'AI' +40",
+    "공모전 +14",
+    "대기업·공공·대학 주최 +15",
+    "시험기간과 안 겹침 +15"
+   ],
+   "status": "recommended",
+   "warnings": [],
+   "first_seen": "2026-11-21T23:49:32.186546"
   },
   {
    "id": "devevent-f91deef8",
@@ -4834,36 +5016,6 @@
    "first_seen": "2026-11-21T23:49:32.186546"
   },
   {
-   "id": "wevity-b609e53c",
-   "category": "contest",
-   "title": "2026년 서울교육 AI 활용 공모전",
-   "source": "wevity",
-   "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=112438",
-   "organizer": "서울특별시동부교육지원청",
-   "apply_start": null,
-   "deadline": "2026-12-12T23:59:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "웹/모바일/IT"
-   ],
-   "eligibility": "",
-   "location": "",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 84,
-   "score_reasons": [
-    "제목에 'AI' +40",
-    "공모전 +14",
-    "대기업·공공·대학 주최 +15",
-    "시험기간과 안 겹침 +15"
-   ],
-   "status": "recommended",
-   "warnings": [],
-   "first_seen": "2026-11-21T23:49:32.186546"
-  },
-  {
    "id": "devevent-925741a2",
    "category": "event",
    "title": "Vibe Coders Jam Session: feat. Base44",
@@ -4925,6 +5077,40 @@
    "status": "hidden",
    "warnings": [],
    "first_seen": "2026-11-21T22:41:22.809219"
+  },
+  {
+   "id": "wevity-5fc4ec72",
+   "category": "contest",
+   "title": "VIVID RE:PLAY 6개 IP로 만드는 AI영상 공모전",
+   "source": "wevity",
+   "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=112343",
+   "organizer": "(주)아캐인",
+   "apply_start": null,
+   "deadline": "2026-12-13T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "광고/마케팅",
+    "영상/UCC/사진",
+    "웹/모바일/IT",
+    "예체능/미술/음악",
+    "기타"
+   ],
+   "eligibility": "",
+   "location": "",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 72,
+   "score_reasons": [
+    "제목에 'AI' +40",
+    "공모전 +14",
+    "기타 주최 +3",
+    "시험기간과 안 겹침 +15"
+   ],
+   "status": "recommended",
+   "warnings": [],
+   "first_seen": "2026-11-21T23:49:32.186546"
   },
   {
    "id": "linkareer-c23d9d0e",
@@ -4992,6 +5178,66 @@
    "first_seen": "2026-11-21T22:41:22.809219"
   },
   {
+   "id": "linkareer-c69934e1",
+   "category": "internship",
+   "title": "[네이버웹툰] 글로벌웹툰 콘텐츠 기획/운영 (체험형 인턴)",
+   "source": "linkareer",
+   "url": "https://linkareer.com/activity/366571",
+   "organizer": "네이버웹툰",
+   "apply_start": null,
+   "deadline": "2026-12-13T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "SNS/콘텐츠마케팅",
+    "체험형 인턴"
+   ],
+   "eligibility": "",
+   "location": "오프라인(경기)",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 55,
+   "score_reasons": [
+    "기타 직무 +10",
+    "근무 기간 미상 +10",
+    "대기업·공공·대학 주최 +20",
+    "재학생 지원 가능(체험형) +15"
+   ],
+   "status": "maybe",
+   "warnings": [],
+   "first_seen": "2026-11-24T13:10:01.012860"
+  },
+  {
+   "id": "wevity-8920df48",
+   "category": "contest",
+   "title": "한국세라믹기술원 대국민 안전제안 공모전",
+   "source": "wevity",
+   "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=112451",
+   "organizer": "한국세라믹기술원",
+   "apply_start": null,
+   "deadline": "2026-12-13T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "기획/아이디어"
+   ],
+   "eligibility": "",
+   "location": "",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 32,
+   "score_reasons": [
+    "공모전 +14",
+    "기타 주최 +3",
+    "시험기간과 안 겹침 +15"
+   ],
+   "status": "hidden",
+   "warnings": [],
+   "first_seen": "2026-11-21T23:49:32.186546"
+  },
+  {
    "id": "linkareer-3b72f54b",
    "category": "internship",
    "title": "[서원유통] 탑마트 채용연계형 인턴사원 채용",
@@ -5019,38 +5265,37 @@
    "first_seen": "2026-11-23T10:28:12.861778"
   },
   {
-   "id": "wevity-5fc4ec72",
+   "id": "devevent-23698c5a",
    "category": "contest",
-   "title": "VIVID RE:PLAY 6개 IP로 만드는 AI영상 공모전",
-   "source": "wevity",
-   "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=112343",
-   "organizer": "(주)아캐인",
-   "apply_start": null,
-   "deadline": "2026-12-14T23:59:00",
+   "title": "2026 국가시범도시 AI 아이디어·기술 공모전",
+   "source": "dev-event",
+   "url": "https://smartcity-ai.kr/",
+   "organizer": "국토교통부 · 스마트도시협회",
+   "apply_start": "2026-11-16",
+   "deadline": "2026-12-14T18:00:00",
    "event_start": null,
    "event_end": null,
    "tags": [
-    "광고/마케팅",
-    "영상/UCC/사진",
-    "웹/모바일/IT",
-    "예체능/미술/음악",
-    "기타"
+    "온라인",
+    "무료",
+    "대회",
+    "AI"
    ],
    "eligibility": "",
-   "location": "",
+   "location": "온라인",
    "prize": "",
    "work_start": null,
    "work_end": null,
-   "score": 72,
+   "score": 84,
    "score_reasons": [
     "제목에 'AI' +40",
     "공모전 +14",
-    "기타 주최 +3",
+    "대기업·공공·대학 주최 +15",
     "시험기간과 안 겹침 +15"
    ],
    "status": "recommended",
    "warnings": [],
-   "first_seen": "2026-11-21T23:49:32.186546"
+   "first_seen": "2026-11-24T13:10:01.012860"
   },
   {
    "id": "linkareer-3b67c092",
@@ -5085,33 +5330,102 @@
    "first_seen": "2026-11-22T00:09:44.527946"
   },
   {
-   "id": "wevity-8920df48",
-   "category": "contest",
-   "title": "한국세라믹기술원 대국민 안전제안 공모전",
-   "source": "wevity",
-   "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=112451",
-   "organizer": "한국세라믹기술원",
+   "id": "devevent-488a793e",
+   "category": "event",
+   "title": "AutoRAG Agent 오픈소스 컨퍼런스 2026",
+   "source": "dev-event",
+   "url": "https://luma.com/1j9tw0oj",
+   "organizer": "Markr · 브레인크루",
    "apply_start": null,
-   "deadline": "2026-12-14T23:59:00",
-   "event_start": null,
-   "event_end": null,
+   "deadline": null,
+   "event_start": "2026-12-14T12:30:00",
+   "event_end": "2026-12-14T17:40:00",
    "tags": [
-    "기획/아이디어"
+    "오프라인(서울 강남구)",
+    "무료",
+    "세미나",
+    "AI"
    ],
    "eligibility": "",
-   "location": "",
+   "location": "오프라인(서울 강남구)",
    "prize": "",
    "work_start": null,
    "work_end": null,
-   "score": 32,
+   "score": 49,
    "score_reasons": [
-    "공모전 +14",
+    "태그·주최에 'AI' +25",
+    "세미나·모임 +6",
     "기타 주최 +3",
     "시험기간과 안 겹침 +15"
    ],
+   "status": "maybe",
+   "warnings": [],
+   "first_seen": "2026-11-24T13:10:01.012860"
+  },
+  {
+   "id": "devevent-178be9ef",
+   "category": "event",
+   "title": "MUG Seoul DEC 2026 - MongoDB 2026 Highlights",
+   "source": "dev-event",
+   "url": "https://luma.com/ftkf0lxh",
+   "organizer": "Seoul MongoDB User Group",
+   "apply_start": null,
+   "deadline": null,
+   "event_start": "2026-12-15T19:00:00",
+   "event_end": "2026-12-15T21:30:00",
+   "tags": [
+    "오프라인(서울 서초구)",
+    "무료",
+    "모임",
+    "기술일반",
+    "AI"
+   ],
+   "eligibility": "",
+   "location": "오프라인(서울 서초구)",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 34,
+   "score_reasons": [
+    "태그·주최에 'AI' +25",
+    "세미나·모임 +6",
+    "기타 주최 +3",
+    "학기말 시험과 겹침 +0"
+   ],
+   "status": "hidden",
+   "warnings": [
+    "학기말 시험 기간과 겹침"
+   ],
+   "first_seen": "2026-11-24T13:10:01.012860"
+  },
+  {
+   "id": "linkareer-6d0510fe",
+   "category": "internship",
+   "title": "[딜로이트 커뮤니케이션즈] Deloitte Communications 정규직 전환형 인턴십",
+   "source": "linkareer",
+   "url": "https://linkareer.com/activity/366358",
+   "organizer": "Deloitte 안진회계법인",
+   "apply_start": null,
+   "deadline": "2026-12-17T16:00:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "채용연계형 인턴"
+   ],
+   "eligibility": "",
+   "location": "오프라인(서울)",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 25,
+   "score_reasons": [
+    "기타 직무 +10",
+    "근무 기간 미상 +10",
+    "기타 주최 +5"
+   ],
    "status": "hidden",
    "warnings": [],
-   "first_seen": "2026-11-21T23:49:32.186546"
+   "first_seen": "2026-11-24T13:10:01.012860"
   },
   {
    "id": "linkareer-9edcb754",
@@ -5144,125 +5458,38 @@
    "first_seen": "2026-11-22T00:09:44.527946"
   },
   {
-   "id": "linkareer-e680facc",
-   "category": "internship",
-   "title": "[모아리] AI 캐릭터챗 서비스 기획·운영 인턴",
-   "source": "linkareer",
-   "url": "https://linkareer.com/activity/365440",
-   "organizer": "주식회사 뮤팟",
-   "apply_start": null,
-   "deadline": "2026-12-18T23:59:00",
+   "id": "devevent-a374694c",
+   "category": "event",
+   "title": "[잇츠맨 웨비나] PostgreSQL for the Enterprise — 안정성, 관리, 기술지원을 어떻게 확보할 것인가?",
+   "source": "dev-event",
+   "url": "https://onoffmix.com/event/353825",
+   "organizer": "잇츠맨 · 인젠트",
+   "apply_start": "2026-11-23",
+   "deadline": "2026-12-17T14:00:00",
    "event_start": null,
    "event_end": null,
    "tags": [
-    "마케팅기획/전략",
-    "체험형 인턴"
+    "온라인",
+    "무료",
+    "세미나",
+    "기술일반"
    ],
    "eligibility": "",
-   "location": "오프라인(서울), 재택",
+   "location": "온라인",
    "prize": "",
    "work_start": null,
    "work_end": null,
-   "score": 70,
+   "score": 9,
    "score_reasons": [
-    "PM·서비스 기획 직무 +40",
-    "근무 기간 미상 +10",
-    "기타 주최 +5",
-    "재학생 지원 가능(체험형) +15"
-   ],
-   "status": "recommended",
-   "warnings": [],
-   "first_seen": "2026-11-22T00:09:44.527946"
-  },
-  {
-   "id": "linkareer-4421aeba",
-   "category": "internship",
-   "title": "[Forvis Mazars 새빛회계법인] 경영지원팀 GA Intern 모집",
-   "source": "linkareer",
-   "url": "https://linkareer.com/activity/365361",
-   "organizer": "새빛회계법인",
-   "apply_start": null,
-   "deadline": "2026-12-18T23:59:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "체험형 인턴"
-   ],
-   "eligibility": "",
-   "location": "오프라인(서울)",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 40,
-   "score_reasons": [
-    "기타 직무 +10",
-    "근무 기간 미상 +10",
-    "기타 주최 +5",
-    "재학생 지원 가능(체험형) +15"
-   ],
-   "status": "maybe",
-   "warnings": [],
-   "first_seen": "2026-11-22T00:09:44.527946"
-  },
-  {
-   "id": "linkareer-ece04948",
-   "category": "internship",
-   "title": "[인턴] US Team - 틱톡 어필리에이트 마케터(정규직 전환형)",
-   "source": "linkareer",
-   "url": "https://linkareer.com/activity/365487",
-   "organizer": "에프앤엘코퍼레이션",
-   "apply_start": null,
-   "deadline": "2026-12-18T23:59:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "브랜드마케팅",
-    "SNS/콘텐츠마케팅",
-    "채용연계형 인턴"
-   ],
-   "eligibility": "",
-   "location": "오프라인(서울)",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 25,
-   "score_reasons": [
-    "기타 직무 +10",
-    "근무 기간 미상 +10",
-    "기타 주최 +5"
+    "세미나·모임 +6",
+    "기타 주최 +3",
+    "학기말 시험과 겹침 +0"
    ],
    "status": "hidden",
-   "warnings": [],
-   "first_seen": "2026-11-22T00:09:44.527946"
-  },
-  {
-   "id": "linkareer-0cd82050",
-   "category": "internship",
-   "title": "[채용전환형 인턴] 미디어커머스 콘텐츠마케터",
-   "source": "linkareer",
-   "url": "https://linkareer.com/activity/365341",
-   "organizer": "엘에스에스씨",
-   "apply_start": null,
-   "deadline": "2026-12-20T23:59:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "채용연계형 인턴"
+   "warnings": [
+    "학기말 시험 기간과 겹침"
    ],
-   "eligibility": "",
-   "location": "오프라인(서울)",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 25,
-   "score_reasons": [
-    "기타 직무 +10",
-    "근무 기간 미상 +10",
-    "기타 주최 +5"
-   ],
-   "status": "hidden",
-   "warnings": [],
-   "first_seen": "2026-11-22T00:09:44.527946"
+   "first_seen": "2026-11-24T13:10:01.012860"
   },
   {
    "id": "wevity-e5e5f52a",
@@ -5272,7 +5499,7 @@
    "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=112285",
    "organizer": "세종사이버대학교",
    "apply_start": null,
-   "deadline": "2026-12-21T23:59:00",
+   "deadline": "2026-12-20T23:59:00",
    "event_start": null,
    "event_end": null,
    "tags": [
@@ -5304,7 +5531,7 @@
    "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=112277",
    "organizer": "saaskr",
    "apply_start": null,
-   "deadline": "2026-12-21T23:59:00",
+   "deadline": "2026-12-20T23:59:00",
    "event_start": null,
    "event_end": null,
    "tags": [
@@ -5328,6 +5555,40 @@
     "학기말 시험 기간과 겹침"
    ],
    "first_seen": "2026-11-21T23:49:32.186546"
+  },
+  {
+   "id": "linkareer-14d1990c",
+   "category": "internship",
+   "title": "에브리타임 글로벌 마케팅 정규직 전환형 인턴",
+   "source": "linkareer",
+   "url": "https://linkareer.com/activity/366082",
+   "organizer": "비누랩스 주식회사",
+   "apply_start": null,
+   "deadline": "2026-12-20T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "사업기획/신규사업",
+    "마케팅기획/전략",
+    "SNS/콘텐츠마케팅",
+    "시장조사/리서치",
+    "해외영업",
+    "채용연계형 인턴"
+   ],
+   "eligibility": "",
+   "location": "오프라인(서울)",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 40,
+   "score_reasons": [
+    "AI·데이터 직무 +25",
+    "근무 기간 미상 +10",
+    "기타 주최 +5"
+   ],
+   "status": "maybe",
+   "warnings": [],
+   "first_seen": "2026-11-24T13:10:01.012860"
   },
   {
    "id": "devevent-5777e3e8",
@@ -5366,6 +5627,37 @@
    "first_seen": "2026-11-21T22:41:22.809219"
   },
   {
+   "id": "linkareer-69b9ee22",
+   "category": "internship",
+   "title": "[굿워크랩] F&B 인플루언서 마케팅 캠페인 AE (채용전환형 인턴)",
+   "source": "linkareer",
+   "url": "https://linkareer.com/activity/366181",
+   "organizer": "굿워크랩",
+   "apply_start": null,
+   "deadline": "2026-12-23T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "SNS/콘텐츠마케팅",
+    "광고기획/AE",
+    "채용연계형 인턴"
+   ],
+   "eligibility": "",
+   "location": "오프라인(서울)",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 25,
+   "score_reasons": [
+    "기타 직무 +10",
+    "근무 기간 미상 +10",
+    "기타 주최 +5"
+   ],
+   "status": "hidden",
+   "warnings": [],
+   "first_seen": "2026-11-24T13:10:01.012860"
+  },
+  {
    "id": "linkareer-bba40c42",
    "category": "internship",
    "title": "[딜로이트 안진회계법인] 경영자문부문 부동산그룹 정규직 전환형 인턴십",
@@ -5402,7 +5694,7 @@
    "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=112445",
    "organizer": "한국스마트그리드협회",
    "apply_start": null,
-   "deadline": "2026-12-25T23:59:00",
+   "deadline": "2026-12-24T23:59:00",
    "event_start": null,
    "event_end": null,
    "tags": [
@@ -5425,29 +5717,66 @@
    "first_seen": "2026-11-21T23:49:32.186546"
   },
   {
-   "id": "dorm-3b312b94",
-   "category": "dorm",
-   "title": "2026학년도 신촌캠퍼스 겨울방학 연장 신청 안내  (Sinchon Winter Extension) — 겨울방학 신규 입사 2026. 12. 26.( 토 )",
-   "source": "dorm",
-   "url": "https://dorm.yonsei.ac.kr/board/?id=schedule&mode=V&idx=9168",
-   "organizer": "생활관 · 공통",
+   "id": "linkareer-48d1bbc7",
+   "category": "internship",
+   "title": "[사업개발팀] 겨울 인턴십 모집",
+   "source": "linkareer",
+   "url": "https://linkareer.com/activity/366285",
+   "organizer": "오피앤",
    "apply_start": null,
-   "deadline": null,
-   "event_start": "2026-12-26T00:00:00",
-   "event_end": "2026-12-26T23:59:00",
+   "deadline": "2026-12-27T23:59:00",
+   "event_start": null,
+   "event_end": null,
    "tags": [
-    "공통"
+    "경영기획/전략",
+    "사업기획/신규사업",
+    "체험형 인턴"
+   ],
+   "eligibility": "",
+   "location": "오프라인(서울)",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 55,
+   "score_reasons": [
+    "AI·데이터 직무 +25",
+    "근무 기간 미상 +10",
+    "기타 주최 +5",
+    "재학생 지원 가능(체험형) +15"
+   ],
+   "status": "maybe",
+   "warnings": [],
+   "first_seen": "2026-11-24T13:10:01.012860"
+  },
+  {
+   "id": "wevity-dddfecbf",
+   "category": "contest",
+   "title": "2026 AI 플레이 콘텐츠 제작 공모전",
+   "source": "wevity",
+   "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=111800",
+   "organizer": "중앙대학교",
+   "apply_start": null,
+   "deadline": "2026-12-31T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "웹/모바일/IT"
    ],
    "eligibility": "",
    "location": "",
    "prize": "",
    "work_start": null,
    "work_end": null,
-   "score": 0,
-   "score_reasons": [],
-   "status": "always",
+   "score": 84,
+   "score_reasons": [
+    "제목에 'AI' +40",
+    "공모전 +14",
+    "대기업·공공·대학 주최 +15",
+    "시험기간과 안 겹침 +15"
+   ],
+   "status": "recommended",
    "warnings": [],
-   "first_seen": "2026-11-22T00:34:09.539795"
+   "first_seen": "2026-11-21T23:49:32.186546"
   },
   {
    "id": "devevent-70576936",
@@ -5482,38 +5811,6 @@
    "status": "maybe",
    "warnings": [],
    "first_seen": "2026-11-21T22:41:22.809219"
-  },
-  {
-   "id": "linkareer-760c1650",
-   "category": "internship",
-   "title": "[PTKOREA] 2027년 상반기 대기업 신제품 글로벌 프로젝트 대규모 인턴 채용",
-   "source": "linkareer",
-   "url": "https://linkareer.com/activity/356995",
-   "organizer": "PTKOREA",
-   "apply_start": null,
-   "deadline": "2026-12-31T23:59:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "IT기획/PM/PO",
-    "QA/기술지원",
-    "체험형 인턴"
-   ],
-   "eligibility": "",
-   "location": "오프라인(서울)",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 55,
-   "score_reasons": [
-    "AI·데이터 직무 +25",
-    "근무 기간 미상 +10",
-    "기타 주최 +5",
-    "재학생 지원 가능(체험형) +15"
-   ],
-   "status": "maybe",
-   "warnings": [],
-   "first_seen": "2026-11-23T10:28:12.861778"
   },
   {
    "id": "devevent-17594215",
@@ -5609,37 +5906,6 @@
    "first_seen": "2026-11-22T00:09:44.527946"
   },
   {
-   "id": "linkareer-cb20ac2e",
-   "category": "internship",
-   "title": "[케이시크릿] 글로벌 화장품 유통 (중동, 아프리카) B2B 해외영업 인턴 채용",
-   "source": "linkareer",
-   "url": "https://linkareer.com/activity/365696",
-   "organizer": "케이시크릿",
-   "apply_start": null,
-   "deadline": "2026-12-31T23:59:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "B2B영업",
-    "해외영업",
-    "채용연계형 인턴"
-   ],
-   "eligibility": "",
-   "location": "오프라인(서울)",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 25,
-   "score_reasons": [
-    "기타 직무 +10",
-    "근무 기간 미상 +10",
-    "기타 주최 +5"
-   ],
-   "status": "hidden",
-   "warnings": [],
-   "first_seen": "2026-11-22T00:09:44.527946"
-  },
-  {
    "id": "linkareer-2725252f",
    "category": "internship",
    "title": "[미국인턴] CJ Logistics America SCM 물류인턴 지점별 인턴 채용 (CA, IL, TN)",
@@ -5668,36 +5934,6 @@
    "first_seen": "2026-11-22T00:09:44.527946"
   },
   {
-   "id": "wevity-dddfecbf",
-   "category": "contest",
-   "title": "2026 AI 플레이 콘텐츠 제작 공모전",
-   "source": "wevity",
-   "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=111800",
-   "organizer": "중앙대학교",
-   "apply_start": null,
-   "deadline": "2027-01-01T23:59:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "웹/모바일/IT"
-   ],
-   "eligibility": "",
-   "location": "",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 84,
-   "score_reasons": [
-    "제목에 'AI' +40",
-    "공모전 +14",
-    "대기업·공공·대학 주최 +15",
-    "시험기간과 안 겹침 +15"
-   ],
-   "status": "recommended",
-   "warnings": [],
-   "first_seen": "2026-11-21T23:49:32.186546"
-  },
-  {
    "id": "wevity-82cf74ef",
    "category": "contest",
    "title": "공모전 준비 중이라면? AI 교정 서비스 [교정의 신]과 함께!",
@@ -5705,7 +5941,7 @@
    "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=111812",
    "organizer": "교정의 신",
    "apply_start": null,
-   "deadline": "2027-01-01T23:59:00",
+   "deadline": "2026-12-31T23:59:00",
    "event_start": null,
    "event_end": null,
    "tags": [
@@ -5737,7 +5973,7 @@
    "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=112487",
    "organizer": "(주)해냄에듀",
    "apply_start": null,
-   "deadline": "2027-01-01T23:59:00",
+   "deadline": "2026-12-31T23:59:00",
    "event_start": null,
    "event_end": null,
    "tags": [
@@ -5757,6 +5993,70 @@
    "first_seen": "2026-11-21T23:49:32.186546"
   },
   {
+   "id": "devevent-d2abc2b3",
+   "category": "contest",
+   "title": "2027 제 2회 Superb AI X BDAI Vision AI Hackathon",
+   "source": "dev-event",
+   "url": "https://bdai.co.kr/lectures/contest/18/",
+   "organizer": "Superb AI × BDAI",
+   "apply_start": "2026-11-16",
+   "deadline": "2027-01-10T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "온라인",
+    "오프라인",
+    "무료",
+    "대회",
+    "AI"
+   ],
+   "eligibility": "",
+   "location": "온라인, 오프라인",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 78,
+   "score_reasons": [
+    "제목에 'AI' +40",
+    "해커톤·개발 대회 +20",
+    "기타 주최 +3",
+    "시험기간과 안 겹침 +15"
+   ],
+   "status": "recommended",
+   "warnings": [],
+   "first_seen": "2026-11-24T13:10:01.012860"
+  },
+  {
+   "id": "wevity-6566380c",
+   "category": "contest",
+   "title": "상주시 대표축제 대국민 아이디어 공모전",
+   "source": "wevity",
+   "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=110750",
+   "organizer": "상주시",
+   "apply_start": null,
+   "deadline": "2027-01-15T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "기획/아이디어"
+   ],
+   "eligibility": "",
+   "location": "",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 54,
+   "score_reasons": [
+    "주변 키워드 '아이디어' +10",
+    "공모전 +14",
+    "대기업·공공·대학 주최 +15",
+    "시험기간과 안 겹침 +15"
+   ],
+   "status": "maybe",
+   "warnings": [],
+   "first_seen": "2026-11-24T13:10:01.012860"
+  },
+  {
    "id": "wevity-85bb5fdc",
    "category": "contest",
    "title": "7th Da-Ho Award Asian International Short Film Competition(단편영화 공모전)",
@@ -5764,7 +6064,7 @@
    "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=110179",
    "organizer": "Da-Ho Construction Co., Ltd.",
    "apply_start": null,
-   "deadline": "2027-01-16T23:59:00",
+   "deadline": "2027-01-15T23:59:00",
    "event_start": null,
    "event_end": null,
    "tags": [
@@ -5798,7 +6098,7 @@
    "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=112151",
    "organizer": "동성케미컬",
    "apply_start": null,
-   "deadline": "2027-01-19T23:59:00",
+   "deadline": "2027-01-18T23:59:00",
    "event_start": null,
    "event_end": null,
    "tags": [
@@ -5818,370 +6118,6 @@
    "first_seen": "2026-11-21T23:49:32.186546"
   },
   {
-   "id": "linkareer-2c115ff3",
-   "category": "internship",
-   "title": "[블래스트] 프로젝트 매니지먼트(PM) 인턴 채용 (6개월)",
-   "source": "linkareer",
-   "url": "https://linkareer.com/activity/365373",
-   "organizer": "블래스트",
-   "apply_start": null,
-   "deadline": "2027-02-16T23:59:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "체험형 인턴"
-   ],
-   "eligibility": "",
-   "location": "오프라인(서울)",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 70,
-   "score_reasons": [
-    "PM·서비스 기획 직무 +40",
-    "근무 기간 미상 +10",
-    "기타 주최 +5",
-    "재학생 지원 가능(체험형) +15"
-   ],
-   "status": "recommended",
-   "warnings": [],
-   "first_seen": "2026-11-22T00:09:44.527946"
-  },
-  {
-   "id": "linkareer-9524abdd",
-   "category": "internship",
-   "title": "[체험형 인턴] B2B 해외영업 운영 지원(Sales Operations Assistant)(6개월~)",
-   "source": "linkareer",
-   "url": "https://linkareer.com/activity/365456",
-   "organizer": "비나우",
-   "apply_start": null,
-   "deadline": "2027-02-16T23:59:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "해외영업",
-    "체험형 인턴"
-   ],
-   "eligibility": "",
-   "location": "오프라인(서울)",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 40,
-   "score_reasons": [
-    "기타 직무 +10",
-    "근무 기간 미상 +10",
-    "기타 주최 +5",
-    "재학생 지원 가능(체험형) +15"
-   ],
-   "status": "maybe",
-   "warnings": [],
-   "first_seen": "2026-11-22T00:09:44.527946"
-  },
-  {
-   "id": "linkareer-5f622707",
-   "category": "internship",
-   "title": "[IPX] Original IP Brand Marketing Internship (체험형)",
-   "source": "linkareer",
-   "url": "https://linkareer.com/activity/365404",
-   "organizer": "IPX 주식회사",
-   "apply_start": null,
-   "deadline": "2027-02-16T23:59:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "체험형 인턴"
-   ],
-   "eligibility": "",
-   "location": "오프라인(경기)",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 40,
-   "score_reasons": [
-    "기타 직무 +10",
-    "근무 기간 미상 +10",
-    "기타 주최 +5",
-    "재학생 지원 가능(체험형) +15"
-   ],
-   "status": "maybe",
-   "warnings": [],
-   "first_seen": "2026-11-22T00:09:44.527946"
-  },
-  {
-   "id": "linkareer-09b5c523",
-   "category": "internship",
-   "title": "[블래스트] 마케팅 콘텐츠 제작 인턴 채용",
-   "source": "linkareer",
-   "url": "https://linkareer.com/activity/365387",
-   "organizer": "블래스트",
-   "apply_start": null,
-   "deadline": "2027-02-16T23:59:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "체험형 인턴"
-   ],
-   "eligibility": "",
-   "location": "오프라인(서울)",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 40,
-   "score_reasons": [
-    "기타 직무 +10",
-    "근무 기간 미상 +10",
-    "기타 주최 +5",
-    "재학생 지원 가능(체험형) +15"
-   ],
-   "status": "maybe",
-   "warnings": [],
-   "first_seen": "2026-11-22T00:09:44.527946"
-  },
-  {
-   "id": "linkareer-9a309383",
-   "category": "internship",
-   "title": "그래픽 디자이너 인턴",
-   "source": "linkareer",
-   "url": "https://linkareer.com/activity/365374",
-   "organizer": "주식회사 코드잇",
-   "apply_start": null,
-   "deadline": "2027-02-16T23:59:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "그래픽/시각디자인",
-    "체험형 인턴"
-   ],
-   "eligibility": "",
-   "location": "오프라인(서울), 재택",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 40,
-   "score_reasons": [
-    "기타 직무 +10",
-    "근무 기간 미상 +10",
-    "기타 주최 +5",
-    "재학생 지원 가능(체험형) +15"
-   ],
-   "status": "maybe",
-   "warnings": [],
-   "first_seen": "2026-11-22T00:09:44.527946"
-  },
-  {
-   "id": "linkareer-ae58fd54",
-   "category": "internship",
-   "title": "북미 릴리이브 틱톡샵 마케터(체험형 인턴)",
-   "source": "linkareer",
-   "url": "https://linkareer.com/activity/365371",
-   "organizer": "바이트랩",
-   "apply_start": null,
-   "deadline": "2027-02-16T23:59:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "SNS/콘텐츠마케팅",
-    "체험형 인턴"
-   ],
-   "eligibility": "",
-   "location": "오프라인(서울)",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 40,
-   "score_reasons": [
-    "기타 직무 +10",
-    "근무 기간 미상 +10",
-    "기타 주최 +5",
-    "재학생 지원 가능(체험형) +15"
-   ],
-   "status": "maybe",
-   "warnings": [],
-   "first_seen": "2026-11-22T00:09:44.527946"
-  },
-  {
-   "id": "linkareer-51b997ec",
-   "category": "internship",
-   "title": "트래블테크 스타트업 마케팅 인턴 (3개월 주 15시간)",
-   "source": "linkareer",
-   "url": "https://linkareer.com/activity/365367",
-   "organizer": "링코베이션",
-   "apply_start": null,
-   "deadline": "2027-02-16T23:59:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "SNS/콘텐츠마케팅",
-    "체험형 인턴"
-   ],
-   "eligibility": "",
-   "location": "오프라인(서울)",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 40,
-   "score_reasons": [
-    "기타 직무 +10",
-    "근무 기간 미상 +10",
-    "기타 주최 +5",
-    "재학생 지원 가능(체험형) +15"
-   ],
-   "status": "maybe",
-   "warnings": [],
-   "first_seen": "2026-11-22T00:09:44.527946"
-  },
-  {
-   "id": "linkareer-0c7f9259",
-   "category": "internship",
-   "title": "[인턴] 인사/총무 담당자 채용",
-   "source": "linkareer",
-   "url": "https://linkareer.com/activity/365433",
-   "organizer": "(주)빅크",
-   "apply_start": null,
-   "deadline": "2027-02-16T23:59:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "인사/채용/노무",
-    "기타"
-   ],
-   "eligibility": "",
-   "location": "오프라인(서울)",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 25,
-   "score_reasons": [
-    "기타 직무 +10",
-    "근무 기간 미상 +10",
-    "기타 주최 +5"
-   ],
-   "status": "hidden",
-   "warnings": [],
-   "first_seen": "2026-11-22T00:09:44.527946"
-  },
-  {
-   "id": "linkareer-86e6655f",
-   "category": "internship",
-   "title": "[애슬러] 인플루언서 마케팅 전환형 인턴",
-   "source": "linkareer",
-   "url": "https://linkareer.com/activity/365397",
-   "organizer": "바인드",
-   "apply_start": null,
-   "deadline": "2027-02-16T23:59:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "채용연계형 인턴"
-   ],
-   "eligibility": "",
-   "location": "오프라인(서울)",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 25,
-   "score_reasons": [
-    "기타 직무 +10",
-    "근무 기간 미상 +10",
-    "기타 주최 +5"
-   ],
-   "status": "hidden",
-   "warnings": [],
-   "first_seen": "2026-11-22T00:09:44.527946"
-  },
-  {
-   "id": "linkareer-9d7a0395",
-   "category": "internship",
-   "title": "[마카롱팩토리/마이클] 오피스 운영 담당자 - 총무/GA (전환형 인턴)",
-   "source": "linkareer",
-   "url": "https://linkareer.com/activity/365390",
-   "organizer": "주식회사 마카롱팩토리",
-   "apply_start": null,
-   "deadline": "2027-02-16T23:59:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "총무/법무/비서",
-    "채용연계형 인턴"
-   ],
-   "eligibility": "",
-   "location": "오프라인(경기)",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 25,
-   "score_reasons": [
-    "기타 직무 +10",
-    "근무 기간 미상 +10",
-    "기타 주최 +5"
-   ],
-   "status": "hidden",
-   "warnings": [],
-   "first_seen": "2026-11-22T00:09:44.527946"
-  },
-  {
-   "id": "linkareer-892b74de",
-   "category": "internship",
-   "title": "[인턴] Global Beauty Team - 인플루언서 마케터(정규직 전환형)",
-   "source": "linkareer",
-   "url": "https://linkareer.com/activity/365375",
-   "organizer": "에프앤엘코퍼레이션",
-   "apply_start": null,
-   "deadline": "2027-02-16T23:59:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "브랜드마케팅",
-    "SNS/콘텐츠마케팅",
-    "시장조사/리서치",
-    "채용연계형 인턴"
-   ],
-   "eligibility": "",
-   "location": "오프라인(서울)",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 25,
-   "score_reasons": [
-    "기타 직무 +10",
-    "근무 기간 미상 +10",
-    "기타 주최 +5"
-   ],
-   "status": "hidden",
-   "warnings": [],
-   "first_seen": "2026-11-22T00:09:44.527946"
-  },
-  {
-   "id": "linkareer-a6d96228",
-   "category": "internship",
-   "title": "[화이트큐브] [챌린저스] Account Manager·광고 운영 인턴 (3개월 전환형)",
-   "source": "linkareer",
-   "url": "https://linkareer.com/activity/365349",
-   "organizer": "화이트큐브",
-   "apply_start": null,
-   "deadline": "2027-02-16T23:59:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "채용연계형 인턴"
-   ],
-   "eligibility": "",
-   "location": "오프라인(서울)",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 25,
-   "score_reasons": [
-    "기타 직무 +10",
-    "근무 기간 미상 +10",
-    "기타 주최 +5"
-   ],
-   "status": "hidden",
-   "warnings": [],
-   "first_seen": "2026-11-22T00:09:44.527946"
-  },
-  {
    "id": "linkareer-3b9abb47",
    "category": "internship",
    "title": "[핀다] Business Development 인턴",
@@ -6195,38 +6131,6 @@
    "tags": [
     "사업기획/신규사업",
     "서비스기획/운영",
-    "체험형 인턴"
-   ],
-   "eligibility": "",
-   "location": "오프라인(서울)",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 55,
-   "score_reasons": [
-    "AI·데이터 직무 +25",
-    "근무 기간 미상 +10",
-    "기타 주최 +5",
-    "재학생 지원 가능(체험형) +15"
-   ],
-   "status": "maybe",
-   "warnings": [],
-   "first_seen": "2026-11-22T00:09:44.527946"
-  },
-  {
-   "id": "linkareer-662943a6",
-   "category": "internship",
-   "title": "[피에프씨테크놀로지스] [체험형 인턴] 여신상품 운영 매니저",
-   "source": "linkareer",
-   "url": "https://linkareer.com/activity/365609",
-   "organizer": "피에프씨테크놀로지스",
-   "apply_start": null,
-   "deadline": "2027-02-17T23:59:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "서비스기획/운영",
-    "사무/문서관리",
     "체험형 인턴"
    ],
    "eligibility": "",
@@ -6370,103 +6274,9 @@
    "first_seen": "2026-11-22T00:09:44.527946"
   },
   {
-   "id": "linkareer-25fffe3d",
-   "category": "internship",
-   "title": "[글로벌 기업 LAVOIR] 온라인몰 운영 인턴(AMD)",
-   "source": "linkareer",
-   "url": "https://linkareer.com/activity/365668",
-   "organizer": "(주)원앤코",
-   "apply_start": null,
-   "deadline": "2027-02-17T23:59:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "MD/상품기획",
-    "기타",
-    "채용연계형 인턴",
-    "체험형 인턴"
-   ],
-   "eligibility": "",
-   "location": "오프라인(서울)",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 40,
-   "score_reasons": [
-    "기타 직무 +10",
-    "근무 기간 미상 +10",
-    "기타 주최 +5",
-    "재학생 지원 가능(체험형) +15"
-   ],
-   "status": "maybe",
-   "warnings": [],
-   "first_seen": "2026-11-22T00:09:44.527946"
-  },
-  {
-   "id": "linkareer-473e3b59",
-   "category": "internship",
-   "title": "Ad Operations Intern",
-   "source": "linkareer",
-   "url": "https://linkareer.com/activity/365585",
-   "organizer": "뤼튼테크놀로지스",
-   "apply_start": null,
-   "deadline": "2027-02-17T23:59:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "서비스기획/운영",
-    "기타"
-   ],
-   "eligibility": "",
-   "location": "오프라인(서울)",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 40,
-   "score_reasons": [
-    "AI·데이터 직무 +25",
-    "근무 기간 미상 +10",
-    "기타 주최 +5"
-   ],
-   "status": "maybe",
-   "warnings": [],
-   "first_seen": "2026-11-22T00:09:44.527946"
-  },
-  {
-   "id": "linkareer-fd24e9a8",
-   "category": "internship",
-   "title": "[ANUA] BI & Data Engineer 채용전환형 인턴",
-   "source": "linkareer",
-   "url": "https://linkareer.com/activity/365572",
-   "organizer": "주식회사 더파운더즈",
-   "apply_start": null,
-   "deadline": "2027-02-17T23:59:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "백엔드/서버개발",
-    "데이터분석",
-    "채용연계형 인턴"
-   ],
-   "eligibility": "",
-   "location": "오프라인(서울)",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 40,
-   "score_reasons": [
-    "AI·데이터 직무 +25",
-    "근무 기간 미상 +10",
-    "기타 주최 +5"
-   ],
-   "status": "maybe",
-   "warnings": [],
-   "first_seen": "2026-11-22T00:09:44.527946"
-  },
-  {
    "id": "linkareer-c00b8f35",
    "category": "internship",
-   "title": "[ohora] Contents PD Internship Program",
+   "title": "[ohora] Contents PD(신입·인턴)",
    "source": "linkareer",
    "url": "https://linkareer.com/activity/365706",
    "organizer": "주식회사 글루가",
@@ -6476,95 +6286,6 @@
    "event_end": null,
    "tags": [
     "SNS/콘텐츠마케팅",
-    "채용연계형 인턴"
-   ],
-   "eligibility": "",
-   "location": "오프라인(서울)",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 25,
-   "score_reasons": [
-    "기타 직무 +10",
-    "근무 기간 미상 +10",
-    "기타 주최 +5"
-   ],
-   "status": "hidden",
-   "warnings": [],
-   "first_seen": "2026-11-22T00:09:44.527946"
-  },
-  {
-   "id": "linkareer-2647dbf1",
-   "category": "internship",
-   "title": "[29CM] 여성 컨템포러리 매입 업무 보조 어시스턴트 (아르바이트)",
-   "source": "linkareer",
-   "url": "https://linkareer.com/activity/365597",
-   "organizer": "주식회사 무신사",
-   "apply_start": null,
-   "deadline": "2027-02-17T23:59:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "기타"
-   ],
-   "eligibility": "",
-   "location": "오프라인(서울)",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 25,
-   "score_reasons": [
-    "기타 직무 +10",
-    "근무 기간 미상 +10",
-    "기타 주최 +5"
-   ],
-   "status": "hidden",
-   "warnings": [],
-   "first_seen": "2026-11-22T00:09:44.527946"
-  },
-  {
-   "id": "linkareer-dfb42a52",
-   "category": "internship",
-   "title": "[무신사스탠다드] VMD 2D/3D 그래픽 디자인 어시스턴트 (아르바이트)",
-   "source": "linkareer",
-   "url": "https://linkareer.com/activity/365578",
-   "organizer": "주식회사 무신사",
-   "apply_start": null,
-   "deadline": "2027-02-17T23:59:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "그래픽/시각디자인",
-    "기타"
-   ],
-   "eligibility": "",
-   "location": "오프라인(서울)",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 25,
-   "score_reasons": [
-    "기타 직무 +10",
-    "근무 기간 미상 +10",
-    "기타 주최 +5"
-   ],
-   "status": "hidden",
-   "warnings": [],
-   "first_seen": "2026-11-22T00:09:44.527946"
-  },
-  {
-   "id": "linkareer-7a8f5cab",
-   "category": "internship",
-   "title": "[전환형인턴] 글로벌 AMD (중화권)",
-   "source": "linkareer",
-   "url": "https://linkareer.com/activity/365562",
-   "organizer": "(주)어댑트",
-   "apply_start": null,
-   "deadline": "2027-02-17T23:59:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "MD/상품기획",
     "채용연계형 인턴"
    ],
    "eligibility": "",
@@ -6624,330 +6345,6 @@
    "tags": [
     "고객상담/CS",
     "기타",
-    "체험형 인턴"
-   ],
-   "eligibility": "",
-   "location": "오프라인(해외)",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 0,
-   "score_reasons": [
-    "제외: 허용 지역 아님"
-   ],
-   "status": "hidden",
-   "warnings": [],
-   "first_seen": "2026-11-22T00:09:44.527946"
-  },
-  {
-   "id": "linkareer-cd91d747",
-   "category": "internship",
-   "title": "[미국] CJ대한통운 미주법인 및 지사 창고 운영관리 / 포워딩 / 통관 모집",
-   "source": "linkareer",
-   "url": "https://linkareer.com/activity/365687",
-   "organizer": "CJ Logistics America, LLC",
-   "apply_start": null,
-   "deadline": "2027-02-17T23:59:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "기타",
-    "채용연계형 인턴",
-    "체험형 인턴"
-   ],
-   "eligibility": "",
-   "location": "오프라인(해외)",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 0,
-   "score_reasons": [
-    "제외: 허용 지역 아님"
-   ],
-   "status": "hidden",
-   "warnings": [],
-   "first_seen": "2026-11-22T00:09:44.527946"
-  },
-  {
-   "id": "linkareer-3193bcef",
-   "category": "internship",
-   "title": "[미국] 식품 유통회사 세일즈 자재관리 사무원 모집",
-   "source": "linkareer",
-   "url": "https://linkareer.com/activity/365671",
-   "organizer": "HS MIDWEST, Inc.",
-   "apply_start": null,
-   "deadline": "2027-02-17T23:59:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "구매/자재관리",
-    "기타",
-    "채용연계형 인턴",
-    "체험형 인턴"
-   ],
-   "eligibility": "",
-   "location": "오프라인(해외)",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 0,
-   "score_reasons": [
-    "제외: 허용 지역 아님"
-   ],
-   "status": "hidden",
-   "warnings": [],
-   "first_seen": "2026-11-22T00:09:44.527946"
-  },
-  {
-   "id": "linkareer-52e22e19",
-   "category": "internship",
-   "title": "[미국] 반도체 전문 시공 및 기술 지원 기업 재무&회계팀 / 총무&사무행정 / 자재&구매관리 모집",
-   "source": "linkareer",
-   "url": "https://linkareer.com/activity/365665",
-   "organizer": "Finetech US, Inc.",
-   "apply_start": null,
-   "deadline": "2027-02-17T23:59:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "총무/법무/비서",
-    "사무/문서관리",
-    "재무/회계/세무",
-    "구매/자재관리",
-    "기타",
-    "채용연계형 인턴",
-    "체험형 인턴"
-   ],
-   "eligibility": "",
-   "location": "오프라인(해외)",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 0,
-   "score_reasons": [
-    "제외: 허용 지역 아님"
-   ],
-   "status": "hidden",
-   "warnings": [],
-   "first_seen": "2026-11-22T00:09:44.527946"
-  },
-  {
-   "id": "linkareer-d4adde69",
-   "category": "internship",
-   "title": "[미국인턴/북미지역] Home Service Network (dba HSN) 각 부문 신입 및 경력채용",
-   "source": "linkareer",
-   "url": "https://linkareer.com/activity/365645",
-   "organizer": "Home Service Network, Inc.",
-   "apply_start": null,
-   "deadline": "2027-02-17T23:59:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "기타",
-    "체험형 인턴"
-   ],
-   "eligibility": "",
-   "location": "오프라인(해외)",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 0,
-   "score_reasons": [
-    "제외: 허용 지역 아님"
-   ],
-   "status": "hidden",
-   "warnings": [],
-   "first_seen": "2026-11-22T00:09:44.527946"
-  },
-  {
-   "id": "linkareer-dd6c5fe1",
-   "category": "internship",
-   "title": "[미국] LA 다운타운에 위치한 여성 의류 제조/홀세일 전문 회사 Customer Service Team 모집",
-   "source": "linkareer",
-   "url": "https://linkareer.com/activity/365612",
-   "organizer": "Eesome, Inc.",
-   "apply_start": null,
-   "deadline": "2027-02-17T23:59:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "기타",
-    "채용연계형 인턴",
-    "체험형 인턴"
-   ],
-   "eligibility": "",
-   "location": "오프라인(해외)",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 0,
-   "score_reasons": [
-    "제외: 허용 지역 아님"
-   ],
-   "status": "hidden",
-   "warnings": [],
-   "first_seen": "2026-11-22T00:09:44.527946"
-  },
-  {
-   "id": "linkareer-e329e013",
-   "category": "internship",
-   "title": "[미국] 토탈비즈니스솔루션 제공기업 데이터 관리&총무 모집",
-   "source": "linkareer",
-   "url": "https://linkareer.com/activity/365604",
-   "organizer": "Credit Card Services, Inc. (DBA. Bankcard Services",
-   "apply_start": null,
-   "deadline": "2027-02-17T23:59:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "기타",
-    "채용연계형 인턴",
-    "체험형 인턴"
-   ],
-   "eligibility": "",
-   "location": "오프라인(해외)",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 0,
-   "score_reasons": [
-    "제외: 허용 지역 아님"
-   ],
-   "status": "hidden",
-   "warnings": [],
-   "first_seen": "2026-11-22T00:09:44.527946"
-  },
-  {
-   "id": "linkareer-fdc285c2",
-   "category": "internship",
-   "title": "[미국] CA 복합물류기업 수출입업무 오퍼레이터 채용",
-   "source": "linkareer",
-   "url": "https://linkareer.com/activity/365593",
-   "organizer": "KT GLOBAL LOGISTICS LLC",
-   "apply_start": null,
-   "deadline": "2027-02-17T23:59:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "기타",
-    "채용연계형 인턴",
-    "체험형 인턴"
-   ],
-   "eligibility": "",
-   "location": "오프라인(해외)",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 0,
-   "score_reasons": [
-    "제외: 허용 지역 아님"
-   ],
-   "status": "hidden",
-   "warnings": [],
-   "first_seen": "2026-11-22T00:09:44.527946"
-  },
-  {
-   "id": "linkareer-8baf7504",
-   "category": "internship",
-   "title": "[미국] 뉴저지주 남성&여성 패션 의류 전문기업 그래픽 디자이너 채용",
-   "source": "linkareer",
-   "url": "https://linkareer.com/activity/365587",
-   "organizer": "3FORTY GROUP, Inc.",
-   "apply_start": null,
-   "deadline": "2027-02-17T23:59:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "그래픽/시각디자인",
-    "기타",
-    "채용연계형 인턴",
-    "체험형 인턴"
-   ],
-   "eligibility": "",
-   "location": "오프라인(해외)",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 0,
-   "score_reasons": [
-    "제외: 허용 지역 아님"
-   ],
-   "status": "hidden",
-   "warnings": [],
-   "first_seen": "2026-11-22T00:09:44.527946"
-  },
-  {
-   "id": "linkareer-b04257cd",
-   "category": "internship",
-   "title": "[카카오] 카카오비즈니스 마케팅 콘텐츠 제작_어시스턴트",
-   "source": "linkareer",
-   "url": "https://linkareer.com/activity/365558",
-   "organizer": "카카오",
-   "apply_start": null,
-   "deadline": "2027-02-17T23:59:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "마케팅기획/전략",
-    "SNS/콘텐츠마케팅",
-    "체험형 인턴"
-   ],
-   "eligibility": "",
-   "location": "오프라인(제주), 오프라인(제주특별자치도)",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 0,
-   "score_reasons": [
-    "제외: 허용 지역 아님"
-   ],
-   "status": "hidden",
-   "warnings": [],
-   "first_seen": "2026-11-22T00:09:44.527946"
-  },
-  {
-   "id": "linkareer-8837ad02",
-   "category": "internship",
-   "title": "[미국] 화장품 및 스킨케어 유통회사 디지털 마케팅 어시스턴트 채용",
-   "source": "linkareer",
-   "url": "https://linkareer.com/activity/365553",
-   "organizer": "LEE&GEN Global Corp. (I World)",
-   "apply_start": null,
-   "deadline": "2027-02-17T23:59:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "기타",
-    "채용연계형 인턴",
-    "체험형 인턴"
-   ],
-   "eligibility": "",
-   "location": "오프라인(해외)",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 0,
-   "score_reasons": [
-    "제외: 허용 지역 아님"
-   ],
-   "status": "hidden",
-   "warnings": [],
-   "first_seen": "2026-11-22T00:09:44.527946"
-  },
-  {
-   "id": "linkareer-f0a3e7d8",
-   "category": "internship",
-   "title": "[미국] LA 근교 직원수 1,500명의 물류 대기업 본사 IT팀 업무지원 모집",
-   "source": "linkareer",
-   "url": "https://linkareer.com/activity/365548",
-   "organizer": "KW Companies Inc. (KW International)",
-   "apply_start": null,
-   "deadline": "2027-02-17T23:59:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "기타",
-    "채용연계형 인턴",
     "체험형 인턴"
    ],
    "eligibility": "",
@@ -7259,6 +6656,37 @@
    "first_seen": "2026-11-22T00:09:44.527946"
   },
   {
+   "id": "linkareer-05b3daec",
+   "category": "internship",
+   "title": "[앳홈] [톰(THOME)] 뷰티 디바이스 상품기획/전략 체험형 인턴",
+   "source": "linkareer",
+   "url": "https://linkareer.com/activity/366452",
+   "organizer": "앳홈",
+   "apply_start": null,
+   "deadline": "2027-02-21T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "시장조사/리서치",
+    "체험형 인턴"
+   ],
+   "eligibility": "",
+   "location": "오프라인(서울)",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 55,
+   "score_reasons": [
+    "AI·데이터 직무 +25",
+    "근무 기간 미상 +10",
+    "기타 주최 +5",
+    "재학생 지원 가능(체험형) +15"
+   ],
+   "status": "maybe",
+   "warnings": [],
+   "first_seen": "2026-11-24T13:10:01.012860"
+  },
+  {
    "id": "linkareer-fda1588f",
    "category": "internship",
    "title": "[토스플레이스] Call Sales Assistant",
@@ -7287,6 +6715,431 @@
    "status": "maybe",
    "warnings": [],
    "first_seen": "2026-11-23T10:28:12.861778"
+  },
+  {
+   "id": "linkareer-f8f34fdc",
+   "category": "internship",
+   "title": "대만 콘텐츠 마케터",
+   "source": "linkareer",
+   "url": "https://linkareer.com/activity/366478",
+   "organizer": "주식회사 크리에이트립",
+   "apply_start": null,
+   "deadline": "2027-02-21T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "SNS/콘텐츠마케팅",
+    "채용연계형 인턴",
+    "체험형 인턴"
+   ],
+   "eligibility": "",
+   "location": "오프라인(서울)",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 40,
+   "score_reasons": [
+    "기타 직무 +10",
+    "근무 기간 미상 +10",
+    "기타 주최 +5",
+    "재학생 지원 가능(체험형) +15"
+   ],
+   "status": "maybe",
+   "warnings": [],
+   "first_seen": "2026-11-24T13:10:01.012860"
+  },
+  {
+   "id": "linkareer-5b285e02",
+   "category": "internship",
+   "title": "[리멤버앤컴퍼니] 영업 SDR 담당자 (B2B 영업대행 신사업 초기멤버) 인턴",
+   "source": "linkareer",
+   "url": "https://linkareer.com/activity/366441",
+   "organizer": "리멤버앤컴퍼니",
+   "apply_start": null,
+   "deadline": "2027-02-21T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "B2B영업",
+    "체험형 인턴"
+   ],
+   "eligibility": "",
+   "location": "오프라인(서울)",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 40,
+   "score_reasons": [
+    "기타 직무 +10",
+    "근무 기간 미상 +10",
+    "기타 주최 +5",
+    "재학생 지원 가능(체험형) +15"
+   ],
+   "status": "maybe",
+   "warnings": [],
+   "first_seen": "2026-11-24T13:10:01.012860"
+  },
+  {
+   "id": "linkareer-2e6d255a",
+   "category": "internship",
+   "title": "[체험형 인턴] ​글로벌 ​인허가(RA) 담당자 ​(6개월~)",
+   "source": "linkareer",
+   "url": "https://linkareer.com/activity/366424",
+   "organizer": "비나우",
+   "apply_start": null,
+   "deadline": "2027-02-21T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "물류/SCM관리",
+    "체험형 인턴"
+   ],
+   "eligibility": "",
+   "location": "오프라인(서울)",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 40,
+   "score_reasons": [
+    "기타 직무 +10",
+    "근무 기간 미상 +10",
+    "기타 주최 +5",
+    "재학생 지원 가능(체험형) +15"
+   ],
+   "status": "maybe",
+   "warnings": [],
+   "first_seen": "2026-11-24T13:10:01.012860"
+  },
+  {
+   "id": "linkareer-0b79050c",
+   "category": "internship",
+   "title": "[토스플레이스 자회사/iShopCARE] 수익 파트 인턴 (6개월)",
+   "source": "linkareer",
+   "url": "https://linkareer.com/activity/366422",
+   "organizer": "아이샵케어",
+   "apply_start": null,
+   "deadline": "2027-02-21T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "재무/IR",
+    "체험형 인턴"
+   ],
+   "eligibility": "",
+   "location": "오프라인(서울)",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 40,
+   "score_reasons": [
+    "기타 직무 +10",
+    "근무 기간 미상 +10",
+    "기타 주최 +5",
+    "재학생 지원 가능(체험형) +15"
+   ],
+   "status": "maybe",
+   "warnings": [],
+   "first_seen": "2026-11-24T13:10:01.012860"
+  },
+  {
+   "id": "linkareer-46c5cb55",
+   "category": "internship",
+   "title": "Business Support Intern",
+   "source": "linkareer",
+   "url": "https://linkareer.com/activity/366388",
+   "organizer": "렛서",
+   "apply_start": null,
+   "deadline": "2027-02-21T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "총무/법무/비서",
+    "체험형 인턴"
+   ],
+   "eligibility": "",
+   "location": "오프라인(서울)",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 40,
+   "score_reasons": [
+    "기타 직무 +10",
+    "근무 기간 미상 +10",
+    "기타 주최 +5",
+    "재학생 지원 가능(체험형) +15"
+   ],
+   "status": "maybe",
+   "warnings": [],
+   "first_seen": "2026-11-24T13:10:01.012860"
+  },
+  {
+   "id": "linkareer-3f1abe26",
+   "category": "internship",
+   "title": "채용팀 체험형 인턴",
+   "source": "linkareer",
+   "url": "https://linkareer.com/activity/366270",
+   "organizer": "(주)엘지경영개발원 AI연구원",
+   "apply_start": null,
+   "deadline": "2027-02-21T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "인사/채용/노무",
+    "체험형 인턴"
+   ],
+   "eligibility": "",
+   "location": "오프라인(서울)",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 40,
+   "score_reasons": [
+    "기타 직무 +10",
+    "근무 기간 미상 +10",
+    "기타 주최 +5",
+    "재학생 지원 가능(체험형) +15"
+   ],
+   "status": "maybe",
+   "warnings": [],
+   "first_seen": "2026-11-24T13:10:01.012860"
+  },
+  {
+   "id": "linkareer-b049f0ac",
+   "category": "internship",
+   "title": "[채널톡] Technical Program Manager (TPM)",
+   "source": "linkareer",
+   "url": "https://linkareer.com/activity/366264",
+   "organizer": "채널코퍼레이션",
+   "apply_start": null,
+   "deadline": "2027-02-21T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "IT기획/PM/PO",
+    "채용연계형 인턴"
+   ],
+   "eligibility": "",
+   "location": "오프라인(서울)",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 40,
+   "score_reasons": [
+    "AI·데이터 직무 +25",
+    "근무 기간 미상 +10",
+    "기타 주최 +5"
+   ],
+   "status": "maybe",
+   "warnings": [],
+   "first_seen": "2026-11-24T13:10:01.012860"
+  },
+  {
+   "id": "linkareer-f464fb2e",
+   "category": "internship",
+   "title": "신세계인터내셔날 해외패션부문 뷰오리팀 인턴 모집 공고",
+   "source": "linkareer",
+   "url": "https://linkareer.com/activity/366214",
+   "organizer": "(주)삼구아이앤씨",
+   "apply_start": null,
+   "deadline": "2027-02-21T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "체험형 인턴"
+   ],
+   "eligibility": "",
+   "location": "오프라인(서울)",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 40,
+   "score_reasons": [
+    "기타 직무 +10",
+    "근무 기간 미상 +10",
+    "기타 주최 +5",
+    "재학생 지원 가능(체험형) +15"
+   ],
+   "status": "maybe",
+   "warnings": [],
+   "first_seen": "2026-11-24T13:10:01.012860"
+  },
+  {
+   "id": "linkareer-b32c0fa3",
+   "category": "internship",
+   "title": "콘텐츠, 영상 마케팅 체험형 인턴 모집",
+   "source": "linkareer",
+   "url": "https://linkareer.com/activity/366142",
+   "organizer": "주식회사 더엑시스",
+   "apply_start": null,
+   "deadline": "2027-02-21T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "체험형 인턴"
+   ],
+   "eligibility": "",
+   "location": "오프라인(서울)",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 40,
+   "score_reasons": [
+    "기타 직무 +10",
+    "근무 기간 미상 +10",
+    "기타 주최 +5",
+    "재학생 지원 가능(체험형) +15"
+   ],
+   "status": "maybe",
+   "warnings": [],
+   "first_seen": "2026-11-24T13:10:01.012860"
+  },
+  {
+   "id": "linkareer-9015bf09",
+   "category": "internship",
+   "title": "[더파운더즈] BX 디자이너 채용전환형 인턴",
+   "source": "linkareer",
+   "url": "https://linkareer.com/activity/366420",
+   "organizer": "주식회사 더파운더즈",
+   "apply_start": null,
+   "deadline": "2027-02-21T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "제품/산업디자인",
+    "채용연계형 인턴"
+   ],
+   "eligibility": "",
+   "location": "오프라인(서울)",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 25,
+   "score_reasons": [
+    "기타 직무 +10",
+    "근무 기간 미상 +10",
+    "기타 주최 +5"
+   ],
+   "status": "hidden",
+   "warnings": [],
+   "first_seen": "2026-11-24T13:10:01.012860"
+  },
+  {
+   "id": "linkareer-ba28ac83",
+   "category": "internship",
+   "title": "[무신사] 상품 매입 운영 어시스턴트 (아르바이트)",
+   "source": "linkareer",
+   "url": "https://linkareer.com/activity/366409",
+   "organizer": "주식회사 무신사",
+   "apply_start": null,
+   "deadline": "2027-02-21T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "기타"
+   ],
+   "eligibility": "",
+   "location": "오프라인(서울)",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 25,
+   "score_reasons": [
+    "기타 직무 +10",
+    "근무 기간 미상 +10",
+    "기타 주최 +5"
+   ],
+   "status": "hidden",
+   "warnings": [],
+   "first_seen": "2026-11-24T13:10:01.012860"
+  },
+  {
+   "id": "linkareer-c41a0db0",
+   "category": "internship",
+   "title": "[채널톡] Security Engineer Intern",
+   "source": "linkareer",
+   "url": "https://linkareer.com/activity/366404",
+   "organizer": "채널코퍼레이션",
+   "apply_start": null,
+   "deadline": "2027-02-21T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "DevOps/클라우드/보안",
+    "채용연계형 인턴"
+   ],
+   "eligibility": "",
+   "location": "오프라인(서울)",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 25,
+   "score_reasons": [
+    "기타 직무 +10",
+    "근무 기간 미상 +10",
+    "기타 주최 +5"
+   ],
+   "status": "hidden",
+   "warnings": [],
+   "first_seen": "2026-11-24T13:10:01.012860"
+  },
+  {
+   "id": "linkareer-fa3c338d",
+   "category": "internship",
+   "title": "[톤28] 사진/영상 콘텐츠 서포트(인턴)",
+   "source": "linkareer",
+   "url": "https://linkareer.com/activity/366297",
+   "organizer": "톤28",
+   "apply_start": null,
+   "deadline": "2027-02-21T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "영상촬영/편집",
+    "채용연계형 인턴"
+   ],
+   "eligibility": "",
+   "location": "오프라인(경기)",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 25,
+   "score_reasons": [
+    "기타 직무 +10",
+    "근무 기간 미상 +10",
+    "기타 주최 +5"
+   ],
+   "status": "hidden",
+   "warnings": [],
+   "first_seen": "2026-11-24T13:10:01.012860"
+  },
+  {
+   "id": "linkareer-7169cf93",
+   "category": "internship",
+   "title": "[무신사스탠다드] VMD 현장 세팅 어시스턴트 (아르바이트)",
+   "source": "linkareer",
+   "url": "https://linkareer.com/activity/366262",
+   "organizer": "주식회사 무신사",
+   "apply_start": null,
+   "deadline": "2027-02-21T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "기타"
+   ],
+   "eligibility": "",
+   "location": "오프라인(서울)",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 25,
+   "score_reasons": [
+    "기타 직무 +10",
+    "근무 기간 미상 +10",
+    "기타 주최 +5"
+   ],
+   "status": "hidden",
+   "warnings": [],
+   "first_seen": "2026-11-24T13:10:01.012860"
   },
   {
    "id": "linkareer-bdddccdd",
@@ -7319,6 +7172,358 @@
    "first_seen": "2026-11-23T10:28:12.861778"
   },
   {
+   "id": "linkareer-8dcedaf6",
+   "category": "internship",
+   "title": "[미국] 2012년 설립된 실리카겔 등 건조제 관련 제품 유통 기업 그래픽 디자이너 채용",
+   "source": "linkareer",
+   "url": "https://linkareer.com/activity/366345",
+   "organizer": "Dry & Dry company (L2K COMMERCE)",
+   "apply_start": null,
+   "deadline": "2027-02-21T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "그래픽/시각디자인",
+    "기타",
+    "채용연계형 인턴",
+    "체험형 인턴"
+   ],
+   "eligibility": "",
+   "location": "오프라인(해외)",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 0,
+   "score_reasons": [
+    "제외: 허용 지역 아님"
+   ],
+   "status": "hidden",
+   "warnings": [],
+   "first_seen": "2026-11-24T13:10:01.012860"
+  },
+  {
+   "id": "linkareer-fb910148",
+   "category": "internship",
+   "title": "[미국인턴] 뉴욕 기반 건축 시공사  - 인테리어 디자이너 채용",
+   "source": "linkareer",
+   "url": "https://linkareer.com/activity/366340",
+   "organizer": "Harang Design, Inc",
+   "apply_start": null,
+   "deadline": "2027-02-21T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "공간/인테리어디자인",
+    "체험형 인턴"
+   ],
+   "eligibility": "",
+   "location": "오프라인(해외)",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 0,
+   "score_reasons": [
+    "제외: 허용 지역 아님"
+   ],
+   "status": "hidden",
+   "warnings": [],
+   "first_seen": "2026-11-24T13:10:01.012860"
+  },
+  {
+   "id": "linkareer-35608260",
+   "category": "internship",
+   "title": "[미국인턴/북미지역] CJ Logistics America 각 부문 채용",
+   "source": "linkareer",
+   "url": "https://linkareer.com/activity/366335",
+   "organizer": "CJ Logistics America Inc.",
+   "apply_start": null,
+   "deadline": "2027-02-21T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "기타",
+    "체험형 인턴"
+   ],
+   "eligibility": "",
+   "location": "오프라인(해외)",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 0,
+   "score_reasons": [
+    "제외: 허용 지역 아님"
+   ],
+   "status": "hidden",
+   "warnings": [],
+   "first_seen": "2026-11-24T13:10:01.012860"
+  },
+  {
+   "id": "linkareer-5c89f7f6",
+   "category": "internship",
+   "title": "[미국인턴/앨라배마][현기차 협력사][숙소제공] Chowel Weldparts 각 부문 채용",
+   "source": "linkareer",
+   "url": "https://linkareer.com/activity/366329",
+   "organizer": "Chowel Weldparts Inc.",
+   "apply_start": null,
+   "deadline": "2027-02-21T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "기타",
+    "체험형 인턴"
+   ],
+   "eligibility": "",
+   "location": "오프라인(해외)",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 0,
+   "score_reasons": [
+    "제외: 허용 지역 아님"
+   ],
+   "status": "hidden",
+   "warnings": [],
+   "first_seen": "2026-11-24T13:10:01.012860"
+  },
+  {
+   "id": "linkareer-67ce1407",
+   "category": "internship",
+   "title": "[미국인턴/캘리포니아][현지물류대기업] KW International Data Analysis 부문 채용",
+   "source": "linkareer",
+   "url": "https://linkareer.com/activity/366328",
+   "organizer": "KW International Inc.",
+   "apply_start": null,
+   "deadline": "2027-02-21T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "기타",
+    "체험형 인턴"
+   ],
+   "eligibility": "",
+   "location": "오프라인(해외)",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 0,
+   "score_reasons": [
+    "제외: 허용 지역 아님"
+   ],
+   "status": "hidden",
+   "warnings": [],
+   "first_seen": "2026-11-24T13:10:01.012860"
+  },
+  {
+   "id": "linkareer-f3499e50",
+   "category": "internship",
+   "title": "[미국인턴/미전역] CJ대한통운 미주지사  - 물류팀 인턴 채용",
+   "source": "linkareer",
+   "url": "https://linkareer.com/activity/366318",
+   "organizer": "CJ Logistics America, LLC",
+   "apply_start": null,
+   "deadline": "2027-02-21T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "채용연계형 인턴",
+    "체험형 인턴"
+   ],
+   "eligibility": "",
+   "location": "오프라인(해외)",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 0,
+   "score_reasons": [
+    "제외: 허용 지역 아님"
+   ],
+   "status": "hidden",
+   "warnings": [],
+   "first_seen": "2026-11-24T13:10:01.012860"
+  },
+  {
+   "id": "linkareer-6c5cabdb",
+   "category": "internship",
+   "title": "[조선미녀] 글로벌 인플루언서 마케팅 인턴",
+   "source": "linkareer",
+   "url": "https://linkareer.com/activity/366600",
+   "organizer": "주식회사 구다이글로벌",
+   "apply_start": null,
+   "deadline": "2027-02-22T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "디지털/퍼포먼스마케팅",
+    "SNS/콘텐츠마케팅",
+    "체험형 인턴"
+   ],
+   "eligibility": "",
+   "location": "오프라인(서울)",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 40,
+   "score_reasons": [
+    "기타 직무 +10",
+    "근무 기간 미상 +10",
+    "기타 주최 +5",
+    "재학생 지원 가능(체험형) +15"
+   ],
+   "status": "maybe",
+   "warnings": [],
+   "first_seen": "2026-11-24T13:10:01.012860"
+  },
+  {
+   "id": "linkareer-7fc7181e",
+   "category": "internship",
+   "title": "[마카롱팩토리/마이클] 파트너 영업지원 담당자 (전환형 인턴)",
+   "source": "linkareer",
+   "url": "https://linkareer.com/activity/366560",
+   "organizer": "주식회사 마카롱팩토리",
+   "apply_start": null,
+   "deadline": "2027-02-22T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "영업관리/기획",
+    "채용연계형 인턴"
+   ],
+   "eligibility": "",
+   "location": "오프라인(경기)",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 25,
+   "score_reasons": [
+    "기타 직무 +10",
+    "근무 기간 미상 +10",
+    "기타 주최 +5"
+   ],
+   "status": "hidden",
+   "warnings": [],
+   "first_seen": "2026-11-24T13:10:01.012860"
+  },
+  {
+   "id": "linkareer-c1c1a417",
+   "category": "internship",
+   "title": "뷰티 릴리이브 콘텐츠 마케터(전환형 인턴)",
+   "source": "linkareer",
+   "url": "https://linkareer.com/activity/366558",
+   "organizer": "바이트랩",
+   "apply_start": null,
+   "deadline": "2027-02-22T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "SNS/콘텐츠마케팅",
+    "채용연계형 인턴"
+   ],
+   "eligibility": "",
+   "location": "오프라인(서울)",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 25,
+   "score_reasons": [
+    "기타 직무 +10",
+    "근무 기간 미상 +10",
+    "기타 주최 +5"
+   ],
+   "status": "hidden",
+   "warnings": [],
+   "first_seen": "2026-11-24T13:10:01.012860"
+  },
+  {
+   "id": "linkareer-d87f30ab",
+   "category": "internship",
+   "title": "뷰티 색동서울 콘텐츠 마케터(전환형 인턴)",
+   "source": "linkareer",
+   "url": "https://linkareer.com/activity/366557",
+   "organizer": "바이트랩",
+   "apply_start": null,
+   "deadline": "2027-02-22T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "SNS/콘텐츠마케팅",
+    "채용연계형 인턴"
+   ],
+   "eligibility": "",
+   "location": "오프라인(서울)",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 25,
+   "score_reasons": [
+    "기타 직무 +10",
+    "근무 기간 미상 +10",
+    "기타 주최 +5"
+   ],
+   "status": "hidden",
+   "warnings": [],
+   "first_seen": "2026-11-24T13:10:01.012860"
+  },
+  {
+   "id": "linkareer-3e2a4196",
+   "category": "internship",
+   "title": "[마카롱팩토리/마이클] 오피스 운영 담당자 - 총무/GA (전환형 인턴)",
+   "source": "linkareer",
+   "url": "https://linkareer.com/activity/366553",
+   "organizer": "주식회사 마카롱팩토리",
+   "apply_start": null,
+   "deadline": "2027-02-22T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "총무/법무/비서",
+    "채용연계형 인턴"
+   ],
+   "eligibility": "",
+   "location": "오프라인(경기)",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 25,
+   "score_reasons": [
+    "기타 직무 +10",
+    "근무 기간 미상 +10",
+    "기타 주최 +5"
+   ],
+   "status": "hidden",
+   "warnings": [],
+   "first_seen": "2026-11-24T13:10:01.012860"
+  },
+  {
+   "id": "linkareer-c5e8f201",
+   "category": "internship",
+   "title": "[마케팅] 포맨트 온라인 마케팅 채용연계형 인턴사원 모집",
+   "source": "linkareer",
+   "url": "https://linkareer.com/activity/366535",
+   "organizer": "주식회사 에이피알",
+   "apply_start": null,
+   "deadline": "2027-02-22T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "SNS/콘텐츠마케팅",
+    "채용연계형 인턴"
+   ],
+   "eligibility": "",
+   "location": "오프라인(서울)",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 25,
+   "score_reasons": [
+    "기타 직무 +10",
+    "근무 기간 미상 +10",
+    "기타 주최 +5"
+   ],
+   "status": "hidden",
+   "warnings": [],
+   "first_seen": "2026-11-24T13:10:01.012860"
+  },
+  {
    "id": "wevity-0a311cee",
    "category": "contest",
    "title": "농업가치 확산을 위한 농심천심 대학(원)생 논문 공모전",
@@ -7326,7 +7531,7 @@
    "url": "https://www.wevity.com/?c=find&s=1&gbn=view&ix=111899",
    "organizer": "농업협동조합중앙회",
    "apply_start": null,
-   "deadline": "2027-02-27T23:59:00",
+   "deadline": "2027-02-26T23:59:00",
    "event_start": null,
    "event_end": null,
    "tags": [
