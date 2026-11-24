@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-24T13:18+09:00",
+ "generated_at": "2026-11-24T14:01+09:00",
  "repo": "jaebin06/yonsei-calendar",
  "health": {
   "dev-event": {
@@ -6095,39 +6095,6 @@
    "first_seen": "2026-11-22T00:09:44.527946"
   },
   {
-   "id": "linkareer-b613ffef",
-   "category": "internship",
-   "title": "[케이시크릿] 글로벌 화장품 유통 Operation Manager 인턴 채용",
-   "source": "linkareer",
-   "url": "https://linkareer.com/activity/365699",
-   "organizer": "케이시크릿",
-   "apply_start": null,
-   "deadline": "2026-12-31T23:59:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "구매/자재관리",
-    "물류/SCM관리",
-    "배송/운송/화물",
-    "채용연계형 인턴"
-   ],
-   "eligibility": "",
-   "location": "오프라인(서울)",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 25,
-   "score_reasons": [
-    "기타 직무 +10",
-    "근무 기간 미상 +10",
-    "기타 주최 +5"
-   ],
-   "status": "hidden",
-   "warnings": [],
-   "ask": false,
-   "first_seen": "2026-11-22T00:09:44.527946"
-  },
-  {
    "id": "linkareer-2725252f",
    "category": "internship",
    "title": "[미국인턴] CJ Logistics America SCM 물류인턴 지점별 인턴 채용 (CA, IL, TN)",
@@ -6457,39 +6424,6 @@
    "tags": [
     "IT기획/PM/PO",
     "기타"
-   ],
-   "eligibility": "",
-   "location": "오프라인(서울)",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 40,
-   "score_reasons": [
-    "AI·데이터 직무 +25",
-    "근무 기간 미상 +10",
-    "기타 주최 +5"
-   ],
-   "status": "maybe",
-   "warnings": [],
-   "ask": false,
-   "first_seen": "2026-11-22T00:09:44.527946"
-  },
-  {
-   "id": "linkareer-c1793c63",
-   "category": "internship",
-   "title": "[미미박스] AI 콘텐츠·Meta 퍼포먼스 마케터 인턴 (채용연계형)",
-   "source": "linkareer",
-   "url": "https://linkareer.com/activity/365702",
-   "organizer": "(주)미미박스",
-   "apply_start": null,
-   "deadline": "2027-02-17T23:59:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "마케팅기획/전략",
-    "디지털/퍼포먼스마케팅",
-    "SNS/콘텐츠마케팅",
-    "채용연계형 인턴"
    ],
    "eligibility": "",
    "location": "오프라인(서울)",
@@ -7610,6 +7544,69 @@
    "warnings": [],
    "ask": false,
    "first_seen": "2026-11-24T13:10:01.012860"
+  },
+  {
+   "id": "linkareer-7cd65c04",
+   "category": "internship",
+   "title": "[네오위즈] [ASTRA9 Studio] 라이프 시뮬레이션 신작 프로젝트 스토리 세계관 설정 기획자 (인턴)",
+   "source": "linkareer",
+   "url": "https://linkareer.com/activity/366619",
+   "organizer": "네오위즈",
+   "apply_start": null,
+   "deadline": "2027-02-22T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "게임개발/기획",
+    "체험형 인턴"
+   ],
+   "eligibility": "",
+   "location": "오프라인(경기)",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 70,
+   "score_reasons": [
+    "PM·서비스 기획 직무 +40",
+    "근무 기간 미상 +10",
+    "기타 주최 +5",
+    "재학생 지원 가능(체험형) +15"
+   ],
+   "status": "recommended",
+   "warnings": [],
+   "ask": false,
+   "first_seen": "2026-11-24T14:01:09.566730"
+  },
+  {
+   "id": "linkareer-71634cb5",
+   "category": "internship",
+   "title": "신세계인터내셔날 코스메틱 돌체앤가바나뷰티 디자인&AMD 채용",
+   "source": "linkareer",
+   "url": "https://linkareer.com/activity/366616",
+   "organizer": "(주)삼구아이앤씨",
+   "apply_start": null,
+   "deadline": "2027-02-22T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "체험형 인턴"
+   ],
+   "eligibility": "",
+   "location": "오프라인(서울)",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 40,
+   "score_reasons": [
+    "기타 직무 +10",
+    "근무 기간 미상 +10",
+    "기타 주최 +5",
+    "재학생 지원 가능(체험형) +15"
+   ],
+   "status": "maybe",
+   "warnings": [],
+   "ask": false,
+   "first_seen": "2026-11-24T14:01:09.566730"
   },
   {
    "id": "linkareer-6c5cabdb",
