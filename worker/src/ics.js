@@ -48,9 +48,22 @@ export function shortHash(s) {
   return h.toString(16).padStart(8, "0");
 }
 
+// 'Progress start' / 'Progress stop' 처럼 같은 활동의 시작·끝 알림을 가리키는 표시
+const PAIR_RE = /\s*[\(\[]?\s*(progress\s*(start|stop|end)|(진도|출석|학습)\s*(시작|종료|마감))\s*[\)\]]?\s*$/i;
+const PAIR_PREFIX_RE = /^\s*[\(\[]?\s*progress\s*(start|stop|end)\s*[\)\]]?\s*[:\-]?\s*/i;
+
+function pairInfo(title) {
+  const m = title.match(PAIR_RE) || title.match(PAIR_PREFIX_RE);
+  if (!m) return null;
+  const word = m[0].toLowerCase();
+  const role = /start|시작/.test(word) ? "start" : "stop";
+  const base = title.replace(PAIR_RE, "").replace(PAIR_PREFIX_RE, "").trim();
+  return base ? { role, base } : null;
+}
+
 /** LearnUs ICS → 대시보드 공통 형식 */
 export function learnusEvents(text) {
-  return parseICS(text).map((ve) => {
+  const raw = parseICS(text).map((ve) => {
     const title = ve.SUMMARY?.value?.trim() || "(제목 없음)";
     const desc = ve.DESCRIPTION?.value || "";
     const start = icsDateToKst(ve.DTSTART);
@@ -60,10 +73,12 @@ export function learnusEvents(text) {
     const from = due !== start ? start : null;
     const hay = `${title} ${desc}`;
     let kind = "assignment";
-    if (/동영상|영상|VOD|vod|시청|강의\s*콘텐츠/.test(hay)) kind = "video";
+    if (/동영상|영상|VOD|vod|시청|강의\s*콘텐츠|progress/i.test(hay)) kind = "video";
     else if (/퀴즈|quiz|시험/i.test(hay)) kind = "quiz";
-    const isOpen = /\b(opens|열림)\b|시작\s*$|오픈/.test(title);
+    const isOpen = /\b(opens|열림)\b|오픈/.test(title);
     return {
+      uid: ve.UID?.value || title + start,
+      pair: pairInfo(title),
       id: `learnus-${shortHash(ve.UID?.value || title + start)}`,
       category: "learnus",
       kind,
@@ -78,6 +93,25 @@ export function learnusEvents(text) {
       url: "https://ys.learnus.org/calendar/view.php?view=upcoming",
     };
   }).filter((e) => e.event_start);
+
+  // 같은 과목·같은 이름의 start/stop은 할 일 하나로 합친다: 마감 = stop, '○일부터' = start
+  const groups = new Map();
+  const out = [];
+  for (const e of raw) {
+    if (!e.pair) { out.push(e); continue; }
+    const key = `${e.course}|${e.pair.base}`;
+    if (!groups.has(key)) groups.set(key, {});
+    groups.get(key)[e.pair.role] = e;
+  }
+  for (const { start, stop } of groups.values()) {
+    if (stop) {
+      out.push({ ...stop, title: stop.pair.base, kind: "video", available_from: start ? start.event_start : stop.available_from });
+    } else {
+      // 시작 알림만 있으면 마감이 아니므로 기본으로 내 일정에서 뺀다
+      out.push({ ...start, title: `${start.pair.base} (시작)`, kind: "video", is_open: true });
+    }
+  }
+  return out.map(({ uid, pair, ...e }) => e);
 }
 
 // ---------- 쓰기 ----------

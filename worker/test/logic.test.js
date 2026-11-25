@@ -132,3 +132,23 @@ test("장학금은 고르면 [장학 마감], 묻는 문구는 신청 결정", (
   const s = applyOp(EMPTY_STATE, { op: "select", id: ev.id }, now);
   assert.deepEqual(feedItems(decorate([ev], s, now), now).map((i) => i.summary), ["[장학 마감] 울산연구원 장학생 선발"]);
 });
+
+test("Progress start / stop은 할 일 하나로 합친다", () => {
+  const ics = [
+    "BEGIN:VEVENT", "UID:a1@x", "SUMMARY:11주차 강의 (Progress start)", "CATEGORIES:CAS3201", "DTSTART:20261123T150000Z", "END:VEVENT",
+    "BEGIN:VEVENT", "UID:a2@x", "SUMMARY:11주차 강의 (Progress stop)", "CATEGORIES:CAS3201", "DTSTART:20261130T145900Z", "END:VEVENT",
+    "BEGIN:VEVENT", "UID:b1@x", "SUMMARY:12주차 강의 Progress start", "CATEGORIES:CAS3201", "DTSTART:20261130T150000Z", "END:VEVENT",
+    "BEGIN:VEVENT", "UID:c1@x", "SUMMARY:과제5 마감", "CATEGORIES:CAS2250", "DTSTART:20261201T145900Z", "END:VEVENT",
+  ].join("\r\n");
+  const evs = learnusEvents(ics);
+  const v11 = evs.find((e) => e.title === "11주차 강의");
+  assert.ok(v11);
+  assert.equal(v11.event_start, "2026-11-30T23:59");
+  assert.equal(v11.available_from, "2026-11-24T00:00");
+  assert.equal(v11.kind, "video");
+  assert.equal(evs.filter((e) => e.title.startsWith("11주차")).length, 1);
+  const v12 = evs.find((e) => e.title.startsWith("12주차"));
+  assert.equal(v12.is_open, true);
+  assert.equal(isIncluded(v12, EMPTY_STATE), false);
+  assert.ok(evs.find((e) => e.title === "과제5 마감")); // '마감'은 짝이 없으면 그대로
+});
