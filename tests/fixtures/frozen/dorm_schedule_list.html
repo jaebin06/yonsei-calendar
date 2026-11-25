@@ -32,7 +32,7 @@
 			<link rel="stylesheet" type="text/css" media="all" href="/res/css/animate/ie-9-animate.css">
 		<![endif]-->
 		<link rel="stylesheet" type="text/css" media="all" href="/res/css/sub.css" />
-		<link rel="stylesheet" type="text/css" media="all" href="/res/css/sub_6.css" />
+		<link rel="stylesheet" type="text/css" media="all" href="/res/css/sub_2.css" />
 		<link rel="stylesheet" type="text/css" media="all" href="/res/css/form.css" />
 		<!--[if lte IE 9]>
 		<script src="/res/js/Compatibility_HTML5Shiv.js"></script>
@@ -49,7 +49,7 @@
 		<script src="/res/js/jQuery.print.js"></script>
 		<link rel="stylesheet" type="text/css" media="all" href="/res/modules/jquery-ui/jQuery.Ui.css" />
 		<script src="/res/modules/jquery-ui/jQuery.Ui.js"></script>
-		<title>공지사항 - 연세대학교 생활관</title>
+		<title>선발일정 - 연세대학교 생활관</title>
 	</head>
 	<body>
 		<div id="mqLayout">
@@ -263,10 +263,10 @@
 				</div>
 			</aside>				
 		</header>
-			<div id="mqSubvisual" class="subCode_6">
+			<div id="mqSubvisual" class="subCode_2">
 				<div class="subvisual_box">
 					<p>
-						<b>커뮤니티</b>
+						<b>입사안내</b>
 					</p>
 						
 		<div id="subMenu">
@@ -274,10 +274,10 @@
 				<ul data-liststyle="none" class="sub-menu-box">
 					<li class="home-data"><a href="/" title="Home"><span data-hide="true">홈</span></a></li>
 					<li class="p-data">
-						<a href="javascript:void(0)">커뮤니티</a>
+						<a href="javascript:void(0)">입사안내</a>
 						<ul data-liststyle="none" class="navi-m-box">				
 							<li><a href="/sub.php?code=010200">생활관 안내</a></li>			
-							<li><a href="/sub.php?code=020100">입사안내</a></li>
+							<li class="enter active"><a href="/sub.php?code=020100">입사안내</a></li>
 							<li><a href="/board/?id=notice">커뮤니티</a></li>
 							
 
@@ -286,18 +286,15 @@
 						</ul>
 					</li> 
 					<li class="c-data">
-						<a href="#n">공지사항</a>
+						<a href="#n">선발일정</a>
 						<ul data-liststyle="none" class="navi-s-box" >
-						<li class="enter"><a href="/board/?id=notice">공지사항</a></li>					
-						
-						<li><a href="/board/?id=faq">FAQ</a></li>
-						<li><a href="/board/?id=qna">Q&amp;A</a></li>
-						<li><a href="/board/?id=foodbus">식당/셔틀</a></li>	
-						<li><a href="/sub.php?code=060400">수요예배</a></li>
-						<!-- <li><a href="/board/?id=tips">TIPS!</a></li> -->
-						<li><a href="/sub.php?code=060800">생활관 내규</a></li>
-						<li><a href="/board/?id=repair">수리요청</a></li>
-						<!-- <li><a href="/Survey/list/">사용자 의견 조사</a></li> -->
+					
+						<li><a href="/sub.php?code=020100">선발기준</a></li>
+						<li><a href="/sub.php?code=020300">신청안내</a></li>
+						<!-- <li><a href="/application/">On-line Application</a></li> -->
+									
+						<li><a href="/board/?id=data">서식자료실</a></li>
+						<li class="enter"><a href="/board/?id=schedule">선발일정</a></li>	
 					  </ul>
 					</li>
 				</ul>
@@ -369,7 +366,7 @@
 			<div id="mqContent">
 				<div id="mqContent_box">
 					<div id="content">
-						<h1 class="cmn-m-title">공지사항</h1>
+						<h1 class="cmn-m-title">선발일정</h1>
 											
 					<div id="mqSub-Data" class="subx-board-list customZone">
 					<!--
@@ -395,25 +392,25 @@
 						</ul>					
 					-->
 						<div class="board-list-head">
-							<p>Total <b data-color="red">254</b> Posts (<b data-color="red">1</b>/26 page)</p>
+							<p>Total <b data-color="red">107</b> Posts (<b data-color="red">1</b>/11 page)</p>
 							<form name="searchForm" id="searchForm" method="get" action="?">
-								<input type="hidden" name="id" id="id" value="notice" />
+								<input type="hidden" name="id" id="id" value="schedule" />
 								<fieldset>
 									<legend data-hide="true">search</legend>
 									<div class="default">
 									<!--span class="inlineblock margin_t_5 margin_r_5 bold">분류</span-->
-									<label for="searchCategory" data-hide="true">Category</label>
+									<label for="searchCategory" data-hide="true">category</label>
 									<select name="searchCategory" id="searchCategory">
 										<option value="">Category</option>
-<option value="공통">공통</option><option value="생활관">생활관</option><option value="무악/우정">무악/우정</option><option value="법현">법현</option><option value="우정">우정</option><option value="1학사">1학사</option><option value="2학사">2학사</option><option value="3학사">3학사</option><option value="4학사">4학사</option>									</select>
-									<label for="searchType" data-hide="true">searchType</label>
+<option value="공통">공통</option><option value="무악학사">무악학사</option><option value="법현학사">법현학사</option><option value="우정원">우정원</option><option value="INTERNATION HOUSE">INTERNATION HOUSE</option><option value="SK GLOBAL HOUSE">SK GLOBAL HOUSE</option>									</select>
+									<label for="searchType" data-hide="true">검색 타입</label>
 									<select name="searchType" id="searchType">
 										<option value="all">All</option>
 										<option value="title">Title</option>
 										<option value="contents">Contents</option>
 										<option value="writer">Writer</option>
 									</select>
-									<label for="searchKeyword" data-hide="true">searchKeyword</label>
+									<label for="searchKeyword" data-hide="true">키워드입력</label>
 									<input type="text" name="searchKeyword" id="searchKeyword" class="textbox" value="">
 									<button type="submit"><span>Search</span></button>
 									</div>
@@ -432,7 +429,7 @@
 								</caption>
                                 <colgroup>
                                     <col class="w10">
-									<col class="w13">
+									<col class="w13" >
                                     <col />
                                     <col class="w12">
                                     <col class="w8 hide_when_mobile">
@@ -451,222 +448,222 @@
 								<tbody>
 
 									<!-- {s} mobile -->
-									<tr class = "hide_when_pc">	
-										<td colspan = "4">
-											<span class="n-title">Notice</span>											<strong>[3학사]</strong>&nbsp;											<span class = "title"><a href="/board/?mode=V&idx=9179&id=notice&p=1" alt="">무악3학사 단수공지</a></span>
-											2026-11-19
+									<tr class = "hide_when_pc">
+																				<td colspan = "4">
+											<strong>[무악학사]</strong>&nbsp;											<span class = "title"><a href="/board/?mode=V&idx=9172&id=schedule&p=1" alt="">2026년 4분기 고시동(현거주자) 연장 신청 안내</a></span>
+											2026-10-29
 										</td>
 
 									</tr>
 
 
-									<tr class = 'hide_when_mobile'>
-										<td data-align="center"><span class="n-title">Notice</span></td>
-										<td data-align="center">3학사</td>
-										<td class=" bold">
-											<a href="/board/?mode=V&idx=9179&id=notice&p=1" alt="">무악3학사 단수공지</a>
+									<tr class = "hide_when_mobile">
+										<td data-align="center">107</td>
+										<td data-align="center">무악학사</td>
+										<td class="">
+											<a href="/board/?mode=V&idx=9172&id=schedule&p=1" alt="">2026년 4분기 고시동(현거주자) 연장 신청 안내</a>
 										</td>
-										<td data-align="center">2026-11-19</td>
-										<td data-align="center" class = "hide_when_mobile">161</td>
-										<td data-align="center" class = "hide_when_mobile">
+										<td data-align="center" class = "hide_when_mobile">2026-10-29</td>
+										<td data-align="center" class = "hide_when_mobile">2284</td>
+										<td data-align="center">
 										</td>
 									</tr>
 
 									<!-- {s} mobile -->
-									<tr class = "hide_when_pc">	
-										<td colspan = "4">
-											<span class="n-title">Notice</span>											<strong>[공통]</strong>&nbsp;											<span class = "title"><a href="/board/?mode=V&idx=9178&id=notice&p=1" alt="">전체 사생실 내부 정기 방역 안내 (11. 30.(월))</a></span>
-											2026-11-16
+									<tr class = "hide_when_pc">
+																				<td colspan = "4">
+											<strong>[공통]</strong>&nbsp;											<span class = "title"><a href="/board/?mode=V&idx=9168&id=schedule&p=1" alt="">2026학년도 신촌캠퍼스 겨울방학 연장 신청 안내  (Sinchon Winter Extension)</a></span>
+											2026-10-20
 										</td>
 
 									</tr>
 
 
-									<tr class = 'hide_when_mobile'>
-										<td data-align="center"><span class="n-title">Notice</span></td>
+									<tr class = "hide_when_mobile">
+										<td data-align="center">106</td>
 										<td data-align="center">공통</td>
-										<td class=" bold">
-											<a href="/board/?mode=V&idx=9178&id=notice&p=1" alt="">전체 사생실 내부 정기 방역 안내 (11. 30.(월))</a>
+										<td class="">
+											<a href="/board/?mode=V&idx=9168&id=schedule&p=1" alt="">2026학년도 신촌캠퍼스 겨울방학 연장 신청 안내  (Sinchon Winter Extension)</a>
 										</td>
-										<td data-align="center">2026-11-16</td>
-										<td data-align="center" class = "hide_when_mobile">197</td>
-										<td data-align="center" class = "hide_when_mobile">
-										</td>
-									</tr>
-
-									<!-- {s} mobile -->
-									<tr class = "hide_when_pc">	
-										<td colspan = "4">
-											<span class="n-title">Notice</span>											<strong>[2학사]</strong>&nbsp;											<span class = "title"><a href="/board/?mode=V&idx=9174&id=notice&p=1" alt="">무악2학사 A동 단수공지</a></span>
-											2026-11-02
-										</td>
-
-									</tr>
-
-
-									<tr class = 'hide_when_mobile'>
-										<td data-align="center"><span class="n-title">Notice</span></td>
-										<td data-align="center">2학사</td>
-										<td class=" bold">
-											<a href="/board/?mode=V&idx=9174&id=notice&p=1" alt="">무악2학사 A동 단수공지</a>
-										</td>
-										<td data-align="center">2026-11-02</td>
-										<td data-align="center" class = "hide_when_mobile">288</td>
-										<td data-align="center" class = "hide_when_mobile">
+										<td data-align="center" class = "hide_when_mobile">2026-10-20</td>
+										<td data-align="center" class = "hide_when_mobile">9123</td>
+										<td data-align="center">
 										</td>
 									</tr>
 
 									<!-- {s} mobile -->
-									<tr class = "hide_when_pc">	
-										<td colspan = "4">
-											<span class="n-title">Notice</span>											<strong>[공통]</strong>&nbsp;											<span class = "title"><a href="/board/?mode=V&idx=9171&id=notice&p=1" alt="">신촌캠퍼스 무선네트워크 일시중지 안내</a></span>
-											2026-10-28
+									<tr class = "hide_when_pc">
+																				<td colspan = "4">
+											<strong>[공통]</strong>&nbsp;											<span class = "title"><a href="/board/?mode=V&idx=9154&id=schedule&p=1" alt="">2026학년도 2학기 생활관 추가 입사 선발 종료 안내</a></span>
+											2026-09-21
 										</td>
 
 									</tr>
 
 
-									<tr class = 'hide_when_mobile'>
-										<td data-align="center"><span class="n-title">Notice</span></td>
+									<tr class = "hide_when_mobile">
+										<td data-align="center">105</td>
 										<td data-align="center">공통</td>
-										<td class=" bold">
-											<a href="/board/?mode=V&idx=9171&id=notice&p=1" alt="">신촌캠퍼스 무선네트워크 일시중지 안내</a>
+										<td class="">
+											<a href="/board/?mode=V&idx=9154&id=schedule&p=1" alt="">2026학년도 2학기 생활관 추가 입사 선발 종료 안내</a>
 										</td>
-										<td data-align="center">2026-10-28</td>
-										<td data-align="center" class = "hide_when_mobile">355</td>
-										<td data-align="center" class = "hide_when_mobile">
+										<td data-align="center" class = "hide_when_mobile">2026-09-21</td>
+										<td data-align="center" class = "hide_when_mobile">991</td>
+										<td data-align="center">
 										</td>
 									</tr>
 
 									<!-- {s} mobile -->
-									<tr class = "hide_when_pc">	
-										<td colspan = "4">
-											<span class="n-title">Notice</span>											<strong>[공통]</strong>&nbsp;											<span class = "title"><a href="/board/?mode=V&idx=9169&id=notice&p=1" alt="">찾아가는 청년주거 상담소 (2026.11.5.(목)~11.6.(금))</a></span>
-											2026-10-22
+									<tr class = "hide_when_pc">
+																				<td colspan = "4">
+											<strong>[공통]</strong>&nbsp;											<span class = "title"><a href="/board/?mode=V&idx=9134&id=schedule&p=1" alt="">2026-2학기 기숙사(신촌) 추가 신청 안내 </a></span>
+											2026-08-19
 										</td>
 
 									</tr>
 
 
-									<tr class = 'hide_when_mobile'>
-										<td data-align="center"><span class="n-title">Notice</span></td>
+									<tr class = "hide_when_mobile">
+										<td data-align="center">104</td>
 										<td data-align="center">공통</td>
-										<td class=" bold">
-											<a href="/board/?mode=V&idx=9169&id=notice&p=1" alt="">찾아가는 청년주거 상담소 (2026.11.5.(목)~11.6.(금))</a>
+										<td class="">
+											<a href="/board/?mode=V&idx=9134&id=schedule&p=1" alt="">2026-2학기 기숙사(신촌) 추가 신청 안내 </a>
 										</td>
-										<td data-align="center">2026-10-22</td>
-										<td data-align="center" class = "hide_when_mobile">408</td>
-										<td data-align="center" class = "hide_when_mobile">
-										</td>
-									</tr>
-
-									<!-- {s} mobile -->
-									<tr class = "hide_when_pc">	
-										<td colspan = "4">
-											<span class="n-title">Notice</span>											<strong>[4학사]</strong>&nbsp;											<span class = "title"><a href="/board/?mode=V&idx=9165&id=notice&p=1" alt="">(일정연기)무악4학사 배관 밸브공사에 따른 단수 공지(10.16금→10.30금)</a></span>
-											2026-10-08
-										</td>
-
-									</tr>
-
-
-									<tr class = 'hide_when_mobile'>
-										<td data-align="center"><span class="n-title">Notice</span></td>
-										<td data-align="center">4학사</td>
-										<td class=" bold">
-											<a href="/board/?mode=V&idx=9165&id=notice&p=1" alt="">(일정연기)무악4학사 배관 밸브공사에 따른 단수 공지(10.16금→10.30금)</a>
-										</td>
-										<td data-align="center">2026-10-08</td>
-										<td data-align="center" class = "hide_when_mobile">636</td>
-										<td data-align="center" class = "hide_when_mobile">
+										<td data-align="center" class = "hide_when_mobile">2026-08-19</td>
+										<td data-align="center" class = "hide_when_mobile">7961</td>
+										<td data-align="center">
 										</td>
 									</tr>
 
 									<!-- {s} mobile -->
-									<tr class = "hide_when_pc">	
-										<td colspan = "4">
-											<span class="n-title">Notice</span>											<strong>[무악/우정]</strong>&nbsp;											<span class = "title"><a href="/board/?mode=V&idx=9162&id=notice&p=1" alt="">냉방 중단 알림</a></span>
-											2026-09-30
+									<tr class = "hide_when_pc">
+																				<td colspan = "4">
+											<strong>[공통]</strong>&nbsp;											<span class = "title"><a href="/board/?mode=V&idx=9106&id=schedule&p=1" alt="">2026학년도 여름학기 생활관 추가 입사 선발 종료 안내</a></span>
+											2026-07-16
 										</td>
 
 									</tr>
 
 
-									<tr class = 'hide_when_mobile'>
-										<td data-align="center"><span class="n-title">Notice</span></td>
-										<td data-align="center">무악/우정</td>
-										<td class=" bold">
-											<a href="/board/?mode=V&idx=9162&id=notice&p=1" alt="">냉방 중단 알림</a>
+									<tr class = "hide_when_mobile">
+										<td data-align="center">103</td>
+										<td data-align="center">공통</td>
+										<td class="">
+											<a href="/board/?mode=V&idx=9106&id=schedule&p=1" alt="">2026학년도 여름학기 생활관 추가 입사 선발 종료 안내</a>
 										</td>
-										<td data-align="center">2026-09-30</td>
-										<td data-align="center" class = "hide_when_mobile">656</td>
-										<td data-align="center" class = "hide_when_mobile">
-										</td>
-									</tr>
-
-									<!-- {s} mobile -->
-									<tr class = "hide_when_pc">	
-										<td colspan = "4">
-											<span class="n-title">Notice</span>											<strong>[무악/우정]</strong>&nbsp;											<span class = "title"><a href="/board/?mode=V&idx=9161&id=notice&p=1" alt="">2026학년도 2학기 기숙사 야간 화재대피훈련 안내</a></span>
-											2026-09-29
-										</td>
-
-									</tr>
-
-
-									<tr class = 'hide_when_mobile'>
-										<td data-align="center"><span class="n-title">Notice</span></td>
-										<td data-align="center">무악/우정</td>
-										<td class=" bold">
-											<a href="/board/?mode=V&idx=9161&id=notice&p=1" alt="">2026학년도 2학기 기숙사 야간 화재대피훈련 안내</a>
-										</td>
-										<td data-align="center">2026-09-29</td>
-										<td data-align="center" class = "hide_when_mobile">563</td>
-										<td data-align="center" class = "hide_when_mobile">
+										<td data-align="center" class = "hide_when_mobile">2026-07-16</td>
+										<td data-align="center" class = "hide_when_mobile">3133</td>
+										<td data-align="center">
 										</td>
 									</tr>
 
 									<!-- {s} mobile -->
-									<tr class = "hide_when_pc">	
-										<td colspan = "4">
-											<span class="n-title">Notice</span>											<strong>[생활관]</strong>&nbsp;											<span class = "title"><a href="/board/?mode=V&idx=9153&id=notice&p=1" alt="">서대문경찰서 범죄예방 포스터 및 캠퍼스 안심소식지 공유</a></span>
-											2026-09-18
+									<tr class = "hide_when_pc">
+																				<td colspan = "4">
+											<strong>[공통]</strong>&nbsp;											<span class = "title"><a href="/board/?mode=V&idx=9105&id=schedule&p=1" alt="">2026-2학기 기숙사(신촌) 신규 선발 안내 2026-Fall Housing(Sinchon) Application</a></span>
+											2026-07-16
 										</td>
 
 									</tr>
 
 
-									<tr class = 'hide_when_mobile'>
-										<td data-align="center"><span class="n-title">Notice</span></td>
-										<td data-align="center">생활관</td>
-										<td class=" bold">
-											<a href="/board/?mode=V&idx=9153&id=notice&p=1" alt="">서대문경찰서 범죄예방 포스터 및 캠퍼스 안심소식지 공유</a>
+									<tr class = "hide_when_mobile">
+										<td data-align="center">102</td>
+										<td data-align="center">공통</td>
+										<td class="">
+											<a href="/board/?mode=V&idx=9105&id=schedule&p=1" alt="">2026-2학기 기숙사(신촌) 신규 선발 안내 2026-Fall Housing(Sinchon) Application</a>
 										</td>
-										<td data-align="center">2026-09-18</td>
-										<td data-align="center" class = "hide_when_mobile">514</td>
-										<td data-align="center" class = "hide_when_mobile">
+										<td data-align="center" class = "hide_when_mobile">2026-07-16</td>
+										<td data-align="center" class = "hide_when_mobile">29043</td>
+										<td data-align="center">
 										</td>
 									</tr>
 
 									<!-- {s} mobile -->
-									<tr class = "hide_when_pc">	
-										<td colspan = "4">
-											<span class="n-title">Notice</span>											<strong>[무악/우정]</strong>&nbsp;											<span class = "title"><a href="/board/?mode=V&idx=9150&id=notice&p=1" alt="">전체 사생실 내부 정기 방역 안내 (9. 21.(월))</a></span>
-											2026-09-15
+									<tr class = "hide_when_pc">
+																				<td colspan = "4">
+											<strong>[공통]</strong>&nbsp;											<span class = "title"><a href="/board/?mode=V&idx=9094&id=schedule&p=1" alt="">2026학년도 2학기 연장(2026-Fall Extension) 신청 안내</a></span>
+											2026-07-06
 										</td>
 
 									</tr>
 
 
-									<tr class = 'hide_when_mobile'>
-										<td data-align="center"><span class="n-title">Notice</span></td>
-										<td data-align="center">무악/우정</td>
-										<td class=" bold">
-											<a href="/board/?mode=V&idx=9150&id=notice&p=1" alt="">전체 사생실 내부 정기 방역 안내 (9. 21.(월))</a>
+									<tr class = "hide_when_mobile">
+										<td data-align="center">101</td>
+										<td data-align="center">공통</td>
+										<td class="">
+											<a href="/board/?mode=V&idx=9094&id=schedule&p=1" alt="">2026학년도 2학기 연장(2026-Fall Extension) 신청 안내</a>
 										</td>
-										<td data-align="center">2026-09-15</td>
-										<td data-align="center" class = "hide_when_mobile">469</td>
-										<td data-align="center" class = "hide_when_mobile">
+										<td data-align="center" class = "hide_when_mobile">2026-07-06</td>
+										<td data-align="center" class = "hide_when_mobile">11770</td>
+										<td data-align="center">
+										</td>
+									</tr>
+
+									<!-- {s} mobile -->
+									<tr class = "hide_when_pc">
+																				<td colspan = "4">
+											<strong>[공통]</strong>&nbsp;											<span class = "title"><a href="/board/?mode=V&idx=9080&id=schedule&p=1" alt="">2026학년도 여름방학 기숙사(신촌) 추가 신청 안내</a></span>
+											2026-06-24
+										</td>
+
+									</tr>
+
+
+									<tr class = "hide_when_mobile">
+										<td data-align="center">100</td>
+										<td data-align="center">공통</td>
+										<td class="">
+											<a href="/board/?mode=V&idx=9080&id=schedule&p=1" alt="">2026학년도 여름방학 기숙사(신촌) 추가 신청 안내</a>
+										</td>
+										<td data-align="center" class = "hide_when_mobile">2026-06-24</td>
+										<td data-align="center" class = "hide_when_mobile">11905</td>
+										<td data-align="center">
+										</td>
+									</tr>
+
+									<!-- {s} mobile -->
+									<tr class = "hide_when_pc">
+																				<td colspan = "4">
+											<strong>[무악학사]</strong>&nbsp;											<span class = "title"><a href="/board/?mode=V&idx=9069&id=schedule&p=1" alt="">[경력개발팀]2026-2학기 무악4학사 국가고시동 정기선발 안내</a></span>
+											2026-06-15
+										</td>
+
+									</tr>
+
+
+									<tr class = "hide_when_mobile">
+										<td data-align="center">99</td>
+										<td data-align="center">무악학사</td>
+										<td class="">
+											<a href="/board/?mode=V&idx=9069&id=schedule&p=1" alt="">[경력개발팀]2026-2학기 무악4학사 국가고시동 정기선발 안내</a>
+										</td>
+										<td data-align="center" class = "hide_when_mobile">2026-06-15</td>
+										<td data-align="center" class = "hide_when_mobile">3664</td>
+										<td data-align="center">
+										</td>
+									</tr>
+
+									<!-- {s} mobile -->
+									<tr class = "hide_when_pc">
+																				<td colspan = "4">
+											<strong>[공통]</strong>&nbsp;											<span class = "title"><a href="/board/?mode=V&idx=9055&id=schedule&p=1" alt="">2026학년도 여름방학 기숙사(신촌) 신규 신청 안내 (2026-Summer)</a></span>
+											2026-05-29
+										</td>
+
+									</tr>
+
+
+									<tr class = "hide_when_mobile">
+										<td data-align="center">98</td>
+										<td data-align="center">공통</td>
+										<td class="">
+											<a href="/board/?mode=V&idx=9055&id=schedule&p=1" alt="">2026학년도 여름방학 기숙사(신촌) 신규 신청 안내 (2026-Summer)</a>
+										</td>
+										<td data-align="center" class = "hide_when_mobile">2026-05-29</td>
+										<td data-align="center" class = "hide_when_mobile">17529</td>
+										<td data-align="center">
 										</td>
 									</tr>
 								</tbody>
@@ -676,22 +673,20 @@
 					<!-- 페이징 -->
 					<div class="board-pager-default">
 						<ul data-liststyle="none">
-							<li><a class="active" href="/board/?id=notice&amp;p=1"><span>1</span></a></li>
-<li><a href="/board/?id=notice&amp;p=2"><span>2</span></a></li>
-<li><a href="/board/?id=notice&amp;p=3"><span>3</span></a></li>
-<li><a href="/board/?id=notice&amp;p=4"><span>4</span></a></li>
-<li><a href="/board/?id=notice&amp;p=5"><span>5</span></a></li>
-<li><a href="/board/?id=notice&amp;p=6"><span>6</span></a></li>
-<li><a href="/board/?id=notice&amp;p=7"><span>7</span></a></li>
-<li><a href="/board/?id=notice&amp;p=8"><span>8</span></a></li>
-<li><a href="/board/?id=notice&amp;p=9"><span>9</span></a></li>
-<li><a href="/board/?id=notice&amp;p=10"><span>10</span></a></li>
-<li><a href="/board/?id=notice&amp;p=11" title="다음 10개 페이지"><img src="/res/img/board/iconNext.png"  alt="&gt;" /></a></li>
-<li><a href="/board/?id=notice&amp;p=26" title="마지막 26 페이지"><img src="/res/img/board/iconLast.png" alt="&gt;&gt;" /></a></li>
+							<li><a class="active" href="/board/?id=schedule&amp;p=1"><span>1</span></a></li>
+<li><a href="/board/?id=schedule&amp;p=2"><span>2</span></a></li>
+<li><a href="/board/?id=schedule&amp;p=3"><span>3</span></a></li>
+<li><a href="/board/?id=schedule&amp;p=4"><span>4</span></a></li>
+<li><a href="/board/?id=schedule&amp;p=5"><span>5</span></a></li>
+<li><a href="/board/?id=schedule&amp;p=6"><span>6</span></a></li>
+<li><a href="/board/?id=schedule&amp;p=7"><span>7</span></a></li>
+<li><a href="/board/?id=schedule&amp;p=8"><span>8</span></a></li>
+<li><a href="/board/?id=schedule&amp;p=9"><span>9</span></a></li>
+<li><a href="/board/?id=schedule&amp;p=10"><span>10</span></a></li>
+<li><a href="/board/?id=schedule&amp;p=11" title="마지막 11 페이지"><img src="/res/img/board/iconLast.png" alt="&gt;&gt;" /></a></li>
 						</ul>
 					</div>
 				</div>
-
 
 
 

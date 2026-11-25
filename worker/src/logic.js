@@ -86,15 +86,16 @@ export function feedItems(decorated, now = new Date()) {
     if (ev.needs_decision) {
       const key = (ev.deadline || ev.event_start).slice(0, 10);
       const dday = Math.round((Date.parse(key) - Date.parse(today)) / 864e5);
-      items.push({ uid: `${ev.id}-ask`, summary: `❓ [참여 결정] ${ev.title} (D-${dday}, ${ev.score}점)`, allDay: true, start: today,
+      const what = ev.category === "scholarship" ? "신청 결정" : "참여 결정";
+      items.push({ uid: `${ev.id}-ask`, summary: `❓ [${what}] ${ev.title} (D-${dday}, ${ev.score}점)`, allDay: true, start: today,
         description: `대시보드에서 '참여할래요' 또는 '안 할래요'를 누르면 사라져요.\n주최: ${ev.organizer || "-"}\n링크: ${ev.url || "-"}`, url: ev.url });
     }
     if (!ev.included) continue;
     const check = ev.done ? "✅ " : "";
     const desc = [ev.course && `과목: ${ev.course}`, ev.organizer && `주최: ${ev.organizer}`, ev.url && `링크: ${ev.url}`]
       .filter(Boolean).join("\n");
-    if (["contest", "internship", "event"].includes(ev.category)) {
-      const label = ev.category === "internship" ? "인턴 마감" : "마감";
+    if (["contest", "internship", "event", "scholarship"].includes(ev.category)) {
+      const label = { internship: "인턴 마감", scholarship: "장학 마감" }[ev.category] || "마감";
       if (ev.deadline) items.push({ uid: `${ev.id}-deadline`, summary: `${check}[${label}] ${ev.title}`, allDay: true, start: ev.deadline, description: desc, url: ev.url });
       if (ev.event_start) items.push({ uid: `${ev.id}-event`, summary: `${check}[${ev.category === "contest" ? "본선" : "행사"}] ${ev.title}`, allDay: true, start: ev.event_start, end: ev.event_end || ev.event_start, description: desc, url: ev.url });
     } else if (ev.category === "learnus" || ev.category === "custom") {

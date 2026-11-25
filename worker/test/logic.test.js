@@ -124,3 +124,11 @@ test("90점 이상 대회는 정할 때까지 참여 결정 항목", () => {
   // 마감이 지나면 묻지 않는다
   assert.equal(decorate([{ ...ev, deadline: "2026-11-20T23:59" }], EMPTY_STATE, now)[0].needs_decision, false);
 });
+
+test("장학금은 고르면 [장학 마감], 묻는 문구는 신청 결정", () => {
+  const now = new Date("2026-11-25T03:00:00Z");
+  const ev = { id: "yonsei-notice-aaaa0002", category: "scholarship", title: "울산연구원 장학생 선발", ask: true, score: 95, deadline: "2026-12-10T18:00" };
+  assert.match(feedItems(decorate([ev], EMPTY_STATE, now), now)[0].summary, /신청 결정/);
+  const s = applyOp(EMPTY_STATE, { op: "select", id: ev.id }, now);
+  assert.deepEqual(feedItems(decorate([ev], s, now), now).map((i) => i.summary), ["[장학 마감] 울산연구원 장학생 선발"]);
+});

@@ -5,7 +5,7 @@ from yc.build import dedupe
 from yc.collectors import wevity, yonsei
 from yc.models import Event
 
-RAW = Path(__file__).resolve().parent / "fixtures/raw"
+RAW = Path(__file__).resolve().parent / "fixtures/frozen"  # 고정 샘플: probe 워크플로가 덮어쓰지 않는다
 
 
 def read(name):
@@ -84,3 +84,33 @@ def test_dorm_list_and_dates():
     assert ev.category == "dorm" and "신규 입사" in ev.title
     postponed = dorm.dates_from_title("(일정연기)무악4학사 단수 공지(10.16금→10.30금)", date(2026, 10, 8))
     assert dorm.build_event({"idx": "1", "category": "4학사", "title": "→", "url": "u", "posted": None}, postponed).event_start.date() == date(2026, 10, 30)
+
+
+def test_scholarship_parsing_and_scoring():
+    import yaml
+    from pathlib import Path
+    from yc import score
+    cfg = yaml.safe_load((Path(__file__).resolve().parents[1] / "config/profile.yaml").read_text(encoding="utf-8"))
+    rows = yonsei.parse_list(read("yonsei_scholar_list"))
+    kept = [r["title"] for r in rows if not yonsei.SCHOLAR_SKIP_RE.search(r["title"])]
+    assert "2027년도 [19기] 에몬스 장학생 모집 안내" in kept
+    assert not any("통학로" in t or "중복지원" in t or "아동돌봄" in t for t in kept)
+
+    ulsan = yonsei.build_event({"title": "2026년도 상반기 울산연구원 장학생 선발 안내", "url": "u1", "posted": date(2026, 2, 25)},
+                               read("yonsei_art_ulsan"), "scholarship")
+    assert ulsan.deadline == datetime(2026, 4, 3, 18, 0)  # 머리의 '기간'(2/3)이 아니라 본문 신청기간 끝
+    score.score_scholarship(ulsan, cfg, date(2026, 3, 1))
+    assert ulsan.status == "recommended" and any("울산" in r for r in ulsan.score_reasons)
+
+    nat = yonsei.build_event({"title": "2026년 1학기 국가장학금 1차 신청 안내", "url": "u2", "posted": date(2025, 11, 18)},
+                             read("yonsei_art_national"), "scholarship")
+    assert nat.deadline == datetime(2025, 12, 26, 18, 0)
+    score.score_scholarship(nat, cfg, date(2025, 11, 20))
+    assert nat.status == "recommended"
+
+    grad = Event(id="g", category="scholarship", title="대학원생 연구장학금", source="t",
+                 deadline=datetime(2026, 12, 20, 23, 59))
+    assert score.score_scholarship(grad, cfg, date(2026, 11, 25)).status == "hidden"
+    busan = Event(id="b", category="scholarship", title="부산 출신 대학생 장학금", source="t",
+                  deadline=datetime(2026, 12, 20, 23, 59))
+    assert score.score_scholarship(busan, cfg, date(2026, 11, 25)).status == "hidden"

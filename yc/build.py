@@ -115,6 +115,8 @@ def run(offline: bool = False, fixture: Path | None = None, out: Path | None = N
         ev.first_seen = prev.first_seen if prev and prev.first_seen else now.replace(tzinfo=None)
         if ev.category == "dorm":
             pass  # 기숙사 공지는 점수 없이 그대로 (기본으로 내 일정에 들어감)
+        elif ev.category == "scholarship":
+            score.score_scholarship(ev, cfg, today)
         elif ev.source != "manual":
             if ev.category == "internship":
                 score.score_internship(ev, cfg, today)
@@ -124,8 +126,11 @@ def run(offline: bool = False, fixture: Path | None = None, out: Path | None = N
             clash = score._conflict(ev, periods)
             if clash:
                 ev.warnings.append(f"{clash} 기간과 겹침")
-        ev.ask = (ev.category == "contest" and ev.status != "hidden"
-                  and ev.score >= cfg.get("ask_threshold", 90))
+        sc = cfg.get("scholarship", {})
+        ev.ask = ev.status != "hidden" and (
+            (ev.category == "contest" and ev.score >= cfg.get("ask_threshold", 90))
+            or (ev.category == "scholarship" and (ev.score >= sc.get("ask_threshold", 70)
+                                                  or bool(score._has_any(ev.title, sc.get("always_ask", []))))))
         if ev.id in star:
             ev.status = "starred"
         if ev.id in hide:
@@ -143,6 +148,8 @@ def run(offline: bool = False, fixture: Path | None = None, out: Path | None = N
         "exams.ics": ics.build_period_feed("시험·자격증", exams, now),
         "contests.ics": ics.build_deadline_feed(
             "대회", [e for e in result if e.category in ("contest", "event") and in_cal(e)], now),
+        "scholarships.ics": ics.build_deadline_feed(
+            "장학금", [e for e in result if e.category == "scholarship" and in_cal(e)], now, label="장학 마감"),
         "internships.ics": ics.build_deadline_feed(
             "인턴", [e for e in result if e.category == "internship" and in_cal(e)], now, label="인턴 마감"),
     }

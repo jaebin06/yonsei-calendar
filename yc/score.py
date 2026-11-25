@@ -211,3 +211,58 @@ def _hide(ev: Event, reason: str) -> Event:
     ev.score = 0
     ev.score_reasons = [f"제외: {reason}"]
     return ev
+
+
+def score_scholarship(ev: Event, cfg: dict, today: date) -> Event:
+    """장학금: 내가 받을 수 있는지(대상 조건) 위주로 점수."""
+    sc = cfg.get("scholarship", {})
+    text = f"{ev.title} {ev.eligibility}"
+    reasons: list[str] = []
+    kd = ev.key_date()
+    if kd is None:
+        ev.status, ev.score = "maybe", 0
+        ev.warnings.append("마감일 확인 필요")
+        ev.score_reasons = ["마감일을 못 찾음 → 원문 확인"]
+        return ev
+    if (kd - today).days < cfg.get("min_days_left", 2):
+        return _hide(ev, "마감 임박·지남")
+
+    student = _has_any(text, sc.get("student", []))
+    bad = _has_any(ev.title, sc.get("exclude", [])) or (
+        _has_any(ev.eligibility, sc.get("exclude", [])) if not student else [])
+    if bad:
+        return _hide(ev, f"대상 아님({bad[0]})")
+    home = _has_any(text, sc.get("hometown", []))
+    places = [p for p in _has_any(ev.title, cfg.get("non_local_places", [])) if p not in sc.get("hometown", [])]
+    if places and not home:
+        return _hide(ev, f"다른 지역 장학금({places[0]})")
+
+    score = 20
+    reasons.append("장학금 기본 +20")
+    if home:
+        score += 40; reasons.append(f"'{home[0]}' 지역 대상 +40")
+    major = _has_any(text, sc.get("major", []))
+    if major:
+        score += 25; reasons.append(f"전공 관련('{major[0]}') +25")
+    if student:
+        score += 10; reasons.append("학부 재학생 대상 +10")
+    extra = _has_any(text, sc.get("extra", []))
+    if extra:
+        score += 15; reasons.append(f"'{extra[0]}' +15")
+    if re.search(r"소득|분위|지원구간|기초생활|차상위|저소득", text):
+        ev.warnings.append("소득 기준 확인")
+    if re.search(r"평점|성적|학점\s*이상", text):
+        ev.warnings.append("성적 기준 확인")
+
+    ev.score = min(score, 100)
+    ev.score_reasons = reasons
+    if ev.score >= 50:
+        ev.status = "recommended"
+    elif ev.score >= 25:
+        ev.status = "maybe"
+    else:
+        ev.status = "hidden"
+    if _has_any(ev.title, sc.get("always_ask", [])):
+        ev.status = "recommended"
+        reasons.append("모든 재학생이 챙겨야 하는 장학금")
+    return ev

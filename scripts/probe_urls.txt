@@ -1,4 +1,4 @@
-# 이름 URL  (probe.yml이 받아서 tests/fixtures/raw/<이름>.html 로 저장)
+# 이름 URL  (probe.yml이 받아서 probe/<이름>.html 로 저장)
 wevity_robots https://www.wevity.com/robots.txt
 wevity_it https://www.wevity.com/?c=find&s=1&gub=1&cidx=20
 wevity_sw https://www.wevity.com/?c=find&s=1&gub=1&cidx=21
