@@ -26,3 +26,6 @@ dorm_art_winter https://dorm.yonsei.ac.kr/board/?id=schedule&mode=V&idx=9168
 dorm_art_gosi https://dorm.yonsei.ac.kr/board/?id=schedule&mode=V&idx=9172
 dorm_art_bangyeok https://dorm.yonsei.ac.kr/board/?id=notice&mode=V&idx=9178
 dorm_art_dansu https://dorm.yonsei.ac.kr/board/?id=notice&mode=V&idx=9179
+yonsei_scholar_list https://www.yonsei.ac.kr/bbs/sc/58/artclList.do?findClSeq=257
+yonsei_art_ulsan https://www.yonsei.ac.kr/bbs/sc/58/942646/artclView.do
+yonsei_art_national https://www.yonsei.ac.kr/bbs/sc/58/941958/artclView.do
