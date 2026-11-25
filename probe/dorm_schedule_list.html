@@ -1,0 +1,834 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=0.8, user-scalable=0" />
+		
+		<link rel="stylesheet" type="text/css" media="all" href="//fonts.googleapis.com/earlyaccess/nanumgothic.css" />
+
+		<link rel="apple-touch-icon" href="/res/favicon.png" type="image/png" />
+		<link rel="icon" href="/res/favicon.ico" />
+		<link rel="shortcut icon" href="/res/favicon.ico" />
+					<link rel="stylesheet" type="text/css" media="all" href="/res/css/@_def.css?ver=190513" />
+			<link rel="stylesheet" type="text/css" media="all" href="/res/css/@_ext.css?ver=190513" />
+			<link rel="stylesheet" type="text/css" media="all" href="/res/css/@_table.css?ver=190513" />
+			<link rel="stylesheet" type="text/css" media="all" href="/res/css/board.css?ver=190513" />
+			<link rel="stylesheet" type="text/css" media="all" href="/res/css/header.css?ver=190513" />
+			<link rel="stylesheet" type="text/css" media="all" href="/res/css/footer.css?ver=190513" />
+			<link rel="stylesheet" type="text/css" media="all" href="/res/css/default.css?ver=190513" />
+			<link rel="stylesheet" type="text/css" media="all" href="/res/css/comment.css?ver=190513" />
+			<link rel="stylesheet" type="text/css" media="all" href="/res/css/ipsa.css?ver=190513" />
+
+
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+		<style type = "text/css">
+			.fa, .far, .fas {
+				font-family: "Font Awesome 5 Free" !important;
+			}
+		</style>
+		<!--<link rel="stylesheet" type="text/css" media="all" href="/res/css/animate/animate.min.css" />-->
+		<!--[if lt IE 10]>
+			<link rel="stylesheet" type="text/css" media="all" href="/res/css/animate/ie-9-animate.css">
+		<![endif]-->
+		<link rel="stylesheet" type="text/css" media="all" href="/res/css/sub.css" />
+		<link rel="stylesheet" type="text/css" media="all" href="/res/css/sub_2.css" />
+		<link rel="stylesheet" type="text/css" media="all" href="/res/css/form.css" />
+		<!--[if lte IE 9]>
+		<script src="/res/js/Compatibility_HTML5Shiv.js"></script>
+		<script src="/res/js/Compatibility_Selectivizr.js"></script>
+		<script src="/res/js/Compatibility_Respond.js"></script>
+		<![endif]-->
+		<script src="/res/js/jQuery.js"></script>
+		<script src="/res/js/jQuery.plugin.Cycle2.js"></script>
+		<script src="/res/js/jQuery.plugin.EnterLeave.js"></script>	
+		<script src="/res/js/jQuery.Common.js"></script>
+		<script src="/res/js/jQuery.comment.js"></script>
+		<script src="/res/js/common.js"></script>
+		<script src="/res/js/jQuery.Sub.js"></script>
+		<script src="/res/js/jQuery.print.js"></script>
+		<link rel="stylesheet" type="text/css" media="all" href="/res/modules/jquery-ui/jQuery.Ui.css" />
+		<script src="/res/modules/jquery-ui/jQuery.Ui.js"></script>
+		<title>선발일정 - 연세대학교 생활관</title>
+	</head>
+	<body>
+		<div id="mqLayout">
+			<header id="mqHeader">
+				<aside id="topNavi">
+					<div class="tn-frame">						
+						<div class="name_logout pc-size">
+						<!-- [S] 학생이름 -->
+													<!-- [E] 학생이름 -->
+							<a href="/member/login/" class="m-login-btn item">Login</a>
+							
+							
+							<!--div class="em-call-mob">
+								<span class="block">Emergency Call(COVID-19)</span>
+								<span class="block y-txt">02-2123-3616</span>
+							</div-->
+							
+						</div>
+					</div>
+				</aside>
+				<nav id="mqNavi" style = "position:relative;">
+					<p class="logo"><a href="/"><img src="/res/img/common/img-logo.png" alt="연세대학교 생활관 HOUSING OFFICE OF YONSEI UNIVERSITY" /></a></p>
+					<ul class="parent" data-liststyle="none">
+						<li class="parentlist">
+							<a class="parentlink" href="/sub.php?code=010200">생활관 안내</a>
+							<div class="children">
+								<ul class="child" data-liststyle="none">
+									<li class="childlist"><a class="childlink" href="/sub.php?code=010200">오시는 길</a></li>
+									<li class="childlist"><a class="childlink" href="/sub.php?code=010100">Contact Us</a></li>
+									<li class="childlist"><a class="childlink" href="/sub.php?code=010400">반입금지물품</a></li>
+									<li class="childlist"><a class="childlink" href="/sub.php?code=010500">화재·지진 안내</a></li>
+									<li class="childlist"><a class="childlink" href="/sub.php?code=010600">편의시설위치</a></li>
+									<li class="childlist"><a class="childlink" href="/sub.php?code=010700">우편물</a></li>
+									<!-- <li class="childlist"><a class="childlink" href="/sub.php?code=010800">셔틀버스 안내</a></li> -->
+									<li class="childlist"><a class="childlink" href="/sub.php?code=010900">식당 안내</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="parentlist">
+							<a class="parentlink" href="/sub.php?code=020100">입사안내</a>
+							<div class="children">
+								<ul class="child" data-liststyle="none">
+									<li class="childlist"><a class="childlink" href="/sub.php?code=020100">선발기준</a></li>
+									<li class="childlist"><a class="childlink" href="/sub.php?code=020300">신청안내</a></li>
+									<!-- <li class="childlist"><a class="childlink" href="/application/">On-line Application</a></li> -->
+									<li class="childlist"><a class="childlink" href="/board/?id=schedule">선발일정</a></li>
+									<li class="childlist"><a class="childlink" href="/board/?id=data">서식자료실</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="parentlist">
+							<a class="parentlink" href="/board/?id=notice">커뮤니티</a>
+							<div class="children">
+								<ul class="child" data-liststyle="none">
+									<li class="childlist"><a class="childlink" href="/board/?id=notice">공지사항</a></li>
+									
+									<li class="childlist"><a class="childlink" href="/board/?id=faq">FAQ</a></li>
+									<!-- <li class="childlist"><a class="childlink" href="/board/?id=qna">Q&amp;A</a></li> -->
+									<li class="childlist"><a class="childlink" href="/board/?id=foodbus">식당/셔틀</a></li>
+									<li class="childlist"><a class="childlink" href="/sub.php?code=060400">수요예배</a></li>
+									<!-- <li class="childlist"><a class="childlink" href="/board/?id=tips">TIPS!</a></li> -->
+									<li class="childlist"><a class="childlink" href="/sub.php?code=060800">생활관 내규</a></li>
+									<!-- <li class="childlist"><a class="childlink" href="/board/?id=repair">수리요청</a></li> -->
+									<!-- <li class="childlist"><a class="childlink" href="/Survey/list/">사용자 의견 조사</a></li> -->
+																	</ul>
+							</div>
+						</li>
+						<li class="parentlist">
+							<a class="parentlink" href="/dormitory/?mode=view1&id=QUFBQXRSQUFDQUFBQWJGQUFC">시설소개</a>
+							<div class="children">
+								<ul class="child" data-liststyle="none">
+									<li class="childlist"><a class="childlink" href="/dormitory/?mode=view1&id=QUFBQXRSQUFDQUFBQWJGQUFC">무악1,2학사</a></li>
+									<li class="childlist"><a class="childlink" href="/dormitory/?mode=view1&id=QUFBQXRSQUFDQUFBQWJGQUFE">무악3,4학사</a></li>
+									<li class="childlist"><a class="childlink" href="/dormitory/?mode=view1&id=QUFBQXRSQUFDQUFBQWJGQUFG">우정원</a></li>
+									<li class="childlist"><a class="childlink" href="/dormitory/?mode=view1&id=QUFBQXRSQUFDQUFBQWJGQUFH">법현학사</a></li>
+									<li class="childlist"><a class="childlink" href="/sub.php?code=080900">시설현황</a></li>
+
+									<!-- <li class="childlist"><a class="childlink" href="/dormitory/facilities/">시설사용예약</a></li> -->
+
+
+								</ul>
+							</div>
+						</li>
+
+					</ul>
+					<div class="r_Navi">
+						<div class="r-n-box">
+							<!--<a href="/member/login/">Login</a>-->
+							<!--<div class="em-call">
+								<span class="block">Emergency Call<br />(COVID-19)</span>
+								<span class="block y-txt">02-2123-3616</span>
+							</div>-->
+						</div>
+												
+					</div>
+					<p class="all">
+						<a href="javascript:void(0)">
+							<font data-hide="true">전체메뉴</font>
+							<span class="bg-w-line"></span>
+							<span class="bg-w-line"></span>
+							<span class="bg-w-line"></span>
+						</a>
+					</p>					
+				</nav>
+				<aside id="mqNavi-Map" style="display: none;">
+				<div>
+					<nav>
+						<!-- 1단계 메뉴 리스트 -->
+							<ul class="parent" data-liststyle="none">
+								<li class="parent-data">
+									<a href="/sub.php?code=010200" class="parent-link"><b>생활관 안내</b></a>
+									<!-- 2단계 메뉴 리스트 -->
+									<ul class="child" style="display:none;">
+										<li class="child-data"><a href="/sub.php?code=010200" class="child-link">오시는 길</a></li>
+										<li class="child-data"><a href="/sub.php?code=010100" class="child-link">CONTACT US</a></li>
+										<li class="child-data"><a href="/sub.php?code=010300" class="child-link">생활관 내규</a></li>  
+										<li class="child-data"><a href="/sub.php?code=010400" class="child-link">반입금지물품</a></li>
+										<li class="child-data"><a href="/sub.php?code=010500" class="child-link">화재·지진 안내</a></li>
+										<li class="child-data"><a href="/sub.php?code=010600" class="child-link">편의시설위치</a></li>
+										<li class="child-data"><a href="/sub.php?code=010700" class="child-link">우편물</a></li>
+										<!-- <li class="child-data"><a href="/sub.php?code=010800" class="child-link">셔틀버스 안내</a></li> -->
+										<li class="child-data"><a href="/sub.php?code=010900" class="child-link">식당 안내</a></li>
+									</ul>
+								</li>
+								<li class="parent-data">
+									<a href="/sub.php?code=020100" class="parent-link"><b>입사 신청</b></a>
+									<!-- 2단계 메뉴 리스트 -->
+									<ul class="child" style="display: none;">
+										<li class="child-data"><a href="/sub.php?code=020100" class="child-link">선발기준</a></li>
+										<li class="child-data"><a href="/sub.php?code=020300" class="child-link">Application Guide</a></li>
+										<li class="child-data"><a href="/application/" class="child-link">On-line Application</a></li>
+									</ul>
+								</li>
+								<li class="parent-data">
+									<a href="/board/?id=notice" class="parent-link"><b>커뮤니티</b></a>
+									<!-- 2단계 메뉴 리스트 -->
+									<ul class="child" style="display: none;">
+										<li class="child-data"><a href="/board/?id=notice" class="child-link">공지사항</a></li>
+										<li class="child-data"><a href="/board/?id=schedule" class="child-link">선발일정</a></li>
+										<li class="child-data"><a href="/board/?id=data" class="child-link">서식자료실</a></li>
+										<li class="child-data"><a href="/board/?id=faq" class="child-link">FAQ</a></li>
+										<li class="child-data"><a href="/board/?id=qna" class="child-link">Q&amp;A</a></li>
+										<li class="child-data"><a href="/board/?id=foodbus" class="child-link">식당/셔틀</a></li>
+										<li class="child-data"><a href="/sub.php?code=060400" class="child-link">수요예배</a></li>
+										<!-- <li class="child-data"><a href="/board/?id=tips" class="child-link">TIPS!</a></li> -->
+										<li class="child-data"><a href="/sub.php?code=060800" class="child-link">생활관 내규</a></li>
+										<li class="child-data"><a href="/board/?id=repair" class="child-link">수리요청</a></li>
+										<li class="child-data"><a class="child-link" href="/Survey/list/">사용자 의견 조사</a></li>
+																				
+									</ul>
+								</li>
+								<li class="parent-data">
+									<a href="/dormitory/?mode=view1&id=QUFBQXRSQUFDQUFBQWJGQUFC" class="parent-link"><b>시설소개</b></a>
+									<!-- 2단계 메뉴 리스트 -->
+									<ul class="child" style="display: none;">
+										<li class="child-data">
+											<a href="/dormitory/?mode=view1&id=QUFBQXRSQUFDQUFBQWJGQUFC" class="child-link nochild">무악1,2학사</a>
+											<!-- 3단계 메뉴 리스트 -->
+											<ul class="tail" data-liststyle="none">
+												<li class="tail-data"><a href="/dormitory/?mode=view1&id=QUFBQXRSQUFDQUFBQWJGQUFC" class="tail-link">생활공간</a></li>
+												<li class="tail-data"><a href="/dormitory/?mode=view2&id=QUFBQXRSQUFDQUFBQWJGQUFC" class="tail-link">편의시설</a></li>
+											</ul>
+										</li>
+										<li class="child-data">
+											<a href="/dormitory/?mode=view1&id=QUFBQXRSQUFDQUFBQWJGQUFE" class="child-link nochild">무악3,4학사</a>
+											<!-- 3단계 메뉴 리스트 -->
+											<ul class="tail" data-liststyle="none">
+												<li class="tail-data"><a href="/dormitory/?mode=view1&id=QUFBQXRSQUFDQUFBQWJGQUFE" class="tail-link">생활공간</a></li>
+												<li class="tail-data"><a href="/dormitory/?mode=view2&id=QUFBQXRSQUFDQUFBQWJGQUFE" class="tail-link">편의시설</a></li>
+											</ul>
+										</li>
+										<li class="child-data">
+											<a href="/dormitory/?mode=view1&id=QUFBQXRSQUFDQUFBQWJGQUFG" class="child-link nochild">우정원</a>
+											<!-- 3단계 메뉴 리스트 -->
+											<ul class="tail" data-liststyle="none">
+												<li class="tail-data"><a href="/dormitory/?mode=view1&id=QUFBQXRSQUFDQUFBQWJGQUFG" class="tail-link">생활공간</a></li>
+												<li class="tail-data"><a href="/dormitory/?mode=view2&id=QUFBQXRSQUFDQUFBQWJGQUFG" class="tail-link">편의시설</a></li>
+											</ul>
+										</li>
+										<li class="child-data">
+											<a href="/dormitory/?mode=view1&id=QUFBQXRSQUFDQUFBQWJGQUFH" class="child-link nochild">법현학사</a>
+											<!-- 3단계 메뉴 리스트 -->
+											<ul class="tail" data-liststyle="none">
+												<li class="tail-data"><a href="/dormitory/?mode=view1&id=QUFBQXRSQUFDQUFBQWJGQUFH" class="tail-link">생활공간</a></li>
+												<li class="tail-data"><a href="/dormitory/?mode=view2&id=QUFBQXRSQUFDQUFBQWJGQUFH" class="tail-link">편의시설</a></li>
+											</ul>
+										</li>
+										<li class="child-data"><a href="/sub.php?code=080900" class="child-link">시설현황</a></li>
+									</ul>
+								</li>
+								
+						<li class="parent-data">
+							<a href="#n" class="parent-link"><b>로그인</b></a>
+							<!-- 2단계 메뉴 리스트 -->
+							<ul class="child" style="display: none;">
+								<li class="child-data">
+									<a href="/member/login/" class="child-link">로그인</a>
+								</li>
+							</ul>
+						</li>
+						</ul>
+						<p class="close">
+							<button type="button" id="obj-Navi-Close">
+							<font data-hide="true">닫기</font>
+							<span class="bg-w-line"></span>
+							<span class="bg-w-line"></span>
+							<span class="bg-w-line"></span>
+						</button>
+						</p>
+					</nav>
+				</div>
+			</aside>				
+		</header>
+			<div id="mqSubvisual" class="subCode_2">
+				<div class="subvisual_box">
+					<p>
+						<b>입사안내</b>
+					</p>
+						
+		<div id="subMenu">
+			<div class="container">
+				<ul data-liststyle="none" class="sub-menu-box">
+					<li class="home-data"><a href="/" title="Home"><span data-hide="true">홈</span></a></li>
+					<li class="p-data">
+						<a href="javascript:void(0)">입사안내</a>
+						<ul data-liststyle="none" class="navi-m-box">				
+							<li><a href="/sub.php?code=010200">생활관 안내</a></li>			
+							<li class="enter active"><a href="/sub.php?code=020100">입사안내</a></li>
+							<li><a href="/board/?id=notice">커뮤니티</a></li>
+							
+
+							<li><a href="/sub.php?code=080101">시설소개</a></li>
+							<li><a href="/member/login/"></a></li>
+						</ul>
+					</li> 
+					<li class="c-data">
+						<a href="#n">선발일정</a>
+						<ul data-liststyle="none" class="navi-s-box" >
+					
+						<li><a href="/sub.php?code=020100">선발기준</a></li>
+						<li><a href="/sub.php?code=020300">신청안내</a></li>
+						<!-- <li><a href="/application/">On-line Application</a></li> -->
+									
+						<li><a href="/board/?id=data">서식자료실</a></li>
+						<li class="enter"><a href="/board/?id=schedule">선발일정</a></li>	
+					  </ul>
+					</li>
+				</ul>
+				
+				<!-- 프린트/즐겨찾기 -->
+				<div class="etc-box">
+					<div>
+						<div class="bookmark-box">
+							<a id="bookmark" href="javascript:void(0)"><img src="/res/img/sub/img-bookmark.png" alt="즐겨찾기" title="즐겨찾기" /></a>
+						</div>
+						<div class="print-box">
+							<a id="print" href="javascript:void(0)"><img src="/res/img/sub/img-print.png" alt="프린트" title="프린트" /></a>
+						</div>
+					</div>
+				</div>
+				<script>
+					$(function() {				
+						$('#bookmark').on('click', function() {
+							//IE 모든 브라우저 지원, Firefox 지원
+							//Chrome, Opera 단축키 알림을 띄움
+							var bookmarkURL = window.location.href;
+							var bookmarkTitle = document.title;
+							if (window.sidebar && window.sidebar.addPanel) {
+								// Firefox version < 23
+								window.sidebar.addPanel(bookmarkTitle, bookmarkURL, ''); 
+							} else if ((window.sidebar && (navigator.userAgent.toLowerCase().indexOf('firefox') > -1)) || (window.opera && window.print)) {
+								// Firefox version >= 23 and Opera Hotlist
+								/*
+								var $this = $(this);
+								$this.attr('href', bookmarkURL);
+								$this.attr('title', bookmarkTitle);
+								$this.attr('rel', 'sidebar');
+								$this.off(e);
+								*/
+								alert((navigator.userAgent.toLowerCase().indexOf('mac') != -1 ? 'Cmd' : 'Ctrl') + '+D 키를 눌러 즐겨찾기에 등록하실 수 있습니다.');
+							} else if (window.external && ('AddFavorite' in window.external)) { 
+								// IE Favorite
+								window.external.AddFavorite(bookmarkURL, bookmarkTitle);
+							} else {
+								// WebKit - Safari/Chrome 
+								alert((navigator.userAgent.toLowerCase().indexOf('mac') != -1 ? 'Cmd' : 'Ctrl') + '+D 키를 눌러 즐겨찾기에 등록하실 수 있습니다.');
+							}
+						});
+						$("#print").on('click', function(e) {
+							$("#mqContent").print({
+								globalStyles: true,
+								mediaPrint: false,
+								stylesheet: null,
+								noPrintSelector: ".no-print",
+								iframe: false,
+								append: null,
+								prepend: null,
+								manuallyCopyFormValues: true,
+								deferred: $.Deferred(),
+								timeout: 750,
+								title: null,
+								doctype: '<!DOCTYPE html>'
+							});
+							return false;
+						});
+					});
+				</script>
+				<!-- 공유/즐겨찾기 -->
+			</div>
+		</div>
+			
+				</div>
+			</div>
+			<div id="mqContent">
+				<div id="mqContent_box">
+					<div id="content">
+						<h1 class="cmn-m-title">선발일정</h1>
+											
+					<div id="mqSub-Data" class="subx-board-list customZone">
+					<!--
+						<ul class="t-category" data-liststyle="none">
+							<li>
+								<a class="category_btn active" href="javascript:void(0)">무악1학사</a>
+							</li>
+							<li>
+								<a class="category_btn" href="javascript:void(0)">무악2학사</a>
+							</li>
+							<li>
+								<a class="category_btn" href="javascript:void(0)">무악3학사</a>
+							</li>
+							<li>
+								<a class="category_btn"href="javascript:void(0)">무악4학사</a>
+							</li>
+							<li>
+								<a class="category_btn" href="javascript:void(0)">우정원</a>
+							</li>
+							<li>
+								<a class="category_btn" href="javascript:void(0)">법현학사</a>
+							</li>
+						</ul>					
+					-->
+						<div class="board-list-head">
+							<p>Total <b data-color="red">107</b> Posts (<b data-color="red">1</b>/11 page)</p>
+							<form name="searchForm" id="searchForm" method="get" action="?">
+								<input type="hidden" name="id" id="id" value="schedule" />
+								<fieldset>
+									<legend data-hide="true">search</legend>
+									<div class="default">
+									<!--span class="inlineblock margin_t_5 margin_r_5 bold">분류</span-->
+									<label for="searchCategory" data-hide="true">category</label>
+									<select name="searchCategory" id="searchCategory">
+										<option value="">Category</option>
+<option value="공통">공통</option><option value="무악학사">무악학사</option><option value="법현학사">법현학사</option><option value="우정원">우정원</option><option value="INTERNATION HOUSE">INTERNATION HOUSE</option><option value="SK GLOBAL HOUSE">SK GLOBAL HOUSE</option>									</select>
+									<label for="searchType" data-hide="true">검색 타입</label>
+									<select name="searchType" id="searchType">
+										<option value="all">All</option>
+										<option value="title">Title</option>
+										<option value="contents">Contents</option>
+										<option value="writer">Writer</option>
+									</select>
+									<label for="searchKeyword" data-hide="true">키워드입력</label>
+									<input type="text" name="searchKeyword" id="searchKeyword" class="textbox" value="">
+									<button type="submit"><span>Search</span></button>
+									</div>
+								</fieldset>
+							</form>
+                        </div>
+
+						<div class="board-list">
+                            <table class="table-board">
+								<caption data-hide="true">
+									<strong>Board</strong>
+									<details>
+										<summary>Help</summary>
+										<p>Number , Title, Date, View, File Provide information</p>
+									</details>
+								</caption>
+                                <colgroup>
+                                    <col class="w10">
+									<col class="w13" >
+                                    <col />
+                                    <col class="w12">
+                                    <col class="w8 hide_when_mobile">
+                                    <col class="w8 hide_when_mobile">
+                                </colgroup>
+                                <thead class="centers">
+                                    <tr class = "hide_when_mobile">
+                                        <th scope="col">No</th>
+										<th scope="col">Category</th>
+                                        <th scope="col">Title</th>
+                                        <th scope="col" class = "hide_when_mobile">Date</th>
+                                        <th scope="col" class = "hide_when_mobile">View</th>
+                                        <th scope="col">File</th>
+                                    </tr>
+                                </thead>
+								<tbody>
+
+									<!-- {s} mobile -->
+									<tr class = "hide_when_pc">
+																				<td colspan = "4">
+											<strong>[무악학사]</strong>&nbsp;											<span class = "title"><a href="/board/?mode=V&idx=9172&id=schedule&p=1" alt="">2026년 4분기 고시동(현거주자) 연장 신청 안내</a></span>
+											2026-10-29
+										</td>
+
+									</tr>
+
+
+									<tr class = "hide_when_mobile">
+										<td data-align="center">107</td>
+										<td data-align="center">무악학사</td>
+										<td class="">
+											<a href="/board/?mode=V&idx=9172&id=schedule&p=1" alt="">2026년 4분기 고시동(현거주자) 연장 신청 안내</a>
+										</td>
+										<td data-align="center" class = "hide_when_mobile">2026-10-29</td>
+										<td data-align="center" class = "hide_when_mobile">2459</td>
+										<td data-align="center">
+										</td>
+									</tr>
+
+									<!-- {s} mobile -->
+									<tr class = "hide_when_pc">
+																				<td colspan = "4">
+											<strong>[공통]</strong>&nbsp;											<span class = "title"><a href="/board/?mode=V&idx=9168&id=schedule&p=1" alt="">2026학년도 신촌캠퍼스 겨울방학 연장 신청 안내  (Sinchon Winter Extension)</a></span>
+											2026-10-20
+										</td>
+
+									</tr>
+
+
+									<tr class = "hide_when_mobile">
+										<td data-align="center">106</td>
+										<td data-align="center">공통</td>
+										<td class="">
+											<a href="/board/?mode=V&idx=9168&id=schedule&p=1" alt="">2026학년도 신촌캠퍼스 겨울방학 연장 신청 안내  (Sinchon Winter Extension)</a>
+										</td>
+										<td data-align="center" class = "hide_when_mobile">2026-10-20</td>
+										<td data-align="center" class = "hide_when_mobile">9612</td>
+										<td data-align="center">
+										</td>
+									</tr>
+
+									<!-- {s} mobile -->
+									<tr class = "hide_when_pc">
+																				<td colspan = "4">
+											<strong>[공통]</strong>&nbsp;											<span class = "title"><a href="/board/?mode=V&idx=9154&id=schedule&p=1" alt="">2026학년도 2학기 생활관 추가 입사 선발 종료 안내</a></span>
+											2026-09-21
+										</td>
+
+									</tr>
+
+
+									<tr class = "hide_when_mobile">
+										<td data-align="center">105</td>
+										<td data-align="center">공통</td>
+										<td class="">
+											<a href="/board/?mode=V&idx=9154&id=schedule&p=1" alt="">2026학년도 2학기 생활관 추가 입사 선발 종료 안내</a>
+										</td>
+										<td data-align="center" class = "hide_when_mobile">2026-09-21</td>
+										<td data-align="center" class = "hide_when_mobile">1046</td>
+										<td data-align="center">
+										</td>
+									</tr>
+
+									<!-- {s} mobile -->
+									<tr class = "hide_when_pc">
+																				<td colspan = "4">
+											<strong>[공통]</strong>&nbsp;											<span class = "title"><a href="/board/?mode=V&idx=9134&id=schedule&p=1" alt="">2026-2학기 기숙사(신촌) 추가 신청 안내 </a></span>
+											2026-08-19
+										</td>
+
+									</tr>
+
+
+									<tr class = "hide_when_mobile">
+										<td data-align="center">104</td>
+										<td data-align="center">공통</td>
+										<td class="">
+											<a href="/board/?mode=V&idx=9134&id=schedule&p=1" alt="">2026-2학기 기숙사(신촌) 추가 신청 안내 </a>
+										</td>
+										<td data-align="center" class = "hide_when_mobile">2026-08-19</td>
+										<td data-align="center" class = "hide_when_mobile">8060</td>
+										<td data-align="center">
+										</td>
+									</tr>
+
+									<!-- {s} mobile -->
+									<tr class = "hide_when_pc">
+																				<td colspan = "4">
+											<strong>[공통]</strong>&nbsp;											<span class = "title"><a href="/board/?mode=V&idx=9106&id=schedule&p=1" alt="">2026학년도 여름학기 생활관 추가 입사 선발 종료 안내</a></span>
+											2026-07-16
+										</td>
+
+									</tr>
+
+
+									<tr class = "hide_when_mobile">
+										<td data-align="center">103</td>
+										<td data-align="center">공통</td>
+										<td class="">
+											<a href="/board/?mode=V&idx=9106&id=schedule&p=1" alt="">2026학년도 여름학기 생활관 추가 입사 선발 종료 안내</a>
+										</td>
+										<td data-align="center" class = "hide_when_mobile">2026-07-16</td>
+										<td data-align="center" class = "hide_when_mobile">3158</td>
+										<td data-align="center">
+										</td>
+									</tr>
+
+									<!-- {s} mobile -->
+									<tr class = "hide_when_pc">
+																				<td colspan = "4">
+											<strong>[공통]</strong>&nbsp;											<span class = "title"><a href="/board/?mode=V&idx=9105&id=schedule&p=1" alt="">2026-2학기 기숙사(신촌) 신규 선발 안내 2026-Fall Housing(Sinchon) Application</a></span>
+											2026-07-16
+										</td>
+
+									</tr>
+
+
+									<tr class = "hide_when_mobile">
+										<td data-align="center">102</td>
+										<td data-align="center">공통</td>
+										<td class="">
+											<a href="/board/?mode=V&idx=9105&id=schedule&p=1" alt="">2026-2학기 기숙사(신촌) 신규 선발 안내 2026-Fall Housing(Sinchon) Application</a>
+										</td>
+										<td data-align="center" class = "hide_when_mobile">2026-07-16</td>
+										<td data-align="center" class = "hide_when_mobile">29222</td>
+										<td data-align="center">
+										</td>
+									</tr>
+
+									<!-- {s} mobile -->
+									<tr class = "hide_when_pc">
+																				<td colspan = "4">
+											<strong>[공통]</strong>&nbsp;											<span class = "title"><a href="/board/?mode=V&idx=9094&id=schedule&p=1" alt="">2026학년도 2학기 연장(2026-Fall Extension) 신청 안내</a></span>
+											2026-07-06
+										</td>
+
+									</tr>
+
+
+									<tr class = "hide_when_mobile">
+										<td data-align="center">101</td>
+										<td data-align="center">공통</td>
+										<td class="">
+											<a href="/board/?mode=V&idx=9094&id=schedule&p=1" alt="">2026학년도 2학기 연장(2026-Fall Extension) 신청 안내</a>
+										</td>
+										<td data-align="center" class = "hide_when_mobile">2026-07-06</td>
+										<td data-align="center" class = "hide_when_mobile">11822</td>
+										<td data-align="center">
+										</td>
+									</tr>
+
+									<!-- {s} mobile -->
+									<tr class = "hide_when_pc">
+																				<td colspan = "4">
+											<strong>[공통]</strong>&nbsp;											<span class = "title"><a href="/board/?mode=V&idx=9080&id=schedule&p=1" alt="">2026학년도 여름방학 기숙사(신촌) 추가 신청 안내</a></span>
+											2026-06-24
+										</td>
+
+									</tr>
+
+
+									<tr class = "hide_when_mobile">
+										<td data-align="center">100</td>
+										<td data-align="center">공통</td>
+										<td class="">
+											<a href="/board/?mode=V&idx=9080&id=schedule&p=1" alt="">2026학년도 여름방학 기숙사(신촌) 추가 신청 안내</a>
+										</td>
+										<td data-align="center" class = "hide_when_mobile">2026-06-24</td>
+										<td data-align="center" class = "hide_when_mobile">11966</td>
+										<td data-align="center">
+										</td>
+									</tr>
+
+									<!-- {s} mobile -->
+									<tr class = "hide_when_pc">
+																				<td colspan = "4">
+											<strong>[무악학사]</strong>&nbsp;											<span class = "title"><a href="/board/?mode=V&idx=9069&id=schedule&p=1" alt="">[경력개발팀]2026-2학기 무악4학사 국가고시동 정기선발 안내</a></span>
+											2026-06-15
+										</td>
+
+									</tr>
+
+
+									<tr class = "hide_when_mobile">
+										<td data-align="center">99</td>
+										<td data-align="center">무악학사</td>
+										<td class="">
+											<a href="/board/?mode=V&idx=9069&id=schedule&p=1" alt="">[경력개발팀]2026-2학기 무악4학사 국가고시동 정기선발 안내</a>
+										</td>
+										<td data-align="center" class = "hide_when_mobile">2026-06-15</td>
+										<td data-align="center" class = "hide_when_mobile">3687</td>
+										<td data-align="center">
+										</td>
+									</tr>
+
+									<!-- {s} mobile -->
+									<tr class = "hide_when_pc">
+																				<td colspan = "4">
+											<strong>[공통]</strong>&nbsp;											<span class = "title"><a href="/board/?mode=V&idx=9055&id=schedule&p=1" alt="">2026학년도 여름방학 기숙사(신촌) 신규 신청 안내 (2026-Summer)</a></span>
+											2026-05-29
+										</td>
+
+									</tr>
+
+
+									<tr class = "hide_when_mobile">
+										<td data-align="center">98</td>
+										<td data-align="center">공통</td>
+										<td class="">
+											<a href="/board/?mode=V&idx=9055&id=schedule&p=1" alt="">2026학년도 여름방학 기숙사(신촌) 신규 신청 안내 (2026-Summer)</a>
+										</td>
+										<td data-align="center" class = "hide_when_mobile">2026-05-29</td>
+										<td data-align="center" class = "hide_when_mobile">17611</td>
+										<td data-align="center">
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+					<!-- 페이징 -->
+					<div class="board-pager-default">
+						<ul data-liststyle="none">
+							<li><a class="active" href="/board/?id=schedule&amp;p=1"><span>1</span></a></li>
+<li><a href="/board/?id=schedule&amp;p=2"><span>2</span></a></li>
+<li><a href="/board/?id=schedule&amp;p=3"><span>3</span></a></li>
+<li><a href="/board/?id=schedule&amp;p=4"><span>4</span></a></li>
+<li><a href="/board/?id=schedule&amp;p=5"><span>5</span></a></li>
+<li><a href="/board/?id=schedule&amp;p=6"><span>6</span></a></li>
+<li><a href="/board/?id=schedule&amp;p=7"><span>7</span></a></li>
+<li><a href="/board/?id=schedule&amp;p=8"><span>8</span></a></li>
+<li><a href="/board/?id=schedule&amp;p=9"><span>9</span></a></li>
+<li><a href="/board/?id=schedule&amp;p=10"><span>10</span></a></li>
+<li><a href="/board/?id=schedule&amp;p=11" title="마지막 11 페이지"><img src="/res/img/board/iconLast.png" alt="&gt;&gt;" /></a></li>
+						</ul>
+					</div>
+				</div>
+
+
+
+				
+<style type = "text/css">
+	@media screen and (min-width:1px) and (max-width:1000px) {
+
+		.hide_when_mobile {		
+			display:none;
+		}	
+
+		.title { 
+			font-size:1.2em;
+			font-weight:bold;
+		}
+
+	}
+
+
+	@media screen and (min-width:1000px) {
+	
+		.hide_when_pc { 
+			display:none;
+		}
+	
+
+	}
+
+</style>					</div>
+				</div>
+			</div>
+			<footer id="mqFooter">
+				<div class="link-facility">
+					<ul data-liststyle="none" class="l-f-box flex-box lay-start">
+						<li class="item"><a href="/en/" class="link-btn" target="_blank" title="새창으로 국제학사 & SK 국제학사 페이지로 이동합니다"><span class="txt">SK GLOBAL HOUSE</span><span class="icon">&gt;</span></a></li>
+						<li class="item"><a href="/en/" class="link-btn" target="_blank" title="새창으로 국제학사 & SK 국제학사 페이지로 이동합니다"><span class="txt">INTERNATIONAL HOUSE</span><span class="icon">&gt;</span></a></li>
+						<li class="item"><a href="https://jbhaksa.yonsei.ac.kr/facility.asp?mid=m02_03" class="link-btn" target="_blank" title="새창으로 게스트하우스 페이지로 이동합니다"><span class="txt">GUEST HOUSE</span><span class="icon">&gt;</span></a></li>
+						<li class="item"><a href="https://yicdorm.yonsei.ac.kr" class="link-btn" target="_blank" title="새창으로 송도학사 페이지로 이동합니다"><span class="txt">SONGDO HOUSE</span><span class="icon">&gt;</span></a></li>
+						<li class="item"><a href="https://chejunghouse.yonsei.ac.kr" class="link-btn" target="_blank" title="새창으로 제중학사 페이지로 이동합니다"><span class="txt">CHEJUNG HOUSE</span><span class="icon">&gt;</span></a></li>
+					</ul>						
+				</div>
+				<div class="foot-site-map">					
+					<div class="site-frame">
+						<div class="link-list">
+							<h3 class="l-m-tt">생활관 안내</h3>
+							<a href="/sub.php?code=010200" class="link-btn">오시는 길</a>
+							<a href="/sub.php?code=010100" class="link-btn">CONTACT US</a>
+							<a href="/sub.php?code=010400" class="link-btn">반입금지물품</a>
+							<a href="/sub.php?code=010500" class="link-btn">화재지진등 예방</a>
+							<a href="/sub.php?code=010600" class="link-btn">편의시설위치</a>
+							<a href="/sub.php?code=010700" class="link-btn">우편물</a>
+							<!-- <a href="/sub.php?code=010800" class="link-btn">셔틀버스 안내</a> -->
+							<a href="/sub.php?code=010900" class="link-btn">식당 안내</a>
+						</div>
+						<div class="link-list">
+							<h3 class="l-m-tt">입사안내</h3>
+							<a href="/sub.php?code=020100" class="link-btn">선발기준</a>
+							<a href="/sub.php?code=020300" class="link-btn">신청안내</a>
+							<!-- <a href="/application/" class="link-btn">On-line Application</a> -->
+							<a href="/board/?id=schedule" class="link-btn">선발일정</a>
+							<a href="/board/?id=data" class="link-btn">서식자료실</a>
+						</div>
+						<div class="link-list">
+							<h3 class="l-m-tt">커뮤니티</h3>
+							<a href="/board/?id=notice" class="link-btn">공지사항</a>
+							
+							<a href="/board/?id=faq" class="link-btn">FAQ</a>
+							<!-- <a href="/board/?id=qna" class="link-btn">Q&amp;A</a> -->
+							<a href="/board/?id=foodbus" class="link-btn">식당/셔틀</a>
+							<a href="/sub.php?code=060400" class="link-btn">수요예배</a>
+							<!-- <a href="/board/?id=tips" class="link-btn">TIPS!</a> -->
+							<a href="/sub.php?code=060800" class="link-btn">생활관 규정</a>
+						</div>
+						<!-- <div class="link-list">
+							<h3 class="l-m-tt">마이페이지</h3>
+							<a href="/mypage/applied/" class="link-btn">입사신청내역</a>
+							<a href="/mypage/result/" class="link-btn">선발결과/기숙사비 고지</a>
+							<a href="/mypage/payment/" class="link-btn">기숙사비 납부내역</a>
+							<a href="/sub.php?code=070500" class="link-btn">룸메이트</a>
+							<a class="link-btn" href="/mypage/retirement/">자진퇴사 신청</a>
+							<a href="/mypage/stayout/" class="link-btn">외박/복귀 신고</a>
+							<a href="/mypage/sanction/" class="link-btn">상&middot;벌점 조회</a>
+						</div> -->
+						<div class="link-list">
+							<h3 class="l-m-tt">시설소개</h3>
+							<a class="link-btn" href="/dormitory/?mode=view1&id=QUFBQXRSQUFDQUFBQWJGQUFC">무악1,2학사</a>
+							<a class="link-btn" href="/dormitory/?mode=view1&id=QUFBQXRSQUFDQUFBQWJGQUFE">무악3,4학사</a>
+							<a class="link-btn" href="/dormitory/?mode=view1&id=QUFBQXRSQUFDQUFBQWJGQUFG">우정원</a>
+							<a class="link-btn" href="/dormitory/?mode=view1&id=QUFBQXRSQUFDQUFBQWJGQUFH">법현학사</a>
+							<a class="link-btn" href="/sub.php?code=080900">시설현황</a>
+						</div>
+					</div>
+				</div>
+				<div class="foot-frame">					
+					<h2 class="foot_logo"><a href="/"><img src="/res/img/common/img-foot-logo.png" alt="연세대학교 생활관 HOUSING OFFICE OF YONSEI UNIVERSITY" /></a></h2>
+					<div class="foot_box">	
+						<div class="link-law flex-box">
+							<a class="link-item" href="https://www.yonsei.ac.kr/sc/etc/privacy.jsp" target="_blank" title="새창으로 연세대학교 개인정보처리방침 페이지로 이동합니다.">개인정보처리방침</a>
+													</div>
+						<div class="adr-box">
+							<div class="m_b flex-box">
+								<address class="item v-align-center">03722) 서울특별시 서대문구 연세로 50 연세대학교 생활관</address>
+							</div>
+							<div class="m_b flex-box tel-num" style="margin-top:10px;">
+								<span class="item v-align-center">무악학사&middot;우정원 02-2123-8419</span>
+								<span class="item v-align-center">법현학사 02-2123-8295 </span>
+								<span class="item v-align-center">공통이메일  muakdorm@yonsei.ac.kr </span>
+								<!--<span class="item v-align-center">국제학사 02-2123-4616</span>-->
+								<span class="item v-align-center">INTERNATIONAL HOUSEㆍSK GLOBAL HOUSE : 02-2123-7481</span>
+								<span class="item v-align-center">E-MAIL : skghouse@yonsei.ac.kr</span>
+								<!--<span class="item v-align-center">SK국제학사 02-2123-7481</span>
+								<span class="item v-align-center">Fax 02-2123-8679</span>-->
+							</div>
+							<p class="copyrights">Copyright ⓒ HOUSING OFFICE OF YONSEI UNIVERSITY. All Rights Reserved</p>
+						</div>
+					</div>
+					<div class="s-link-box">
+						<form onsubmit="if(this.site.value) window.open(this.site.value); return false;">
+							<fieldset>
+								<label for="siteLink" data-hide="true">교내 주요사이트 바로가기</label>
+								<select name="site" id="siteLink" title="교내 주요사이트 바로가기">
+									<option value="/">관련사이트</option>
+									<option value="http://www.yonsei.ac.kr">연세대학교</option>
+									<option value="http://career.yonsei.ac.kr">취업정보실</option>
+									<option value="http://portal.yonsei.ac.kr">학사포탈시스템</option>
+									<option value="http://mail.yonsei.ac.kr/welcome.do">연세웹메일</option>
+									<option value="http://yis.yonsei.ac.kr">정보통신처</option>
+									<option value="http://helpdesk.yonsei.ac.kr">정보통신처 helpdesk</option>
+									<option value="http://exam.yonsei.ac.kr">국가고시정보센터</option>
+									<option value="http://www.yonsei.ac.kr/fresh">학부대학</option>
+									<option value="http://medicine.yonsei.ac.kr">의과대학</option>
+									<option value="http://dentistry.yonsei.ac.kr">치과대학</option>
+									<option value="http://nursingcollege.yonsei.ac.kr">간호대학</option>
+									<option value="http://www.yonseicoop.co.kr">생활협동조합</option>
+								</select>
+								<input type="submit" value="방문" title="새 창" class="s-link-btn">
+							</fieldset>
+						</form>
+					</div>
+				</div>
+			</footer>
+			<div id="go-top" style="display: block;"><a href="#top"><span></span>TOP</a></div>
+		</div>
+	</body>
+</html>
