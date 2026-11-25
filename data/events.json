@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-25T13:00+09:00",
+ "generated_at": "2026-11-25T14:24+09:00",
  "repo": "jaebin06/yonsei-calendar",
  "health": {
   "dev-event": {
@@ -12,7 +12,7 @@
   },
   "yonsei-notice": {
    "ok": true,
-   "count": 9
+   "count": 16
   },
   "linkareer": {
    "ok": true,
@@ -225,6 +225,64 @@
    "warnings": [],
    "ask": false,
    "first_seen": "2026-11-21T23:49:32.186546"
+  },
+  {
+   "id": "yonsei-notice-0ed636b5",
+   "category": "scholarship",
+   "title": "미래 건설교통신기술인 장학사업 안내",
+   "source": "yonsei-notice",
+   "url": "https://www.yonsei.ac.kr/bbs/sc/58/944641/artclView.do",
+   "organizer": "학생지원팀(장학)",
+   "apply_start": null,
+   "deadline": "2026-11-18T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "연세대 공지",
+    "날짜:기간"
+   ],
+   "eligibility": "1. 선발대상: / ㅇ신청자격 (공통) / - 장학금 공고일 기준 잔여 정규학기가 1학기 이상인 자 / -  신입생 등 직전 대학 정규학기 성적이 없는 자,  휴학생·대학원생은 초년도 대상에서 제외 / ㅇ 부문별 신청자격 / ※ 관련 학과 범위 예시 : 토목·건축·교통·도시·조경·환경·기계·전기전자·안전 등. 학과 명칭만으로 판단하기 어려우면 교육과정과 건설·교통 분야의 연관성을 확인하 여 공고한 기준에 따라 결정",
+   "location": "",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 0,
+   "score_reasons": [
+    "제외: 마감 임박·지남"
+   ],
+   "status": "hidden",
+   "warnings": [],
+   "ask": false,
+   "first_seen": "2026-11-25T14:24:21.989527"
+  },
+  {
+   "id": "yonsei-notice-db9610c8",
+   "category": "scholarship",
+   "title": "2027년도 송원김영환장학재단 장학생 추천 안내(모집 연장)",
+   "source": "yonsei-notice",
+   "url": "https://www.yonsei.ac.kr/bbs/sc/58/944667/artclView.do",
+   "organizer": "연세대학교",
+   "apply_start": null,
+   "deadline": "2026-11-22T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "연세대 공지",
+    "날짜:기간"
+   ],
+   "eligibility": "2. 지원 조건 / 3. 장학금액: 학기당 500만원 (장학생 자격 유지 시 정규학기 졸업까지 지원)",
+   "location": "",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 0,
+   "score_reasons": [
+    "제외: 마감 임박·지남"
+   ],
+   "status": "hidden",
+   "warnings": [],
+   "ask": false,
+   "first_seen": "2026-11-25T14:24:21.989527"
   },
   {
    "id": "devevent-24b86984",
@@ -866,6 +924,36 @@
    ],
    "ask": false,
    "first_seen": "2026-11-21T23:49:32.186546"
+  },
+  {
+   "id": "yonsei-notice-338b6ced",
+   "category": "scholarship",
+   "title": "2027년도 제35기 세아해암장학생 추천(신촌캠퍼스)",
+   "source": "yonsei-notice",
+   "url": "https://www.yonsei.ac.kr/bbs/sc/58/944731/artclView.do",
+   "organizer": "학생지원팀",
+   "apply_start": null,
+   "deadline": null,
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "연세대 공지"
+   ],
+   "eligibility": "2. 지원 조건 / 가. 2027-1학기 기준 3학년 이과대학, 공과대학, 인공지능융합대학, 생명시스템대학 학부 재학생 / 다. 2026-2학기 기준 소득분위 8분위 이하인 학생 / 4. 진학 시 아래의 재단 동문 장학생 자격 우선 선정 혜택 / -교수 및 연구원: 연구프로젝트 연 5,000만원(3년 계속지원), 세아해암학술상 대상자 선정 시 3,000만원 상금 등 / 6. 학교 추천 대상자 선정:",
+   "location": "",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 0,
+   "score_reasons": [
+    "마감일을 못 찾음 → 원문 확인"
+   ],
+   "status": "maybe",
+   "warnings": [
+    "마감일 확인 필요"
+   ],
+   "ask": false,
+   "first_seen": "2026-11-25T14:24:21.989527"
   },
   {
    "id": "devevent-432bdb64",
@@ -2024,6 +2112,37 @@
    "first_seen": "2026-11-21T23:49:32.186546"
   },
   {
+   "id": "linkareer-826a9618",
+   "category": "internship",
+   "title": "[하루7H근무/중식제공/본사] 신세계인터내셔날 이커머스 입점팀(라이프) AMD 채용",
+   "source": "linkareer",
+   "url": "https://linkareer.com/activity/366950",
+   "organizer": "주식회사유니에스",
+   "apply_start": null,
+   "deadline": "2026-11-29T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "MD/상품기획",
+    "기타"
+   ],
+   "eligibility": "",
+   "location": "오프라인(서울)",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 25,
+   "score_reasons": [
+    "기타 직무 +10",
+    "근무 기간 미상 +10",
+    "기타 주최 +5"
+   ],
+   "status": "hidden",
+   "warnings": [],
+   "ask": false,
+   "first_seen": "2026-11-25T14:24:21.989527"
+  },
+  {
    "id": "devevent-6d92bd11",
    "category": "event",
    "title": "VIMRC 2026 : CLI 특집",
@@ -2444,37 +2563,6 @@
    "first_seen": "2026-11-21T22:41:22.809219"
   },
   {
-   "id": "linkareer-77da571e",
-   "category": "internship",
-   "title": "AI 신용평가 아카데미 5기",
-   "source": "linkareer",
-   "url": "https://linkareer.com/activity/366183",
-   "organizer": "피에프씨테크놀로지스",
-   "apply_start": null,
-   "deadline": "2026-11-30T23:59:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "체험형 인턴"
-   ],
-   "eligibility": "",
-   "location": "오프라인(서울)",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 55,
-   "score_reasons": [
-    "AI·데이터 직무 +25",
-    "근무 기간 미상 +10",
-    "기타 주최 +5",
-    "재학생 지원 가능(체험형) +15"
-   ],
-   "status": "maybe",
-   "warnings": [],
-   "ask": false,
-   "first_seen": "2026-11-23T10:28:12.861778"
-  },
-  {
    "id": "wevity-15a594e9",
    "category": "contest",
    "title": "부천도시공사 2026 ESG 아이디어 공모전",
@@ -2849,37 +2937,6 @@
    "warnings": [],
    "ask": false,
    "first_seen": "2026-11-24T13:10:01.012860"
-  },
-  {
-   "id": "linkareer-f5c61e75",
-   "category": "internship",
-   "title": "[하루7H근무/중식제공/본사] 신세계인터내셔날 이커머스 입점팀 뷰티 AMD 채용",
-   "source": "linkareer",
-   "url": "https://linkareer.com/activity/366126",
-   "organizer": "주식회사유니에스",
-   "apply_start": null,
-   "deadline": "2026-11-30T23:59:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "MD/상품기획",
-    "기타"
-   ],
-   "eligibility": "",
-   "location": "오프라인(서울)",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 25,
-   "score_reasons": [
-    "기타 직무 +10",
-    "근무 기간 미상 +10",
-    "기타 주최 +5"
-   ],
-   "status": "hidden",
-   "warnings": [],
-   "ask": false,
-   "first_seen": "2026-11-23T10:28:12.861778"
   },
   {
    "id": "devevent-e7e81be3",
@@ -3796,36 +3853,6 @@
    "first_seen": "2026-11-21T23:49:32.186546"
   },
   {
-   "id": "linkareer-41f41d4d",
-   "category": "internship",
-   "title": "[-12/4] 이삼오구 신입 마케터 대규모 채용 (채용연계형 인턴)",
-   "source": "linkareer",
-   "url": "https://linkareer.com/activity/366178",
-   "organizer": "이삼오구",
-   "apply_start": null,
-   "deadline": "2026-12-04T23:59:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "채용연계형 인턴"
-   ],
-   "eligibility": "",
-   "location": "오프라인(서울)",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 25,
-   "score_reasons": [
-    "기타 직무 +10",
-    "근무 기간 미상 +10",
-    "기타 주최 +5"
-   ],
-   "status": "hidden",
-   "warnings": [],
-   "ask": false,
-   "first_seen": "2026-11-23T10:28:12.861778"
-  },
-  {
    "id": "devevent-9ca0eeec",
    "category": "event",
    "title": "DDD Seoul 2026",
@@ -3857,6 +3884,34 @@
    "warnings": [],
    "ask": false,
    "first_seen": "2026-11-21T22:41:22.809219"
+  },
+  {
+   "id": "linkareer-78e8a61a",
+   "category": "internship",
+   "title": "[한국타이어앤테크놀로지] 2026년 하반기 한국공장 생산기능직 인턴 채용",
+   "source": "linkareer",
+   "url": "https://linkareer.com/activity/366948",
+   "organizer": "한국타이어앤테크놀로지",
+   "apply_start": null,
+   "deadline": "2026-12-04T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "채용연계형 인턴"
+   ],
+   "eligibility": "",
+   "location": "오프라인(대전), 오프라인(충남), 오프라인(충청)",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 0,
+   "score_reasons": [
+    "제외: 허용 지역 아님"
+   ],
+   "status": "hidden",
+   "warnings": [],
+   "ask": false,
+   "first_seen": "2026-11-25T14:24:21.989527"
   },
   {
    "id": "devevent-2c3f7399",
@@ -4156,36 +4211,6 @@
    "warnings": [],
    "ask": false,
    "first_seen": "2026-11-24T13:10:01.012860"
-  },
-  {
-   "id": "linkareer-78fe71a2",
-   "category": "internship",
-   "title": "[OK금융그룹] 2026 AI Native 채용형 인턴 공개모집",
-   "source": "linkareer",
-   "url": "https://linkareer.com/activity/366155",
-   "organizer": "OK금융그룹",
-   "apply_start": null,
-   "deadline": "2026-12-06T23:59:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "채용연계형 인턴"
-   ],
-   "eligibility": "",
-   "location": "오프라인(서울)",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 40,
-   "score_reasons": [
-    "AI·데이터 직무 +25",
-    "근무 기간 미상 +10",
-    "기타 주최 +5"
-   ],
-   "status": "maybe",
-   "warnings": [],
-   "ask": false,
-   "first_seen": "2026-11-23T10:28:12.861778"
   },
   {
    "id": "linkareer-40870231",
@@ -4647,6 +4672,36 @@
    "warnings": [],
    "ask": false,
    "first_seen": "2026-11-24T13:10:01.012860"
+  },
+  {
+   "id": "linkareer-2a14789b",
+   "category": "internship",
+   "title": "[kakao계열사] 링키지랩 AI용 멀티모달 레이블링 장애대학생 인턴십[채용전환형]",
+   "source": "linkareer",
+   "url": "https://linkareer.com/activity/366932",
+   "organizer": "주식회사 링키지랩",
+   "apply_start": null,
+   "deadline": "2026-12-08T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "채용연계형 인턴"
+   ],
+   "eligibility": "",
+   "location": "오프라인(서울)",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 40,
+   "score_reasons": [
+    "AI·데이터 직무 +25",
+    "근무 기간 미상 +10",
+    "기타 주최 +5"
+   ],
+   "status": "maybe",
+   "warnings": [],
+   "ask": false,
+   "first_seen": "2026-11-25T14:24:21.989527"
   },
   {
    "id": "linkareer-3496ad50",
@@ -5260,6 +5315,36 @@
    "first_seen": "2026-11-21T22:41:22.809219"
   },
   {
+   "id": "yonsei-notice-a0c14791",
+   "category": "scholarship",
+   "title": "한국고등교육재단 문우림 제6기 장학생 선발 안내",
+   "source": "yonsei-notice",
+   "url": "https://www.yonsei.ac.kr/bbs/sc/58/944606/artclView.do",
+   "organizer": "학생지원팀(장학)",
+   "apply_start": null,
+   "deadline": "2026-12-11T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "연세대 공지",
+    "날짜:기간"
+   ],
+   "eligibility": "1. 지원자격: / ○ 학부 2, 3학년이며 2개 학기 이상 이수자 (학년 수료 기준은 재학 중인 학교 기준을 따름) / - 2026년 10월 기준, 1학년 2학기 이수 후~3학년 2학기 이수 후 휴학중인 자 / ○ 평균 학점 3.5 이상인 자(4.5 만점 기준)",
+   "location": "",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 30,
+   "score_reasons": [
+    "장학금 기본 +20",
+    "학부 재학생 대상 +10"
+   ],
+   "status": "maybe",
+   "warnings": [],
+   "ask": false,
+   "first_seen": "2026-11-25T14:24:21.989527"
+  },
+  {
    "id": "yonsei-notice-ccad6a4f",
    "category": "event",
    "title": "제26회 윤동주 시문학상",
@@ -5389,39 +5474,6 @@
    "warnings": [],
    "ask": false,
    "first_seen": "2026-11-21T23:49:32.186546"
-  },
-  {
-   "id": "linkareer-c23d9d0e",
-   "category": "internship",
-   "title": "[네이버웹툰] AI Engineer (체험형 인턴)",
-   "source": "linkareer",
-   "url": "https://linkareer.com/activity/366170",
-   "organizer": "네이버웹툰",
-   "apply_start": null,
-   "deadline": "2026-12-13T23:59:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "QA/기술지원",
-    "체험형 인턴"
-   ],
-   "eligibility": "",
-   "location": "오프라인(경기)",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 70,
-   "score_reasons": [
-    "AI·데이터 직무 +25",
-    "근무 기간 미상 +10",
-    "대기업·공공·대학 주최 +20",
-    "재학생 지원 가능(체험형) +15",
-    "제목에 PM·기획 직무 없음 → 검토"
-   ],
-   "status": "maybe",
-   "warnings": [],
-   "ask": false,
-   "first_seen": "2026-11-23T10:28:12.861778"
   },
   {
    "id": "devevent-fc4b798f",
@@ -5614,6 +5666,36 @@
    "warnings": [],
    "ask": false,
    "first_seen": "2026-11-21T23:49:32.186546"
+  },
+  {
+   "id": "yonsei-notice-acbcdfb0",
+   "category": "scholarship",
+   "title": "2027학년도 강남장학회 장학생 모집 안내",
+   "source": "yonsei-notice",
+   "url": "https://www.yonsei.ac.kr/bbs/sc/58/944647/artclView.do",
+   "organizer": "학생지원팀(장학)",
+   "apply_start": null,
+   "deadline": "2026-12-13T22:00:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "연세대 공지",
+    "날짜:본문"
+   ],
+   "eligibility": "- 모집대상: 서울·경기 소재의 사립대학교 (학부·대학원) 8명 / 서류 합격 및 면접 대상자 발표 : 2026년 12월 14일(월) ~ 18일(금) / 개별 연락",
+   "location": "",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 30,
+   "score_reasons": [
+    "장학금 기본 +20",
+    "학부 재학생 대상 +10"
+   ],
+   "status": "maybe",
+   "warnings": [],
+   "ask": false,
+   "first_seen": "2026-11-25T14:24:21.989527"
   },
   {
    "id": "linkareer-3b72f54b",
@@ -5944,41 +6026,6 @@
    "first_seen": "2026-11-21T23:49:32.186546"
   },
   {
-   "id": "linkareer-14d1990c",
-   "category": "internship",
-   "title": "에브리타임 글로벌 마케팅 정규직 전환형 인턴",
-   "source": "linkareer",
-   "url": "https://linkareer.com/activity/366082",
-   "organizer": "비누랩스 주식회사",
-   "apply_start": null,
-   "deadline": "2026-12-20T23:59:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "사업기획/신규사업",
-    "마케팅기획/전략",
-    "SNS/콘텐츠마케팅",
-    "시장조사/리서치",
-    "해외영업",
-    "채용연계형 인턴"
-   ],
-   "eligibility": "",
-   "location": "오프라인(서울)",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 40,
-   "score_reasons": [
-    "AI·데이터 직무 +25",
-    "근무 기간 미상 +10",
-    "기타 주최 +5"
-   ],
-   "status": "maybe",
-   "warnings": [],
-   "ask": false,
-   "first_seen": "2026-11-24T13:10:01.012860"
-  },
-  {
    "id": "devevent-5777e3e8",
    "category": "contest",
    "title": "2026 HAI(하이)! - Hecto AI x Wallet Service Challenge",
@@ -6014,38 +6061,6 @@
    ],
    "ask": false,
    "first_seen": "2026-11-21T22:41:22.809219"
-  },
-  {
-   "id": "linkareer-69b9ee22",
-   "category": "internship",
-   "title": "[굿워크랩] F&B 인플루언서 마케팅 캠페인 AE (채용전환형 인턴)",
-   "source": "linkareer",
-   "url": "https://linkareer.com/activity/366181",
-   "organizer": "굿워크랩",
-   "apply_start": null,
-   "deadline": "2026-12-23T23:59:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "SNS/콘텐츠마케팅",
-    "광고기획/AE",
-    "채용연계형 인턴"
-   ],
-   "eligibility": "",
-   "location": "오프라인(서울)",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 25,
-   "score_reasons": [
-    "기타 직무 +10",
-    "근무 기간 미상 +10",
-    "기타 주최 +5"
-   ],
-   "status": "hidden",
-   "warnings": [],
-   "ask": false,
-   "first_seen": "2026-11-24T13:10:01.012860"
   },
   {
    "id": "wevity-f7acc1fa",
@@ -6301,35 +6316,6 @@
    "first_seen": "2026-11-21T22:41:22.809219"
   },
   {
-   "id": "linkareer-2725252f",
-   "category": "internship",
-   "title": "[미국인턴] CJ Logistics America SCM 물류인턴 지점별 인턴 채용 (CA, IL, TN)",
-   "source": "linkareer",
-   "url": "https://linkareer.com/activity/366068",
-   "organizer": "CJ Logistics America",
-   "apply_start": null,
-   "deadline": "2026-12-31T23:59:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "물류/SCM관리",
-    "체험형 인턴"
-   ],
-   "eligibility": "",
-   "location": "오프라인(해외)",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 0,
-   "score_reasons": [
-    "제외: 허용 지역 아님"
-   ],
-   "status": "hidden",
-   "warnings": [],
-   "ask": false,
-   "first_seen": "2026-11-22T00:09:44.527946"
-  },
-  {
    "id": "wevity-82cf74ef",
    "category": "contest",
    "title": "공모전 준비 중이라면? AI 교정 서비스 [교정의 신]과 함께!",
@@ -6389,6 +6375,65 @@
    "warnings": [],
    "ask": false,
    "first_seen": "2026-11-21T23:49:32.186546"
+  },
+  {
+   "id": "yonsei-notice-c2561db7",
+   "category": "scholarship",
+   "title": "2027년도 1학기 제7회 보림 새말귀 장학생 선발 안내",
+   "source": "yonsei-notice",
+   "url": "https://www.yonsei.ac.kr/bbs/sc/58/944664/artclView.do",
+   "organizer": "학생지원팀(장학)",
+   "apply_start": null,
+   "deadline": "2027-01-05T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "연세대 공지",
+    "날짜:기간"
+   ],
+   "eligibility": "1) 선발 대상 및 장학금 규모 / - 대상: 대학생 및 대학원생(석사) / - 자기소개서 및 독후감 제출은 A4 기준, 자율 분량. / ※ 제출 내용이 사실과 다르거나 자격 요건을 충족하지 않을 경우, 지급된 장학금은 회수될 수 있습니다.",
+   "location": "",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 30,
+   "score_reasons": [
+    "장학금 기본 +20",
+    "학부 재학생 대상 +10"
+   ],
+   "status": "maybe",
+   "warnings": [],
+   "ask": false,
+   "first_seen": "2026-11-25T14:24:21.989527"
+  },
+  {
+   "id": "yonsei-notice-cae1bd82",
+   "category": "scholarship",
+   "title": "2027년도 [19기] 에몬스 장학생 모집 안내",
+   "source": "yonsei-notice",
+   "url": "https://www.yonsei.ac.kr/bbs/sc/58/944728/artclView.do",
+   "organizer": "학생지원팀(장학)",
+   "apply_start": null,
+   "deadline": "2027-01-08T05:00:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "연세대 공지",
+    "날짜:기간"
+   ],
+   "eligibility": "2) 지원 자격 / ※ 2027년 2월 졸업 예정자, 2027년 신규 입학자, 대학원생(석사 ㆍ 박사 과정 및 수료자)은 지원 대상에서 제외됩니다.",
+   "location": "",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 0,
+   "score_reasons": [
+    "제외: 대상 아님(대학원생)"
+   ],
+   "status": "hidden",
+   "warnings": [],
+   "ask": false,
+   "first_seen": "2026-11-25T14:24:21.989527"
   },
   {
    "id": "devevent-d2abc2b3",
@@ -6521,37 +6566,6 @@
    "warnings": [],
    "ask": false,
    "first_seen": "2026-11-25T13:00:04.384436"
-  },
-  {
-   "id": "linkareer-bb1f2ba9",
-   "category": "internship",
-   "title": "[보령] [글로벌본부] Global Strategy Manager 채용연계형 인턴",
-   "source": "linkareer",
-   "url": "https://linkareer.com/activity/366026",
-   "organizer": "보령",
-   "apply_start": null,
-   "deadline": "2027-02-18T23:59:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "경영기획/전략",
-    "채용연계형 인턴"
-   ],
-   "eligibility": "",
-   "location": "오프라인(서울)",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 40,
-   "score_reasons": [
-    "AI·데이터 직무 +25",
-    "근무 기간 미상 +10",
-    "기타 주최 +5"
-   ],
-   "status": "maybe",
-   "warnings": [],
-   "ask": false,
-   "first_seen": "2026-11-22T00:09:44.527946"
   },
   {
    "id": "linkareer-05b3daec",
@@ -6841,37 +6855,6 @@
    "first_seen": "2026-11-24T13:10:01.012860"
   },
   {
-   "id": "linkareer-b32c0fa3",
-   "category": "internship",
-   "title": "콘텐츠, 영상 마케팅 체험형 인턴 모집",
-   "source": "linkareer",
-   "url": "https://linkareer.com/activity/366142",
-   "organizer": "주식회사 더엑시스",
-   "apply_start": null,
-   "deadline": "2027-02-21T23:59:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "체험형 인턴"
-   ],
-   "eligibility": "",
-   "location": "오프라인(서울)",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 40,
-   "score_reasons": [
-    "기타 직무 +10",
-    "근무 기간 미상 +10",
-    "기타 주최 +5",
-    "재학생 지원 가능(체험형) +15"
-   ],
-   "status": "maybe",
-   "warnings": [],
-   "ask": false,
-   "first_seen": "2026-11-24T13:10:01.012860"
-  },
-  {
    "id": "linkareer-9015bf09",
    "category": "internship",
    "title": "[더파운더즈] BX 디자이너 채용전환형 인턴",
@@ -7023,37 +7006,6 @@
    "warnings": [],
    "ask": false,
    "first_seen": "2026-11-24T13:10:01.012860"
-  },
-  {
-   "id": "linkareer-bdddccdd",
-   "category": "internship",
-   "title": "[마카롱팩토리/마이클] CS 매니저 (전환형 인턴)",
-   "source": "linkareer",
-   "url": "https://linkareer.com/activity/366167",
-   "organizer": "주식회사 마카롱팩토리",
-   "apply_start": null,
-   "deadline": "2027-02-21T23:59:00",
-   "event_start": null,
-   "event_end": null,
-   "tags": [
-    "고객상담/CS",
-    "채용연계형 인턴"
-   ],
-   "eligibility": "",
-   "location": "오프라인(경기)",
-   "prize": "",
-   "work_start": null,
-   "work_end": null,
-   "score": 25,
-   "score_reasons": [
-    "기타 직무 +10",
-    "근무 기간 미상 +10",
-    "기타 주최 +5"
-   ],
-   "status": "hidden",
-   "warnings": [],
-   "ask": false,
-   "first_seen": "2026-11-23T10:28:12.861778"
   },
   {
    "id": "linkareer-8dcedaf6",
@@ -7771,6 +7723,71 @@
    "first_seen": "2026-11-25T13:00:04.384436"
   },
   {
+   "id": "linkareer-bc7b9039",
+   "category": "internship",
+   "title": "투자1본부 오픈이노베이션팀 I RA(Research Assistant) 인턴 채용",
+   "source": "linkareer",
+   "url": "https://linkareer.com/activity/366935",
+   "organizer": "주식회사 블루포인트파트너스",
+   "apply_start": null,
+   "deadline": "2027-02-23T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "체험형 인턴"
+   ],
+   "eligibility": "",
+   "location": "오프라인(대전), 오프라인(서울)",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 40,
+   "score_reasons": [
+    "기타 직무 +10",
+    "근무 기간 미상 +10",
+    "기타 주최 +5",
+    "재학생 지원 가능(체험형) +15"
+   ],
+   "status": "maybe",
+   "warnings": [],
+   "ask": false,
+   "first_seen": "2026-11-25T14:24:21.989527"
+  },
+  {
+   "id": "linkareer-c0c7ea30",
+   "category": "internship",
+   "title": "[씨드앤] R&D 인턴",
+   "source": "linkareer",
+   "url": "https://linkareer.com/activity/366934",
+   "organizer": "씨드앤",
+   "apply_start": null,
+   "deadline": "2027-02-23T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "AI/ML엔지니어",
+    "전기/전자/반도체",
+    "화학/에너지/환경",
+    "기계설계/CAD",
+    "채용연계형 인턴"
+   ],
+   "eligibility": "",
+   "location": "오프라인(서울)",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 40,
+   "score_reasons": [
+    "AI·데이터 직무 +25",
+    "근무 기간 미상 +10",
+    "기타 주최 +5"
+   ],
+   "status": "maybe",
+   "warnings": [],
+   "ask": false,
+   "first_seen": "2026-11-25T14:24:21.989527"
+  },
+  {
    "id": "linkareer-2bcf29b3",
    "category": "internship",
    "title": "[누아] 글로벌 마케터",
@@ -7834,6 +7851,36 @@
    "first_seen": "2026-11-25T13:00:04.384436"
   },
   {
+   "id": "linkareer-32ebf95e",
+   "category": "internship",
+   "title": "[이너시아] US TikTok Growth Intern 채용(0명)",
+   "source": "linkareer",
+   "url": "https://linkareer.com/activity/366949",
+   "organizer": "주식회사 이너웍스",
+   "apply_start": null,
+   "deadline": "2027-02-23T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "채용연계형 인턴"
+   ],
+   "eligibility": "",
+   "location": "오프라인(서울)",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 25,
+   "score_reasons": [
+    "기타 직무 +10",
+    "근무 기간 미상 +10",
+    "기타 주최 +5"
+   ],
+   "status": "hidden",
+   "warnings": [],
+   "ask": false,
+   "first_seen": "2026-11-25T14:24:21.989527"
+  },
+  {
    "id": "linkareer-143218a3",
    "category": "internship",
    "title": "[누아] 경영지원 채용 (HR/GA)",
@@ -7863,6 +7910,160 @@
    "warnings": [],
    "ask": false,
    "first_seen": "2026-11-25T13:00:04.384436"
+  },
+  {
+   "id": "linkareer-a1a49c30",
+   "category": "internship",
+   "title": "[미국] CJ Logistics의 미주 법인 물류 오퍼레이션(Logistics Operations Coordinator) 모집 (연봉 약 6,900만원)",
+   "source": "linkareer",
+   "url": "https://linkareer.com/activity/366933",
+   "organizer": "CJ Logistics America LLC",
+   "apply_start": null,
+   "deadline": "2027-02-23T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "기타",
+    "채용연계형 인턴",
+    "체험형 인턴"
+   ],
+   "eligibility": "",
+   "location": "오프라인(해외)",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 0,
+   "score_reasons": [
+    "제외: 허용 지역 아님"
+   ],
+   "status": "hidden",
+   "warnings": [],
+   "ask": false,
+   "first_seen": "2026-11-25T14:24:21.989527"
+  },
+  {
+   "id": "linkareer-d600ec21",
+   "category": "internship",
+   "title": "[미국] 텍사스 반도체 전문 시공 및 기술 지원 기업 5D 설계 및 모델링 직무 채용",
+   "source": "linkareer",
+   "url": "https://linkareer.com/activity/366931",
+   "organizer": "Finetech US, Inc.",
+   "apply_start": null,
+   "deadline": "2027-02-23T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "기타",
+    "채용연계형 인턴",
+    "체험형 인턴"
+   ],
+   "eligibility": "",
+   "location": "오프라인(해외)",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 0,
+   "score_reasons": [
+    "제외: 허용 지역 아님"
+   ],
+   "status": "hidden",
+   "warnings": [],
+   "ask": false,
+   "first_seen": "2026-11-25T14:24:21.989527"
+  },
+  {
+   "id": "linkareer-2f3c97d8",
+   "category": "internship",
+   "title": "[미국] CA 여성 의류 제조·온라인 홀세일 회사 Production / Customer Service / Design Assistant / Trade Show Sales 채용",
+   "source": "linkareer",
+   "url": "https://linkareer.com/activity/366930",
+   "organizer": "HeimishUSA",
+   "apply_start": null,
+   "deadline": "2027-02-23T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "패션/의류디자인",
+    "고객상담/CS",
+    "기타",
+    "채용연계형 인턴",
+    "체험형 인턴"
+   ],
+   "eligibility": "",
+   "location": "오프라인(해외)",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 0,
+   "score_reasons": [
+    "제외: 허용 지역 아님"
+   ],
+   "status": "hidden",
+   "warnings": [],
+   "ask": false,
+   "first_seen": "2026-11-25T14:24:21.989527"
+  },
+  {
+   "id": "linkareer-f6380c20",
+   "category": "internship",
+   "title": "[미국] 자동차 내·외장 부품 전문 제조기업(1차 협력사) 품질관리 모집(숙소/차량/통신 제공, 유급휴가&유급공휴일)",
+   "source": "linkareer",
+   "url": "https://linkareer.com/activity/366928",
+   "organizer": "Gummoon USA, LLC",
+   "apply_start": null,
+   "deadline": "2027-02-23T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "품질관리(QC/QA)",
+    "기타",
+    "채용연계형 인턴",
+    "체험형 인턴"
+   ],
+   "eligibility": "",
+   "location": "오프라인(해외)",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 0,
+   "score_reasons": [
+    "제외: 허용 지역 아님"
+   ],
+   "status": "hidden",
+   "warnings": [],
+   "ask": false,
+   "first_seen": "2026-11-25T14:24:21.989527"
+  },
+  {
+   "id": "linkareer-c10859b8",
+   "category": "internship",
+   "title": "[미국] 2008년 설립된 Business Law and Accounting 회사 회계 포지션 모집",
+   "source": "linkareer",
+   "url": "https://linkareer.com/activity/366925",
+   "organizer": "BH Whang&Associates, Ltd.",
+   "apply_start": null,
+   "deadline": "2027-02-23T23:59:00",
+   "event_start": null,
+   "event_end": null,
+   "tags": [
+    "재무/회계/세무",
+    "기타",
+    "채용연계형 인턴",
+    "체험형 인턴"
+   ],
+   "eligibility": "",
+   "location": "오프라인(해외)",
+   "prize": "",
+   "work_start": null,
+   "work_end": null,
+   "score": 0,
+   "score_reasons": [
+    "제외: 허용 지역 아님"
+   ],
+   "status": "hidden",
+   "warnings": [],
+   "ask": false,
+   "first_seen": "2026-11-25T14:24:21.989527"
   },
   {
    "id": "wevity-0a311cee",
