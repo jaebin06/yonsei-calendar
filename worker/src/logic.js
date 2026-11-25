@@ -19,7 +19,8 @@ export const kstToday = (now = new Date()) => new Date(now.getTime() + 9 * 3600 
 export function needsDecision(ev, state, today) {
   if (!ev.ask || state.dismissed[ev.id] || ev.id in state.selected) return false;
   const key = (ev.deadline || ev.event_start || "").slice(0, 10);
-  return !!key && key >= today;
+  if (!key) return ev.category === "scholarship"; // 마감일을 못 찾은 장학금도 일단 묻는다
+  return key >= today;
 }
 
 export function decorate(events, state, now = new Date()) {
@@ -84,8 +85,8 @@ export function feedItems(decorated, now = new Date()) {
   for (const ev of decorated) {
     // 참여 여부를 정하지 않은 고득점 대회: 정할 때까지 매일 '오늘' 칸에 띄운다
     if (ev.needs_decision) {
-      const key = (ev.deadline || ev.event_start).slice(0, 10);
-      const dday = Math.round((Date.parse(key) - Date.parse(today)) / 864e5);
+      const key = (ev.deadline || ev.event_start || "").slice(0, 10);
+      const dday = key ? Math.round((Date.parse(key) - Date.parse(today)) / 864e5) : "?";
       const what = ev.category === "scholarship" ? "신청 결정" : "참여 결정";
       items.push({ uid: `${ev.id}-ask`, summary: `❓ [${what}] ${ev.title} (D-${dday}, ${ev.score}점)`, allDay: true, start: today,
         description: `대시보드에서 '참여할래요' 또는 '안 할래요'를 누르면 사라져요.\n주최: ${ev.organizer || "-"}\n링크: ${ev.url || "-"}`, url: ev.url });

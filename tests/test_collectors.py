@@ -114,3 +114,19 @@ def test_scholarship_parsing_and_scoring():
     busan = Event(id="b", category="scholarship", title="부산 출신 대학생 장학금", source="t",
                   deadline=datetime(2026, 12, 20, 23, 59))
     assert score.score_scholarship(busan, cfg, date(2026, 11, 25)).status == "hidden"
+
+
+def test_scholarship_negation_and_grade():
+    import yaml
+    from pathlib import Path
+    from yc import score
+    cfg = yaml.safe_load((Path(__file__).resolve().parents[1] / "config/profile.yaml").read_text(encoding="utf-8"))
+    emons = Event(id="e", category="scholarship", title="에몬스 장학생 모집", source="t",
+                  eligibility="2) 지원 자격 / ※ 2027년 2월 졸업 예정자, 2027년 신규 입학자, 대학원생(석사 ㆍ 박사 과정 및 수료자)은 지원 대상에서 제외됩니다.",
+                  deadline=datetime(2027, 1, 8, 23, 59))
+    assert score.score_scholarship(emons, cfg, date(2026, 11, 25)).status != "hidden"
+    sea = Event(id="s", category="scholarship", title="세아해암장학생 추천", source="t",
+                eligibility="가. 2027-1학기 기준 3학년 이과대학, 공과대학, 인공지능융합대학, 생명시스템대학 학부 재학생 / 다. 소득분위 8분위 이하인 학생")
+    score.score_scholarship(sea, cfg, date(2026, 11, 25))
+    assert sea.status == "recommended" and sea.score >= 65
+    assert "마감일 확인 필요" in sea.warnings and "소득 기준 확인" in sea.warnings

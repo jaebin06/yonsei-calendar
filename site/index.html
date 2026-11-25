@@ -260,7 +260,7 @@ function applyState(state) {
     else if (e.category === "learnus" && e.is_open) e.included = false;
     else e.included = e.status === "starred" || DEFAULT_IN.has(e.category);
     const key = (e.deadline || e.event_start || "").slice(0, 10);
-    e.needs_decision = !!e.ask && !e.dismissed && !(e.id in sel) && !!key && key >= todayKey();
+    e.needs_decision = !!e.ask && !e.dismissed && !(e.id in sel) && (key ? key >= todayKey() : e.category === "scholarship");
   }
 }
 
@@ -441,7 +441,7 @@ function renderList() {
   const tk = todayKey(), dis = connected() ? "" : "disabled";
   const rows = DATA.events.filter(match).sort((a, b) => keyDate(a).localeCompare(keyDate(b)) || ((b.score || 0) - (a.score || 0)));
   $("#list").innerHTML = rows.length ? rows.map((e) => {
-    const k = keyDate(e), days = daysBetween(tk, k);
+    const k = keyDate(e), days = daysBetween(tk, k), noDate = k === "9999";
     const isNew = e.first_seen && (Date.now() - new Date(e.first_seen)) < 3 * 864e5;
     const actions = e.dismissed
       ? `<button data-undismiss="${e.id}" ${dis}>되돌리기</button>`
@@ -450,7 +450,7 @@ function renderList() {
         : `<button class="primary" data-select="${e.id}" ${dis}>+ 내 일정에 넣기</button>
            <select data-dismiss="${e.id}" ${dis} aria-label="추천 안 함"><option value="">추천 안 함…</option><option>대상 아님</option><option>관심 없음</option><option>이미 지원함</option><option>기타</option></select>`;
     return `<div class="card">
-      <div class="dday"><b>${days < 0 ? "끝" : days === 0 ? "D-day" : "D-" + days}</b><span>${k.slice(5).replace("-", "/")} ${e.deadline ? "마감" : "행사"}</span></div>
+      <div class="dday"><b>${noDate ? "?" : days < 0 ? "끝" : days === 0 ? "D-day" : "D-" + days}</b><span>${noDate ? "마감일 확인" : k.slice(5).replace("-", "/") + (e.deadline ? " 마감" : " 행사")}</span></div>
       <div>
         <h3><a href="${esc(e.url)}" target="_blank" rel="noopener">${esc(e.title)}</a></h3>
         <div class="meta">${esc(e.organizer || "주최 정보 없음")}${e.location ? " · " + esc(e.location) : ""}</div>
@@ -489,9 +489,9 @@ function renderAsk() {
   document.title = items.length ? `(${items.length}) 연세 통합 일정` : "연세 통합 일정";
   const tk = todayKey(), dis = connected() ? "" : "disabled";
   $("#ask-list").innerHTML = items.map((e) => {
-    const k = keyDate(e), days = daysBetween(tk, k);
+    const k = keyDate(e), days = daysBetween(tk, k), noDate = k === "9999";
     return `<div class="ask-card">
-      <div class="dday"><b>${days === 0 ? "D-day" : "D-" + days}</b><span>${k.slice(5).replace("-", "/")} 마감</span></div>
+      <div class="dday"><b>${noDate ? "?" : days === 0 ? "D-day" : "D-" + days}</b><span>${noDate ? "마감일 확인" : k.slice(5).replace("-", "/") + " 마감"}</span></div>
       <div>
         <h3 style="font-size:15px;margin:0 0 3px"><a href="${esc(e.url)}" target="_blank" rel="noopener" style="color:inherit">${esc(e.title)}</a></h3>
         <div class="meta">${esc(e.organizer || "주최 정보 없음")}${e.location ? " · " + esc(e.location) : ""} · <b>${e.score}점</b></div>

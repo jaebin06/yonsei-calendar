@@ -219,17 +219,15 @@ def score_scholarship(ev: Event, cfg: dict, today: date) -> Event:
     text = f"{ev.title} {ev.eligibility}"
     reasons: list[str] = []
     kd = ev.key_date()
-    if kd is None:
-        ev.status, ev.score = "maybe", 0
-        ev.warnings.append("마감일 확인 필요")
-        ev.score_reasons = ["마감일을 못 찾음 → 원문 확인"]
-        return ev
-    if (kd - today).days < cfg.get("min_days_left", 2):
+    if kd is not None and (kd - today).days < cfg.get("min_days_left", 2):
         return _hide(ev, "마감 임박·지남")
 
+    # '대학원생은 지원 대상에서 제외' 같은 문장은 오히려 학부생에게 유리 → 제외 판단에서 뺀다
+    clauses = re.split(r"\s/\s|[.。]\s", ev.eligibility)
+    positive = " ".join(c for c in clauses if not re.search(r"제외|불가|제한|해당\s*없|신청\s*못", c))
     student = _has_any(text, sc.get("student", []))
     bad = _has_any(ev.title, sc.get("exclude", [])) or (
-        _has_any(ev.eligibility, sc.get("exclude", [])) if not student else [])
+        _has_any(positive, sc.get("exclude", [])) if not student else [])
     if bad:
         return _hide(ev, f"대상 아님({bad[0]})")
     home = _has_any(text, sc.get("hometown", []))
@@ -246,22 +244,23 @@ def score_scholarship(ev: Event, cfg: dict, today: date) -> Event:
         score += 25; reasons.append(f"전공 관련('{major[0]}') +25")
     if student:
         score += 10; reasons.append("학부 재학생 대상 +10")
+    years = _has_any(positive, sc.get("years", []))
+    if years:
+        score += 10; reasons.append(f"'{years[0]}' 대상 +10")
     extra = _has_any(text, sc.get("extra", []))
     if extra:
         score += 15; reasons.append(f"'{extra[0]}' +15")
     if re.search(r"소득|분위|지원구간|기초생활|차상위|저소득", text):
         ev.warnings.append("소득 기준 확인")
-    if re.search(r"평점|성적|학점\s*이상", text):
+    if re.search(r"평점|평균\s*학점|성적|학점\s*\d", text):
         ev.warnings.append("성적 기준 확인")
+    if kd is None:
+        ev.warnings.append("마감일 확인 필요")
 
     ev.score = min(score, 100)
     ev.score_reasons = reasons
-    if ev.score >= 50:
-        ev.status = "recommended"
-    elif ev.score >= 25:
-        ev.status = "maybe"
-    else:
-        ev.status = "hidden"
+    # 대상에서 빠지지 않은 장학금은 숨기지 않는다 (조건을 못 읽었을 수도 있어서 최소 '검토')
+    ev.status = "recommended" if ev.score >= 50 else "maybe"
     if _has_any(ev.title, sc.get("always_ask", [])):
         ev.status = "recommended"
         reasons.append("모든 재학생이 챙겨야 하는 장학금")
